@@ -47,9 +47,9 @@ export default function NavBar() {
         <div className="fixed inset-0 bg-teal-900 text-gray-200 z-50 p-6 sm:p-8 overflow-y-auto">
           {/* Logo */}
           <div className="flex justify-start">
-	          <Link href="/" target="_blank" rel="noopener noreferrer">
+            <Link href="/" target="_blank" rel="noopener noreferrer">
               <h1 className="text-3xl text-orange-500 font-semibold">Ossara</h1>
-					  </Link>
+            </Link>
           </div>
           {/* Close Icon */}
           <div className="flex justify-end">
@@ -85,6 +85,7 @@ export default function NavBar() {
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link>
+                          {/* <Link href={`/${menu.name.toLowerCase()}#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link> */}
                         </li>
                       ))}
                     </ul>
@@ -121,7 +122,7 @@ export default function NavBar() {
                     <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-300">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
-                          <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`}>
+                          <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">
                             - {item}
                           </Link>
                         </li>
