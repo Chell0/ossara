@@ -3,6 +3,7 @@ export interface AboutRowProps {
   text: string;
   imageUrl: string;
   reverse?: boolean;
+  id?: string;
 }
 
 export interface TeamMember {
