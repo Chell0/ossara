@@ -1,5 +1,5 @@
 
-import Banner from "@/components/Banner/Banner";
+import AboutPage from "@/components/AboutPage/AboutPage";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 
@@ -8,7 +8,7 @@ export default function Page() {
 		<div>
 			<main className="p-6">
 				<NavBar />
-				<Banner />
+				<AboutPage />
 				<Footer />
 			</main>
 		</div>
