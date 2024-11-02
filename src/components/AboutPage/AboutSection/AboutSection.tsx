@@ -4,13 +4,13 @@ import AboutRow from "@/components/AboutPage/AboutRow/AboutRow";
 export default function AboutSection() {
   return (
     <>
-      <section className="container mx-auto px-6">
+      <section className="container mx-auto px-6 mt-10">
         <div>
           {/* Row 1: Über Uns */}
           <AboutRow
             title="Über Uns"
-            text="We are committed to making a positive impact by engaging and working towards a better future. Our mission is to support the community and foster sustainable growth through various projects and initiatives."
-            imageUrl="/"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis. Vestibulum risus urna, feugiat ut sem a, condimentum rhoncus nunc. Curabitur vehicula venenatis ipsum vel bibendum. Sed vitae erat ipsum. Maecenas malesuada nisl at congue vehicula. Integer augue odio, elementum ut pretium sed, gravida vel purus. Nulla vestibulum diam a sollicitudin viverra. Aenean convallis finibus laoreet. Quisque posuere odio odio, ac condimentum urna varius eu. Cras congue dolor id ante iaculis facilisis. Nullam in gravida massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum ut massa suscipit, vitae laoreet ligula condimentum."
+            imageUrl="/bgs/img1.jpg"
           />
         </div>
 
@@ -18,8 +18,8 @@ export default function AboutSection() {
           {/* Row 2: Verein */}
           <AboutRow
             title="Verein"
-            text="As a dedicated organization, our team comprises passionate individuals who aim to create meaningful change in the community. We work closely with our partners and volunteers to address social, economic, and environmental challenges."
-            imageUrl="/path-to-your-second-image.jpg"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis. Vestibulum risus urna, feugiat ut sem a, condimentum rhoncus nunc. Curabitur vehicula venenatis ipsum vel bibendum. Sed vitae erat ipsum. Maecenas malesuada nisl at congue vehicula. Integer augue odio, elementum ut pretium sed, gravida vel purus. Nulla vestibulum diam a sollicitudin viverra. Aenean convallis finibus laoreet. Quisque posuere odio odio, ac condimentum urna varius eu. Cras congue dolor id ante iaculis facilisis. Nullam in gravida massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum ut massa suscipit, vitae laoreet ligula condimentum."
+            imageUrl="/bgs/img2.jpg"
             reverse
           />
         </div>
