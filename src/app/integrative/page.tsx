@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer/Footer";
+import Integrative from "@/components/Integrative/Integrative";
 import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
@@ -6,7 +7,7 @@ export default function Page() {
 		<div>
 			<main className="p-6">
 				<NavBar />
-				<h1 className="text-black text-xl py-2 px-4 sm:text-md md:text-xl lg:text-2xl font-semibold text-center">Integrative Stadtteilarbeit</h1>
+				<Integrative />
 				<Footer />
 			</main>
 		</div>
