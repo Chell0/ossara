@@ -12,3 +12,7 @@ export interface TeamMember {
   imageUrl: string;
 }
 
+
+export interface YouTubeSectionProps {
+  videoId: string;
+}
