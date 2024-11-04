@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 import Image from "next/image";
 
 export default function Lobby() {
@@ -18,6 +11,10 @@ export default function Lobby() {
             </section>
 
             <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
+                <div className="w-full md:w-1/2 flex-shrink-0">
+                    <Image src={`/bgs/img1.jpg`} alt="About Photo" width={200} height={200}
+                           className="w-full h-auto rounded-lg shadow-lg"/>
+                </div>
                 <div className="w-full md:w-1/2">
                     <p className="mt-4 text-gray-700">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan
@@ -35,13 +32,17 @@ export default function Lobby() {
                         laoreet ligula condimentum.
                     </p>
                 </div>
-                <div className="w-full md:w-1/2 flex-shrink-0">
-                    <Image src={`/bgs/img1.jpg`} alt="About Photo" width={200} height={200}
-                           className="w-full h-auto rounded-lg shadow-lg"/>
-                </div>
             </section>
 
             {/* Ansprechppartner */}
+            <section className="w-full flex items-center justify-center mt-28 sm:px-2">
+                <div className="bg-teal-600 shadow-lg rounded-lg max-w-md sm:px-4">
+                    <h2 className="text-white text-xl py-4 px-4 sm:text-2xl md:text3xl lg:text-4xl font-semibold text-center">
+                        Ansprechpartner
+                    </h2>
+                </div>
+            </section>
+
             <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
                 <div className="w-full md:w-1/2 flex-shrink-0 flex justify-center">
                     <Image
@@ -66,7 +67,19 @@ export default function Lobby() {
             </section>
 
             {/*Netzwerkarbeit*/}
+            <section className="w-full flex items-center justify-center mt-28 sm:px-2">
+                <div className="bg-teal-600 shadow-lg rounded-lg max-w-md sm:px-4">
+                    <h2 className="text-white text-xl py-4 px-4 sm:text-2xl md:text3xl lg:text-4xl font-semibold text-center">
+                        Netzwerkarbeit
+                    </h2>
+                </div>
+            </section>
+
             <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
+                <div className="w-full md:w-1/2 flex-shrink-0">
+                    <Image src={`/bgs/img1.jpg`} alt="About Photo" width={200} height={200}
+                           className="w-full h-auto rounded-lg shadow-lg"/>
+                </div>
                 <div className="w-full md:w-1/2">
                     <p className="mt-4 text-gray-700">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan
@@ -83,9 +96,6 @@ export default function Lobby() {
                         massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum ut massa suscipit, vitae
                         laoreet ligula condimentum.
                     </p>
-                </div>
-                <div className="w-full md:w-1/2 flex-shrink-0">
-                    <Image src={`/bgs/img1.jpg`} alt="About Photo" width={200} height={200} className="w-full h-auto rounded-lg shadow-lg"/>
                 </div>
             </section>
         </>
