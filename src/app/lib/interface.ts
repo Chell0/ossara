@@ -16,3 +16,15 @@ export interface TeamMember {
 export interface YouTubeSectionProps {
   videoId: string;
 }
+
+export interface PersonCardProps {
+  name: string;
+  role: string;
+  imageSrc: string;
+  description: string;
+  socialLinks: {
+    facebook?: string;
+    twitter?: string;
+    instagram?: string;
+  };
+};
