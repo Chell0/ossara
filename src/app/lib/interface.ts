@@ -27,4 +27,4 @@ export interface PersonCardProps {
     twitter?: string;
     instagram?: string;
   };
-};
+}
