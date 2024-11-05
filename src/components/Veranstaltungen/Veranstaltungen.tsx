@@ -153,7 +153,6 @@ export default function Veranstaltungen() {
 
     return (
         <main className="container mx-auto p-6">
-            {/*<h1 className="text-2xl font-bold mb-6 text-center">Veranstaltungen</h1>*/}
             <section className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-teal-600 rounded-lg shadow-lg">
                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Veranstaltungen </h1>
             </section>
