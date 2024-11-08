@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import Link from "next/link";
 
 type Event = {
     id: number;
@@ -10,6 +11,7 @@ type Event = {
     time: string;
     link: string;
     description: string;
+    imageUrl: string;
 };
 
 
@@ -22,6 +24,7 @@ const eventsData: Event[] = [
         time: '10:00 AM',
         link: 'https://ossara.org/register',
         description: 'A workshop focused on the importance of education in community empowerment. Learn strategies and tools to foster educational growth and cultural exchange, with a focus on Ossara e.V.\'s initiatives in Togo.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 2,
@@ -31,6 +34,7 @@ const eventsData: Event[] = [
         time: '9:00 AM',
         link: 'https://ossara.org/register',
         description: 'Join us for a seminar aimed at promoting health awareness and preventive care in underserved communities. This event highlights Ossara e.V.\'s work to improve health outcomes in regions like Kara and Defalé.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 3,
@@ -40,6 +44,7 @@ const eventsData: Event[] = [
         time: '2:00 PM',
         link: 'https://ossara.org/register',
         description: 'Explore the importance of cultural diversity and inclusion in community development, especially in Togo.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 4,
@@ -49,6 +54,7 @@ const eventsData: Event[] = [
         time: '10:00 AM',
         link: 'https://ossara.org/register',
         description: 'A training session focused on promoting health awareness and preventive healthcare practices.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 5,
@@ -58,6 +64,7 @@ const eventsData: Event[] = [
         time: '9:00 AM',
         link: 'https://ossara.org/register',
         description: 'Learn essential digital skills to boost employability and educational opportunities in underserved regions.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 6,
@@ -67,6 +74,7 @@ const eventsData: Event[] = [
         time: '1:00 PM',
         link: 'https://ossara.org/register',
         description: 'A workshop aimed at enhancing community engagement and sustainable development practices.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 7,
@@ -76,6 +84,7 @@ const eventsData: Event[] = [
         time: '10:00 AM',
         link: 'https://ossara.org/register',
         description: 'Training on the preservation of cultural heritage, with a focus on Togo\'s unique traditions and practices.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 8,
@@ -85,6 +94,7 @@ const eventsData: Event[] = [
         time: '11:00 AM',
         link: 'https://ossara.org/register',
         description: 'An essential training session on first aid practices for local community members.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 9,
@@ -94,6 +104,7 @@ const eventsData: Event[] = [
         time: '3:00 PM',
         link: 'https://ossara.org/register',
         description: 'Learn basic financial literacy skills to promote economic empowerment in local communities.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 10,
@@ -103,6 +114,7 @@ const eventsData: Event[] = [
         time: '1:00 PM',
         link: 'https://ossara.org/register',
         description: 'A workshop focusing on women’s health and empowerment, covering topics such as reproductive health and leadership.',
+        imageUrl: '/news/img.jpg',
     },
     {
         id: 11,
@@ -112,17 +124,17 @@ const eventsData: Event[] = [
         time: '9:00 AM',
         link: 'https://ossara.org/register',
         description: 'A training program on sustainable agriculture practices to enhance food security in rural areas.',
+        imageUrl: '/news/img.jpg',
     },
 ];
-
 
 
 const formatDate = (date: string) => new Date(date).toLocaleDateString();
 
 export default function Veranstaltungen() {
     const [expandedEvent, setExpandedEvent] = useState<number | null>(null);
-    const [searchTerm, setSearchTerm] = useState('');
-    const [searchTermArchived, setSearchTermArchived] = useState('');
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchTermArchived, setSearchTermArchived] = useState("");
 
     const currentDate = new Date();
 
@@ -153,133 +165,64 @@ export default function Veranstaltungen() {
 
     return (
         <main className="container mx-auto p-6">
-            <section className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-teal-600 rounded-lg shadow-lg">
-                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Veranstaltungen </h1>
+            {/* Title Section */}
+            <section className="bg-blended-gradient flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
+                <h1 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Veranstaltungen </h1>
             </section>
 
             {/* Search Bar for Current and Future Events */}
             <div className="flex justify-center my-20">
                 <input
                     type="text"
-                    placeholder="Search upcoming events..."
+                    placeholder="Search Upcoming Events..."
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    className="px-4 py-2 w-full md:w-1/2 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
+                    className="px-4 py-2 w-full md:w-1/2 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-orange-500"
                 />
             </div>
 
             {/* Current and Future Events Section */}
             <section>
-                <h2 className="text-2xl font-bold mb-6">Upcoming Events</h2>
+                <h2 className="text-3xl text-orange-600 font-bold mb-6">Upcoming Events</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {filteredCurrentEvents.length > 0 ? (
                         filteredCurrentEvents.map((event) => (
-                            <div
-                                key={event.id}
-                                className="bg-white shadow-md rounded-lg p-4"
-                            >
-                                <h3 className="text-lg font-semibold">{event.title}</h3>
-                                <p className="text-sm text-gray-500">{event.type}</p>
-                                <p className="text-sm text-gray-500">
-                                    Date: {formatDate(event.date)}
-                                </p>
-                                <p className="text-sm text-gray-500">Time: {event.time}</p>
-                                <a
-                                    href={event.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-500 font-semibold text-md hover:underline mt-2 block"
-                                >
-                                    Register Here
-                                </a>
-                                <button
-                                    onClick={() => toggleExpand(event.id)}
-                                    className="mt-2 text-blue-500 text-sm hover:underline"
-                                >
-                                    {expandedEvent === event.id ? 'Less Info' : 'More Info'}
-                                </button>
-                                {expandedEvent === event.id && (
-                                    <p className="mt-2 text-gray-700">{event.description}</p>
-                                )}
+                            <div key={event.id} className="bg-white shadow-md shadow-gray-400 rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                                <div className="h-44 w-full bg-gray-200"><img src={event.imageUrl} alt={event.title} className="w-full h-full object-cover"/></div>
+                                <div className="p-4">
+                                    <h3 className="text-lg text-orange-600 font-semibold">{event.title}</h3>
+                                    <p className="text-sm text-gray-800 font-semibold">{event.type}</p>
+                                    <p className="text-sm text-gray-700">Date: {formatDate(event.date)}</p>
+                                    <p className="text-sm text-gray-500">Time: {event.time}</p>
+                                    <Link href={event.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold text-md hover:underline mt-2 block">Register Here</Link>
+                                    <button onClick={() => toggleExpand(event.id)} className="mt-2 text-blue-500 text-sm hover:underline">{expandedEvent === event.id ? "Less Info" : "More Info"}</button>
+                                    {expandedEvent === event.id && (<p className="mt-2 text-gray-700">{event.description}</p>)}
+                                </div>
                             </div>
                         ))
-                    ) : (
-                        <p>No upcoming events found.</p>
+                    ):(
+                        <p className="text-center text-gray-600">No upcoming events found.</p>
                     )}
                 </div>
             </section>
 
+            {/*Archived Events Section*/}
+            {/* Search Bar for Archived Events */}
+            <div className="flex justify-center my-20">
+                <input
+                    type="text"
+                    placeholder="Search Archived Events..."
+                    value={searchTermArchived}
+                    onChange={(e) => setSearchTermArchived(e.target.value)}
+                    className="px-4 py-2 w-full md:w-1/2 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-orange-500"
+                />
+            </div>
+
             {/* Archived Events Section */}
-            <section className="mt-10">
-                <div className="flex items-center justify-between mb-6">
-                    <h2 className="text-xl font-bold">Archived Events</h2>
-                    <input
-                        type="text"
-                        placeholder="Search archived events..."
-                        value={searchTermArchived}
-                        onChange={(e) => setSearchTermArchived(e.target.value)}
-                        className="px-4 py-2 w-full md:w-1/3 border rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-200"
-                    />
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    {filteredPastEvents.length > 0 ? (
-                        filteredPastEvents.map((event) => (
-                            <div
-                                key={event.id}
-                                className="bg-gray-100 shadow-md rounded-lg p-4"
-                            >
-                                <h3 className="text-md font-semibold">{event.title}</h3>
-                                <p className="text-sm text-gray-500">{event.type}</p>
-                                <p className="text-sm text-gray-500">
-                                    Date: {formatDate(event.date)}
-                                </p>
-                                <p className="text-sm text-gray-500">Time: {event.time}</p>
-                                <button
-                                    onClick={() => toggleExpand(event.id)}
-                                    className="mt-2 text-blue-500 text-sm hover:underline"
-                                >
-                                    {expandedEvent === event.id ? 'Less Info' : 'More Info'}
-                                </button>
-                                {expandedEvent === event.id && (
-                                    <p className="mt-2 text-gray-700">{event.description}</p>
-                                )}
-                            </div>
-                        ))
-                    ) : (
-                        <p>No archived events found.</p>
-                    )}
-                </div>
+            <section className={`mt-10`}>
+                <h2 className={`text-3xl font-bold text-stone-600 mb-6`}>Archived Events</h2>
             </section>
+
         </main>
     );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export default function Dekoloniale() {
-//     return (
-//         <>
-//             <section
-//                 className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-teal-600 rounded-lg shadow-lg">
-//                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
-//                     Veranstaltungen
-//                 </h1>
-//             </section>
-//         </>
-//     )
-// };
