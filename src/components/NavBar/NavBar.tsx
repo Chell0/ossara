@@ -35,7 +35,7 @@ export default function NavBar() {
 
         {/* Logo */}
         <div className="hidden md:block">
-          <Link href="/" target="_blank" rel="noopener noreferrer">
+          <Link href="/">
             <Image src="/logos/ossara-logo.png" alt="Ossara Logo" className="object-contain" width={200} height={200} />
           </Link>
         </div>
@@ -44,25 +44,25 @@ export default function NavBar() {
 
       {/* Full-Viewport Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-teal-900 text-gray-200 z-50 p-6 sm:p-8 overflow-y-auto">
+        <div className="fixed inset-0 bg-blended-gradient text-white z-50 p-6 sm:p-8 overflow-y-auto">
           {/* Logo */}
           <div className="flex justify-start">
-            <Link href="/" target="_blank" rel="noopener noreferrer">
-              <h1 className="text-3xl text-orange-500 font-semibold">Ossara</h1>
+            <Link href="/">
+              <h1 className="text-3xl text-white font-bold">Ossara</h1>
             </Link>
           </div>
           {/* Close Icon */}
           <div className="flex justify-end">
             <button onClick={toggleMenu}>
-              <XIcon className="h-8 w-8 text-orange-400" />
+              <XIcon className="h-8 w-8 text-gray-900" />
             </button>
           </div>
 
           <div className="flex flex-col md:flex-row mt-8 md:mt-12 space-y-8 md:space-y-0 md:space-x-8">
             {/* Left Column: Main Menu with Sub-Menus */}
-            <ul className="space-y-6 text-xl md:text-2xl font-bold w-full md:w-1/2 pr-0 md:pr-8">
+            <ul className="space-y-6 text-white  text-xl md:text-2xl font-bold w-full md:w-1/2 pr-0 md:pr-8">
               {[
-                { name: "NEWS", items: ["Neuigkeiten", "Archiv"], href: "/news" },
+                { name: "NEWS", items: [], href: "/news" },
                 { name: "VERANSTALTUNGEN", items: [], href: "/veranstaltungen" },
                 { name: "ÜBER UNS", items: ["Verein", "Team", "Gechichte"], href: "/uber" },
                 { name: "ENGAGIEREN", items: ["Stellenausschreibungen", "Mitglied Werden", "Ehrenamtliches Engagement"], href: "/engagieren" },
@@ -71,7 +71,7 @@ export default function NavBar() {
                 <li key={index}>
                   <div className="flex items-center justify-between">
                     <Link href={menu.href}
-                      className={`cursor-pointer ${activeSubMenu === menu.name ? "text-orange-400" : ""}`}
+                      className={`cursor-pointer ${activeSubMenu === menu.name ? "text-gray-600" : ""}`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
                       {menu.name}
@@ -81,7 +81,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-300">
+                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-orange-700">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link>
@@ -95,19 +95,19 @@ export default function NavBar() {
             </ul>
 
             {/* Right Column: Sub-Menus */}
-            <ul className="space-y-6 text-xl md:text-2xl font-bold w-full md:w-1/2 pl-0 md:pl-8">
+            <ul className="space-y-6 text-white text-xl md:text-2xl font-bold w-full md:w-1/2 pl-0 md:pl-8">
               {[
-                { name: "INTEGRATIVE STADTTEILARBEIT", items: ["Ansprechpartner", "Bewerbungstraining", "Sprachforderung"], href: "/integrative" },
-                { name: "LOBBY UND NETZWERKARBEIT", items: ["Ansprechpartner", "Netz:Werkstatt"], href: "/lobby" },
-                { name: "DEKOLONIALE BILDUNGSARBEIT", items: ["Ansprechpartner", "Eine Welt-Promotorinnen Programm", "Dekoloniale Offentlichkeitsarbeit", "Machtbewusst-Hamburg"], href: "/bildungsarbeit" },
-                { name: "ANTI-SCHWARZER RASSISMUS", items: ["Ansprechpartner", "Re_Member"], href: "/rassismus" },
-                { name: "ENTWICKLUNGSZUSAMMENARBEIT", items: ["Ansprechpartner", "Schwerpunkte", "Richtlinien", "Projekte", "Archiv"], href: "/dekoloniale" },
+                { name: "INTEGRATIVE STADTTEILARBEIT", items: ["Bewerbungstraining", "Sprachforderung"], href: "/integrative" },
+                { name: "LOBBY UND NETZWERKARBEIT", items: [], href: "/lobby" },
+                { name: "DEKOLONIALE BILDUNGSARBEIT", items: ["Eine Welt-Promotorinnen Programm", "Dekoloniale Offentlichkeitsarbeit", "Machtbewusst-Hamburg"], href: "/bildungsarbeit" },
+                { name: "ANTI-SCHWARZER RASSISMUS", items: [], href: "/rassismus" },
+                { name: "ENTWICKLUNGSZUSAMMENARBEIT", items: ["Schwerpunkte", "Richtlinien", "Projekte"], href: "/dekoloniale" },
                 { name: "FAQ", items: [], href: "/faq" },
               ].map((menu, index) => (
                 <li key={index}>
                   <div className="flex items-center justify-between">
                     <Link href={menu.href}
-                      className={`cursor-pointer ${activeSubMenu === menu.name ? "text-orange-400" : ""}`}
+                      className={`cursor-pointer ${activeSubMenu === menu.name ? "text-gray-600" : ""}`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
                       {menu.name}
@@ -119,7 +119,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-300">
+                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-yellow-300">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">

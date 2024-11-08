@@ -29,9 +29,9 @@ export default function NewsPage() {
     }, [selectedCategory, searchQuery, showNeuigkeiten]);
 
     return (
-        <div className="min-h-screen p-8 bg-gray-100">
+        <div className="min-h-screen p-8">
             <div
-                className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-teal-600 rounded-lg shadow-lg">
+                className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-blended-gradient rounded-xl shadow-lg">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">News</h1>
             </div>
 
@@ -42,7 +42,7 @@ export default function NewsPage() {
                         setShowNeuigkeiten(true);
                         setSelectedCategory(null);
                     }}
-                    className={`px-4 py-2 font-semibold ${showNeuigkeiten ? 'bg-teal-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+                    className={`px-4 py-2 font-semibold rounded-lg ${showNeuigkeiten ? 'bg-blended-gradient text-white' : 'bg-gray-200 text-gray-700'}`}
                 >
                     Neuigkeiten
                 </button>
@@ -51,7 +51,7 @@ export default function NewsPage() {
                         setShowNeuigkeiten(false);
                         setSelectedCategory(null);
                     }}
-                    className={`px-4 py-2 font-semibold ${!showNeuigkeiten ? 'bg-teal-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+                    className={`px-4 py-2 font-semibold rounded-lg ${!showNeuigkeiten ? 'bg-blended-gradient text-white' : 'bg-gray-200 text-gray-700'}`}
                 >
                     Neuigkeiten Archive
                 </button>
@@ -59,7 +59,7 @@ export default function NewsPage() {
                 {/* Category Dropdown */}
                 <select
                     onChange={(e) => setSelectedCategory(e.target.value || null)}
-                    className="px-4 py-2 border rounded bg-white"
+                    className="px-4 py-2 border rounded-lg bg-blended-gradient text-white"
                     defaultValue=""
                 >
                     <option value="">All Categories</option>
@@ -76,7 +76,7 @@ export default function NewsPage() {
                     placeholder="Search..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="px-4 py-2 border rounded"
+                    className="px-4 py-2 border rounded-lg"
                 />
             </div>
 
@@ -94,20 +94,20 @@ export default function NewsPage() {
                             initial={{opacity: 0, y: 20}}
                             animate={{opacity: 1, y: 0}}
                             transition={{duration: 0.3}}
-                            className="p-4 bg-white rounded-lg shadow-lg overflow-hidden"
+                            className="p-4 bg-white rounded-lg shadow-gray-400 shadow-lg overflow-hidden"
                         >
                             {/* News Image */}
                             <img src={news.image} alt={news.title} className="w-full h-40 object-cover mb-4"/>
 
                             {/* News Content */}
-                            <h2 className="text-xl font-bold mb-2">{news.title}</h2>
-                            <p className="text-gray-500 text-sm mb-2">{news.date}</p>
-                            <p className="text-gray-700 mb-4">{news.content}</p>
-                            <p className="text-blue-600 font-medium">Category: {news.category}</p>
+                            <h2 className="text-orange-500 text-xl font-bold mb-2">{news.title}</h2>
+                            <p className="text-slate-700 text-sm mb-2">{news.date}</p>
+                            <p className="text-md text-gray-500 mb-4">{news.content}</p>
+                            <p className="text-blue-600 text-sm font-semibold">Category: {news.category}</p>
                         </motion.div>
                     ))
                 ) : (
-                    <p className="col-span-full text-center text-gray-600">No news available in this category.</p>
+                    <p className="col-span-full text-center text-lg text-gray-600 font-bold">Unfortunately, no news available in this category.</p>
                 )}
             </motion.div>
 
@@ -117,7 +117,7 @@ export default function NewsPage() {
                     <button
                         key={index}
                         onClick={() => setCurrentPage(index + 1)}
-                        className={`px-3 py-1 mx-1 rounded ${currentPage === index + 1 ? 'bg-blue-500 text-white' : 'bg-gray-200 text-gray-700'}`}
+                        className={`px-3 py-1 mx-1 rounded ${currentPage === index + 1 ? 'bg-blended-gradient text-white' : 'bg-gray-200 text-gray-700'}`}
                     >
                         {index + 1}
                     </button>
