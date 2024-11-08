@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
-import News from "@/components/News/News";
+import News from "@/components/Neuigkeiten/Neuigkeiten";
 
 export default function Page() {
 	return (

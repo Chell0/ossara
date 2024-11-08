@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import {archiveData, categories, newsData} from "../../../data";
 
-export default function NewsPage() {
+export default function Neuigkeiten() {
     const [showNeuigkeiten, setShowNeuigkeiten] = useState(true);
     const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
     const [searchQuery, setSearchQuery] = useState("");

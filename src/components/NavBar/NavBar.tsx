@@ -23,14 +23,14 @@ export default function NavBar() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Menu Icon */}
         <div className="flex items-center space-x-2">
-          <button className="block focus:outline-none" onClick={toggleMenu}>
+          <button className="block focus:outline-none text-orange-600" onClick={toggleMenu}>
             {menuOpen ? (
               <XIcon className="h-6 w-6" />
             ) : (
               <MenuIcon className="h-6 w-6" />
             )}
           </button>
-          <span className="text-lg font-semibold">Menu</span>
+          <span className="text-orange-600 text-xl font-bold">Menu</span>
         </div>
 
         {/* Logo */}
@@ -62,7 +62,7 @@ export default function NavBar() {
             {/* Left Column: Main Menu with Sub-Menus */}
             <ul className="space-y-6 text-white  text-xl md:text-2xl font-bold w-full md:w-1/2 pr-0 md:pr-8">
               {[
-                { name: "NEWS", items: [], href: "/news" },
+                { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
                 { name: "VERANSTALTUNGEN", items: [], href: "/veranstaltungen" },
                 { name: "ÜBER UNS", items: ["Verein", "Team", "Gechichte"], href: "/uber" },
                 { name: "ENGAGIEREN", items: ["Stellenausschreibungen", "Mitglied Werden", "Ehrenamtliches Engagement"], href: "/engagieren" },
@@ -81,7 +81,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-orange-700">
+                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link>
@@ -99,10 +99,10 @@ export default function NavBar() {
               {[
                 { name: "INTEGRATIVE STADTTEILARBEIT", items: ["Bewerbungstraining", "Sprachforderung"], href: "/integrative" },
                 { name: "LOBBY UND NETZWERKARBEIT", items: [], href: "/lobby" },
-                { name: "DEKOLONIALE BILDUNGSARBEIT", items: ["Eine Welt-Promotorinnen Programm", "Dekoloniale Offentlichkeitsarbeit", "Machtbewusst-Hamburg"], href: "/bildungsarbeit" },
+                { name: "DEKOLONIALE BILDUNGSARBEIT", items: ["Eine Welt-Promotorinnen Programm", "Machtbewusst-Hamburg"], href: "/bildungsarbeit" },
                 { name: "ANTI-SCHWARZER RASSISMUS", items: [], href: "/rassismus" },
                 { name: "ENTWICKLUNGSZUSAMMENARBEIT", items: ["Schwerpunkte", "Richtlinien", "Projekte"], href: "/dekoloniale" },
-                { name: "FAQ", items: [], href: "/faq" },
+                { name: "DOWNLOADS", items: [], href: "/downloads" },
               ].map((menu, index) => (
                 <li key={index}>
                   <div className="flex items-center justify-between">
@@ -119,7 +119,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-yellow-300">
+                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">
