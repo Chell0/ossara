@@ -166,7 +166,8 @@ export default function Veranstaltungen() {
     return (
         <main className="container mx-auto p-6">
             {/* Title Section */}
-            <section className="bg-blended-gradient flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
+            <section
+                className="bg-blended-gradient flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
                 <h1 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Veranstaltungen </h1>
             </section>
 
@@ -187,20 +188,27 @@ export default function Veranstaltungen() {
                 <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {filteredCurrentEvents.length > 0 ? (
                         filteredCurrentEvents.map((event) => (
-                            <div key={event.id} className="bg-white shadow-md shadow-gray-400 rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
-                                <div className="h-44 w-full bg-gray-200"><img src={event.imageUrl} alt={event.title} className="w-full h-full object-cover"/></div>
+                            <div key={event.id}
+                                 className="bg-white shadow-md shadow-gray-400 rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
+                                <div className="h-44 w-full bg-gray-200"><img src={event.imageUrl} alt={event.title}
+                                                                              className="w-full h-full object-cover"/>
+                                </div>
                                 <div className="p-4">
                                     <h3 className="text-lg text-orange-600 font-semibold">{event.title}</h3>
                                     <p className="text-sm text-gray-800 font-semibold">{event.type}</p>
                                     <p className="text-sm text-gray-700">Date: {formatDate(event.date)}</p>
                                     <p className="text-sm text-gray-500">Time: {event.time}</p>
-                                    <Link href={event.link} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-semibold text-md hover:underline mt-2 block">Register Here</Link>
-                                    <button onClick={() => toggleExpand(event.id)} className="mt-2 text-blue-500 text-sm hover:underline">{expandedEvent === event.id ? "Less Info" : "More Info"}</button>
-                                    {expandedEvent === event.id && (<p className="mt-2 text-gray-700">{event.description}</p>)}
+                                    <Link href={event.link} target="_blank" rel="noopener noreferrer"
+                                          className="text-blue-600 font-semibold text-md hover:underline mt-2 block">Register
+                                        Here</Link>
+                                    <button onClick={() => toggleExpand(event.id)}
+                                            className="mt-2 text-blue-500 text-sm hover:underline">{expandedEvent === event.id ? "Less Info" : "More Info"}</button>
+                                    {expandedEvent === event.id && (
+                                        <p className="mt-2 text-gray-700">{event.description}</p>)}
                                 </div>
                             </div>
                         ))
-                    ):(
+                    ) : (
                         <p className="text-center text-gray-600">No upcoming events found.</p>
                     )}
                 </div>
@@ -219,10 +227,34 @@ export default function Veranstaltungen() {
             </div>
 
             {/* Archived Events Section */}
-            <section className={`mt-10`}>
-                <h2 className={`text-3xl font-bold text-stone-600 mb-6`}>Archived Events</h2>
+            <section className="mt-10">
+                <h2 className="text-3xl font-bold text-stone-600 mb-6">Archived Events</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    {filteredPastEvents.length > 0 ? (
+                        filteredPastEvents.map((event) => (
+                            <div key={event.id} className={`shadow-md shadow-gray-400 rounded-xl overflow-hidden opacity-40 transition-all duration-300 hover:opacity-100`}>
+                                {/* Image section at the top half */}
+                                <div className="h-44 w-full bg-gray-200"><img src={event.imageUrl} alt={event.title} className="w-full h-full object-cover" /></div>
+                                {/* Content section at the bottom half */}
+                                <div className="p-4">
+                                    <h3 className="text-lg text-orange-600 font-semibold">{event.title}</h3>
+                                    <p className="text-sm text-gray-800">{event.type}</p>
+                                    <p className="text-sm text-gray-700">Date: {formatDate(event.date)}</p>
+                                    <p className="text-sm text-gray-500">Time: {event.time}</p>
+                                    <button onClick={() => toggleExpand(event.id)} className="mt-2 text-blue-500 text-sm hover:underline">
+                                        {expandedEvent === event.id ? "Less Info" : "More Info"}
+                                    </button>
+                                    {expandedEvent === event.id && (
+                                        <p className="mt-2 text-gray-700">{event.description}</p>
+                                    )}
+                                </div>
+                            </div>
+                        ))
+                    ) : (
+                        <p className="text-center text-gray-600">No Such Archived Events.</p>
+                    )}
+                </div>
             </section>
-
         </main>
     );
 }

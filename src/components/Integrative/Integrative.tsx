@@ -5,7 +5,7 @@ export default function Lobby() {
     return (
         <>
             <section
-                className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-teal-600 rounded-lg shadow-lg">
+                className="bg-blended-gradient flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
                 <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                     Integrative Stadtteilarbeit
                 </h1>
@@ -37,7 +37,7 @@ export default function Lobby() {
 
             {/* Sprachförderung */}
             <section className="w-full flex items-center justify-center mt-28 sm:px-2">
-                <div className="bg-teal-600 shadow-lg rounded-lg max-w-md sm:px-4">
+                <div className="bg-blended-gradient shadow-lg rounded-lg max-w-md sm:px-4">
                     <h2 className="text-white text-xl py-4 px-4 sm:text-2xl md:text3xl lg:text-4xl font-semibold text-center">
                         Ansprechpartner
                     </h2>
@@ -55,25 +55,26 @@ export default function Lobby() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 bg-gray-200 rounded-lg">
-                    <div className={`max-w-lg space-y-2 p-20`}>
-                        <p className={`text-xl font-bold`}>Name: <span
-                            className={`font-medium text-teal-600`}>John Doe</span></p>
-                        <p className={`text-xl font-bold`}>Position: <span className={`font-medium text-teal-600`}>Project Manager</span>
+                    <div className={`max-w-lg space-y-8 px-3 sm:px-4 md:px-8 lg:px-10 p-8 sm:p-10 md:p-12 lg:p-16`}>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Name: <span
+                            className={`font-medium text-orange-600`}>John Doe</span></p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Position: <span
+                            className={`font-medium text-orange-600`}>Project Manager</span>
                         </p>
-                        <p className={`text-xl font-bold`}>Kontakt: <span
-                            className={`font-medium text-teal-600`}>johndoe@example.com</span></p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Kontakt: <span
+                            className={`font-medium text-orange-600`}>johndoe@example.com</span></p>
                     </div>
                 </div>
             </section>
 
-                {/* Video Section */}
+            {/* Video Section */}
             <section className="w-full flex items-center justify-center mt-28 sm:px-2">
                 <YouTubeSection videoId="VyLDQsiqqGg"/>
             </section>
 
             {/* Sprachförderung */}
             <section className="w-full flex items-center justify-center mt-28 sm:px-2">
-                <div className="bg-teal-600 shadow-lg rounded-lg max-w-md sm:px-4">
+                <div className="bg-blended-gradient shadow-lg rounded-lg max-w-md sm:px-4">
                     <h2 className="text-white text-xl py-4 px-4 sm:text-2xl md:text3xl lg:text-4xl font-semibold text-center">
                         Ansprechpartner
                     </h2>
@@ -91,13 +92,14 @@ export default function Lobby() {
                     />
                 </div>
                 <div className="w-full md:w-1/2 bg-gray-200 rounded-lg">
-                    <div className={`max-w-lg space-y-2 p-20`}>
-                        <p className={`text-xl font-bold`}>Name: <span
-                            className={`font-medium text-teal-600`}>John Doe</span></p>
-                        <p className={`text-xl font-bold`}>Position: <span className={`font-medium text-teal-600`}>Project Manager</span>
+                    <div className={`max-w-lg space-y-8 px-3 sm:px-4 md:px-8 lg:px-10 p-8 sm:p-10 md:p-12 lg:p-16`}>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Name: <span
+                            className={`font-medium text-orange-600`}>John Doe</span></p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Position: <span
+                            className={`font-medium text-orange-600`}>Project Manager</span>
                         </p>
-                        <p className={`text-xl font-bold`}>Kontakt: <span
-                            className={`font-medium text-teal-600`}>johndoe@example.com</span></p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Kontakt: <span
+                            className={`font-medium text-orange-600`}>johndoe@example.com</span></p>
                     </div>
                 </div>
             </section>
