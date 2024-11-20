@@ -101,7 +101,7 @@ export default function NavBar() {
                 { name: "LOBBY UND NETZWERKARBEIT", items: [], href: "/lobby" },
                 { name: "DEKOLONIALE BILDUNGSARBEIT", items: ["Eine Welt-Promotorinnen Programm", "Machtbewusst-Hamburg"], href: "/bildungsarbeit" },
                 { name: "ANTI-SCHWARZER RASSISMUS", items: [], href: "/rassismus" },
-                { name: "ENTWICKLUNGSZUSAMMENARBEIT", items: ["Schwerpunkte", "Richtlinien", "Projekte"], href: "/dekoloniale" },
+                { name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT", items: ["Schwerpunkte", "Richtlinien", "Projekte"], href: "/dekoloniale" },
                 { name: "DOWNLOADS", items: [], href: "/downloads" },
               ].map((menu, index) => (
                 <li key={index}>
