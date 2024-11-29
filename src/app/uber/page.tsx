@@ -6,7 +6,7 @@ import NavBar from "@/components/NavBar/NavBar";
 export default function Page() {
 	return (
 		<div>
-			<main className="bg-main-bg p-6">
+			<main className="p-6">
 				<NavBar />
 				<AboutPage />
 				<Footer />

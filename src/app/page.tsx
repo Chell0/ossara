@@ -1,23 +1,26 @@
 import Footer from "@/components/Footer/Footer";
+import Gallery from "@/components/Gallery/Gallery";
 import NavBar from "@/components/NavBar/NavBar";
 import NewsLetter from "@/components/Newsletter/Newsletter";
+import Support from "@/components/Support/Support";
 import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div className="bg-main-bg">
-			<main className="container mx-auto p-6">
-				<NavBar />
-				<h1 className="text-black text-xl py-2 px-4 sm:text-md md:text-xl lg:text-2xl font-semibold text-center">Welcome to OSSARA!</h1>
-				<section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
+		<div>
+            <main className="container mx-auto p-6">
+                <NavBar/>
+                <h1 className="text-black text-xl py-2 px-4 sm:text-md md:text-xl lg:text-2xl font-semibold text-center">Welcome
+                    to OSSARA!</h1>
+                <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
                     <div className="w-full md:w-1/2 flex-shrink-0">
                         <Image
-							src={`/bgs/img1.jpg`}
-							alt="About Photo"
-							width={200}
-							height={200}
+                            src={`/bgs/img1.jpg`}
+                            alt="About Photo"
+                            width={200}
+                            height={200}
                             className="w-full h-auto rounded-lg shadow-lg"
-						/>
+                        />
                     </div>
                     <div className="w-full md:w-1/2">
                         <p className="mt-4 text-gray-500">
@@ -38,13 +41,22 @@ export default function Home() {
                     </div>
                 </section>
 
-				{/* Newsletter Section */}
-				<section className="flex flex-row justify-center mt-10">
-          			<NewsLetter />
-        		</section>
+                <section className="min-h-screen mt-10">
+                    <Gallery />
+                </section>
 
-				<Footer />
-			</main>
-		</div>
-	);
+                {/* Support Section */}
+                <section className="mt-20">
+                    <Support />
+                </section>
+
+                {/* Newsletter Section */}
+                <section className="flex flex-row justify-center mt-20">
+                    <NewsLetter/>
+                </section>
+
+                <Footer/>
+            </main>
+        </div>
+    );
 }
