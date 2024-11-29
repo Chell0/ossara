@@ -6,12 +6,12 @@ import TeamSection from "@/components/AboutPage/TeamSection/TeamSection";
 export default function AboutPage() {
   return (
     <>
-      <div>
+      <main className="container mx-auto p-6">
         <AboutBanner />
         <AboutSection />
         <TeamSection />
         <History />
-      </div>
+      </main>
     </>
   )
 }

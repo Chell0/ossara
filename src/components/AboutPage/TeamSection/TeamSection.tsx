@@ -24,25 +24,27 @@ const teamMembers: TeamMember[] = [
 
 export default function TeamSection() {
     return (
-        <section className="container mx-auto px-6 py-10 mt-20 rounded-lg shadow-xl bg-main-bg">
-            <h2 id="team" className="text-3xl font-bold text-orange-600 mb-20">Meet Our Team</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                {teamMembers.map((member, index) => (
-                    <div key={index} className="text-center">
-                        <div className="w-20 h-20 mx-auto mb-4">
-                            <Image
-                                src={member.imageUrl}
-                                alt={member.name}
-                                width={60}
-                                height={60}
-                                className="rounded-lg"
-                            />
+        <>
+            <section className="container mx-auto px-6 py-10 mt-20 rounded-lg shadow-xl bg-main-bg">
+                <h2 id="team" className="text-3xl font-bold text-orange-600 mb-20">Meet Our Team</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    {teamMembers.map((member, index) => (
+                        <div key={index} className="text-center">
+                            <div className="w-20 h-20 mx-auto mb-4">
+                                <Image
+                                    src={member.imageUrl}
+                                    alt={member.name}
+                                    width={60}
+                                    height={60}
+                                    className="rounded-lg"
+                                />
+                            </div>
+                            <h3 className="text-lg font-medium text-orange-600">{member.name}</h3>
+                            <p className="text-sm text-gray-500">{member.title}</p>
                         </div>
-                        <h3 className="text-lg font-medium text-orange-600">{member.name}</h3>
-                        <p className="text-sm text-gray-500">{member.title}</p>
-                    </div>
-                ))}
-            </div>
-        </section>
+                    ))}
+                </div>
+            </section>
+        </>
     );
 }
