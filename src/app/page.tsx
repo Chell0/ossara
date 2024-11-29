@@ -1,8 +1,9 @@
 import Footer from "@/components/Footer/Footer";
+import Gallery from "@/components/Gallery/Gallery";
 import NavBar from "@/components/NavBar/NavBar";
 import NewsLetter from "@/components/Newsletter/Newsletter";
+import Support from "@/components/Support/Support";
 import Image from "next/image";
-import Gallery from "@/components/Gallery/Gallery";
 
 export default function Home() {
 	return (
@@ -44,8 +45,13 @@ export default function Home() {
                     <Gallery />
                 </section>
 
+                {/* Support Section */}
+                <section className="mt-20">
+                    <Support />
+                </section>
+
                 {/* Newsletter Section */}
-                <section className="flex flex-row justify-center mt-10">
+                <section className="flex flex-row justify-center mt-20">
                     <NewsLetter/>
                 </section>
 
