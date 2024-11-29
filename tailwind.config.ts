@@ -11,7 +11,12 @@ const config: Config = {
 			backgroundImage: {
 				'blended-gradient': 'linear-gradient(90deg, #fbc41c, #f97001, #f34d3a)',
 			},
+			backgroundColor: {
+				'main-bg': '#fff7dc',
+				'title-bg': '#fcd35f',
+			},
 		},
+
 	},
 	plugins: [],
 };

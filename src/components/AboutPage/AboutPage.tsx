@@ -14,14 +14,14 @@ export default function AboutPage() {
         <History />
 
         {/* Ossara e.V. Weihnachtsbrief */}
-        <div className={`flex justify-between items-center border border-gray-300 rounded-xl p-8 shadow-md bg-white max-w-4xl mx-auto mt-10`}>
-          <h2 className={`text-md font-semibold text-gray-800`}>Ossara e.V. Weihnachtsbrief 2021</h2>
+        <div className={`flex justify-between items-center border border-gray-300 rounded-3xl p-8 shadow-md bg-title-bg max-w-4xl mx-auto mt-10`}>
+          <h2 className={`text-md font-semibold text-gray-600`}>Ossara e.V. Weihnachtsbrief 2021</h2>
           <Link
             href={`/files/weihnachtsbrief_2021.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             download
-            className={`flex items-center space-x-2 bg-blended-gradient text-white font-semibold rounded-lg p-4 hover:bg-blue-700 transition-colors`}
+            className={`flex items-center space-x-2 bg-main-bg text-gray-600 font-semibold rounded-2xl p-4 hover:bg-blended-gradient hover:text-white transition-colors`}
           >
             {/* Download Icon */}
             <svg

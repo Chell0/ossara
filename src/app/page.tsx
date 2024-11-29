@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="bg-main-bg">
 			<main className="container mx-auto p-6">
 				<NavBar />
 				<h1 className="text-black text-xl py-2 px-4 sm:text-md md:text-xl lg:text-2xl font-semibold text-center">Welcome to OSSARA!</h1>
@@ -20,7 +20,7 @@ export default function Home() {
 						/>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <p className="mt-4 text-gray-700">
+                        <p className="mt-4 text-gray-500">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan
                             fermentum.
                             Pellentesque suscipit vestibulum est eget scelerisque. Nunc faucibus lacus sed nibh
