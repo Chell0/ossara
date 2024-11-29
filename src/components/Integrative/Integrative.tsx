@@ -1,5 +1,5 @@
-import Image from "next/image";
 import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
+import Image from "next/image";
 
 export default function Lobby() {
     return (
@@ -44,25 +44,28 @@ export default function Lobby() {
                 </div>
             </section>
 
-            <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
+            {/* Ansprechpartner */}
+            <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
                 <div className="w-full md:w-1/2 flex-shrink-0 flex justify-center">
                     <Image
                         src={`/bgs/img1.jpg`}
-                        alt="Contact Person Photo"
-                        width={300}
-                        height={300}
-                        className="rounded-full shadow-lg object-cover sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"
+                        alt="About Photo"
+                        width={400}
+                        height={400}
+                        className="rounded-xl shadow-xl object-cover sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-84 lg:h-84"
                     />
                 </div>
-                <div className="w-full md:w-1/2 bg-gray-200 rounded-lg">
-                    <div className={`max-w-lg space-y-8 px-3 sm:px-4 md:px-8 lg:px-10 p-8 sm:p-10 md:p-12 lg:p-16`}>
-                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Name: <span
-                            className={`font-medium text-orange-600`}>John Doe</span></p>
-                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Position: <span
-                            className={`font-medium text-orange-600`}>Project Manager</span>
+                <div className="w-full md:w-1/2 bg-gray-200 p-4 rounded-md max-w-sm mx-auto">
+                    <div className={`space-y-2 p-1 sm:p-2 md:p-3 lg:p-6`}>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>
+                            Kontakt: <span className={`font-medium text-orange-600`}>John Doe</span>
                         </p>
-                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Kontakt: <span
-                            className={`font-medium text-orange-600`}>johndoe@example.com</span></p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>
+                            Email: <span className={`font-medium text-orange-600`}>johndoe[a]ossara.de</span>
+                        </p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>
+                            Cell: <span className={`font-medium text-orange-600`}>(+49) 123-4567-8910</span>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -81,25 +84,28 @@ export default function Lobby() {
                 </div>
             </section>
 
-            <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
+            {/* Ansprechpartner */}
+            <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
                 <div className="w-full md:w-1/2 flex-shrink-0 flex justify-center">
                     <Image
                         src={`/bgs/img1.jpg`}
-                        alt="Contact Person Photo"
-                        width={300}
-                        height={300}
-                        className="rounded-full shadow-lg object-cover sm:w-32 sm:h-32 md:w-48 md:h-48 lg:w-64 lg:h-64"
+                        alt="About Photo"
+                        width={400}
+                        height={400}
+                        className="rounded-xl shadow-xl object-cover sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-84 lg:h-84"
                     />
                 </div>
-                <div className="w-full md:w-1/2 bg-gray-200 rounded-lg">
-                    <div className={`max-w-lg space-y-8 px-3 sm:px-4 md:px-8 lg:px-10 p-8 sm:p-10 md:p-12 lg:p-16`}>
-                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Name: <span
-                            className={`font-medium text-orange-600`}>John Doe</span></p>
-                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Position: <span
-                            className={`font-medium text-orange-600`}>Project Manager</span>
+                <div className="w-full md:w-1/2 bg-gray-200 p-4 rounded-md max-w-sm mx-auto">
+                    <div className={`space-y-2 p-1 sm:p-2 md:p-3 lg:p-6`}>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>
+                            Kontakt: <span className={`font-medium text-orange-600`}>John Doe</span>
                         </p>
-                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>Kontakt: <span
-                            className={`font-medium text-orange-600`}>johndoe@example.com</span></p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>
+                            Email: <span className={`font-medium text-orange-600`}>johndoe[a]ossara.de</span>
+                        </p>
+                        <p className={`text-sm sm:text-md md:text-lg lg:text-xl font-bold`}>
+                            Cell: <span className={`font-medium text-orange-600`}>(+49) 123-4567-8910</span>
+                        </p>
                     </div>
                 </div>
             </section>

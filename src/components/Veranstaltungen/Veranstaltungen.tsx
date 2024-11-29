@@ -190,8 +190,12 @@ export default function Veranstaltungen() {
                         filteredCurrentEvents.map((event) => (
                             <div key={event.id}
                                  className="bg-white shadow-md shadow-gray-400 rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
-                                <div className="h-44 w-full bg-gray-200"><img src={event.imageUrl} alt={event.title}
-                                                                              className="w-full h-full object-cover"/>
+                                <div className="h-44 w-full bg-gray-200">
+                                    <img 
+                                        src={event.imageUrl} 
+                                        alt={event.title}
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
                                 <div className="p-4">
                                     <h3 className="text-lg text-orange-600 font-semibold">{event.title}</h3>
