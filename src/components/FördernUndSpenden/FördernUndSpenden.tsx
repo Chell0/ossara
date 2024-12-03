@@ -32,7 +32,7 @@ export default function FördernUndSpenden() {
                             Einmalige und regelmäßige Spenden der <span className="font-bold">OSSARA Community</span> ermöglichen unsere Arbeit. Durch Deinen Beitrag stellst Du sicher, dass wir uns auf unsere Arbeit konzentrieren und diese auch in Zukunft unabhängig gestalten können.
                         </p>
                         <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 p-3 rounded-2xl shadow-xl">
-                            <Link href="#fordern" className="uppercase text-white font-bold">
+                            <Link href="#donation-form" className="uppercase text-white font-bold">
                                 Jetzt Spenden
                             </Link>
                         </button>
