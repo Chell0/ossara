@@ -1,9 +1,9 @@
 import Footer from "@/components/Footer/Footer";
-import Gallery from "@/components/Gallery/Gallery";
-import HeaderCarousel from "@/components/HeaderCarousel/HeaderCarousel";
+import Donate from "@/components/Home/Donate/Donate";
+import Gallery from "@/components/Home/Gallery/Gallery";
+import HeaderCarousel from "@/components/Home/HeaderCarousel/HeaderCarousel";
 import NavBar from "@/components/NavBar/NavBar";
 import NewsLetter from "@/components/Newsletter/Newsletter";
-import Support from "@/components/Support/Support";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
 		<div>
             <main className="container mx-auto p-6">
                 <NavBar/>
+                {/* Carousel */}
                 <section className="mt-20"><HeaderCarousel /></section>
                 <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
                     <div className="w-full md:w-1/2 flex-shrink-0">
@@ -41,19 +42,14 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="min-h-screen mt-10">
-                    <Gallery />
-                </section>
+                {/* Gallery Section */}
+                <section className="min-h-screen mt-10"><Gallery /></section>
 
                 {/* Support Section */}
-                <section className="mt-20">
-                    <Support />
-                </section>
+                <section className="mt-20"><Donate /></section>
 
                 {/* Newsletter Section */}
-                <section className="flex flex-row justify-center mt-20">
-                    <NewsLetter/>
-                </section>
+                <section className="flex flex-row justify-center mt-20"><NewsLetter/></section>
 
                 <Footer/>
             </main>
