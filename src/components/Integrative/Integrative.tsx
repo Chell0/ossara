@@ -1,3 +1,4 @@
+import { markoOne } from "@/app/layout";
 import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
 import Image from "next/image";
 
@@ -5,8 +6,8 @@ export default function Lobby() {
     return (
         <>
             <section
-                className="bg-blended-gradient flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                className="text-[#ffb400] text-center py-12 mt-10">
+                <h1 className={`${markoOne.className} text-[120px] font-bold leading-tight uppercase`}>
                     Integrative Stadtteilarbeit
                 </h1>
             </section>

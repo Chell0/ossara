@@ -1,3 +1,4 @@
+import { robotoSerif } from "@/app/layout";
 import Link from "next/link";
 
 export default function Engagieren() {
@@ -6,8 +7,8 @@ export default function Engagieren() {
         <>
             <div className="min-h-screen">
                 {/* Page Header */}
-                <header className="text-[#ffb400] py-12 text-center bg-gray-100 rounded-2xl">
-                    <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-6xl font-bold">Engagieren</h1>
+                <header className="text-[#ffb400] py-12 text-center mt-20">
+                    <h1 className={`${robotoSerif.className} text-header font-bold leading-tight uppercase`}>Engagieren</h1>
                 </header>
 
                 {/* Stellenausschreibungen */}

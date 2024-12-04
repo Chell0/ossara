@@ -1,17 +1,18 @@
-import Image from "next/image";
+import { markoOne } from "@/app/layout";
 import PersonSection from "@/components/Dekoloniale/PersonSection/PersonSection";
+import Image from "next/image";
 
 
 export default function Dekoloniale() {
     return (
         <>
             <div className="container mx-auto p-6">
-                <section
-                    className="bg-blended-gradient flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
-                    <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white">
+                <header
+                    className="text-[#ffb400] py-12 text-center">
+                    <h1 className={`${markoOne.className} text-[120px] font-bold leading-tight uppercase`}>
                         Dekoloniale Internationale Zusammenarbeit
                     </h1>
-                </section>
+                </header>
 
                 <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
                     <div className="w-full md:w-1/2 flex-shrink-0">

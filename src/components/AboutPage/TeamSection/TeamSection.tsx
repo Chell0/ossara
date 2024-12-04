@@ -25,8 +25,8 @@ const teamMembers: TeamMember[] = [
 export default function TeamSection() {
     return (
         <>
-            <section className="container mx-auto px-6 py-10 mt-20 rounded-lg shadow-xl bg-main-bg">
-                <h2 id="team" className="text-3xl font-bold text-orange-600 mb-20">Meet Our Team</h2>
+            <section className="container mx-auto px-6 py-10 mt-20 rounded-2xl shadow-2xl bg-gray-100">
+                <h2 id="team" className="text-6xl text-center font-bold text-orange-600 mb-20 mt-10">Meet Our Team</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="text-center">

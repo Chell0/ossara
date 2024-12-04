@@ -15,6 +15,9 @@ const config: Config = {
 				'main-bg': '#fff7dc',
 				'title-bg': '#fcd35f',
 			},
+			fontSize: {
+				'header': '160px',
+			}
 		},
 
 	},

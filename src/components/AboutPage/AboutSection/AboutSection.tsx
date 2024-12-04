@@ -4,7 +4,7 @@ import AboutRow from "@/components/AboutPage/AboutRow/AboutRow";
 export default function AboutSection() {
   return (
     <>
-      <section className="container mx-auto px-6 mt-10">
+      <section className="container mx-auto px-6 mt-20">
         <div>
           {/* Row 1: Über Uns */}
           <AboutRow
