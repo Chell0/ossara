@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from 'react';
 import Link from "next/link";
+import { useState } from 'react';
 
 type Event = {
     id: number;
@@ -164,13 +164,7 @@ export default function Veranstaltungen() {
     };
 
     return (
-        <main className="container mx-auto p-6">
-            {/* Title Section */}
-            <section
-                className="bg-blended-gradient flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
-                <h1 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Veranstaltungen </h1>
-            </section>
-
+        <main className="container mx-auto p-6 mt-10">
             {/* Search Bar for Current and Future Events */}
             <div className="flex justify-center my-20">
                 <input
@@ -191,8 +185,8 @@ export default function Veranstaltungen() {
                             <div key={event.id}
                                  className="bg-white shadow-md shadow-gray-400 rounded-xl overflow-hidden transform transition-transform duration-300 hover:scale-105">
                                 <div className="h-44 w-full bg-gray-200">
-                                    <img 
-                                        src={event.imageUrl} 
+                                    <img
+                                        src={event.imageUrl}
                                         alt={event.title}
                                         className="w-full h-full object-cover"
                                     />

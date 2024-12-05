@@ -1,15 +1,16 @@
+import { rubik } from "@/app/layout";
 import Image from "next/image";
 
 export default function Rassismus() {
     return (
         <>
             <div className="container mx-auto p-6">
-                <section
-                    className="bg-blended-gradient flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">
+                <header
+                    className="text-[#ffb400] py-12 text-center">
+                    <h1 className={`${rubik.className} text-[130px] font-bold leading-tight uppercase`}>
                         Anti-Schwarzer Rassismus
                     </h1>
-                </section>
+                </header>
 
                 <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
                     <div className="w-full md:w-1/2">

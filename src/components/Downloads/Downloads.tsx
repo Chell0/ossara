@@ -1,3 +1,4 @@
+import { acme } from "@/app/layout";
 import Link from "next/link";
 
 export default function Downloads() {
@@ -6,10 +7,10 @@ export default function Downloads() {
         <>
             <div className="container mx-auto p-6">
                 {/* Title Section */}
-                <div
-                    className="bg-blended-gradient flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
-                    <h1 className="sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Downloads</h1>
-                </div>
+                <header
+                    className="text-[#ffb400] text-center py-12">
+                    <h1 className={`${acme.className} text-[120px] font-bold leading-tight uppercase`}>Herunterladungen</h1>
+                </header>
 
                 <div className={`flex justify-between items-center max-w-4xl mx-auto mt-20 mb-20 text-lg font-bold`}>
                     <p>Allgemeine Infos zu Ossara finden Sie <Link href={`/uber`} className="bg-blended-gradient text-white font-semibold rounded-lg p-1">hier</Link></p>

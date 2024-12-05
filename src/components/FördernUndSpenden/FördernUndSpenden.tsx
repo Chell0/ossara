@@ -1,3 +1,4 @@
+import { bebasNeue } from "@/app/layout";
 import DonationForm from "@/components/FördernUndSpenden/DonationForm/DonationForm";
 import DonationQuestions from "@/components/FördernUndSpenden/DonationQuestions/DonationQuestions";
 import Image from "next/image";
@@ -9,8 +10,8 @@ export default function FördernUndSpenden() {
             <div className="container mx-auto">
                 {/* Banner Section */}
                 <section
-                    className="bg-main-bg flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 rounded-lg shadow-lg">
-                    <h1 className="text-5xl font-bold text-[#ffb400]">FÖRDERN UND SPENDEN</h1>
+                    className="text-[#ffb400] text-center py-12">
+                    <h1 className={`${bebasNeue.className} text-header font-bold leading-tight uppercase`}>Fördern und Spenden</h1>
                 </section>
 
                 <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
@@ -32,7 +33,7 @@ export default function FördernUndSpenden() {
                             Einmalige und regelmäßige Spenden der <span className="font-bold">OSSARA Community</span> ermöglichen unsere Arbeit. Durch Deinen Beitrag stellst Du sicher, dass wir uns auf unsere Arbeit konzentrieren und diese auch in Zukunft unabhängig gestalten können.
                         </p>
                         <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 p-3 rounded-2xl shadow-xl">
-                            <Link href="#fordern" className="uppercase text-white font-bold">
+                            <Link href="#donation-form" className="uppercase text-white font-bold">
                                 Jetzt Spenden
                             </Link>
                         </button>
