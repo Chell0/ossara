@@ -5,7 +5,7 @@ export default function History() {
     <>
       <section className="w-full flex items-center justify-center mt-20">
         <div className="max-w-lg mx-auto">
-          <h2 className="text-[#ffb400] mt-20 text-6xl sm:text-3xl md:text5xl lg:text-7xl font-semibold text-center drop-shadow-sm">
+          <h2 className="text-[#ffb400] mt-20 text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center drop-shadow-sm">
             Unsere Geschichte
           </h2>
         </div>
