@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -30,12 +29,7 @@ export default function Neuigkeiten() {
 
     return (
         <>
-            <section className="container mx-auto p-6">
-                <div
-                    className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20 bg-blended-gradient rounded-xl shadow-lg">
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white">Neuigkeiten</h1>
-                </div>
-
+            <section className="container mx-auto p-6 mt-20">
                 {/* Toggle Buttons */}
                 <div className="flex flex-wrap justify-center gap-4 my-10">
                     <button
