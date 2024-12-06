@@ -99,14 +99,16 @@ export default function Bildungsarbeit() {
           </div>
         </section>
 
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-orange-600">
-              {/* //TODO: REMOVE THIS PORTION AND MAKE IT THE HEADER IN THIS SECTION */}
-              <Link href="/eine_welt_promotorinnen">
-                Eine Welt-Promotorinnen Program
-              </Link>
+        {/* Eine Welt-Promotorinnen */}
+        <section className="w-full flex items-center justify-center  py-10 mt-10">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-[#ffb400] mt-20 text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center drop-shadow-sm">
+              Eine Welt-Promotorinnen Program
             </h2>
+          </div>
+        </section>
+        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-10 mb-20">
+          <div className="w-full md:w-1/2">
             {/* //TODO: CHANGE TEXT IN THIS SECTION */}
             <p className="mt-4 text-gray-700">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
