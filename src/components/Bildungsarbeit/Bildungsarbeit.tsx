@@ -66,28 +66,34 @@ export default function Bildungsarbeit() {
                 Machtbewusst-Hamburg
               </Link>
             </h2>
-            {/* // TODO: CHANGE TEXT IN THIS AREA */}
-            <p className="mt-4 text-gray-500">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              elementum accumsan fermentum. Pellentesque suscipit vestibulum est
-              eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
-              Vestibulum risus urna, feugiat ut sem a, condimentum rhoncus nunc.
-              Curabitur vehicula venenatis ipsum vel bibendum. Sed vitae erat
-              ipsum. Maecenas malesuada nisl at congue vehicula. Integer augue
-              odio, elementum ut pretium sed, gravida vel purus. Nulla
-              vestibulum diam a sollicitudin viverra. Aenean convallis finibus
-              laoreet. Quisque posuere odio odio, ac condimentum urna varius eu.
-              Cras congue dolor id ante iaculis facilisis. Nullam in gravida
-              massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum
-              ut massa suscipit, vitae laoreet ligula condimentum.
+            <p className="mt-4 text-sm text-gray-800">
+              Bist du auf der Suche nach Themen zur Dekolonisierung? Möchtest du
+              wissen, was in Hamburg passiert und wer sich aktiv für
+              Veränderungen einsetzt? Dann bist du bei uns genau richtig!
+              <br />
+              <br />
+              In unserem Blog „MachtBewusst Hamburg“ dreht sich alles um
+              machtkritische und dekoloniale Perspektiven in der Hamburger
+              Zivilgesellschaft. Wir beleuchten das Engagement von Initiativen,
+              Organisationen und Einzelpersonen, die den Dekolonisierungsprozess
+              in Hamburg vorantreiben. Hier findest du spannende Beiträge,
+              wertvolles Fachwissen und inspirierende Geschichten, die zeigen,
+              wie der Wandel in unserer Stadt gestaltet wird.
+              <br />
+              <br />
+              Komm vorbei, lass dich von unseren Inhalten inspirieren und
+              informiere dich über die vielfältigen Projekte und Aktionen, die
+              das Ziel haben, gesellschaftliche Ungleichheiten zu bekämpfen und
+              den Dialog über Dekolonisierung zu fördern.
             </p>
           </div>
           <div className="w-full md:w-1/2 flex-shrink-0">
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
-              width={200}
-              height={200}
+              width={560}
+              height={480}
+              quality={100}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
