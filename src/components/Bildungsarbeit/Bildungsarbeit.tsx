@@ -19,25 +19,37 @@ export default function Bildungsarbeit() {
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
-              width={200}
-              height={200}
+              width={560}
+              height={480}
+              quality={100}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              elementum accumsan fermentum. Pellentesque suscipit vestibulum est
-              eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
-              Vestibulum risus urna, feugiat ut sem a, condimentum rhoncus nunc.
-              Curabitur vehicula venenatis ipsum vel bibendum. Sed vitae erat
-              ipsum. Maecenas malesuada nisl at congue vehicula. Integer augue
-              odio, elementum ut pretium sed, gravida vel purus. Nulla
-              vestibulum diam a sollicitudin viverra. Aenean convallis finibus
-              laoreet. Quisque posuere odio odio, ac condimentum urna varius eu.
-              Cras congue dolor id ante iaculis facilisis. Nullam in gravida
-              massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum
-              ut massa suscipit, vitae laoreet ligula condimentum.
+            <p className="mt-4 text-sm text-gray-800">
+              Ossara e.V. setzt sich aktiv für die Sichtbarmachung und
+              Auseinandersetzung mit <strong>kolonialen Erblasten</strong> und
+              <strong>Dekolonialisierungsprozessen</strong> ein. Ein zentraler
+              Aspekt unserer Arbeit ist es,{" "}
+              <strong>dekoloniale Perspektiven</strong> sichtbar zu machen und
+              die Themen <strong>Dekolonisierung</strong> und{" "}
+              <strong>Rassismuskritik</strong> in breitere gesellschaftliche
+              Diskussionen zu integrieren. Ossara engagiert sich darüber hinaus
+              in der <strong>Vernetzung mit anderen Initiativen</strong>, um
+              einen gemeinsamen Austausch zu fördern und eine breite Bewegung
+              für soziale Gerechtigkeit zu unterstützen.
+              <br />
+              <br />
+              Wir bieten verschiedene Formate an, die auf eine kritische
+              Auseinandersetzung mit kolonialen Strukturen abzielen. Dazu
+              gehören unter anderem Veranstaltungen und{" "}
+              <strong>Podiumsdiskussionen</strong>, die sich mit den
+              historischen und aktuellen Dimensionen des Kolonialismus befassen.
+              <br />
+              <br />
+              Durch unsere Bildungsarbeit möchten wir dazu beitragen, den
+              <strong>kolonialen Blick</strong> zu hinterfragen und zu einer
+              gerechteren, inklusiveren Gesellschaft beizutragen.
             </p>
           </div>
         </section>
@@ -54,6 +66,7 @@ export default function Bildungsarbeit() {
                 Machtbewusst-Hamburg
               </Link>
             </h2>
+            {/* // TODO: CHANGE TEXT IN THIS AREA */}
             <p className="mt-4 text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
@@ -79,7 +92,7 @@ export default function Bildungsarbeit() {
             />
           </div>
         </section>
-
+        {/* // TODO: DELETE THIS PORTION */}
         {/* Ansprechppartner */}
         <section className="w-full flex items-center justify-center mt-28 sm:px-2">
           <div className="bg-blended-gradient shadow-lg rounded-lg max-w-md sm:px-4">
@@ -130,10 +143,12 @@ export default function Bildungsarbeit() {
         <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl font-bold text-orange-600">
+              {/* //TODO: REMOVE THIS PORTION AND MAKE IT THE HEADER IN THIS SECTION */}
               <Link href="/eine_welt_promotorinnen">
                 Eine Welt-Promotorinnen Program
               </Link>
             </h2>
+            {/* //TODO: CHANGE TEXT IN THIS SECTION */}
             <p className="mt-4 text-gray-700">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
