@@ -57,7 +57,9 @@ export default function Bildungsarbeit() {
         {/* Machtbewusst */}
         <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-[#ffb400]">
+            <h2
+              className={`${bebasNeue.className} drop-shadow-lg text-5xl font-bold text-[#ffb400] uppercase`}
+            >
               <Link
                 href="https://machtbewusst-hamburg.de"
                 target="_blank"
@@ -102,7 +104,9 @@ export default function Bildungsarbeit() {
         {/* Eine Welt-Promotorinnen */}
         <section className="w-full flex items-center justify-center  py-10 mt-10">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-[#ffb400] mt-20 text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center drop-shadow-sm">
+            <h2
+              className={`${bebasNeue.className} text-[#ffb400] mt-20 text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center drop-shadow-md`}
+            >
               Eine Welt-Promotor*innen Program
             </h2>
           </div>
@@ -112,26 +116,40 @@ export default function Bildungsarbeit() {
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
-              width={200}
-              height={200}
+              width={560}
+              height={480}
+              quality={100}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
-            {/* //TODO: CHANGE TEXT IN THIS SECTION */}
-            <p className="mt-4 text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              elementum accumsan fermentum. Pellentesque suscipit vestibulum est
-              eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
-              Vestibulum risus urna, feugiat ut sem a, condimentum rhoncus nunc.
-              Curabitur vehicula venenatis ipsum vel bibendum. Sed vitae erat
-              ipsum. Maecenas malesuada nisl at congue vehicula. Integer augue
-              odio, elementum ut pretium sed, gravida vel purus. Nulla
-              vestibulum diam a sollicitudin viverra. Aenean convallis finibus
-              laoreet. Quisque posuere odio odio, ac condimentum urna varius eu.
-              Cras congue dolor id ante iaculis facilisis. Nullam in gravida
-              massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum
-              ut massa suscipit, vitae laoreet ligula condimentum.
+            <p className="mt-4 text-sm text-gray-800">
+              Die Fachstelle dekoloniale Perspektiven im entwicklungspolitischen
+              Engagement ist Teil des bundesweiten Eine
+              Welt-Promotor:innen-Programms, welches in Hamburg von
+              hamburg.global koordiniert wird. Unsere Eine Welt-Promotor:innen
+              setzen sich dafür ein, die Stimmen von BIPoC und diasporischen
+              Gemeinschaften zu stärken und Partizipationsprozesse zu fördern.
+              Ihr Ziel ist es, das zivilgesellschaftliche Engagement für eine
+              gerechtere, nachhaltigere Welt sichtbarer zu machen und neue
+              Kooperationen zu fördern. Sie tragen aktiv zur Umsetzung der
+              UN-Nachhaltigkeitsziele bei, insbesondere zur Reduzierung von
+              Ungleichheiten (Ziel 10). Der Fokus liegt auf der Vernetzung und
+              Beratung von zivilgesellschaftlichen Initiativen und Akteur:innen.
+              <br />
+              <br />
+              Die Fachstelle Dekolonisierung ist Teil des bundesweiten Eine
+              Welt-Promotor:innen-Programms, das in Hamburg von hamburg.global
+              koordiniert wird.
+              <br />
+              <br />
+              Weitere Informationen finden Sie{" "}
+              <Link
+                href={`/eine_welt_promotorinnen`}
+                className="bg-main-bg text-[#ffb400] font-semibold rounded-lg shadow-xl p-1"
+              >
+                hier.
+              </Link>
             </p>
           </div>
         </section>
