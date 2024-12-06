@@ -7,9 +7,9 @@ export default function EineWeltPromotorinnen() {
   return (
     <>
       <div className="container mx-auto p-6">
-        <section className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 py-10 sm:py-20">
+        <section className="flex flex-col items-center justify-center text-center mx-4 sm:mx-10 mt-10">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-[140px] leading-normal font-bold text-[#ffb400] uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header leading-tight font-bold text-[#ffb400] uppercase`}
           >
             Fachpromotorinnen Dekoloniale Perspektiven im
             entwicklungspolitischen Engagement

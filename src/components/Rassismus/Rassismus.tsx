@@ -1,4 +1,4 @@
-import { markoOne } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +8,7 @@ export default function Rassismus() {
       <div className="container mx-auto p-6">
         <header className="text-[#ffb400] py-12 text-center">
           <h1
-            className={`${markoOne.className} drop-shadow-xl text-[130px] font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
           >
             Anti-Schwarzer Rassismus
           </h1>

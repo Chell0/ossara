@@ -1,4 +1,4 @@
-import { markoOne } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import Link from "next/link";
 
 export default function Engagieren() {
@@ -8,7 +8,7 @@ export default function Engagieren() {
         {/* Page Header */}
         <header className="text-[#ffb400] py-12 text-center mt-20">
           <h1
-            className={`${markoOne.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
           >
             Engagieren
           </h1>

@@ -1,4 +1,4 @@
-import { acme } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import PersonSection from "@/components/Dekoloniale/PersonSection/PersonSection";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ export default function Dekoloniale() {
       <div className="container mx-auto p-6">
         <header className="text-[#ffb400] py-12 text-center">
           <h1
-            className={`${acme.className} drop-shadow-xl text-[140px] font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
           >
             Dekoloniale Internationale Zusammenarbeit
           </h1>

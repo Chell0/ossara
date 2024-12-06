@@ -1,4 +1,4 @@
-import { fjallaOne } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
 import Image from "next/image";
 
@@ -7,7 +7,7 @@ export default function Lobby() {
     <>
       <section className="text-[#ffb400] text-center py-12 mt-10">
         <h1
-          className={`${fjallaOne.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
+          className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
         >
           Integrative Stadtteilarbeit
         </h1>

@@ -1,4 +1,4 @@
-import { robotoSerif } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import Image from "next/image";
 
 export default function Lobby() {
@@ -7,7 +7,7 @@ export default function Lobby() {
       <div className="container mx-auto p-6">
         <header className="text-[#ffb400] py-12 text-center">
           <h1
-            className={`${robotoSerif.className} drop-shadow-xl text-[120px] font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
           >
             Lobby und Netzwerkarbeit
           </h1>
