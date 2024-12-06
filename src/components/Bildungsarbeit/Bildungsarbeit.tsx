@@ -103,7 +103,7 @@ export default function Bildungsarbeit() {
         <section className="w-full flex items-center justify-center  py-10 mt-10">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-[#ffb400] mt-20 text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center drop-shadow-sm">
-              Eine Welt-Promotorinnen Program
+              Eine Welt-Promotor*innen Program
             </h2>
           </div>
         </section>
