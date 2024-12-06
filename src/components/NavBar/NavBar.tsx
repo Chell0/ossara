@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
@@ -11,8 +11,7 @@ export default function NavBar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-  }
-
+  };
 
   const toggleSubMenu = (menuName: string) => {
     setActiveSubMenu(activeSubMenu === menuName ? null : menuName);
@@ -23,7 +22,10 @@ export default function NavBar() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Menu Icon */}
         <div className="flex items-center space-x-2">
-          <button className="block focus:outline-none text-orange-600" onClick={toggleMenu}>
+          <button
+            className="block focus:outline-none text-orange-600"
+            onClick={toggleMenu}
+          >
             {menuOpen ? (
               <XIcon className="h-6 w-6" />
             ) : (
@@ -36,11 +38,16 @@ export default function NavBar() {
         {/* Logo */}
         <div className="hidden md:block">
           <Link href="/">
-            <Image src="/logos/ossara-logo.png" alt="Ossara Logo" className="object-contain" width={200} height={200} />
+            <Image
+              src="/logos/ossara-logo.png"
+              alt="Ossara Logo"
+              className="object-contain"
+              width={200}
+              height={200}
+            />
           </Link>
         </div>
       </div>
-
 
       {/* Full-Viewport Menu */}
       {menuOpen && (
@@ -63,51 +70,38 @@ export default function NavBar() {
             <ul className="space-y-6 text-orange-600 text-xl md:text-2xl font-bold w-full md:w-1/2 pr-0 md:pr-8">
               {[
                 { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
-                { name: "VERANSTALTUNGEN", items: [], href: "/veranstaltungen" },
-                { name: "ÜBER UNS", items: ["Verein", "Team", "Gechichte"], href: "/uber" },
-                { name: "ENGAGIEREN", items: ["Stellenausschreibungen", `Mitglied Werden`, "Ehrenamtliches Engagement"], href: "/engagieren" },
-                { name: "FÖRDERN & SPENDEN", items: ["Donate", "Partnerships"], href: "/fordern" },
+                {
+                  name: "VERANSTALTUNGEN",
+                  items: [],
+                  href: "/veranstaltungen",
+                },
+                {
+                  name: "ÜBER UNS",
+                  items: ["Verein", "Team", "Gechichte"],
+                  href: "/uber",
+                },
+                {
+                  name: "ENGAGIEREN",
+                  items: [
+                    "Stellenausschreibungen",
+                    `Mitglied Werden`,
+                    "Ehrenamtliches Engagement",
+                  ],
+                  href: "/engagieren",
+                },
+                {
+                  name: "FÖRDERN & SPENDEN",
+                  items: ["Donate", "Partnerships"],
+                  href: "/fordern",
+                },
               ].map((menu, index) => (
                 <li key={index}>
                   <div className="flex items-center justify-between">
-                    <Link href={menu.href}
-                      className={`cursor-pointer ${activeSubMenu === menu.name ? "text-gray-600" : ""}`}
-                      onClick={() => toggleSubMenu(menu.name)}
-                    >
-                      {menu.name}
-                    </Link>
-                    {menu.items.length > 0 && (
-                      <button onClick={() => toggleSubMenu(menu.name)}>{activeSubMenu === menu.name ? "−" : "+"}</button>
-                    )}
-                  </div>
-                  {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
-                      {menu.items.map((item, subIndex) => (
-                        <li key={subIndex}>
-                          <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link>
-                          {/* <Link href={`/${menu.name.toLowerCase()}#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link> */}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </li>
-              ))}
-            </ul>
-
-            {/* Right Column: Sub-Menus */}
-            <ul className="space-y-6 text-orange-600 text-xl md:text-2xl font-bold w-full md:w-1/2 pl-0 md:pl-8">
-              {[
-                { name: "INTEGRATIVE STADTTEILARBEIT", items: ["Bewerbungstraining", "Sprachforderung"], href: "/integrative" },
-                { name: "LOBBY UND NETZWERKARBEIT", items: [], href: "/lobby" },
-                { name: "DEKOLONIALE BILDUNGSARBEIT", items: ["Eine Welt-Promotorinnen Programm", "Machtbewusst-Hamburg"], href: "/bildungsarbeit" },
-                { name: "ANTI-SCHWARZER RASSISMUS", items: [], href: "/rassismus" },
-                { name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT", items: ["Schwerpunkte", "Richtlinien", "Projekte"], href: "/dekoloniale" },
-                { name: "DOWNLOADS", items: [], href: "/downloads" },
-              ].map((menu, index) => (
-                <li key={index}>
-                  <div className="flex items-center justify-between">
-                    <Link href={menu.href}
-                      className={`cursor-pointer ${activeSubMenu === menu.name ? "text-gray-600" : ""}`}
+                    <Link
+                      href={menu.href}
+                      className={`cursor-pointer ${
+                        activeSubMenu === menu.name ? "text-gray-600" : ""
+                      }`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
                       {menu.name}
@@ -122,16 +116,84 @@ export default function NavBar() {
                     <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
-                          <Link href={`#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">
+                          <Link
+                            href={`#${item.toLowerCase().replace(/ /g, "-")}`}
+                            className="cursor-pointer"
+                          >
+                            - {item}
+                          </Link>
+                          {/* <Link href={`/${menu.name.toLowerCase()}#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link> */}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            {/* Right Column: Sub-Menus */}
+            <ul className="space-y-6 text-orange-600 text-xl md:text-2xl font-bold w-full md:w-1/2 pl-0 md:pl-8">
+              {[
+                {
+                  name: "INTEGRATIVE STADTTEILARBEIT",
+                  items: ["Bewerbungstraining", "Sprachforderung"],
+                  href: "/integrative",
+                },
+                { name: "LOBBY UND NETZWERKARBEIT", items: [], href: "/lobby" },
+                {
+                  name: "DEKOLONIALE BILDUNGSARBEIT",
+                  items: [
+                    "Eine Welt-Promotorinnen Programm",
+                    "Machtbewusst-Hamburg",
+                  ],
+                  href: "/bildungsarbeit",
+                },
+                {
+                  name: "ANTI-SCHWARZER RASSISMUS",
+                  items: [],
+                  href: "/rassismus",
+                },
+                {
+                  name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
+                  items: ["Projekte"],
+                  href: "/dekoloniale",
+                },
+                { name: "DOWNLOADS", items: [], href: "/downloads" },
+              ].map((menu, index) => (
+                <li key={index}>
+                  <div className="flex items-center justify-between">
+                    <Link
+                      href={menu.href}
+                      className={`cursor-pointer ${
+                        activeSubMenu === menu.name ? "text-gray-600" : ""
+                      }`}
+                      onClick={() => toggleSubMenu(menu.name)}
+                    >
+                      {menu.name}
+                    </Link>
+                    {menu.items.length > 0 && (
+                      <button onClick={() => toggleSubMenu(menu.name)}>
+                        {activeSubMenu === menu.name ? "−" : "+"}
+                      </button>
+                    )}
+                  </div>
+                  {activeSubMenu === menu.name && menu.items.length > 0 && (
+                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
+                      {menu.items.map((item, subIndex) => (
+                        <li key={subIndex}>
+                          <Link
+                            href={`#${item.toLowerCase().replace(/ /g, "-")}`}
+                            className="cursor-pointer"
+                          >
                             - {item}
                           </Link>
                         </li>
                       ))}
                     </ul>
-                )}
-              </li>
-            ))}
-          </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
