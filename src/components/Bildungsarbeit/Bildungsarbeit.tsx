@@ -57,7 +57,7 @@ export default function Bildungsarbeit() {
         {/* Machtbewusst */}
         <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-orange-600">
+            <h2 className="text-3xl font-bold text-[#ffb400]">
               <Link
                 href="https://machtbewusst-hamburg.de"
                 target="_blank"
@@ -108,6 +108,15 @@ export default function Bildungsarbeit() {
           </div>
         </section>
         <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-10 mb-20">
+          <div className="w-full md:w-1/2 flex-shrink-0">
+            <Image
+              src={`/bgs/img1.jpg`}
+              alt="About Photo"
+              width={200}
+              height={200}
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
           <div className="w-full md:w-1/2">
             {/* //TODO: CHANGE TEXT IN THIS SECTION */}
             <p className="mt-4 text-gray-700">
@@ -124,15 +133,6 @@ export default function Bildungsarbeit() {
               massa. Nulla finibus nunc a venenatis tempus. Nunc vehicula ipsum
               ut massa suscipit, vitae laoreet ligula condimentum.
             </p>
-          </div>
-          <div className="w-full md:w-1/2 flex-shrink-0">
-            <Image
-              src={`/bgs/img1.jpg`}
-              alt="About Photo"
-              width={200}
-              height={200}
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
           </div>
         </section>
       </div>
