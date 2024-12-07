@@ -15,7 +15,7 @@ export default function Home() {
         <section className="mt-20">
           <HeaderCarousel />
         </section>
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-20 mb-20 md:flex-row">
           <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
@@ -48,7 +48,7 @@ export default function Home() {
           <Gallery />
         </section>
         {/* Support Section */}
-        <section className="mt-20">
+        <section className="mt-10">
           <Donate />
         </section>
         {/* Newsletter Section */}
