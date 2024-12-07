@@ -17,25 +17,25 @@ export default function Engagieren() {
         {/* Stellenausschreibungen */}
         <section
           id="stellenausschreibungen"
-          className="py-16 bg-white px-6 mt-20"
+          className="px-6 py-16 mt-20 bg-white"
         >
           <h2 className="text-4xl font-bold text-center text-gray-600">
             Job Openings
           </h2>
-          <p className="mt-4 text-center text-gray-500 text-sm">
+          <p className="mt-4 text-sm text-center text-gray-500">
             Join our team and help us make a difference!
           </p>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Job Cards */}
             {[...Array(3)].map((_, index) => (
               <div
                 key={index}
-                className="border borer-gray-200 shadow-lg p-6 rounded-2xl bg-main-bg"
+                className="p-6 border shadow-lg borer-gray-200 rounded-2xl bg-main-bg"
               >
                 <h3 className="text-lg font-semibold text-gray-600">
                   Job Title {index + 1}
                 </h3>
-                <p className="mt-2 text-gray-500 text-sm">
+                <p className="mt-2 text-sm text-gray-500">
                   Short description of the job role.
                 </p>
                 <Link
@@ -60,7 +60,7 @@ export default function Engagieren() {
         {/* Mitglied Werden */}
         <section
           id="mitglied_werden"
-          className="py-16 bg-gray-100 px-6 rounded-xl mt-20"
+          className="px-6 py-16 mt-20 bg-gray-100 rounded-xl"
         >
           <h2 className="text-3xl font-bold text-center text-gray-600">
             Become a Member
@@ -68,32 +68,32 @@ export default function Engagieren() {
           <p className="mt-4 text-center text-gray-500">
             Join our community and contribute to our mission!
           </p>
-          <div className="mt-8 max-w-2xl mx-auto text-center">
-            <button className="bg-blended-gradient text-white font-semibold px-6 py-3 rounded-2xl">
+          <div className="max-w-2xl mx-auto mt-8 text-center">
+            <button className="px-6 py-3 font-semibold text-white bg-blended-gradient rounded-2xl">
               Join Now
             </button>
           </div>
         </section>
 
         {/* Ehrenamtliches Engagement */}
-        <section id="ehrenamtliches_engagement" className="py-16 px-6 mt-20">
+        <section id="ehrenamtliches_engagement" className="px-6 py-16 mt-20">
           <h2 className="text-3xl font-bold text-center text-gray-600">
             Volunteer Opportunities
           </h2>
-          <p className="mt-4 text-center text-gray-500 text-sm">
+          <p className="mt-4 text-sm text-center text-gray-500">
             Make a difference by volunteering with us.
           </p>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Volunteer Cards */}
             {[...Array(3)].map((_, index) => (
               <div
                 key={index}
-                className="border border-gray-200 shadow-lg p-6 rounded-2xl bg-main-bg"
+                className="p-6 border border-gray-200 shadow-lg rounded-2xl bg-main-bg"
               >
                 <h3 className="text-lg font-semibold text-gray-600">
                   Volunteer Role {index + 1}
                 </h3>
-                <p className="mt-2 text-gray-500 text-sm">
+                <p className="mt-2 text-sm text-gray-500">
                   Brief description of the role.
                 </p>
                 <Link

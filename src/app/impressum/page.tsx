@@ -12,9 +12,9 @@ export default function Page() {
         >
           Impressum
         </h1>
-        <div className="p-10 mt-20 mx-5">
+        <div className="p-10 mx-5 mt-20">
           <div>
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Gemäß §5 TMG:
             </h2>
             <p className="text-sm text-gray-800">
@@ -24,7 +24,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Herausgeberin:
             </h2>
             <p className="text-sm text-gray-800">Ossara e.V.</p>
@@ -33,7 +33,7 @@ export default function Page() {
             <p className="text-sm text-gray-800">E-Mail: info[at]ossara.de</p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Vertreten durch:
             </h2>
             <p className="text-sm text-gray-800">Nicolas A. S. Moumouni</p>
@@ -44,7 +44,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Vereinsregister:
             </h2>
             <p className="text-sm text-gray-800">
@@ -57,7 +57,7 @@ export default function Page() {
             <p className="text-sm text-gray-800">Registernummer: VR 23447</p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Verantwortlich für den redaktionellen Inhalt:
             </h2>
             <p className="text-sm text-gray-800">
@@ -68,7 +68,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Haftung für Inhalte
             </h2>
             <p className="text-sm text-gray-800">
@@ -87,7 +87,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Haftung für Links
             </h2>
             <p className="text-sm text-gray-800">
@@ -105,7 +105,7 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h2 className="text-orange-600 text-xl font-semibold">
+            <h2 className="text-xl font-semibold text-orange-600">
               Urheberrecht
             </h2>
             <p className="text-sm text-gray-800">

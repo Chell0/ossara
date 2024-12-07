@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function History() {
   return (
     <>
-      <section className="w-full flex items-center justify-center mt-20">
+      <section className="flex items-center justify-center w-full mt-20">
         <div className="max-w-lg mx-auto">
           <h2 className="text-[#ffb400] mt-20 text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center drop-shadow-sm">
             Unsere Geschichte
@@ -13,7 +13,7 @@ export default function History() {
       <section
         className={`flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20`}
       >
-        <div className="w-full md:w-1/2 flex-shrink-0">
+        <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
             alt="About Photo"

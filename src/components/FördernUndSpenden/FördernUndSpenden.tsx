@@ -17,15 +17,15 @@ export default function FördernUndSpenden() {
           </h1>
         </section>
 
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
-          <div className="w-full md:w-1/2 flex-shrink-0">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+          <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/donate.jpg`}
               alt="About Photo"
               width={350}
               height={350}
               quality={100}
-              className="object-contain w-full h-auto rounded-2xl shadow-lg"
+              className="object-contain w-full h-auto shadow-lg rounded-2xl"
             />
           </div>
           <div className="w-full md:w-1/2">
@@ -42,7 +42,7 @@ export default function FördernUndSpenden() {
             <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 p-3 rounded-2xl shadow-xl">
               <Link
                 href="#donation-form"
-                className="uppercase text-white font-bold"
+                className="font-bold text-white uppercase"
               >
                 Jetzt Spenden
               </Link>

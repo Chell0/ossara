@@ -19,20 +19,20 @@ export default function NavBar() {
 
   return (
     <nav className="w-full">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         {/* Menu Icon */}
         <div className="flex items-center space-x-2">
           <button
-            className="block focus:outline-none text-orange-600"
+            className="block text-orange-600 focus:outline-none"
             onClick={toggleMenu}
           >
             {menuOpen ? (
-              <XIcon className="h-6 w-6" />
+              <XIcon className="w-6 h-6" />
             ) : (
-              <MenuIcon className="h-6 w-6" />
+              <MenuIcon className="w-6 h-6" />
             )}
           </button>
-          <span className="text-orange-600 text-xl font-bold">Menu</span>
+          <span className="text-xl font-bold text-orange-600">Menu</span>
         </div>
 
         {/* Logo */}
@@ -51,23 +51,23 @@ export default function NavBar() {
 
       {/* Full-Viewport Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 bg-main-bg z-50 p-6 sm:p-8 overflow-y-auto">
+        <div className="fixed inset-0 z-50 p-6 overflow-y-auto bg-main-bg sm:p-8">
           {/* Logo */}
           <div className="flex justify-start">
             <Link href="/">
-              <h1 className="text-3xl text-orange-600 font-bold">Ossara</h1>
+              <h1 className="text-3xl font-bold text-orange-600">Ossara</h1>
             </Link>
           </div>
           {/* Close Icon */}
           <div className="flex justify-end">
             <button onClick={toggleMenu}>
-              <XIcon className="h-8 w-8 text-orange-700" />
+              <XIcon className="w-8 h-8 text-orange-700" />
             </button>
           </div>
 
-          <div className="flex flex-col md:flex-row mt-8 md:mt-12 space-y-8 md:space-y-0 md:space-x-8">
+          <div className="flex flex-col mt-8 md:flex-row md:mt-12 space-y-8 md:space-y-0 md:space-x-8">
             {/* Left Column: Main Menu with Sub-Menus */}
-            <ul className="space-y-6 text-orange-600 text-xl md:text-2xl font-bold w-full md:w-1/2 pr-0 md:pr-8">
+            <ul className="w-full pr-0 text-xl font-bold text-orange-600 space-y-6 md:text-2xl md:w-1/2 md:pr-8">
               {[
                 { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
                 {
@@ -113,7 +113,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
+                    <ul className="pl-4 text-sm text-gray-600 space-y-1 sm:text-base">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link
@@ -132,7 +132,7 @@ export default function NavBar() {
             </ul>
 
             {/* Right Column: Sub-Menus */}
-            <ul className="space-y-6 text-orange-600 text-xl md:text-2xl font-bold w-full md:w-1/2 pl-0 md:pl-8">
+            <ul className="w-full pl-0 text-xl font-bold text-orange-600 space-y-6 md:text-2xl md:w-1/2 md:pl-8">
               {[
                 {
                   name: "INTEGRATIVE STADTTEILARBEIT",
@@ -178,7 +178,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 space-y-1 text-sm sm:text-base text-gray-600">
+                    <ul className="pl-4 text-sm text-gray-600 space-y-1 sm:text-base">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link

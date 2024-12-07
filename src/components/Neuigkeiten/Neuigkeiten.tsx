@@ -29,9 +29,9 @@ export default function Neuigkeiten() {
 
     return (
         <>
-            <section className="container mx-auto p-6 mt-20">
+            <section className="container p-6 mx-auto mt-20">
                 {/* Toggle Buttons */}
-                <div className="flex flex-wrap justify-center gap-4 my-10">
+                <div className="flex flex-wrap justify-center my-10 gap-4">
                     <button
                         onClick={() => {
                             setShowNeuigkeiten(true);
@@ -54,7 +54,7 @@ export default function Neuigkeiten() {
                     {/* Category Dropdown */}
                     <select
                         onChange={(e) => setSelectedCategory(e.target.value || null)}
-                        className="px-4 py-2 w-full sm:w-auto border rounded-lg bg-blended-gradient text-white"
+                        className="w-full px-4 py-2 text-white border rounded-lg sm:w-auto bg-blended-gradient"
                         defaultValue=""
                     >
                         <option value="">All Categories</option>
@@ -71,7 +71,7 @@ export default function Neuigkeiten() {
                         placeholder="Search..."
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        className="px-4 py-2 w-full sm:w-auto border rounded-lg"
+                        className="w-full px-4 py-2 border rounded-lg sm:w-auto"
                     />
                 </div>
 
@@ -89,24 +89,24 @@ export default function Neuigkeiten() {
                                 initial={{opacity: 0, y: 20}}
                                 animate={{opacity: 1, y: 0}}
                                 transition={{duration: 0.3}}
-                                className="bg-white rounded-xl shadow-md shadow-gray-400 overflow-hidden"
+                                className="overflow-hidden bg-white shadow-md rounded-xl shadow-gray-400"
                             >
                                 <div className={`h-44 w-full bg-gray-200`}>
                                     {/* News Image */}
-                                    <img src={news.image} alt={news.title} className="w-full h-full object-cover"/>
+                                    <img src={news.image} alt={news.title} className="object-cover w-full h-full"/>
                                 </div>
 
                                 {/* News Content */}
                                 <div className="p-4">
-                                    <h3 className="text-orange-600 text-lg font-semibold">{news.title}</h3>
-                                    <p className="text-gray-800 text-sm font-semibold">{news.date}</p>
-                                    <p className="text-gray-700 text-sm">{news.content}</p>
-                                    <p className="text-blue-500 text-sm font-semibold">Category: {news.category}</p>
+                                    <h3 className="text-lg font-semibold text-orange-600">{news.title}</h3>
+                                    <p className="text-sm font-semibold text-gray-800">{news.date}</p>
+                                    <p className="text-sm text-gray-700">{news.content}</p>
+                                    <p className="text-sm font-semibold text-blue-500">Category: {news.category}</p>
                                 </div>
                             </motion.div>
                         ))
                     ) : (
-                        <p className="col-span-full text-center text-lg text-gray-600 font-bold">Unfortunately, no news
+                        <p className="text-lg font-bold text-center text-gray-600 col-span-full">Unfortunately, no news
                             available in this category.</p>
                     )}
                 </motion.div>

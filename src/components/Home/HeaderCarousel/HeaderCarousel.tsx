@@ -56,7 +56,7 @@ export default function HeaderCarousel() {
     <>
       <header className="relative w-full h-screen overflow-hidden rounded-lg">
         {/* Carousel Images */}
-        <div className="w-full h-full flex transition-transform duration-500">
+        <div className="flex w-full h-full transition-transform duration-500">
           {images.map((image, index) => (
             <div
               key={index}
@@ -68,10 +68,10 @@ export default function HeaderCarousel() {
                 src={image.src}
                 fill={true}
                 alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
+                className="object-cover w-full h-full"
               />
               {/* Description Box */}
-              <div className="absolute bottom-10 right-4 bg-main-bg bg-opacity-90 text-gray-800 text-sm p-5 m-10 rounded-lg">
+              <div className="absolute p-5 m-10 text-sm text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg bg-opacity-90">
                 {image.description}
               </div>
             </div>
@@ -81,13 +81,13 @@ export default function HeaderCarousel() {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute bottom-4 right-20 bg-black bg-opacity-50 text-white rounded-3xl p-2 hover:bg-opacity-75"
+          className="absolute p-2 text-white bg-black bottom-4 right-20 bg-opacity-50 rounded-3xl hover:bg-opacity-75"
         >
           &#8592;
         </button>
         <button
           onClick={nextSlide}
-          className="absolute bottom-4 right-4 bg-black bg-opacity-50 text-white rounded-3xl p-2 hover:bg-opacity-75"
+          className="absolute p-2 text-white bg-black bottom-4 right-4 bg-opacity-50 rounded-3xl hover:bg-opacity-75"
         >
           &#8594;
         </button>

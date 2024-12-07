@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Downloads() {
   return (
     <>
-      <div className="container mx-auto p-6">
+      <div className="container p-6 mx-auto">
         {/* Title Section */}
         <header className="text-[#ffb400] text-center py-12">
           <h1
@@ -21,7 +21,7 @@ export default function Downloads() {
             Allgemeine Infos zu Ossara finden Sie{" "}
             <Link
               href={`/uber`}
-              className="bg-blended-gradient text-white font-semibold rounded-lg p-1"
+              className="p-1 font-semibold text-white rounded-lg bg-blended-gradient"
             >
               hier
             </Link>

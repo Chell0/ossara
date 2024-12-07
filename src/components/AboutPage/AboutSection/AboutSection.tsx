@@ -4,8 +4,8 @@ export default function AboutSection() {
   return (
     <>
       {/* Über uns */}
-      <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
-        <div className="w-full md:w-1/2 flex-shrink-0">
+      <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+        <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
             alt="About Photo"
@@ -44,22 +44,22 @@ export default function AboutSection() {
       </section>
 
       {/* Verein */}
-      <section className="w-full flex items-center justify-center mt-20">
+      <section className="flex items-center justify-center w-full mt-20">
         <div className="max-w-md">
           <h2 className="text-[#ffb400] text-6xl py-4 px-4 mt-10 sm:text-4xl md:text5xl lg:text-7xl font-semibold text-center drop-shadow-xl">
             Verein
           </h2>
         </div>
       </section>
-      <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-10">
+      <section className="flex flex-col items-center py-10 mx-10 mt-10 md:flex-row gap-10">
         <div className="w-full md:w-1/2">
           <div className="p-6">
-            <p className="font-semibold text-gray-800 text-lg mb-4">
+            <p className="mb-4 text-lg font-semibold text-gray-800">
               Als eingetragener Verein (VR 23447) sind wir politisch und
               konfessionell neutral. Unsere Arbeit umfasst ein breites Spektrum
               an Tätigkeitsfeldern, darunter:
             </p>
-            <ul className="list-disc pl-5 space-y-2 text-slate-500">
+            <ul className="pl-5 list-disc space-y-2 text-slate-500">
               <li>Bildung</li>
               <li>Kunst- und Kulturförderung</li>
               <li>Nachhaltige internationale Zusammenarbeit</li>
@@ -76,7 +76,7 @@ export default function AboutSection() {
             </ul>
           </div>
         </div>
-        <div className="w-full md:w-1/2 flex-shrink-0">
+        <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
             alt="About Photo"
@@ -87,8 +87,8 @@ export default function AboutSection() {
           />
         </div>
       </section>
-      <section className="flex flex-col md:flex-row items-center gap-10 mx-10 mb-20">
-        <div className="w-full md:w-1/2 flex-shrink-0">
+      <section className="flex flex-col items-center mx-10 mb-20 md:flex-row gap-10">
+        <div className="flex-shrink-0 w-full md:w-1/2">
           <p className="mt-4 text-gray-700">
             Unsere Projekte werden durch ein starkes Netzwerk aus engagierten
             Mitgliedern, Mitarbeiter:innen, ehrenamtlichen Helfer:innen und

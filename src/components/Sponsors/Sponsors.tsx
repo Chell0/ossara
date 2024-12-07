@@ -4,19 +4,19 @@ export default function Sponsors() {
   return (
     <>
       {/* Sponsors section */}
-      <section className="w-full flex items-center justify-center sm:px-2">
-        <div className="bg-blended-gradient shadow-lg rounded-lg w-full max-w-md sm:px-4">
-          <h2 className="text-white text-xl py-4 px-4 sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-center">
+      <section className="flex items-center justify-center w-full sm:px-2">
+        <div className="w-full max-w-md rounded-lg shadow-lg bg-blended-gradient sm:px-4">
+          <h2 className="px-4 py-4 text-xl font-semibold text-center text-white sm:text-2xl md:text-3xl lg:text-4xl">
             Unsere Sponsors
           </h2>
         </div>
       </section>
-      <section className="mt-6 px-4">
+      <section className="px-4 mt-6">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div className="bg-bone flex items-center justify-center font-semibold text-smokyBlack text-md p-2">
+          <div className="flex items-center justify-center p-2 font-semibold bg-bone text-smokyBlack text-md">
             <p>Gefördert durch: ENGAGEMENT GLOBAL</p>
           </div>
-          <div className="bg-bone flex items-center justify-center font-semibold text-smokyBlack text-md p-2">
+          <div className="flex items-center justify-center p-2 font-semibold bg-bone text-smokyBlack text-md">
             <p>mit Mitteln des</p>
           </div>
           <div className="relative flex items-center justify-center w-full h-[20vh] text-center">

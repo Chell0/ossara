@@ -75,7 +75,7 @@ const teamMembers: TeamMember[] = [
 export default function TeamSection() {
   return (
     <>
-      <section className="container mx-auto px-6 py-20 mt-20 rounded-2xl shadow-2xl bg-gray-100">
+      <section className="container px-6 py-20 mx-auto mt-20 bg-gray-100 shadow-2xl rounded-2xl">
         <h2
           id="team"
           className="text-7xl text-center font-bold text-[#ffb400] mb-20 mt-10 drop-shadow-sm"
