@@ -27,7 +27,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-base text-gray-500">
+            <p className="mt-4 text-gray-500 sm:text-sm md:text-md lg:text-lg">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
               eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
