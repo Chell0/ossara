@@ -71,7 +71,7 @@ export default function HeaderCarousel() {
                 className="object-cover w-full h-full"
               />
               {/* Description Box */}
-              <div className="absolute p-5 m-10 text-sm text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg bg-opacity-90">
+              <div className="absolute p-5 m-10 text-xs text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg bg-opacity-90">
                 {image.description}
               </div>
             </div>
@@ -81,13 +81,13 @@ export default function HeaderCarousel() {
         {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          className="absolute p-2 text-white bg-black bottom-4 right-20 bg-opacity-50 rounded-3xl hover:bg-opacity-75"
+          className="absolute p-2 text-white bg-black bg-opacity-50 bottom-4 right-20 rounded-3xl hover:bg-opacity-75"
         >
           &#8592;
         </button>
         <button
           onClick={nextSlide}
-          className="absolute p-2 text-white bg-black bottom-4 right-4 bg-opacity-50 rounded-3xl hover:bg-opacity-75"
+          className="absolute p-2 text-white bg-black bg-opacity-50 bottom-4 right-4 rounded-3xl hover:bg-opacity-75"
         >
           &#8594;
         </button>
