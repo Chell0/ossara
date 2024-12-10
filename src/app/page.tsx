@@ -27,7 +27,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-gray-500 sm:text-sm md:text-md lg:text-lg">
+            <p className="mt-4 text-base text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
               eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
@@ -47,13 +47,14 @@ export default function Home() {
         <section className="min-h-screen mt-10">
           <Gallery />
         </section>
-        {/* Support Section */}
-        <section className="mt-10">
-          <Donate />
-        </section>
-        {/* Newsletter Section */}
-        <section className="flex flex-row justify-center mt-20">
-          <NewsLetter />
+        {/* Support Section & Newsletter Section */}
+        <section className="flex flex-col items-center gap-10 mt-10 mb-20 md:flex-row">
+          <div className="flex-shrink-0 w-full md:w-1/2">
+            <Donate />
+          </div>
+          <div className="w-full md:w-1/2">
+            <NewsLetter />
+          </div>
         </section>
         <Footer />
       </main>

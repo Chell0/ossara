@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Donate() {
   return (
     <>
-      <div className="px-12 py-12 text-center border border-gray-100 rounded-lg shadow-md bg-main-bg">
-        <h3 className="text-[#ffb400] font-bold text-xl sm:text-md md:text-lg lg:text-2xl xl:text-3xl">
+      <div className="max-w-screen-sm py-12 text-center border border-gray-100 rounded-lg shadow-md bg-main-bg">
+        <h3 className="text-[#ffb400] font-bold text-base sm:text-md md:text-lg lg:text-2xl xl:text-3xl">
           Unterstütze Uns Und Werde Supporter*in
         </h3>
         <div className="flex justify-center mt-6">
