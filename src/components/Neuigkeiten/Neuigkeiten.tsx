@@ -66,7 +66,7 @@ export default function Neuigkeiten() {
           {/* Category Dropdown */}
           <select
             onChange={(e) => setSelectedCategory(e.target.value || null)}
-            className="px-4 py-2 font-semibold transition rounded-lg shadow-xl sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto bg-[#ffb400] text-white"
+            className="px-4 py-2 font-semibold transition rounded-lg shadow-xl sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto bg-[#ffb400] text-white focus:outline-none focus:ring focus:ring-[#ffb400]"
             defaultValue=""
           >
             <option value="">All Categories</option>
@@ -83,7 +83,7 @@ export default function Neuigkeiten() {
             placeholder="Search..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="px-4 py-2 font-semibold transition border border-gray-200 rounded-lg shadow-xl sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto"
+            className="px-4 py-2 font-semibold transition border text-gray-600 rounded-lg shadow-xl sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto focus:outline-none focus:ring focus:ring-[#ffb400]"
           />
         </div>
 
