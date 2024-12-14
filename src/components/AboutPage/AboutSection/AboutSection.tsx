@@ -1,10 +1,11 @@
+import { bebasNeue } from "@/app/fonts";
 import Image from "next/image";
 
 export default function AboutSection() {
   return (
     <>
       {/* Über uns */}
-      <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+      <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-20 mb-20 md:flex-row">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -16,7 +17,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="mt-4 text-gray-700">
+          <p className="mt-4 text-xs text-gray-700">
             Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
             sich mit einer dekolonialen Perspektive für Bildung, Gesundheit und
             interkulturelle Vielfalt einsetzt. Wir hinterfragen bestehende
@@ -46,34 +47,53 @@ export default function AboutSection() {
       {/* Verein */}
       <section className="flex items-center justify-center w-full mt-20">
         <div className="max-w-md">
-          <h2 className="text-[#ffb400] text-6xl py-4 px-4 mt-10 sm:text-4xl md:text5xl lg:text-7xl font-semibold text-center drop-shadow-xl">
+          <h2
+            className={`${bebasNeue.className} text-[#ffb400] text-6xl px-4 mt-10 font-semibold text-center drop-shadow-xl`}
+          >
             Verein
           </h2>
         </div>
       </section>
-      <section className="flex flex-col items-center py-10 mx-10 mt-10 md:flex-row gap-10">
+      <section className="flex flex-col items-center gap-10 py-10 mx-10 md:flex-row">
         <div className="w-full md:w-1/2">
           <div className="p-6">
-            <p className="mb-4 text-lg font-semibold text-gray-800">
+            <p className="mb-4 text-xs font-semibold text-gray-700">
               Als eingetragener Verein (VR 23447) sind wir politisch und
               konfessionell neutral. Unsere Arbeit umfasst ein breites Spektrum
               an Tätigkeitsfeldern, darunter:
+              <br />
+              <br />
+              <ul className="pl-5 space-y-2 text-xs list-disc text-yellow-500">
+                <li>Bildung</li>
+                <li>Kunst- und Kulturförderung</li>
+                <li>Nachhaltige internationale Zusammenarbeit</li>
+                <li>Hilfe für Geflüchtete, Verfolgte und Kriegsopfer</li>
+                <li>
+                  Förderung von internationaler Verständigung, Toleranz und
+                  kultureller Vielfalt
+                </li>
+                <li>
+                  Verbesserung der öffentlichen Gesundheitsversorgung und
+                  Gesundheitsfürsorge
+                </li>
+                <li>Unterstützung hilfsbedürftiger Menschen</li>
+              </ul>
+              <br />
+              <br />
+              Unsere Projekte werden durch ein starkes Netzwerk aus engagierten
+              Mitgliedern, Mitarbeiter:innen, ehrenamtlichen Helfer:innen und
+              Partnerorganisationen unterstützt. Dabei setzen wir auf die
+              Vielfalt an Erfahrungen und Fähigkeiten in unserem Team, um
+              effektiv, konstruktiv und nachhaltig zu arbeiten.
+              <br />
+              <br />
+              Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit,
+              sich durch Praktika oder freiwillige Mitarbeit aktiv in Hamburg
+              oder im westafrikanischen Büro einzubringen. Wer uns in unserer
+              Arbeit unterstützen möchte, ist herzlich eingeladen, zu spenden
+              oder Mitglied zu werden und gemeinsam mit uns an einer gerechteren
+              und solidarischeren Zukunft zu arbeiten.
             </p>
-            <ul className="pl-5 list-disc space-y-2 text-slate-500">
-              <li>Bildung</li>
-              <li>Kunst- und Kulturförderung</li>
-              <li>Nachhaltige internationale Zusammenarbeit</li>
-              <li>Hilfe für Geflüchtete, Verfolgte und Kriegsopfer</li>
-              <li>
-                Förderung von internationaler Verständigung, Toleranz und
-                kultureller Vielfalt
-              </li>
-              <li>
-                Verbesserung der öffentlichen Gesundheitsversorgung und
-                Gesundheitsfürsorge
-              </li>
-              <li>Unterstützung hilfsbedürftiger Menschen</li>
-            </ul>
           </div>
         </div>
         <div className="flex-shrink-0 w-full md:w-1/2">
@@ -85,27 +105,6 @@ export default function AboutSection() {
             quality={100}
             className="w-full h-auto rounded-lg shadow-lg"
           />
-        </div>
-      </section>
-      <section className="flex flex-col items-center mx-10 mb-20 md:flex-row gap-10">
-        <div className="flex-shrink-0 w-full md:w-1/2">
-          <p className="mt-4 text-gray-700">
-            Unsere Projekte werden durch ein starkes Netzwerk aus engagierten
-            Mitgliedern, Mitarbeiter:innen, ehrenamtlichen Helfer:innen und
-            Partnerorganisationen unterstützt. Dabei setzen wir auf die Vielfalt
-            an Erfahrungen und Fähigkeiten in unserem Team, um effektiv,
-            konstruktiv und nachhaltig zu arbeiten.
-          </p>
-        </div>
-        <div className="w-full md:w-1/2">
-          <p className="mt-4 text-gray-700">
-            Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit, sich
-            durch Praktika oder freiwillige Mitarbeit aktiv in Hamburg oder im
-            westafrikanischen Büro einzubringen. Wer uns in unserer Arbeit
-            unterstützen möchte, ist herzlich eingeladen, zu spenden oder
-            Mitglied zu werden und gemeinsam mit uns an einer gerechteren und
-            solidarischeren Zukunft zu arbeiten.
-          </p>
         </div>
       </section>
     </>

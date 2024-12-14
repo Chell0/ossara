@@ -1,3 +1,4 @@
+import { bebasNeue } from "@/app/fonts";
 import Image from "next/image";
 
 export default function History() {
@@ -5,13 +6,15 @@ export default function History() {
     <>
       <section className="flex items-center justify-center w-full mt-20">
         <div className="max-w-lg mx-auto">
-          <h2 className="text-[#ffb400] mt-20 text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-center drop-shadow-sm">
+          <h2
+            className={`${bebasNeue.className} text-[#ffb400] mt-20 text-6xl font-semibold text-center drop-shadow-sm`}
+          >
             Unsere Geschichte
           </h2>
         </div>
       </section>
       <section
-        className={`flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20`}
+        className={`flex flex-col md:flex-row items-center gap-10 py-10 mx-10`}
       >
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
@@ -23,23 +26,23 @@ export default function History() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="mt-2 text-gray-700">
+          <p className="mt-2 text-gray-800 text-xs">
             Ossara e.V. wurde am 28. Oktober 2017 gegründet, um eine dekoloniale
             und machtkritische internationale Zusammenarbeit zu fördern. Der
             Name „Ossara“, der in der Lamba-Sprache aus dem Norden Togos „Alles
             wird gut!“ bedeutet, steht für unsere Vision einer positiven
             Veränderung, die durch eine gleichwertige Zusammenarbeit und die
             Stärkung der Selbstbestimmung erreicht wird.
-          </p>
-          <p className="pt-2 text-gray-700">
+            <br />
+            <br />
             Unsere ersten Projekte begannen in Togo, wo wir mit lokalen
             Partner:innen Bildungs- und Infrastrukturprojekte durchführten. Im
             Laufe der Jahre haben wir unsere Arbeit auf weitere westafrikanische
             Länder ausgeweitet und gleichzeitig ein neues Arbeitsfeld in Hamburg
             etabliert, das sich auf die Stärkung von BIPoC-Communities sowie die
             Bekämpfung von Rassismus und Diskriminierung konzentriert.
-          </p>
-          <p className="pt-2 text-gray-700">
+            <br />
+            <br />
             Heute ist Ossara e.V. ein Verein, der nicht nur in Westafrika aktiv
             ist, sondern auch auf lokaler Ebene durch entwicklungspolitische
             Bildungsarbeit, Empowerment und Vernetzung einen Beitrag zu einer
