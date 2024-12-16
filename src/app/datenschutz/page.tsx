@@ -1,12 +1,21 @@
+import { bebasNeue } from "@/app/fonts";
 import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
-	return (
-		<div>
-			<main className="p-6">
-				<h1 className="px-4 py-2 text-xl font-semibold text-center text-black sm:text-md md:text-xl lg:text-2xl">Datenschutz</h1>
-				<Footer />
-			</main>
-		</div>
-	);
+  return (
+    <div>
+      <main className="p-6">
+        <NavBar />
+        <section className="text-[#ffb400] text-center py-12 mt-10">
+          <h1
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercasez`}
+          >
+            Datenschutz
+          </h1>
+        </section>
+        <Footer />
+      </main>
+    </div>
+  );
 }
