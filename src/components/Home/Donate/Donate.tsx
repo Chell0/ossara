@@ -1,18 +1,18 @@
 import Link from "next/link";
 
 export default function Donate() {
-    return(
-        <>
-            <div className="bg-main-bg text-center py-12 px-6 shadow-xl rounded-xl">
-                <h2 className="text-[#ffb400] font-bold text-2xl md:text-3xl lg:text-4xl">
-                    UNTERSTÜTZE UNS UND WERDE SUPPORTER*IN
-                </h2>
-                <div className="mt-6">
-                    <Link href="/fordern" className="bg-[#ffb400] text-white font-bold py-3 px-6 rounded-2xl shadow-xl transition-all duration-200 hover:bg-blended-gradient">
-                        FÖRDERN & SPENDEN
-                    </Link>
-                </div>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="max-w-screen-sm py-12 text-center border border-gray-100 rounded-lg shadow-md bg-main-bg">
+        <h3 className="text-[#ffb400] font-bold text-base sm:text-md md:text-lg lg:text-2xl xl:text-3xl">
+          Unterstütze Uns Und Werde Supporter*in
+        </h3>
+        <div className="flex justify-center mt-6">
+          <button className="px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg font-semibold rounded-lg bg-[#ffb400] text-white hover:bg-blue-600 transition">
+            <Link href="/fordern">Fördern & Spenden</Link>
+          </button>
+        </div>
+      </div>
+    </>
+  );
 }

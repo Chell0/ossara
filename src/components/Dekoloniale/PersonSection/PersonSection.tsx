@@ -27,7 +27,7 @@ export default function PersonSection(){
     ];
 
     return (
-        <section className="py-20 px-4">
+        <section className="px-4 py-20">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
                 {teamMembers.map((member, index) => (
                     <PersonCard

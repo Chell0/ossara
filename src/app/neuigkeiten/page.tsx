@@ -1,4 +1,4 @@
-import { acme } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import News from "@/components/Neuigkeiten/Neuigkeiten";
@@ -10,7 +10,7 @@ export default function Page() {
         <NavBar />
         <header className="text-[#ffb400] py-12 text-center">
           <h1
-            className={`${acme.className} drop-shadow-xl text-[185px] font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
           >
             Neuigkeiten
           </h1>

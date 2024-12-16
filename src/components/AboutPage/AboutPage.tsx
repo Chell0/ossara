@@ -6,7 +6,7 @@ import TeamSection from "@/components/AboutPage/TeamSection/TeamSection";
 export default function AboutPage() {
   return (
     <>
-      <main className="container mx-auto p-6">
+      <main className="container p-6 mx-auto">
         <AboutBanner />
         <AboutSection />
         <TeamSection />

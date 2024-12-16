@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Bildungsarbeit() {
   return (
     <>
-      <div className="container mx-auto p-6">
+      <div className="container p-6 mx-auto">
         <header className="text-[#ffb400] py-12 text-center">
           <h1
             className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
@@ -14,8 +14,8 @@ export default function Bildungsarbeit() {
           </h1>
         </header>
 
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
-          <div className="w-full md:w-1/2 flex-shrink-0">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+          <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
@@ -55,7 +55,7 @@ export default function Bildungsarbeit() {
         </section>
 
         {/* Machtbewusst */}
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
           <div className="w-full md:w-1/2">
             <h2
               className={`${bebasNeue.className} drop-shadow-lg text-5xl font-bold text-[#ffb400] uppercase`}
@@ -89,7 +89,7 @@ export default function Bildungsarbeit() {
               den Dialog über Dekolonisierung zu fördern.
             </p>
           </div>
-          <div className="w-full md:w-1/2 flex-shrink-0">
+          <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
@@ -102,7 +102,7 @@ export default function Bildungsarbeit() {
         </section>
 
         {/* Eine Welt-Promotorinnen */}
-        <section className="w-full flex items-center justify-center  py-10 mt-10">
+        <section className="flex items-center justify-center w-full py-10 mt-10 ">
           <div className="max-w-3xl mx-auto">
             <h2
               className={`${bebasNeue.className} text-[#ffb400] mt-20 text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-center drop-shadow-md`}
@@ -111,8 +111,8 @@ export default function Bildungsarbeit() {
             </h2>
           </div>
         </section>
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-10 mb-20">
-          <div className="w-full md:w-1/2 flex-shrink-0">
+        <section className="flex flex-col items-center py-10 mx-10 mt-10 mb-20 md:flex-row gap-10">
+          <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"

@@ -9,24 +9,25 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <main className="container mx-auto p-6">
+      <main className="container p-6 mx-auto">
         <NavBar />
         {/* Carousel */}
         <section className="mt-20">
           <HeaderCarousel />
         </section>
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20 mb-20">
-          <div className="w-full md:w-1/2 flex-shrink-0">
+        <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-20 mb-20 md:flex-row">
+          <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
-              width={200}
-              height={200}
+              width={480}
+              height={640}
+              quality={100}
               className="w-full h-auto rounded-lg shadow-lg"
             />
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-gray-500">
+            <p className="mt-4 text-base text-gray-500">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
               eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
@@ -46,13 +47,14 @@ export default function Home() {
         <section className="min-h-screen mt-10">
           <Gallery />
         </section>
-        {/* Support Section */}
-        <section className="mt-20">
-          <Donate />
-        </section>
-        {/* Newsletter Section */}
-        <section className="flex flex-row justify-center mt-20">
-          <NewsLetter />
+        {/* Support Section & Newsletter Section */}
+        <section className="flex flex-col items-center gap-10 mt-10 mb-20 md:flex-row">
+          <div className="flex-shrink-0 w-full md:w-1/2">
+            <Donate />
+          </div>
+          <div className="w-full md:w-1/2">
+            <NewsLetter />
+          </div>
         </section>
         <Footer />
       </main>

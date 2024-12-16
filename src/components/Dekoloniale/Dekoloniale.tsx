@@ -1,21 +1,21 @@
-import { acme } from "@/app/fonts";
+import { bebasNeue } from "@/app/fonts";
 import PersonSection from "@/components/Dekoloniale/PersonSection/PersonSection";
 import Image from "next/image";
 
 export default function Dekoloniale() {
   return (
     <>
-      <div className="container mx-auto p-6">
+      <div className="container p-6 mx-auto">
         <header className="text-[#ffb400] py-12 text-center">
           <h1
-            className={`${acme.className} drop-shadow-xl text-[140px] font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
           >
             Dekoloniale Internationale Zusammenarbeit
           </h1>
         </header>
 
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
-          <div className="w-full md:w-1/2 flex-shrink-0">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-10">
+          <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
@@ -45,7 +45,7 @@ export default function Dekoloniale() {
         {/*Team Section*/}
         <PersonSection />
 
-        <section className="flex flex-col md:flex-row items-center gap-10 py-10 mx-10 mt-20">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-10">
           <div className="w-full md:w-1/2">
             <p className="mt-4 text-gray-700">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
