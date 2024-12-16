@@ -1,5 +1,6 @@
 "use client";
 
+import { bebasNeue } from "@/app/fonts";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +24,7 @@ export default function NavBar() {
         {/* Menu Icon */}
         <div className="flex items-center space-x-2">
           <button
-            className="block text-orange-600 focus:outline-none"
+            className="block focus:outline-none text-slate-600"
             onClick={toggleMenu}
           >
             {menuOpen ? (
@@ -32,7 +33,9 @@ export default function NavBar() {
               <MenuIcon className="w-6 h-6" />
             )}
           </button>
-          <span className="text-xl font-bold text-orange-600">Menu</span>
+          <span className="text-2xl font-bold drop-shadow-md text-slate-700">
+            Menu
+          </span>
         </div>
 
         {/* Logo */}
@@ -51,23 +54,29 @@ export default function NavBar() {
 
       {/* Full-Viewport Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 p-6 overflow-y-auto bg-main-bg sm:p-8">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-main-bg sm:p-8">
           {/* Logo */}
           <div className="flex justify-start">
             <Link href="/">
-              <h1 className="text-3xl font-bold text-orange-600">Ossara</h1>
+              <h1
+                className={` ${bebasNeue.className} text-6xl font-bold text-orange-600 drop-shadow-lg uppercase `}
+              >
+                Ossara
+              </h1>
             </Link>
           </div>
           {/* Close Icon */}
           <div className="flex justify-end">
             <button onClick={toggleMenu}>
-              <XIcon className="w-8 h-8 text-orange-700" />
+              <XIcon className="w-10 h-10 text-orange-600" />
             </button>
           </div>
 
-          <div className="flex flex-col mt-8 md:flex-row md:mt-12 space-y-8 md:space-y-0 md:space-x-8">
+          <div className="flex flex-col mt-8 md:flex-row md:mt-10 space-y-8 md:space-y-0 md:space-x-8">
             {/* Left Column: Main Menu with Sub-Menus */}
-            <ul className="w-full pr-0 text-xl font-bold text-orange-600 space-y-6 md:text-2xl md:w-1/2 md:pr-8">
+            <ul
+              className={` ${bebasNeue.className} w-full pr-0 text-5xl font-bold text-slate-600 space-y-6 md:w-1/2 md:pr-8`}
+            >
               {[
                 { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
                 {
@@ -100,7 +109,7 @@ export default function NavBar() {
                     <Link
                       href={menu.href}
                       className={`cursor-pointer ${
-                        activeSubMenu === menu.name ? "text-gray-600" : ""
+                        activeSubMenu === menu.name ? "text-orange-600" : ""
                       }`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
@@ -113,7 +122,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 text-sm text-gray-600 space-y-1 sm:text-base">
+                    <ul className="pl-4 text-lg text-orange-600 font-medium space-y-1">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link
@@ -132,7 +141,9 @@ export default function NavBar() {
             </ul>
 
             {/* Right Column: Sub-Menus */}
-            <ul className="w-full pl-0 text-xl font-bold text-orange-600 space-y-6 md:text-2xl md:w-1/2 md:pl-8">
+            <ul
+              className={` ${bebasNeue.className} w-full pl-0 text-5xl font-bold text-slate-600 space-y-6 md:w-1/2 md:pl-8`}
+            >
               {[
                 {
                   name: "INTEGRATIVE STADTTEILARBEIT",
@@ -165,7 +176,7 @@ export default function NavBar() {
                     <Link
                       href={menu.href}
                       className={`cursor-pointer ${
-                        activeSubMenu === menu.name ? "text-gray-600" : ""
+                        activeSubMenu === menu.name ? "text-orange-600" : ""
                       }`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
@@ -178,7 +189,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 text-sm text-gray-600 space-y-1 sm:text-base">
+                    <ul className="pl-4 text-lg text-orange-600 space-y-1">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link
