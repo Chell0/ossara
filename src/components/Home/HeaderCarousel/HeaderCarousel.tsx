@@ -71,7 +71,7 @@ export default function HeaderCarousel() {
                 className="object-cover w-full h-full"
               />
               {/* Description Box */}
-              <div className="absolute p-5 m-10 text-xs text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg bg-opacity-90">
+              <div className="absolute p-5 m-10 text-base text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg bg-opacity-90">
                 {image.description}
               </div>
             </div>
