@@ -9,7 +9,7 @@ export default function VolunteerOpportunities() {
           <h1
             className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold`}
           >
-            All Volunteer Opportunities
+            Volunteer Opportunities
           </h1>
         </header>
         <section className="px-6 py-16">
@@ -17,15 +17,15 @@ export default function VolunteerOpportunities() {
             {[...Array(10)].map((_, index) => (
               <div
                 key={index}
-                className="p-6 border border-gray-200 rounded-xl shadow-lg bg-main-bg"
+                className="p-6 border border-gray-200 rounded-2xl shadow-lg bg-main-bg"
               >
-                <h3 className="text-md font-semibold text-gray-600">
+                <h3 className="text-2xl font-semibold text-gray-600">
                   Volunteer Title {index + 1}
                 </h3>
-                <p className="mt-2 text-gray-500 text-xs">
+                <p className="mt-2 text-gray-500 text-base">
                   Brief description of the role.
                 </p>
-                <button className="mt-6 inline-block bg-[#ffb400] text-white font-semibold px-4 py-2 rounded-xl hover:bg-blended-gradient">
+                <button className="mt-6 inline-block bg-[#ffb400] text-white font-semibold text-lg px-8 py-4 rounded-2xl hover:bg-blended-gradient">
                   <Link
                     href={`#volunteer`}
                     target="_blank"
