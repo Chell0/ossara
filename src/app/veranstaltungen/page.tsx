@@ -11,7 +11,7 @@ export default function Page() {
         {/* Title Section */}
         <header className="text-[#ffb400] py-12 text-center mt-20">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-4xl sm:text-5xl md:text-6xl font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
           >
             Veranstaltungen
           </h1>

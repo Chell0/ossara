@@ -114,7 +114,7 @@ export default function Neuigkeiten() {
 
                 {/* News Content */}
                 <div className="p-4">
-                  <h3 className="font-bold text-[#ffb400] text-xl">
+                  <h3 className="font-semibold text-[#ffb400] text-xl">
                     {news.title}
                   </h3>
                   <p className="text-base font-semibold text-gray-900 pt-2">

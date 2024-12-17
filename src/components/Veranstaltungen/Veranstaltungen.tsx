@@ -175,6 +175,9 @@ export default function Veranstaltungen() {
   return (
     <main className="container p-6 mx-auto mt-10">
       {/* Search Bar for Current and Future Events */}
+      <h2 className="mb-6 text-6xl font-semibold text-[#ffb400]">
+        Upcoming Events
+      </h2>
       <div className="flex justify-center my-20">
         <input
           type="text"
@@ -187,17 +190,14 @@ export default function Veranstaltungen() {
 
       {/* Current and Future Events Section */}
       <section>
-        <h2 className="mb-6 text-3xl font-semibold text-[#ffb400]">
-          Upcoming Events
-        </h2>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4 mt-10">
           {filteredCurrentEvents.length > 0 ? (
             filteredCurrentEvents.map((event) => (
               <div
                 key={event.id}
                 className="overflow-hidden transition-transform duration-300 transform bg-white shadow-md shadow-gray-200 rounded-2xl hover:scale-105"
               >
-                <div className="w-full bg-gray-200 h-44">
+                <div className="w-full bg-gray-200 h-52">
                   <img
                     src={event.imageUrl}
                     alt={event.title}
@@ -205,27 +205,27 @@ export default function Veranstaltungen() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-[#ffb400]">
+                  <h3 className="text-xl font-semibold text-[#ffb400]">
                     {event.title}
                   </h3>
-                  <p className="text-sm font-semibold text-gray-800">
+                  <p className="text-base font-semibold text-gray-900 mt-2">
                     {event.type}
                   </p>
-                  <p className="text-sm text-gray-500">
+                  <p className="text-base text-gray-500 mt-2">
                     Date: {formatDate(event.date)}
                   </p>
-                  <p className="text-sm text-gray-500">Time: {event.time}</p>
+                  <p className="text-base text-gray-500">Time: {event.time}</p>
                   <Link
                     href={event.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block mt-2 font-semibold text-[#ffb400] text-md hover:underline"
+                    className="block mt-2 font-semibold text-[#ffb400] text-base hover:underline"
                   >
                     Register Here
                   </Link>
                   <button
                     onClick={() => toggleExpand(event.id)}
-                    className="mt-2 text-sm font-semibold text-blue-500 hover:underline"
+                    className="mt-2 text-base font-semibold text-blue-500 hover:underline"
                   >
                     {expandedEvent === event.id ? "Less Info" : "More Info"}
                   </button>
@@ -244,6 +244,9 @@ export default function Veranstaltungen() {
       </section>
 
       {/*Archived Events Section*/}
+      <h2 className="mt-20 mb-6 text-6xl font-semibold text-[#ffb400]">
+        Archived Events
+      </h2>
       {/* Search Bar for Archived Events */}
       <div className="flex justify-center my-20">
         <input
@@ -257,9 +260,6 @@ export default function Veranstaltungen() {
 
       {/* Archived Events Section */}
       <section className="mt-10">
-        <h2 className="mb-6 text-3xl font-semibold text-[#ffb400]">
-          Archived Events
-        </h2>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4">
           {filteredPastEvents.length > 0 ? (
             filteredPastEvents.map((event) => (
@@ -268,7 +268,7 @@ export default function Veranstaltungen() {
                 className={`shadow-2xl shadow-gray-200 rounded-xl overflow-hidden opacity-40 transition-all duration-300 hover:opacity-100`}
               >
                 {/* Image section at the top half */}
-                <div className="w-full bg-gray-200 h-44">
+                <div className="w-full bg-gray-200 h-52">
                   <img
                     src={event.imageUrl}
                     alt={event.title}
@@ -277,17 +277,19 @@ export default function Veranstaltungen() {
                 </div>
                 {/* Content section at the bottom half */}
                 <div className="p-4">
-                  <h3 className="text-lg font-semibold text-[#ffb400]">
+                  <h3 className="text-xl font-semibold text-[#ffb400]">
                     {event.title}
                   </h3>
-                  <p className="text-sm text-gray-800">{event.type}</p>
-                  <p className="text-xs text-gray-500">
+                  <p className="text-base text-gray-900 font-semibold mt-2">
+                    {event.type}
+                  </p>
+                  <p className="text-base text-gray-500 mt-2">
                     Date: {formatDate(event.date)}
                   </p>
-                  <p className="text-xs text-gray-500">Time: {event.time}</p>
+                  <p className="text-base text-gray-500">Time: {event.time}</p>
                   <button
                     onClick={() => toggleExpand(event.id)}
-                    className="mt-2 text-sm font-semibold text-blue-500 hover:underline"
+                    className="mt-2 text-base font-semibold text-blue-500 hover:underline"
                   >
                     {expandedEvent === event.id ? "Less Info" : "More Info"}
                   </button>
