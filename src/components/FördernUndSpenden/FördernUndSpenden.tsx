@@ -30,19 +30,22 @@ export default function FördernUndSpenden() {
           </div>
           <div className="w-full md:w-1/2">
             <h2
-              className={`${bebasNeue.className} text-6xl uppercase font-bold text-[#ffb400]`}
+              className={`${bebasNeue.className} text-6xl uppercase font-semibold text-[#ffb400]`}
             >
               Hilf uns mit Deiner Spende
             </h2>
-            <p className="mt-4 text-gray-500 text-sm">
+            <p className="mt-4 text-gray-500 text-base">
               Einmalige und regelmäßige Spenden der{" "}
               <span className="font-bold text-black">OSSARA Community</span>{" "}
               ermöglichen unsere Arbeit. Durch Deinen Beitrag stellst Du sicher,
               dass wir uns auf unsere Arbeit konzentrieren und diese auch in
               Zukunft unabhängig gestalten können.
             </p>
-            <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 p-3 rounded-2xl shadow-xl">
-              <Link href="#donation-form" className="font-semibold text-white">
+            <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 px-8 py-4 rounded-2xl shadow-xl">
+              <Link
+                href="#donation-form"
+                className="font-semibold text-white text-lg"
+              >
                 Jetzt Spenden
               </Link>
             </button>

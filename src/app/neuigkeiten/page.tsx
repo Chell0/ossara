@@ -10,7 +10,7 @@ export default function Page() {
         <NavBar />
         <header className="text-[#ffb400] py-12 text-center">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-header font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
           >
             Neuigkeiten
           </h1>

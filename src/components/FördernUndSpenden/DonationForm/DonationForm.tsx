@@ -10,7 +10,7 @@ export default function DonationForm() {
           >
             Deine Spende
           </h2>
-          <p className="mt-4 text-gray-600 text-sm">
+          <p className="mt-4 text-gray-600 text-base">
             Mit Deiner Hilfe können wir wichtige Arbeit leisten, die sonst nicht
             möglich wäre.{" "}
             <span className="font-semibold text-black">OSSARA e.V.</span>{" "}

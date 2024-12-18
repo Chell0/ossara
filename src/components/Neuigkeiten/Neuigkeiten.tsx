@@ -33,7 +33,7 @@ export default function Neuigkeiten() {
 
   return (
     <>
-      <section className="container p-6 mx-auto mt-20">
+      <section className="container p-6 mx-auto mt-10">
         {/* Toggle Buttons */}
         <div className="flex flex-wrap justify-center gap-4 my-10">
           <button
@@ -103,7 +103,7 @@ export default function Neuigkeiten() {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden bg-white shadow-md rounded-xl shadow-gray-400"
               >
-                <div className={`h-44 w-full bg-gray-200`}>
+                <div className={`h-52 w-full bg-gray-200`}>
                   {/* News Image */}
                   <img
                     src={news.image}
@@ -114,14 +114,14 @@ export default function Neuigkeiten() {
 
                 {/* News Content */}
                 <div className="p-4">
-                  <h3 className="font-bold text-[#ffb400] text-md">
+                  <h3 className="font-semibold text-[#ffb400] text-xl">
                     {news.title}
                   </h3>
-                  <p className="text-xs font-semibold text-gray-900">
+                  <p className="text-base font-semibold text-gray-900 pt-2">
                     {news.date}
                   </p>
-                  <p className="text-xs text-gray-700">{news.content}</p>
-                  <p className="text-sm font-bold text-blue-500">
+                  <p className="text-sm text-gray-700 pt-2">{news.content}</p>
+                  <p className="text-sm font-bold text-blue-500 pt-2">
                     Category: {news.category}
                   </p>
                 </div>
