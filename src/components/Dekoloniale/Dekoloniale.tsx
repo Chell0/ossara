@@ -77,7 +77,16 @@ export default function Dekoloniale() {
           </div>
         </section>
 
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-20">
+        <section className="flex items-center justify-center w-full py-10 mt-10 ">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className={`${bebasNeue.className} text-[#ffb400] mt-20 text-6xl font-semibold text-center drop-shadow-md`}
+            >
+              Projektprozess
+            </h2>
+          </div>
+        </section>
+        <section className="flex flex-col items-center py-10 mx-10 md:flex-row gap-20">
           <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
@@ -89,11 +98,6 @@ export default function Dekoloniale() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <h3
-              className={` ${bebasNeue.className} text-[#ffb400] text-6xl px-4 mt-10 font-semibold text-center drop-shadow-xl`}
-            >
-              Projektprozess
-            </h3>
             <p className="mt-4 text-gray-800 text-base">
               Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
               Anfragen aus der lokalen Bevölkerung oder Partnerorganisationen.{" "}
