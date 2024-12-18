@@ -18,8 +18,8 @@ export default function Integrative() {
           <Image
             src={`/bgs/img1.jpg`}
             alt="Integrative Photo"
-            width={520}
-            height={480}
+            width={480}
+            height={520}
             quality={100}
             className="w-full h-auto rounded-lg shadow-lg"
           />
@@ -74,7 +74,7 @@ export default function Integrative() {
           <div className={`space-y-2 p-1 sm:p-2 md:p-3 lg:p-6`}>
             <p className={`text-base font-semibold`}>
               Name:{" "}
-              <span className={`font-semibold text-lg text-blue-500`}>
+              <span className={`font-semibold text-base text-blue-500`}>
                 Katja Heyn
               </span>
             </p>
