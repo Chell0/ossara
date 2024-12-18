@@ -17,35 +17,37 @@ export default function DonationQuestions() {
             ihr auch die Kontoverbindung verwenden:
           </p>
           <div className="p-6 text-center">
-            <p className="text-lg font-semibold text-black uppercase">
+            <p className="text-base font-semibold text-black uppercase">
               Ossara e.V.
             </p>
-            <p className="text-lg font-semibold text-yellow-500">
+            <p className="text-base font-semibold text-yellow-500">
               Steuernummer:{" "}
               <span className="text-lg font-semibold text-black">
                 17 / 451 / 09817
               </span>
             </p>
-            <p className="text-lg font-semibold text-yellow-500">
+            <p className="text-base font-semibold text-yellow-500">
               Spendenkonto:{" "}
-              <span className="text-lg font-semibold text-black">
+              <span className="text-base font-semibold text-black">
                 Hamburger Volksbank
               </span>
             </p>
             <p className="text-lg font-semibold text-yellow-500">
               IBAN:{" "}
-              <span className="text-lg font-semibold text-black">
+              <span className="text-base font-semibold text-black">
                 DE68 2019 0003 0006 0538 07
               </span>
             </p>
             <p className="text-lg font-semibold text-yellow-500">
               Amtsgericht Hamburg:{" "}
-              <span className="text-lg font-semibold text-black">VR 23447</span>
+              <span className="text-base font-semibold text-black">
+                VR 23447
+              </span>
             </p>
           </div>
           <div className="mt-6 text-center">
-            <p className="text-lg font-bold text-black">Kontakt</p>
-            <p className="text-lg font-semibold text-yellow-500">
+            <p className="text-base font-bold text-black">Kontakt</p>
+            <p className="text-base font-semibold text-yellow-500">
               Tel.:{" "}
               <Link
                 href="tel:+4915213062798"
