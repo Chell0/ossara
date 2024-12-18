@@ -25,7 +25,7 @@ export default function Integrative() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="mt-4 text-gray-700 text-base">
+          <p className="mt-4 text-gray-800 text-base">
             Ossara e.V. bietet eine niedrigschwellige Sozialberatung und
             Bewerbungshilfe für Geflüchtete und Interessierte. In wöchentlichen
             Terminen unterstützen wir bei der Orientierung im deutschen
