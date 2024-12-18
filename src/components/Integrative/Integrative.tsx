@@ -13,7 +13,7 @@ export default function Integrative() {
         </h1>
       </section>
 
-      <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-10">
+      <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-20">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
