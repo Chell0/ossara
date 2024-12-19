@@ -14,6 +14,16 @@ export default function Rassismus() {
           </h1>
         </header>
         <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-20">
+          <div className="flex-shrink-0 w-full md:w-1/2">
+            <Image
+              src={`/bgs/img1.jpg`}
+              alt="Rassismus Photo"
+              width={480}
+              height={520}
+              quality={100}
+              className="w-full h-auto rounded-lg shadow-lg"
+            />
+          </div>
           <div className="w-full md:w-1/2">
             <p className="text-base text-gray-800">
               Ossara e.V. setzt sich in Hamburg aktiv dafür ein,{" "}
@@ -43,16 +53,6 @@ export default function Rassismus() {
               eine gerechtere, solidarische Gesellschaft zu fördern
             </p>
           </div>
-          <div className="flex-shrink-0 w-full md:w-1/2">
-            <Image
-              src={`/bgs/img1.jpg`}
-              alt="Rassismus Photo"
-              width={480}
-              height={520}
-              quality={100}
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
-          </div>
         </section>
 
         {/* Forderungskatalog */}
@@ -60,10 +60,8 @@ export default function Rassismus() {
           <div
             className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto`}
           >
-            <p className={`text-base font-semibold text-gray-800`}>
-              Forderungskatalog
-            </p>
-            <button className="px-8 py-4 text-lg sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+            <p className={`text-base text-gray-800`}>Forderungskatalog</p>
+            <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
               <Link
                 href={`/files/stellungnahme.pdf`}
                 target="_blank"
