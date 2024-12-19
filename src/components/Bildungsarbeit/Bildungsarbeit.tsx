@@ -18,7 +18,7 @@ export default function Bildungsarbeit() {
           <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
-              alt="About Photo"
+              alt="Bildungsarbeit Photo"
               width={480}
               height={520}
               quality={100}
@@ -39,14 +39,14 @@ export default function Bildungsarbeit() {
               einen gemeinsamen Austausch zu fördern und eine breite Bewegung
               für soziale Gerechtigkeit zu unterstützen.
             </p>
-            <p className="mt-2 text-base text-gray-800">
+            <p className="mt-4 text-base text-gray-800">
               Wir bieten verschiedene Formate an, die auf eine kritische
               Auseinandersetzung mit kolonialen Strukturen abzielen. Dazu
               gehören unter anderem Veranstaltungen und{" "}
               <strong>Podiumsdiskussionen</strong>, die sich mit den
               historischen und aktuellen Dimensionen des Kolonialismus befassen.
             </p>
-            <p className="mt-2 text-base text-gray-800">
+            <p className="mt-4 text-base text-gray-800">
               Durch unsere Bildungsarbeit möchten wir dazu beitragen, den
               <strong>kolonialen Blick</strong> zu hinterfragen und zu einer
               gerechteren, inklusiveren Gesellschaft beizutragen.
@@ -55,7 +55,7 @@ export default function Bildungsarbeit() {
         </section>
 
         {/* MachtBewusst */}
-        <section className="flex items-center justify-center w-full py-10 mt-10 ">
+        <section className="flex items-center justify-center w-full py-10 mt-10">
           <div className="max-w-3xl mx-auto">
             <h2
               className={`${bebasNeue.className} drop-shadow-lg text-6xl font-bold text-[#ffb400] uppercase`}
@@ -77,7 +77,7 @@ export default function Bildungsarbeit() {
               wissen, was in Hamburg passiert und wer sich aktiv für
               Veränderungen einsetzt? Dann bist du bei uns genau richtig!
             </p>
-            <p className="mt-2 text-base text-gray-800">
+            <p className="mt-4 text-base text-gray-800">
               In unserem Blog „MachtBewusst Hamburg“ dreht sich alles um
               machtkritische und dekoloniale Perspektiven in der Hamburger
               Zivilgesellschaft. Wir beleuchten das Engagement von Initiativen,
@@ -86,7 +86,7 @@ export default function Bildungsarbeit() {
               wertvolles Fachwissen und inspirierende Geschichten, die zeigen,
               wie der Wandel in unserer Stadt gestaltet wird.
             </p>
-            <p className="mt-2 text-base text-gray-800">
+            <p className="mt-4 text-base text-gray-800">
               Komm vorbei, lass dich von unseren Inhalten inspirieren und
               informiere dich über die vielfältigen Projekte und Aktionen, die
               das Ziel haben, gesellschaftliche Ungleichheiten zu bekämpfen und
@@ -112,7 +112,7 @@ export default function Bildungsarbeit() {
         </section>
 
         {/* Eine Welt-Promotorinnen */}
-        <section className="flex items-center justify-center w-full py-10 mt-10 ">
+        <section className="flex items-center justify-center w-full py-10 mt-10">
           <div className="max-w-3xl mx-auto">
             <h2
               className={`${bebasNeue.className} drop-shadow-lg text-6xl font-bold text-[#ffb400] uppercase`}
@@ -121,7 +121,7 @@ export default function Bildungsarbeit() {
             </h2>
           </div>
         </section>
-        <section className="flex flex-col items-center py-10 mx-10 mb-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center py-10 mx-10 mb-20 md:flex-row gap-20">
           <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/sections/eine-welt-fach-promotorinnen.jpg`}
@@ -147,12 +147,12 @@ export default function Bildungsarbeit() {
               Ungleichheiten (Ziel 10). Der Fokus liegt auf der Vernetzung und
               Beratung von zivilgesellschaftlichen Initiativen und Akteur:innen.
             </p>
-            <p className="mt-2 text-base text-gray-800">
+            <p className="mt-4 text-base text-gray-800">
               Die Fachstelle Dekolonisierung ist Teil des bundesweiten Eine
               Welt-Promotor:innen-Programms, das in Hamburg von hamburg.global
               koordiniert wird.
             </p>
-            <p className="mt-2 text-base text-gray-800">
+            <p className="mt-4 text-base text-gray-800">
               Weitere Informationen finden Sie{" "}
               <Link
                 href={`/eine_welt_promotorinnen`}
