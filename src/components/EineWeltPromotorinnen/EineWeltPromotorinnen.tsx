@@ -9,16 +9,16 @@ export default function EineWeltPromotorinnen() {
       <div className="container p-6 mx-auto">
         <section className="flex flex-col items-center justify-center mx-4 mt-10 text-center sm:mx-10">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-header leading-tight font-bold text-[#ffb400] uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl leading-tight font-bold text-[#ffb400] uppercase`}
           >
             Fachpromotorinnen Dekoloniale Perspektiven im
             entwicklungspolitischen Engagement
           </h1>
         </section>
 
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-20">
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-gray-700">
+            <p className="text-gray-800 text-base">
               Obwohl die meisten ehemaligen Kolonien schon vor Jahrzehnten ihre
               Freiheit erlangt haben, gibt es immer noch koloniale
               Kontinuitäten, die weltweit das kollektive Gedächtnis der weißen
@@ -28,8 +28,8 @@ export default function EineWeltPromotorinnen() {
               strukturellen und institutionellen Rassismus, der insbesondere
               Menschen aus dem Globalen Süden und solche, die in der Diaspora
               leben, betrifft.
-              <br />
-              <br />
+            </p>
+            <p className="mt-4 text-base text-gray-800">
               Als Hafenstadt war Hamburg viele Jahrhunderte lang eine der
               bedeutendsten Kolonialmetropolen in Europa und auch heute noch
               erinnern zahlreiche Orte an ihre Kolonialgeschichte. Die Stadt
@@ -39,7 +39,7 @@ export default function EineWeltPromotorinnen() {
             </p>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-gray-700">
+            <p className="text-gray-800 text-base">
               Als Eine Welt-Promotorinnen für Dekolonisierung wollen wir uns
               dafür engagieren, Partizipationsprozesse zu fördern und
               postkoloniale, dekoloniale und diasporische Stimmen
@@ -50,8 +50,8 @@ export default function EineWeltPromotorinnen() {
               unserer Arbeit tragen wir auch zur Implementierung der 17
               UN-Nachhaltigkeitsziele bei, wobei ein Schwerpunkt auf den Kampf
               gegen weniger Ungleichheit (Ziel 10) auf der Welt liegt.
-              <br />
-              <br />
+            </p>
+            <p className="text-base mt-4 text-gray-800">
               Die Fachstelle Dekoloniserung ist Teil des bundeweiten Eine
               Welt-Promotor*innen- Programm das in Hamburg von der
               Netzwerkstelle von hamburg.global koordiniert wird. Aktuell gibt
@@ -62,19 +62,19 @@ export default function EineWeltPromotorinnen() {
         </section>
 
         {/* Vernetzung */}
-        <section className="flex items-center justify-center w-full sm:px-2">
-          <div className="max-w-md">
+        <section className="flex items-center justify-center w-full py-10 mt-10 ">
+          <div className="max-w-3xl mx-auto">
             <h2
-              className={`${bebasNeue.className} mt-20 text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
+              className={`${bebasNeue.className} text-[#ffb400] mt-20 text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
             >
               Vernetzung
             </h2>
           </div>
         </section>
 
-        <section className="flex flex-col items-center mx-10 mt-5 mb-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center mx-10 mt-5 mb-20 md:flex-row gap-20">
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-xl text-gray-800">
+            <p className="text-lg text-gray-800">
               Aufbau von einem Netzwerk und Unterstützung von Akteur*innen deren
               Fokus auf der aktiven Mitgestaltung des gesamtstädtischen
               Dekolonisierungsprozess und dekolonialen entwicklungspolitischen
@@ -82,48 +82,47 @@ export default function EineWeltPromotorinnen() {
             </p>
           </div>
           <div className="flex-shrink-0 w-full md:w-1/2">
-            <section className="flex flex-col items-center mx-5 mt-10 mb-20 md:flex-row gap-10">
-              <div className="flex justify-center flex-shrink-0 w-full md:w-1/2">
+            <div className="flex flex-col items-center max-w-xs p-6 mx-auto bg-gray-50 shadow-md rounded-xl">
+              {/* Profile Image */}
+              <div className="w-32 h-32 mb-4 overflow-hidden rounded-3xl">
                 <Image
                   src={`/team/sonia.jpg`}
-                  alt="About Photo"
-                  width={360}
+                  alt="Sonia's Photo"
+                  width={560}
                   height={720}
                   quality={100}
-                  className="object-cover shadow-xl rounded-xl sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-84 lg:h-84"
+                  className="object-cover"
                 />
               </div>
-              <div className="w-full bg-gray-200 rounded-lg md:w-1/2">
-                <div
-                  className={`max-w-lg space-y-2 px-0 sm:px-1 md:px-2 lg:px-4 p-1 sm:p-2 md:p-3 lg:p-6`}
-                >
-                  <p className={`text-md font-semibold`}>
-                    Kontakt:{" "}
-                    <span className={`text-xs text-orange-600`}>
-                      Sonia Octavio
-                    </span>
-                  </p>
-                  <p className={`text-md font-semibold`}>
-                    Email:{" "}
-                    <span className={`text-xs text-orange-600`}>
-                      sonia.octavio[a]ossara.de
-                    </span>
-                  </p>
-                  <p className={`text-md font-semibold`}>
-                    Phone:{" "}
-                    <span className={`text-xs text-orange-600`}>
-                      (+49) 157-3572-1433
-                    </span>
-                  </p>
-                </div>
+
+              {/* Profile Text */}
+              <div className="mt-4">
+                <p className="text-base font-semibold text-[#ffb400]">
+                  Name:{" "}
+                  <span className={`text-base text-gray-600`}>
+                    Sonia Octavio
+                  </span>
+                </p>
+                <p className="mt-2 text-base font-semibold tracking-wider text-[#ffb400]">
+                  Email:{" "}
+                  <span className={`text-base text-gray-600`}>
+                    sonia.octavio[a]ossara.de
+                  </span>
+                </p>
+                <p className="mt-2 text-base font-semibold tracking-wider text-[#ffb400]">
+                  Telefon:{" "}
+                  <span className={`text-base text-gray-600`}>
+                    (+49) 157-3572-1433
+                  </span>
+                </p>
               </div>
-            </section>
+            </div>
           </div>
         </section>
 
         {/* Beratung */}
-        <section className="flex items-center justify-center w-full sm:px-2">
-          <div className="max-w-md">
+        <section className="flex items-center justify-center w-full py-10 mt-10">
+          <div className="max-w-3xl mx-auto">
             <h2
               className={`${bebasNeue.className} mt-20 text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
             >
@@ -132,46 +131,45 @@ export default function EineWeltPromotorinnen() {
           </div>
         </section>
 
-        <section className="flex flex-col items-center mx-10 mt-10 mb-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center mx-10 mt-5 mb-20 md:flex-row gap-20">
           <div className="flex-shrink-0 w-full md:w-1/2">
-            <section className="flex flex-col items-center mx-5 mt-10 mb-20 md:flex-row gap-10">
-              <div className="w-full bg-gray-200 rounded-lg md:w-1/2">
-                <div
-                  className={`max-w-lg space-y-2 px-0 sm:px-1 md:px-2 lg:px-4 p-1 sm:p-2 md:p-3 lg:p-6`}
-                >
-                  <p className={`text-md font-semibold`}>
-                    Kontakt:{" "}
-                    <span className={`text-xs text-orange-600`}>
-                      Catherine Schlüter
-                    </span>
-                  </p>
-                  <p className={`text-md font-semibold`}>
-                    Email:{" "}
-                    <span className={`text-xs text-orange-600`}>
-                      catherine.schlueter[a]ossara.de
-                    </span>
-                  </p>
-                  <p className={`text-md font-semibold`}>
-                    Phone:{" "}
-                    <span className={`text-xs text-orange-600`}>
-                      (+49) 157-3572-2762
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="flex justify-center flex-shrink-0 w-full md:w-1/2">
+            <div className="flex flex-col items-center max-w-sm p-6 mx-auto bg-gray-50 shadow-md rounded-xl">
+              {/* Profile Image */}
+              <div className="w-32 h-32 mb-4 overflow-hidden rounded-3xl">
                 <Image
                   src={`/team/catherine.jpg`}
-                  alt="About Photo"
-                  width={400}
-                  height={400}
-                  className="object-cover shadow-xl rounded-xl sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-84 lg:h-84"
+                  alt="Catherine's Photo"
+                  width={560}
+                  height={720}
+                  quality={100}
+                  className="object-cover"
                 />
               </div>
-            </section>
+              {/* Profile Text */}
+              <div className="mt-4">
+                <p className="text-base font-semibold text-[#ffb400]">
+                  Name:{" "}
+                  <span className={`text-base text-gray-600`}>
+                    Catherine Schlüter
+                  </span>
+                </p>
+                <p className="mt-2 text-base font-semibold tracking-wider text-[#ffb400]">
+                  Email:{" "}
+                  <span className={`text-base text-gray-600`}>
+                    catherine.schlueter[a]ossara.de
+                  </span>
+                </p>
+                <p className="mt-2 text-base font-semibold tracking-wider text-[#ffb400]">
+                  Telefon:{" "}
+                  <span className={`text-base text-gray-600`}>
+                    (+49) 157-3572-2762
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-xl text-gray-800">
+            <p className="text-lg text-gray-800">
               Beratung von zivilgesellschaftlichen Initiativen und
               Multiplikator*innen, die sich über bisherige Akteur*innen und
               deren Projekte im gesamtstädtischen Dekolonisierungsprozess
@@ -182,9 +180,11 @@ export default function EineWeltPromotorinnen() {
         </section>
 
         {/* Downloads */}
-        <section className="flex items-center justify-center w-full mt-28 sm:px-2">
-          <div className="max-w-md rounded-lg shadow-lg bg-blended-gradient sm:px-4">
-            <h2 className="px-4 py-4 text-xl font-semibold text-center text-white sm:text-2xl md:text3xl lg:text-4xl">
+        <section className="flex items-center justify-center w-full mt-20 sm:px-2">
+          <div className="max-w-3xl mx-auto">
+            <h2
+              className={`${bebasNeue.className} mt-20 text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
+            >
               Downloads
             </h2>
           </div>
@@ -194,7 +194,7 @@ export default function EineWeltPromotorinnen() {
         </section>
 
         {/* Sponsors*/}
-        <section className="mt-36">
+        <section className="mt-20">
           <Sponsors />
         </section>
       </div>
