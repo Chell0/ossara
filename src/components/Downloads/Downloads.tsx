@@ -29,10 +29,8 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-gray-800 text-sm font-medium`}>
-            Jahresbericht 2023
-          </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <p className={`text-gray-800 text-base`}>Jahresbericht 2023</p>
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/jahresbericht_2023.pdf`}
               target="_blank"
@@ -64,10 +62,8 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-gray-800 text-sm font-medium`}>
-            Jahresbericht 2022
-          </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <p className={`text-gray-800 text-base`}>Jahresbericht 2022</p>
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/jahresbericht_2022.pdf`}
               target="_blank"
@@ -99,10 +95,8 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-sm font-medium text-gray-800`}>
-            Jahresbericht 2021
-          </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <p className={`text-base text-gray-800`}>Jahresbericht 2021</p>
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/jahresbericht_2021.pdf`}
               target="_blank"
@@ -134,10 +128,10 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-sm font-medium text-gray-800`}>
+          <p className={`text-base text-gray-800`}>
             Stellungnahme von der Arbeitsgruppe Anti-Schwarzer Rassismus Hamburg
           </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/stellungnahme.pdf`}
               target="_blank"
@@ -169,10 +163,10 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-sm font-medium text-gray-800`}>
+          <p className={`text-base text-gray-800`}>
             Wege für bpoc in ausbildung und arbeit bei der stadt Hamburg
           </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/stadtHamburg.pdf`}
               target="_blank"
@@ -204,10 +198,8 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-sm font-medium text-gray-800`}>
-            Ossara e.V. Satzung
-          </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <p className={`text-base text-gray-800`}>Ossara e.V. Satzung</p>
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/satzung.pdf`}
               target="_blank"
@@ -239,10 +231,10 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-sm font-medium text-gray-800`}>
+          <p className={`text-base text-gray-800`}>
             Ossara e.V. Beitrittserklärung oder einmalige Spende
           </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/beitrittserklärung.pdf`}
               target="_blank"
@@ -274,10 +266,10 @@ export default function Downloads() {
         <div
           className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
         >
-          <p className={`text-sm font-medium text-gray-800`}>
+          <p className={`text-base text-gray-800`}>
             Andere Formate vom Logo sind auf Anfrage erhältlich
           </p>
-          <button className="px-2 py-1 text-sm sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+          <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
             <Link
               href={`/files/ossara_ev_logo.png`}
               target="_blank"
