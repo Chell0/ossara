@@ -56,7 +56,8 @@ export default function HeaderCarousel() {
     <>
       <header className="relative w-full h-screen overflow-hidden rounded-lg">
         {/* Carousel Images */}
-        <div className="flex w-full h-full transition-transform duration-500">
+        {/* <div className="flex w-full h-full transition-transform duration-500"> */}
+        <div className="flex w-full h-96 md:h-[600px] lg:h-[800px] transition-transform duration-500">
           {images.map((image, index) => (
             <div
               key={index}
