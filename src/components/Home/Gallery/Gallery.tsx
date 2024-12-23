@@ -4,15 +4,15 @@ export default function Gallery() {
   const images = [
     { src: "/gallery/img-1.jpg", text: "ÜBER UNS" },
     {
-      src: "/gallery/img-2.jpg",
-      text: "ANTI-SCHWARZEN RASSISMUS, BENENNEN, ANALYSIEREN, BEKÄMPEN",
+      src: "/gallery/integrative.jpg",
+      text: "INTEGRATIVE STADTTEILARBEIT",
     },
-    { src: "/gallery/img-3.jpg", text: "JUNGE MENSCHEN" },
-    { src: "/gallery/img-4.jpg", text: "LITERATUR UND KULTUR" },
-    { src: "/gallery/img-5.jpg", text: "LEADERSHIP & ADVOCACY" },
+    { src: "/gallery/lobby.jpg", text: "LOBBY UND NETZWERKARBEIT" },
+    { src: "/gallery/bildungsarbeit.jpg", text: "DEKOLONIALE BILDUNGSARBEIT" },
+    { src: "/gallery/anti-schwarzer.jpg", text: "ANTI-SCHWARZEN RASSISMUS" },
     {
-      src: "/gallery/img-6.jpg",
-      text: "ANTIDISKRIMINIE-RUNGSBERATUNG /-MONITORING",
+      src: "/gallery/dekoloniale-internationiale-zusammenarbeit.jpg",
+      text: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
     },
   ];
 
@@ -30,8 +30,8 @@ export default function Gallery() {
               alt={`Image ${index + 1}`}
               className="object-cover w-full h-full transition-transform duration-300 transform group-hover:scale-110"
             />
-            <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100">
-              <p className="p-2 font-bold text-left text-white text-md">
+            <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-300 bg-black bg-opacity-80 opacity-0 group-hover:opacity-100">
+              <p className="p-1 font-bold text-center text-white text-xl drop-shadow-xl">
                 {image.text}
               </p>
             </div>
