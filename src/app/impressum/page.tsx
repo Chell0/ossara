@@ -9,7 +9,7 @@ export default function Page() {
         <NavBar />
         <div className="text-[#ffb400] text-center py-12 mt-10">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
           >
             Impressum
           </h1>
@@ -19,7 +19,7 @@ export default function Page() {
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Gemäß §5 TMG:
             </h4>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Dieses Impressum gilt für die Website MachtBewusst-Hamburg.de
               sowie für die Onlinepräsenzen von Ossara auf YouTube, Facebook und
               Instagram.
@@ -29,19 +29,19 @@ export default function Page() {
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Herausgeberin:
             </h4>
-            <p className="text-xs text-gray-800">Ossara e.V.</p>
-            <p className="text-xs text-gray-800">Papenreye 65</p>
-            <p className="text-xs text-gray-800">22453 Hamburg</p>
-            <p className="text-xs text-gray-800">E-Mail: info[at]ossara.de</p>
+            <p className="text-sm text-gray-800">Ossara e.V.</p>
+            <p className="text-sm text-gray-800">Papenreye 65</p>
+            <p className="text-sm text-gray-800">22453 Hamburg</p>
+            <p className="text-sm text-gray-800">E-Mail: info[at]ossara.de</p>
           </div>
           <div className="mt-5">
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Vertreten durch:
             </h4>
-            <p className="text-xs text-gray-800">Nicolas A. S. Moumouni</p>
-            <p className="text-xs text-gray-800">Vorstandsvorsitzender</p>
-            <p className="text-xs text-gray-800">Tel.: +49 15213062798</p>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">Nicolas A. S. Moumouni</p>
+            <p className="text-sm text-gray-800">Vorstandsvorsitzender</p>
+            <p className="text-sm text-gray-800">Tel.: +49 15213062798</p>
+            <p className="text-sm text-gray-800">
               E-Mail: vorstand[at]ossara.de
             </p>
           </div>
@@ -49,23 +49,23 @@ export default function Page() {
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Vereinsregister:
             </h4>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Ossara ist gemeinnützig anerkannt und Spenden an uns sind
               steuerlich absetzbar.
             </p>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Registergericht: Amtsgericht Hamburg
             </p>
-            <p className="text-xs text-gray-800">Registernummer: VR 23447</p>
+            <p className="text-sm text-gray-800">Registernummer: VR 23447</p>
           </div>
           <div className="mt-5">
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Verantwortlich für den redaktionellen Inhalt:
             </h4>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Julia Karimi - info[at]ossara.de
             </p>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Sonia Octavio - sonia.octavio[at]ossara.de
             </p>
           </div>
@@ -73,7 +73,7 @@ export default function Page() {
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Haftung für Inhalte
             </h4>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
               Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
               verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
@@ -92,7 +92,7 @@ export default function Page() {
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Haftung für Links
             </h4>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Unser Angebot enthält Links zu externen Webseiten Dritter, auf
               deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
               diese fremden Inhalte auch keine Gewähr übernehmen. Für die
@@ -110,7 +110,7 @@ export default function Page() {
             <h4 className="text-2xl font-semibold text-[#ffb400]">
               Urheberrecht
             </h4>
-            <p className="text-xs text-gray-800">
+            <p className="text-sm text-gray-800">
               Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
               diesen Seiten unterliegen dem deutschen Urheberrecht. Die
               Vervielfältigung, Bearbeitung, Verbreitung und jede Art der

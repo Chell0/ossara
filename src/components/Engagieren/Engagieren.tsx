@@ -8,7 +8,7 @@ export default function Engagieren() {
         {/* Page Header */}
         <header className="text-[#ffb400] py-12 text-center mt-20">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-9xl font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl sm:text-5xl md:text-6xl lg:text-8xl font-bold leading-tight uppercase`}
           >
             Engagieren
           </h1>
@@ -19,13 +19,13 @@ export default function Engagieren() {
           id="stellenausschreibungen"
           className="px-6 py-16 bg-white mt-20"
         >
-          <h2 className="text-4xl font-semibold text-center text-gray-600">
+          <h4 className="text-4xl font-semibold text-center text-gray-600">
             Job Openings
-          </h2>
+          </h4>
           <p className="mt-4 text-base text-center text-gray-800">
             Join our team and help us make a difference!
           </p>
-          <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Job Cards */}
             {[...Array(3)].map((_, index) => (
               <div
@@ -38,7 +38,7 @@ export default function Engagieren() {
                 <p className="mt-2 text-base text-gray-800">
                   Short description of the job role.
                 </p>
-                <button className="mt-6 inline-block bg-[#ffb400] font-semibold text-lg text-white px-7 py-4 rounded-2xl hover:bg-blended-gradient">
+                <button className="mt-6 inline-block bg-[#ffb400] font-semibold text-base text-white px-6 py-2 rounded-2xl hover:bg-blended-gradient">
                   <Link
                     href={`/apply`}
                     target="_blank"
@@ -61,10 +61,10 @@ export default function Engagieren() {
         {/* Mitglied Werden */}
         <section
           id="mitglied_werden"
-          className="px-6 py-16 mt-20 bg-gray-100 rounded-xl"
+          className="px-6 py-16 mt-20 bg-gray-50 rounded-xl shadow-md"
         >
           <h2
-            className={`${bebasNeue.className} text-7xl font-semibold text-center text-blue-500`}
+            className={`${bebasNeue.className} text-blue-500 text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
           >
             Become a Member
           </h2>
@@ -87,13 +87,13 @@ export default function Engagieren() {
 
         {/* Ehrenamtliches Engagement */}
         <section id="ehrenamtliches_engagement" className="px-6 py-16 mt-20">
-          <h2 className="text-4xl font-bold text-center text-gray-600">
+          <h3 className="text-4xl font-semibold text-center text-gray-600">
             Volunteer Opportunities
-          </h2>
-          <p className="mt-4 text-base text-center text-gray-500">
+          </h3>
+          <p className="mt-4 text-base text-center text-gray-800">
             Make a difference by volunteering with us.
           </p>
-          <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-6xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-3 gap-10">
             {/* Volunteer Cards */}
             {[...Array(3)].map((_, index) => (
               <div
@@ -103,10 +103,10 @@ export default function Engagieren() {
                 <h3 className="text-2xl font-semibold text-gray-600">
                   Volunteer Role {index + 1}
                 </h3>
-                <p className="mt-2 text-base text-gray-500">
+                <p className="mt-2 text-base text-gray-800">
                   Brief description of the role.
                 </p>
-                <button className="mt-6 inline-block bg-[#ffb400] text-white font-semibold px-7 py-3 rounded-2xl text-lg hover:bg-blended-gradient">
+                <button className="mt-6 inline-block bg-[#ffb400] text-white font-semibold px-6 py-2 rounded-2xl text-lg hover:bg-blended-gradient">
                   <Link
                     href={`#volunteer`}
                     target="_blank"

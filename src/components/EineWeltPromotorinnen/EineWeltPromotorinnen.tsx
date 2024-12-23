@@ -16,7 +16,7 @@ export default function EineWeltPromotorinnen() {
           </h1>
         </section>
 
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-20">
+        <section className="flex flex-col items-center py-10 mx-10 mb-20 md:flex-row gap-20">
           <div className="w-full md:w-1/2">
             <p className="text-gray-800 text-base">
               Obwohl die meisten ehemaligen Kolonien schon vor Jahrzehnten ihre
@@ -62,10 +62,10 @@ export default function EineWeltPromotorinnen() {
         </section>
 
         {/* Vernetzung */}
-        <section className="flex items-center justify-center w-full py-10 mt-10 ">
+        <section className="flex items-center justify-center w-full py-10">
           <div className="max-w-3xl mx-auto">
             <h2
-              className={`${bebasNeue.className} text-[#ffb400] mt-20 text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
+              className={`${bebasNeue.className} text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
             >
               Vernetzung
             </h2>

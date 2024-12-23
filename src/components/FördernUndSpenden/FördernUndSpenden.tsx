@@ -11,13 +11,13 @@ export default function FördernUndSpenden() {
         {/* Banner Section */}
         <section className="text-[#ffb400] text-center py-12">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
           >
             Fördern und Spenden
           </h1>
         </section>
 
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-20">
           <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/donate.jpg`}
@@ -29,11 +29,11 @@ export default function FördernUndSpenden() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <h2
-              className={`${bebasNeue.className} text-6xl uppercase font-semibold text-[#ffb400]`}
+            <h3
+              className={`${bebasNeue.className} text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
             >
               Hilf uns mit Deiner Spende
-            </h2>
+            </h3>
             <p className="mt-4 text-gray-500 text-base">
               Einmalige und regelmäßige Spenden der{" "}
               <span className="font-bold text-black">OSSARA Community</span>{" "}
@@ -44,7 +44,7 @@ export default function FördernUndSpenden() {
             <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 px-8 py-4 rounded-2xl shadow-xl">
               <Link
                 href="#donation-form"
-                className="font-semibold text-white text-lg"
+                className="font-semibold text-white text-base"
               >
                 Jetzt Spenden
               </Link>

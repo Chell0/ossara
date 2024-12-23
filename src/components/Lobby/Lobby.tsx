@@ -13,7 +13,7 @@ export default function Lobby() {
           </h1>
         </header>
 
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-10">
+        <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-20">
           <div className="flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
@@ -25,7 +25,7 @@ export default function Lobby() {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <p className="mt-4 text-gray-800 text-base">
+            <p className="text-gray-800 text-base">
               Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
               Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
               Lobbyarbeit für die Belange von BIPoC und migrantischen
@@ -49,7 +49,7 @@ export default function Lobby() {
         <section className="flex items-center justify-center w-full mt-20 sm:px-2">
           <div className="text-[#ffb400] text-center py-8">
             <h2
-              className={`${bebasNeue.className} drop-shadow-md text-6xl font-bold leading-tight`}
+              className={`${bebasNeue.className} text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
             >
               Ansprechperson
             </h2>
@@ -57,7 +57,7 @@ export default function Lobby() {
         </section>
 
         {/* Ansprechperson Person */}
-        <section className="flex flex-col items-center py-10 mx-10 mt-10 mb-10 md:flex-row gap-10">
+        <section className="flex flex-col items-center py-10 mx-10 mb-10 md:flex-row gap-10">
           <div className="flex justify-center flex-shrink-0 w-full md:w-1/2">
             <Image
               src={`/bgs/img1.jpg`}
@@ -102,7 +102,7 @@ export default function Lobby() {
         <section className="flex items-center justify-center w-full mt-20 sm:px-2">
           <div className="text-[#ffb400] text-center py-8">
             <h2
-              className={`${bebasNeue.className} drop-shadow-md text-6xl font-bold leading-tight`}
+              className={`${bebasNeue.className} text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
             >
               NETZ:WERKSTATT – Netzwerken mal anders
             </h2>
@@ -128,7 +128,7 @@ export default function Lobby() {
               Möglichkeit, ihre Ideen auszutauschen und gleichzeitig kreative
               Prozesse zu erleben.
             </p>
-            <p className="mt-2 text-gray-800 text-base">
+            <p className="mt-4 text-gray-800 text-base">
               Unter der Leitung von Fabienne Schöter, Kunsttherapeutin, wird die
               Veranstaltung monatlich verschiedene kreative Ansätze bieten, die
               den Austausch und das gegenseitige Lernen fördern. Wir verstehen
@@ -137,7 +137,7 @@ export default function Lobby() {
               sich für eine solidarische Gesellschaft einsetzen und offen für
               interkulturellen Austausch sind.
             </p>
-            <p className="mt-2 text-gray-800 text-base">
+            <p className="mt-4 text-gray-800 text-base">
               Wann & Wo?
               <br />
               Die Veranstaltung findet einmal im Monat statt. Verfolgt unsere
@@ -149,7 +149,7 @@ export default function Lobby() {
                 SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
               </span>
             </p>
-            <p className="mt-2 text-gray-800 text-base">
+            <p className="mt-4 text-gray-800 text-base">
               Die Teilnahme ist kostenlos.
             </p>
           </div>

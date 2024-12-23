@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <>
       {/* Über uns */}
-      <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-20 mb-20 md:flex-row">
+      <section className="flex flex-col items-center gap-20 py-10 mx-10 mt-20 mb-20 md:flex-row">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -17,7 +17,7 @@ export default function AboutSection() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="mt-4 text-base text-gray-700">
+          <p className="text-base text-gray-800">
             Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
             sich mit einer dekolonialen Perspektive für Bildung, Gesundheit und
             interkulturelle Vielfalt einsetzt. Wir hinterfragen bestehende
@@ -25,7 +25,7 @@ export default function AboutSection() {
             Zusammenarbeit, die auf Respekt, Solidarität und Selbstbestimmung
             beruht.
           </p>
-          <p className="mt-2 text-base text-gray-700">
+          <p className="mt-4 text-base text-gray-800">
             Neben unserer internationalen Arbeit in Westafrika (Togo, Benin,
             Côte d’Ivoire) engagieren wir uns auch in Hamburg. Hier bieten wir
             integrative Stadtteilarbeit an und unterstützen mit
@@ -35,7 +35,7 @@ export default function AboutSection() {
             Rassismus auseinander und schaffen Begegnungs- und empowernde Räume
             für BIPoC.
           </p>
-          <p className="mt-2 text-base text-gray-700">
+          <p className="mt-4 text-base text-gray-800">
             Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende und
             nachhaltige Veränderung nur durch einen dekolonialen und
             machtkritischen Ansatz erreicht werden kann, der die Stimmen und
@@ -49,13 +49,13 @@ export default function AboutSection() {
       <section className="flex items-center justify-center w-full mt-20">
         <div className="max-w-md">
           <h2
-            className={` ${bebasNeue.className} text-[#ffb400] text-8xl px-4 mt-10 font-semibold text-center drop-shadow-xl`}
+            className={`${bebasNeue.className} text-[#ffb400] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-center drop-shadow-md`}
           >
             Verein
           </h2>
         </div>
       </section>
-      <section className="flex flex-col items-center gap-10 py-10 mx-10 md:flex-row">
+      <section className="flex flex-col items-center gap-20 py-10 mx-10 md:flex-row">
         <div className="w-full md:w-1/2">
           <div className="p-6">
             <p className="text-base text-gray-800">

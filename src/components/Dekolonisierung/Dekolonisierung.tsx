@@ -7,10 +7,8 @@ export default function Promo() {
       <div
         className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
       >
-        <p className={`text-base font-semibold text-gray-800`}>
-          Promo Dekolonisierung Flyer
-        </p>
-        <button className="px-8 py-4 text-lg font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+        <p className={`text-base text-gray-800`}>Promo Dekolonisierung Flyer</p>
+        <button className="px-8 py-4 text-base font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
           <Link
             href={`/files/dekolonisierung.pdf`}
             target="_blank"
@@ -42,10 +40,8 @@ export default function Promo() {
       <div
         className={`flex justify-between items-center border border-gray-100 rounded-xl p-8 shadow-sm bg-main-bg max-w-4xl mx-auto mt-10`}
       >
-        <p className={`text-base font-semibold text-gray-800`}>
-          Flyer HH Promotorinnen
-        </p>
-        <button className="px-8 py-4 text-lg font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
+        <p className={`text-base text-gray-800`}>Flyer HH Promotorinnen</p>
+        <button className="px-8 py-4 text-base font-semibold rounded-xl shadow-xl bg-[#ffb400] text-white hover:bg-blended-gradient transition">
           <Link
             href={`/files/dekolonisierung.pdf`}
             target="_blank"

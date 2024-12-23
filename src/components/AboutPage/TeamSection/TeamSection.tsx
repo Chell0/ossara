@@ -1,107 +1,109 @@
-// components/TeamSection.tsx
-import { TeamMember } from "@/app/lib/interface";
 import Image from "next/image";
 
-const teamMembers: TeamMember[] = [
-  {
-    name: "Marie Schmidt",
-    title: "Founder & Executive Director",
-    imageUrl: "/team/img.jpg",
-  },
-  {
-    name: "Hans Müller",
-    title: "Co-founder, Program Director",
-    imageUrl: "/team/img1.jpg",
-  },
-  {
-    name: "Sophie Keller",
-    title: "Chief Financial Officer",
-    imageUrl: "/team/img2.jpg",
-  },
-  {
-    name: "Lukas Becker",
-    title: "Head of Community Outreach",
-    imageUrl: "/team/img3.jpg",
-  },
-  {
-    name: "Lea Fischer",
-    title: "Head of Partnerships & Development",
-    imageUrl: "/team/img4.jpg",
-  },
-  { name: "Jonas Wagner", title: "Project Manager", imageUrl: "/team/img.jpg" },
-  {
-    name: "Elena Hoffmann",
-    title: "Communications & Marketing Lead",
-    imageUrl: "/team/img1.jpg",
-  },
-  {
-    name: "Felix Richter",
-    title: "Volunteer Coordinator",
-    imageUrl: "/team/img2.jpg",
-  },
-  {
-    name: "Greta Braun",
-    title: "Head of Research & Impact",
-    imageUrl: "/team/img3.jpg",
-  },
-  {
-    name: "Maja Weber",
-    title: "Director of Operations",
-    imageUrl: "/team/img4.jpg",
-  },
-  {
-    name: "Tim Neumann",
-    title: "IT & Digital Infrastructure Lead",
-    imageUrl: "/team/img.jpg",
-  },
-  {
-    name: "Sandra Krüger",
-    title: "Human Resources Manager",
-    imageUrl: "/team/img1.jpg",
-  },
-  { name: "Paul Engel", title: "Legal Advisor", imageUrl: "/team/img2.jpg" },
-  {
-    name: "Anna Vogel",
-    title: "Fundraising & Donor Relations Lead",
-    imageUrl: "/team/img3.jpg",
-  },
-  {
-    name: "Niklas Baumann",
-    title: "Educational Program Coordinator",
-    imageUrl: "/team/img4.jpg",
-  },
-];
-
 export default function TeamSection() {
+  const images = [
+    {
+      src: "/team/SalwaTchakala.JPG",
+      name: "Salwa Tchakala",
+      position: "Assistentin der Geschäftsführung",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/NataanmanLare.JPG",
+      name: "Nataan-man Lare",
+      position: "Assistentin für Projektmanagement",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/Logtabamaana.JPG",
+      name: "B. Logtaba Maana",
+      position: "Leitung Monitoring und Evaluation",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/SalwaTchakala.JPG",
+      name: "Salwa Tchakala",
+      position: "Assistentin der Geschäftsführung",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/NataanmanLare.JPG",
+      name: "Nataan-man Lare",
+      position: "Assistentin für Projektmanagement",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/Logtabamaana.JPG",
+      name: "B. Logtaba Maana",
+      position: "Leitung Monitoring und Evaluation",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/SalwaTchakala.JPG",
+      name: "Salwa Tchakala",
+      position: "Assistentin der Geschäftsführung",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/NataanmanLare.JPG",
+      name: "Nataan-man Lare",
+      position: "Assistentin für Projektmanagement",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/Logtabamaana.JPG",
+      name: "B. Logtaba Maana",
+      position: "Leitung Monitoring und Evaluation",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/SalwaTchakala.JPG",
+      name: "Salwa Tchakala",
+      position: "Assistentin der Geschäftsführung",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/NataanmanLare.JPG",
+      name: "Nataan-man Lare",
+      position: "Assistentin für Projektmanagement",
+      büro: "Kara, Togo",
+    },
+    {
+      src: "/team/Logtabamaana.JPG",
+      name: "B. Logtaba Maana",
+      position: "Leitung Monitoring und Evaluation",
+      büro: "Kara, Togo",
+    },
+  ];
+
   return (
     <>
-      <section className="container px-6 py-10 mx-auto mt-20 bg-gray-100 shadow-2xl rounded-2xl">
-        <h2
-          id="team"
-          className="text-3xl text-center font-bold text-[#ffb400] mb-20 mt-10 drop-shadow-sm"
-        >
-          Meet Our Team
-        </h2>
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="text-center">
-              <div className="w-20 h-20 mx-auto mb-4">
-                <Image
-                  src={member.imageUrl}
-                  alt={member.name}
-                  width={60}
-                  height={60}
-                  className="rounded-lg"
-                />
-              </div>
-              <h3 className="text-lg font-medium text-[#ffb400]">
-                {member.name}
-              </h3>
-              <p className="text-sm text-gray-500">{member.title}</p>
+      <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:grid-cols-4 mt-10">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className="relative aspect-w-16 h-72 overflow-hidden shadow-xl group rounded-xl"
+          >
+            <Image
+              fill={true}
+              src={image.src}
+              alt={`Image ${index + 1}`}
+              className="object-cover w-full h-full transition-all duration-300 transform group-hover:brightness-50"
+            />
+            <div className="absolute inset-x-0 bottom-0 flex flex-col space-y-1 bg-black bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <p className="font-extrabold text-left text-white text-lg uppercase">
+                {image.name}
+              </p>
+              <p className="font-semibold text-left text-white text-base">
+                {image.position}
+              </p>
+              <p className="font-semibold text-left text-white text-base">
+                {image.büro}
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
     </>
   );
 }
