@@ -175,9 +175,9 @@ export default function Veranstaltungen() {
   return (
     <main className="container p-6 mx-auto mt-10">
       {/* Search Bar for Current and Future Events */}
-      <h2 className="mb-6 text-6xl font-semibold text-[#ffb400]">
+      <h3 className="mb-6 text-4xl font-semibold text-center text-gray-500">
         Upcoming Events
-      </h2>
+      </h3>
       <div className="flex justify-center my-20">
         <input
           type="text"
@@ -244,9 +244,9 @@ export default function Veranstaltungen() {
       </section>
 
       {/*Archived Events Section*/}
-      <h2 className="mt-20 mb-6 text-6xl font-semibold text-[#ffb400]">
+      <h3 className="mt-20 mb-6 text-4xl font-semibold text-center text-gray-500">
         Archived Events
-      </h2>
+      </h3>
       {/* Search Bar for Archived Events */}
       <div className="flex justify-center my-20">
         <input
