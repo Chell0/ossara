@@ -9,9 +9,9 @@ export default function Page() {
       <main className="p-6">
         <NavBar />
         {/* Title Section */}
-        <header className="text-[#ffb400] py-12 text-center mt-20">
+        <header className="text-[#ffb400] py-12 text-center mt-10">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
+            className={`${bebasNeue.className} drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
           >
             Veranstaltungen
           </h1>
