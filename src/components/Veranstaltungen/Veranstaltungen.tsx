@@ -79,7 +79,7 @@ const eventsData: Event[] = [
     link: "https://ossara.org/register",
     description:
       "Unsere Decolonize-Veranstaltungsreihe setzt sich diesmal mit dem Thema Schönheits- und Körperideale auseinander und untersucht die koloniale Prägung von gesellschaftlichen Schönheitsvorstellungen. Wir fragen, wie „Schönheit“ in unseren Biografien verankert ist und wie diese Ideale mit bestehenden Machtstrukturen kollidieren. Ziel ist es, durch Empowerment und dekoloniale Perspektiven einen gesellschaftlichen Wandel zu fördern und bestehende Schönheitsnormen zu hinterfragen.",
-    imageUrl: "/veranstaltungen/decolonize-schönheit.png",
+    imageUrl: "/veranstaltungen/decolonize-schonheit.png",
   },
   {
     id: 7,
