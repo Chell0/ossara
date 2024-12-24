@@ -236,7 +236,7 @@ export default function Veranstaltungen() {
 
       {/* Current and Future Events Section */}
       <section>
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3 lg:grid-cols-4 mt-10">
+        <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-3 lg:grid-cols-4">
           {filteredCurrentEvents.length > 0 ? (
             filteredCurrentEvents.map((event) => (
               <div
@@ -256,7 +256,7 @@ export default function Veranstaltungen() {
                   <h3 className="text-xl font-semibold text-[#ffb400]">
                     {event.title}
                   </h3>
-                  <p className="text-base text-gray-900 mt-2">
+                  <p className="mt-2 text-base text-gray-900">
                     What: {event.type}
                   </p>
                   <p className="text-base text-gray-900">
@@ -328,7 +328,7 @@ export default function Veranstaltungen() {
                   <h3 className="text-lg font-semibold text-[#ffb400]">
                     {event.title}
                   </h3>
-                  <p className="text-base text-gray-900 mt-2">
+                  <p className="mt-2 text-base text-gray-900">
                     What: {event.type}
                   </p>
                   <p className="text-base text-gray-900">
