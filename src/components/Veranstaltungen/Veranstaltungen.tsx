@@ -244,7 +244,7 @@ export default function Veranstaltungen() {
                 className="overflow-hidden transition-transform duration-300 transform bg-white shadow-md shadow-gray-200 rounded-2xl hover:scale-105"
               >
                 {/* Image section at the top half */}
-                <div className="w-full bg-gray-200 h-52">
+                <div className="w-full bg-gray-200 h-96">
                   <img
                     src={event.imageUrl}
                     alt={event.title}
