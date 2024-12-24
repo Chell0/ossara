@@ -313,7 +313,7 @@ export default function Veranstaltungen() {
             filteredPastEvents.map((event) => (
               <div
                 key={event.id}
-                className={`shadow-2xl shadow-gray-500 rounded-xl overflow-hidden opacity-100 transition-all duration-300 hover:opacity-100`}
+                className={`shadow-2xl shadow-gray-500 rounded-xl overflow-hidden opacity-20 transition-all duration-300 hover:opacity-100`}
               >
                 {/* Image section at the top half */}
                 <div className="w-full bg-gray-200 h-96">
