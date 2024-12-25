@@ -62,7 +62,7 @@ export default function AboutSection() {
               Als eingetragener Verein (VR 23447) sind wir politisch und
               konfessionell neutral. Unsere Arbeit umfasst ein breites Spektrum
               an Tätigkeitsfeldern, darunter:
-              <ul className="ml-10 space-y-2 mt-4 text-sm list-disc text-yellow-500 font-semibold">
+              <ul className="mt-4 ml-10 space-y-2 text-sm font-semibold text-yellow-500 list-disc">
                 <li>Bildung</li>
                 <li>Kunst- und Kulturförderung</li>
                 <li>Nachhaltige internationale Zusammenarbeit</li>

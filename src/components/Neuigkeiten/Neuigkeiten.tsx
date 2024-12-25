@@ -1,6 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { archiveData, categories, newsData } from "../../../data";
 
@@ -92,7 +94,7 @@ export default function Neuigkeiten() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4 md:gap-6 lg:gap-8"
+          className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8"
         >
           {paginatedNews.length > 0 ? (
             paginatedNews.map((news) => (
@@ -103,26 +105,36 @@ export default function Neuigkeiten() {
                 transition={{ duration: 0.3 }}
                 className="overflow-hidden bg-white shadow-md rounded-xl shadow-gray-400"
               >
-                <div className={`h-52 w-full bg-gray-200`}>
+                <div className={`h-64 w-full bg-gray-200`}>
                   {/* News Image */}
-                  <img
+                  <Image
                     src={news.image}
                     alt={news.title}
-                    className="object-cover w-full h-full"
+                    width={400}
+                    height={400}
+                    quality={100}
+                    className="object-cover object-center"
                   />
                 </div>
 
                 {/* News Content */}
-                <div className="p-4">
-                  <h3 className="font-semibold text-[#ffb400] text-xl">
+                <div className="p-4 mt-20">
+                  <h3 className="mt-10 font-bold text-[#ffb400] text-lg">
                     {news.title}
                   </h3>
-                  <p className="text-base font-semibold text-gray-900 pt-2">
+                  <p className="mt-2 text-sm font-semibold text-gray-800">
                     {news.date}
                   </p>
-                  <p className="text-sm text-gray-700 pt-2">{news.content}</p>
-                  <p className="text-sm font-bold text-blue-500 pt-2">
+                  <p className="pt-2 text-sm text-gray-800 line-clamp-3">
+                    {news.content}
+                  </p>
+                  {/* <p className="pt-2 text-base font-bold text-blue-500">
                     Category: {news.category}
+                  </p> */}
+                  <p className="mt-2 text-base">
+                    <button className="px-2 py-1 font-semibold text-white rounded-lg bg-[#ffb400]">
+                      <Link href={news.mehr}>Mehr lesen...</Link>
+                    </button>
                   </p>
                 </div>
               </motion.div>

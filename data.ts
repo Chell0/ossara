@@ -1,30 +1,127 @@
-import {Category, NewsItem} from "./types";
+import { Category, NewsItem } from "./types";
 
-// data.ts
 export const newsData: NewsItem[] = [
-    { id: 1, title: "Neuigkeiten 1", category: "Sports", date: "2024-10-01", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img.jpg" },
-    { id: 2, title: "Neuigkeiten 2", category: "Technology", date: "2024-11-01", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img1.jpg" },
-    { id: 3, title: "Neuigkeiten 3", category: "Health", date: "2024-11-05", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img2.jpg" },
-    { id: 4, title: "Neuigkeiten 4", category: "Education", date: "2024-11-06", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img3.jpg" },
-    { id: 5, title: "Neuigkeiten 5", category: "Technology", date: "2024-11-07", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img4.jpg" },
-    { id: 6, title: "Neuigkeiten 6", category: "Sports", date: "2024-11-08", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img.jpg" },
-    { id: 7, title: "Neuigkeiten 7", category: "Technology", date: "2024-11-09", content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus elementum accumsan fermentum. Pellentesque suscipit vestibulum est eget scelerisque.", image: "/news/img1.jpg" }
+  {
+    id: 1,
+    title: "Neu im Team Ossara- Hamburg",
+    category: "Team",
+    date: "2024-10-01",
+    content:
+      "Katja Heyn ist seit September für das Angebot des Bewerbungstrainings und der Orientierungshilfe zuständig.",
+    image: "/news/picture-6.png",
+    mehr: "/neuigkeiten/news_one",
+  },
+  {
+    id: 2,
+    title: "Decolonize Schönheit",
+    category: "Decolonize",
+    date: "2024-03-11",
+    content:
+      "Die Vorstellung von Körperidealen ist eng mit dem Kolonialismus verbunden, da die koloniale Herrschaft oft mit der Verbreitung westlicher Schönheitsstandards einherging. Während des Kolonialismus wurden die Körper und Erscheinungsbilder der kolonisierten Völker oft als minderwertig angesehen und westliche Schönheitsideale wurden als überlegen propagiert.",
+    image: "/news/picture-5.png",
+    mehr: "/neuigkeiten/news_two",
+  },
+  {
+    id: 3,
+    title: "Newsletter MachtBewusst: Dekoloniale Perspektiven",
+    category: "Decolonize",
+    date: "2023-12-12",
+    content:
+      "Du möchtest Neuigkeiten von Ossara e.V. und aktuelle Debatten und News zum Thema Dekolonisierung und Anti-Rassismus verfolgen oder über Veranstaltungen zu diesen Thematiken informiert bleiben? Dann abonniere unseren Newsletter hier.",
+    image: "/news/picture-4.png",
+    mehr: "/neuigkeiten/news_three",
+  },
+  {
+    id: 4,
+    title: "Vielfalt im Fokus",
+    category: "Education",
+    date: "2023-11-10",
+    content:
+      "Perspektiven und Erfahrungen von Migrantenselbstorganisationen Vielfalt als Statussymbol? Wer kommt zu kurz und welche Stimmen müssen mehr gehört werden? In einem interaktiven Live Podcast kommen Expert*innen zu Wort, die Perspektiven von Migrantenselbstorganisationen zum Thema Vielfalt in Hamburg in den Blick nehmen. Welche Herausforderungen bringt die Thematik für Person of Color?",
+    image: "/news/picture-3.png",
+    mehr: "/neuigkeiten/news_four",
+  },
+  {
+    id: 5,
+    title: "Podiumsdiskussion Decolonize Literatur",
+    category: "Decolonize",
+    date: "2023-11-06",
+    content:
+      "Unsere Auftaktveranstaltung Decolonize Literatur beschäftigt sich mit dekolonialen Perspektiven im Bereich Literatur und setzt sich kritisch mit den heutigen Auswirkungen des Kolonialismus auf die Literaturbranche auseinandersetzen. Wir analysieren den eurozentrischen Blick auf Literatur und wie neue Repräsentationsräume für weitere Perspektiven geschaffen werden können.",
+    image: "/news/picture-1.png",
+    mehr: "/neuigkeiten/news_five",
+  },
 ];
 
-
 export const archiveData: NewsItem[] = [
-    { id: 8, title: "Archive 1", category: "Health", date: "2023-09-01", content: "Content of Archive 1", image: "/news/img.jpg" },
-    { id: 9, title: "Archive 2", category: "Education", date: "2023-08-01", content: "Content of Archive 2", image: "/news/img1.jpg" },
-    { id: 10, title: "Archive 3", category: "Sports", date: "2023-08-01", content: "Content of Archive 3", image: "/news/img2.jpg" },
-    { id: 11, title: "Archive 4", category: "Education", date: "2023-08-01", content: "Content of Archive 4", image: "/news/img3.jpg" },
-    { id: 12, title: "Archive 5", category: "Technology", date: "2023-08-01", content: "Content of Archive 5", image: "/news/img4.jpg" },
-    { id: 13, title: "Archive 6", category: "Sports", date: "2023-08-01", content: "Content of Archive 6", image: "/news/img.jpg" },
-    { id: 14, title: "Archive 7", category: "Education", date: "2023-08-01", content: "Content of Archive 7", image: "/news/img1.jpg" }
+  {
+    id: 7,
+    title: "Archive 1",
+    category: "Health",
+    date: "2023-09-01",
+    content: "Content of Archive 1",
+    image: "/news/img.jpg",
+    mehr: "/news_one/page.tsx",
+  },
+  {
+    id: 8,
+    title: "Archive 2",
+    category: "Education",
+    date: "2023-08-01",
+    content: "Content of Archive 2",
+    image: "/news/img1.jpg",
+    mehr: "/news_one/page.tsx",
+  },
+  {
+    id: 9,
+    title: "Archive 3",
+    category: "Sports",
+    date: "2023-08-01",
+    content: "Content of Archive 3",
+    image: "/news/img2.jpg",
+    mehr: "/news_one/page.tsx",
+  },
+  {
+    id: 10,
+    title: "Archive 4",
+    category: "Education",
+    date: "2023-08-01",
+    content: "Content of Archive 4",
+    image: "/news/img3.jpg",
+    mehr: "/news_one/page.tsx",
+  },
+  {
+    id: 11,
+    title: "Archive 5",
+    category: "Technology",
+    date: "2023-08-01",
+    content: "Content of Archive 5",
+    image: "/news/img4.jpg",
+    mehr: "/news_one/page.tsx",
+  },
+  {
+    id: 12,
+    title: "Archive 6",
+    category: "Sports",
+    date: "2023-08-01",
+    content: "Content of Archive 6",
+    image: "/news/img.jpg",
+    mehr: "/news_one/page.tsx",
+  },
+  {
+    id: 13,
+    title: "Archive 7",
+    category: "Education",
+    date: "2023-08-01",
+    content: "Content of Archive 7",
+    image: "/news/img1.jpg",
+    mehr: "/news_one/page.tsx",
+  },
 ];
 
 export const categories: Category[] = [
-    { id: 1, name: "Sports" },
-    { id: 2, name: "Technology" },
-    { id: 3, name: "Health" },
-    { id: 4, name: "Education" },
+  { id: 1, name: "Sports" },
+  { id: 2, name: "Technology" },
+  { id: 3, name: "Health" },
+  { id: 4, name: "Education" },
 ];
