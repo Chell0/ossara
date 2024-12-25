@@ -13,7 +13,7 @@ export default function Integrative() {
         </h1>
       </section>
 
-      <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-20">
+      <section className="flex flex-col items-center gap-20 py-10 mx-10 mt-20 md:flex-row">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -25,7 +25,7 @@ export default function Integrative() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-gray-800 text-base">
+          <p className="text-base text-gray-800">
             Ossara e.V. bietet eine niedrigschwellige Sozialberatung und
             Bewerbungshilfe für Geflüchtete und Interessierte. In wöchentlichen
             Terminen unterstützen wir bei der Orientierung im deutschen
@@ -59,7 +59,7 @@ export default function Integrative() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center py-10 mx-10 mt-10 mb-20 md:flex-row gap-10">
+      <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-10 mb-20 md:flex-row">
         <div className="flex justify-center flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -70,7 +70,7 @@ export default function Integrative() {
             className="object-cover shadow-xl rounded-xl sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-84 lg:h-84"
           />
         </div>
-        <div className="w-full max-w-lg p-1 bg-gray-50 md:w-1/2 shadow-md rounded-md">
+        <div className="w-full max-w-lg p-1 rounded-md shadow-md bg-gray-50 md:w-1/2">
           <div className={`space-y-2 p-1 sm:p-2 md:p-3 lg:p-6`}>
             <p className={`text-base font-semibold`}>
               Name:{" "}
@@ -100,7 +100,7 @@ export default function Integrative() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-20">
+      <section className="flex flex-col items-center gap-20 py-10 mx-10 mt-20 md:flex-row">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -112,25 +112,25 @@ export default function Integrative() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-gray-800 text-base">
+          <p className="text-base text-gray-800">
             Ossara e.V. bietet einmal wöchentlich eine niedrigschwellige
             Sozialberatung bzw. Orientierungshilfe an und unterstützt
             Interessierte bei Bewerbungen.
           </p>
-          <p className="mt-4 text-gray-800 text-base">
+          <p className="mt-4 text-base text-gray-800">
             <b>Wo : </b>
             <span className="font-medium text-[#ffb400]">
               In den Räumlichkeiten des Sportvereins SV Groß Borstel am
               Brödermannsweg 31, 22453 Hamburg und digital
             </span>
           </p>
-          <p className="mt-4 text-gray-800 text-base">
+          <p className="mt-4 text-base text-gray-800">
             <b>Wann : </b>
             <span className="font-medium text-[#ffb400]">
               Freitags von 10:00 - 13:00 Uhr und nach Vereinbarung
             </span>
           </p>
-          <p className="mt-4 text-gray-800 text-base">
+          <p className="mt-4 text-base text-gray-800">
             <b>Für wen : </b>
             <span className="font-medium text-[#ffb400]">
               Geflüchtete aus naheliegenden Unterkünften und Interessierte
@@ -150,7 +150,7 @@ export default function Integrative() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center py-10 mx-10 mt-10 mb-20 md:flex-row gap-10">
+      <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-10 mb-20 md:flex-row">
         <div className="flex justify-center flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -161,7 +161,7 @@ export default function Integrative() {
             className="object-cover shadow-xl rounded-xl sm:w-40 sm:h-40 md:w-72 md:h-72 lg:w-84 lg:h-84"
           />
         </div>
-        <div className="w-full max-w-2xl p-1 bg-gray-50 md:w-1/2 shadow-md rounded-md mr-10">
+        <div className="w-full max-w-2xl p-1 mr-10 rounded-md shadow-md bg-gray-50 md:w-1/2">
           <div className={`space-y-2 p-1 sm:p-2 md:p-3 lg:p-6`}>
             <p className={`text-base font-semibold`}>
               Name:{" "}
@@ -191,7 +191,7 @@ export default function Integrative() {
         </div>
       </section>
 
-      <section className="flex flex-col items-center py-10 mx-10 mt-20 md:flex-row gap-10">
+      <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-20 md:flex-row">
         <div className="flex-shrink-0 w-full md:w-1/2">
           <Image
             src={`/bgs/img1.jpg`}
@@ -203,13 +203,13 @@ export default function Integrative() {
           />
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-gray-800 text-base">
+          <p className="text-base text-gray-800">
             Mit unserer Sprachförderung möchten wir den Teilnehmenden helfen,
             ihre Sprachkenntnisse im formellen Kontext zu verbessern, ihre
             schriftliche Kompetenz zu fördern und einen Raum für
             interkulturellen Austausch zu bieten.
           </p>
-          <p className="mt-4 text-gray-800 text-base">
+          <p className="mt-4 text-base text-gray-800">
             Die Prüfungsvorbereitung findet montags und dienstags von 10:00 bis
             13:00 Uhr statt. Unser Ziel ist es, die Teilnehmenden gezielt auf
             ihre Abschlussprüfungen vorzubereiten, indem wir sowohl schriftliche
@@ -217,16 +217,16 @@ export default function Integrative() {
             werden Prüfungssituationen simuliert und das richtige Verhalten in
             Prüfungen geübt.
           </p>
-          <p className="mt-4 text-gray-800 text-base">
+          <p className="mt-4 text-base text-gray-800">
             Die gängigen Prüfungen umfassen:
-            <ul className="pl-5 space-y-2 mt-2 font-semibold text-xs list-disc text-yellow-500">
+            <ul className="pl-5 mt-2 space-y-2 text-xs font-semibold text-yellow-500 list-disc">
               <li>Zertifikat Deutsch Telc A1, A2, B1, DTZ, B2, C1</li>
               <li>Goethe Zertifikat A1, A2, B1, B2, C1</li>
             </ul>
           </p>
-          <p className="mt-4 text-gray-800 text-base">
+          <p className="mt-4 text-base text-gray-800">
             <b>PS :</b>{" "}
-            <span className="text-blue-500 font-bold">
+            <span className="font-bold text-blue-500">
               Wir führen keine Prüfungen durch und übernehmen keine
               Prüfungsgebühren.
             </span>
