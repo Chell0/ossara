@@ -1,4 +1,4 @@
-import { manrope } from "@/app/fonts";
+import { leagueSpartan } from "@/app/fonts";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import type { Metadata } from "next";
 import React from "react";
@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.className} antialiased`}>{children}</body>
+      <body className={`${leagueSpartan.className} antialiased`}>
+        {children}
+      </body>
     </html>
   );
 }
