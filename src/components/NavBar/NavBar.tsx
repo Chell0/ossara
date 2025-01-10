@@ -1,6 +1,6 @@
 "use client";
 
-import { bebasNeue } from "@/app/fonts";
+import { leagueSpartan } from "@/app/fonts";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -54,12 +54,12 @@ export default function NavBar() {
 
       {/* Full-Viewport Menu */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-main-bg sm:p-8">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#fef5db] text-[#f7cc55] sm:p-8">
           {/* Logo */}
           <div className="flex justify-start">
             <Link href="/">
               <h1
-                className={` ${bebasNeue.className} text-6xl font-bold text-orange-600 drop-shadow-lg uppercase `}
+                className={` ${leagueSpartan.className} text-6xl font-bold drop-shadow-sm uppercase `}
               >
                 Ossara
               </h1>
@@ -68,14 +68,14 @@ export default function NavBar() {
           {/* Close Icon */}
           <div className="flex justify-end">
             <button onClick={toggleMenu}>
-              <XIcon className="w-10 h-10 text-orange-600" />
+              <XIcon className="w-10 h-10" />
             </button>
           </div>
 
           <div className="flex flex-col mt-8 md:flex-row md:mt-10 space-y-8 md:space-y-0 md:space-x-8">
             {/* Left Column: Main Menu with Sub-Menus */}
             <ul
-              className={` ${bebasNeue.className} w-full pr-0 text-5xl font-bold text-slate-600 space-y-6 md:w-1/2 md:pr-8`}
+              className={` ${leagueSpartan.className} w-full pr-0 text-4xl font-bold space-y-6 md:w-1/2 md:pr-8`}
             >
               {[
                 { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
@@ -109,7 +109,7 @@ export default function NavBar() {
                     <Link
                       href={menu.href}
                       className={`cursor-pointer ${
-                        activeSubMenu === menu.name ? "text-orange-600" : ""
+                        activeSubMenu === menu.name ? "text-[#f7cc55]" : ""
                       }`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
@@ -122,7 +122,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 text-lg text-orange-600 font-medium space-y-1">
+                    <ul className="pl-4 font-medium text-base space-y-1">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link
@@ -142,7 +142,7 @@ export default function NavBar() {
 
             {/* Right Column: Sub-Menus */}
             <ul
-              className={` ${bebasNeue.className} w-full pl-0 text-5xl font-bold text-slate-600 space-y-6 md:w-1/2 md:pl-8`}
+              className={` ${leagueSpartan.className} w-full pl-0 text-4xl font-bold space-y-6 md:w-1/2 md:pl-8`}
             >
               {[
                 {
@@ -176,7 +176,7 @@ export default function NavBar() {
                     <Link
                       href={menu.href}
                       className={`cursor-pointer ${
-                        activeSubMenu === menu.name ? "text-orange-600" : ""
+                        activeSubMenu === menu.name ? "text-[#f7cc55]" : ""
                       }`}
                       onClick={() => toggleSubMenu(menu.name)}
                     >
@@ -189,7 +189,7 @@ export default function NavBar() {
                     )}
                   </div>
                   {activeSubMenu === menu.name && menu.items.length > 0 && (
-                    <ul className="pl-4 text-lg text-orange-600 space-y-1">
+                    <ul className="pl-4 font-medium text-base space-y-1">
                       {menu.items.map((item, subIndex) => (
                         <li key={subIndex}>
                           <Link
