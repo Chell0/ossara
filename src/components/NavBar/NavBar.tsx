@@ -1,6 +1,5 @@
 "use client";
 
-import { leagueSpartan } from "@/app/fonts";
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
@@ -30,12 +29,10 @@ export default function NavBar() {
             {menuOpen ? (
               <XIcon className="w-6 h-6" />
             ) : (
-              <MenuIcon className="w-6 h-6" />
+              <MenuIcon className="w-8 h-8" />
             )}
           </button>
-          <span className="text-2xl font-bold drop-shadow-md text-slate-700">
-            Menu
-          </span>
+          <span className="font-medium text-2xl text-slate-800">Menu</span>
         </div>
 
         {/* Logo */}
@@ -58,9 +55,7 @@ export default function NavBar() {
           {/* Logo */}
           <div className="flex justify-start">
             <Link href="/">
-              <h1
-                className={` ${leagueSpartan.className} text-6xl font-bold drop-shadow-sm uppercase `}
-              >
+              <h1 className={` text-6xl font-bold drop-shadow-sm uppercase `}>
                 Ossara
               </h1>
             </Link>
@@ -75,7 +70,7 @@ export default function NavBar() {
           <div className="flex flex-col mt-8 md:flex-row md:mt-10 space-y-8 md:space-y-0 md:space-x-8">
             {/* Left Column: Main Menu with Sub-Menus */}
             <ul
-              className={` ${leagueSpartan.className} w-full pr-0 text-4xl font-bold space-y-6 md:w-1/2 md:pr-8`}
+              className={` w-full pr-0 text-4xl font-bold space-y-6 md:w-1/2 md:pr-8`}
             >
               {[
                 { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
@@ -142,7 +137,7 @@ export default function NavBar() {
 
             {/* Right Column: Sub-Menus */}
             <ul
-              className={` ${leagueSpartan.className} w-full pl-0 text-4xl font-bold space-y-6 md:w-1/2 md:pl-8`}
+              className={` w-full pl-0 text-4xl font-bold space-y-6 md:w-1/2 md:pl-8`}
             >
               {[
                 {
