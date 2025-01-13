@@ -6,7 +6,6 @@ export default function Page() {
   return (
     <div>
       <main className=" bg-[#f7e1a5]">
-        
         <NavBar />
         <Rassismus />
         <Footer />

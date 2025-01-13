@@ -1,7 +1,6 @@
 "use client";
 
 import { MenuIcon, XIcon } from "@heroicons/react/solid";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -18,12 +17,12 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="w-full">
+    <nav className="bg-opacity-70 fixed top-0 left-0 w-full z-50">
       <div className="container flex items-center justify-between px-4 py-4 mx-auto">
         {/* Menu Icon */}
         <div className="flex items-center space-x-2">
           <button
-            className="block focus:outline-none text-slate-600"
+            className="block focus:outline-none text-white"
             onClick={toggleMenu}
           >
             {menuOpen ? (
@@ -32,11 +31,11 @@ export default function NavBar() {
               <MenuIcon className="w-8 h-8" />
             )}
           </button>
-          <span className="font-medium text-2xl text-slate-800">Menu</span>
+          <span className="font-medium text-2xl text-white">Menu</span>
         </div>
 
         {/* Logo */}
-        <div className="hidden md:block">
+        {/* <div className="hidden md:block">
           <Link href="/">
             <Image
               src="/logos/ossara-logo.png"
@@ -46,7 +45,7 @@ export default function NavBar() {
               height={200}
             />
           </Link>
-        </div>
+        </div> */}
       </div>
 
       {/* Full-Viewport Menu */}
