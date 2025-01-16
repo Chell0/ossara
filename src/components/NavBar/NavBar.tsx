@@ -97,6 +97,7 @@ export default function NavBar() {
                   items: ["Donate", "Partnerships"],
                   href: "/fordern",
                 },
+                { name: "DOWNLOADS", items: [], href: "/downloads" },
               ].map((menu, index) => (
                 <li key={index}>
                   <div className="flex items-center justify-between">
@@ -163,7 +164,6 @@ export default function NavBar() {
                   items: ["Projekte"],
                   href: "/dekoloniale",
                 },
-                { name: "DOWNLOADS", items: [], href: "/downloads" },
               ].map((menu, index) => (
                 <li key={index}>
                   <div className="flex items-center justify-between">
