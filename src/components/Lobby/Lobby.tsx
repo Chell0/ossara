@@ -12,7 +12,7 @@ export default function Lobby() {
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
           >
             <h1
-              className={`text-[#58bc90] drop-shadow-xl text-8xl md:text-9xl font-extrabold leading-tight uppercase ml-10 mt-16`}
+              className={`text-[#58bc90] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
             >
               Lokal.
               <br /> Vernetzt.

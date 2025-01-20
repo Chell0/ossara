@@ -8,8 +8,12 @@ export default function Rassismus() {
           className="h-screen w-full bg-cover bg-center relative"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-start p-8">
-            <h1 className="text-[#ba334b] drop-shadow-xl text-8xl md:text-9xl font-extrabold leading-tight uppercase">
+          <div
+            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+          >
+            <h1
+              className={`text-[#ba334b] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+            >
               Anti.
               <br />
               Schwarzer.
@@ -71,7 +75,7 @@ export default function Rassismus() {
             <p className={`text-base text-[#ba334b]`}>Forderungskatalog</p>
             <button className="px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-xl bg-[#ba334b] text-white">
               <Link
-                href={`/files/stellungnahme.pdf`}
+                href={`/files/forderungskatalog_anti_schwarzer_rassismus`}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
