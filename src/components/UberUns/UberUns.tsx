@@ -85,7 +85,7 @@ export default function UberUns() {
               >
                 Verein
               </h3>
-              <p className="mt-4 text-gray-800 text-lg">
+              <p className="mt-4 text-gray-800 text-md">
                 Als eingetragener Verein (VR 23447) sind wir politisch und
                 konfessionell neutral. Unsere Arbeit umfasst ein breites
                 Spektrum an Tätigkeitsfeldern, darunter:
@@ -105,14 +105,14 @@ export default function UberUns() {
                 </li>
                 <li>Unterstützung hilfsbedürftiger Menschen</li>
               </ul>
-              <p className="mt-4 text-base text-gray-800">
+              <p className="mt-4 text-md text-gray-800">
                 Unsere Projekte werden durch ein starkes Netzwerk aus
                 engagierten Mitgliedern, Mitarbeiter:innen, ehrenamtlichen
                 Helfer:innen und Partnerorganisationen unterstützt. Dabei setzen
                 wir auf die Vielfalt an Erfahrungen und Fähigkeiten in unserem
                 Team, um effektiv, konstruktiv und nachhaltig zu arbeiten.
               </p>
-              <p className="mt-4 text-base text-gray-800">
+              <p className="mt-4 text-md text-gray-800">
                 Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit,
                 sich durch Praktika oder freiwillige Mitarbeit aktiv in Hamburg
                 oder im westafrikanischen Büro einzubringen. Wer uns in unserer
@@ -121,12 +121,12 @@ export default function UberUns() {
                 gerechteren und solidarischeren Zukunft zu arbeiten.
               </p>
             </div>
-            <div className="basis-1/2 flex justify-center items-center p-4 h-[600px] md:h-[720px]">
+            <div className="basis-1/2 flex justify-center items-center p-4 h-[600px] md:h-[700px]">
               <Image
                 src={`/bgs/img1.jpg`}
                 alt="About Photo"
                 width={480}
-                height={720}
+                height={700}
                 quality={100}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
@@ -149,12 +149,12 @@ export default function UberUns() {
         {/* History Section */}
         <section className="relative w-full min-h-screen mt-20">
           <div className="flex md:flex-grow flex-row gap-10 m-8">
-            <div className="flex justify-center items-center basis-1/2 p-4 h-[560px] md:h-[610px]">
+            <div className="flex justify-center items-center basis-1/2 p-4 h-[560px] md:h-[500px]">
               <Image
                 src={`/bgs/img1.jpg`}
                 alt="History Photo"
                 width={480}
-                height={610}
+                height={500}
                 quality={100}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
@@ -165,7 +165,7 @@ export default function UberUns() {
               >
                 Unsere Geschichte
               </h3>
-              <p className="text-gray-800 text-lg mt-4">
+              <p className="text-gray-800 text-md mt-4">
                 Ossara e.V. wurde am 28. Oktober 2017 gegründet, um eine
                 dekoloniale und machtkritische internationale Zusammenarbeit zu
                 fördern. Der Name „Ossara“, der in der Lamba-Sprache aus dem
@@ -174,7 +174,7 @@ export default function UberUns() {
                 Zusammenarbeit und die Stärkung der Selbstbestimmung erreicht
                 wird.
               </p>
-              <p className="text-lg mt-4 text-gray-800">
+              <p className="text-md mt-4 text-gray-800">
                 Unsere ersten Projekte begannen in Togo, wo wir mit lokalen
                 Partner:innen Bildungs- und Infrastrukturprojekte durchführten.
                 Im Laufe der Jahre haben wir unsere Arbeit auf weitere
@@ -183,7 +183,7 @@ export default function UberUns() {
                 BIPoC-Communities sowie die Bekämpfung von Rassismus und
                 Diskriminierung konzentriert.
               </p>
-              <p className="text-lg mt-4 text-gray-800">
+              <p className="text-md mt-4 text-gray-800">
                 Heute ist Ossara e.V. ein Verein, der nicht nur in Westafrika
                 aktiv ist, sondern auch auf lokaler Ebene durch
                 entwicklungspolitische Bildungsarbeit, Empowerment und
