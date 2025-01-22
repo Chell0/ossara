@@ -1,9 +1,9 @@
-export interface AboutRowProps {
-  title: string;
-  text: string;
-  imageUrl: string;
-  reverse?: boolean;
-  id?: string;
+export interface ContactPersonProps {
+  name: string;
+  position: string;
+  email: string;
+  phone: string;
+  imageSrc: string;
 }
 
 export interface TeamMember {
@@ -11,7 +11,6 @@ export interface TeamMember {
   title: string;
   imageUrl: string;
 }
-
 
 export interface YouTubeSectionProps {
   videoId: string;

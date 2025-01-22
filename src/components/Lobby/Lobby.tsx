@@ -31,7 +31,7 @@ export default function Lobby() {
           </div>
           <div className="flex md:flex-grow flex-row justify-end">
             <div className="basis-1/2 mr-10 mt-10 mb-20 text-gray-800">
-              <p className="text-lg">
+              <p className="text-md">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
                 Lobbyarbeit für die Belange von BIPoC und migrantischen
@@ -40,7 +40,7 @@ export default function Lobby() {
                 für mehr Sichtbarkeit, Rechte und Teilhabe dieser Gruppen in
                 Hamburg ein.
               </p>
-              <p className="mt-4 text-lg">
+              <p className="mt-4 text-md">
                 Darüber hinaus bieten wir Unterstützung und Starthilfe für
                 andere Initiativen, die sich mit ähnlichen Themen beschäftigen,
                 und fördern die Vernetzung von Akteur:innen, Vereinen und
@@ -61,14 +61,14 @@ export default function Lobby() {
               >
                 NETZ:WERKSTATT – Netzwerken mal anders
               </h3>
-              <p className="mt-4 text-gray-800 text-lg">
+              <p className="mt-4 text-gray-800 text-md">
                 Die NETZ:WERKSTATT bietet einmal im Monat einen Raum, in dem
                 Netzwerken und kreatives Arbeiten miteinander verbunden werden.
                 In einer offenen und einladenden Atmosphäre haben Teilnehmende
                 die Möglichkeit, ihre Ideen auszutauschen und gleichzeitig
                 kreative Prozesse zu erleben.
               </p>
-              <p className="mt-4 text-gray-800 text-lg">
+              <p className="mt-4 text-gray-800 text-md">
                 Unter der Leitung von Fabienne Schöter, Kunsttherapeutin, wird
                 die Veranstaltung monatlich verschiedene kreative Ansätze
                 bieten, die den Austausch und das gegenseitige Lernen fördern.
@@ -77,7 +77,7 @@ export default function Lobby() {
                 willkommen, die sich für eine solidarische Gesellschaft
                 einsetzen und offen für interkulturellen Austausch sind.
               </p>
-              <p className="mt-4 text-gray-800 text-lg">
+              <p className="mt-4 text-gray-800 text-md">
                 Wann & Wo?
                 <br />
                 Die Veranstaltung findet einmal im Monat statt. Verfolgt unsere
@@ -89,16 +89,16 @@ export default function Lobby() {
                   SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
                 </span>
               </p>
-              <p className="mt-4 text-gray-800 text-lg">
+              <p className="mt-4 text-gray-800 text-md">
                 Die Teilnahme ist kostenlos.
               </p>
             </div>
-            <div className="basis-1/2 flex justify-center items-center p-4 h-[600px] md:h-[720px]">
+            <div className="basis-1/2 flex justify-center items-center p-4 h-[480px] md:h-[560px]">
               <Image
                 src={`/bgs/img1.jpg`}
                 alt="About Photo"
                 width={480}
-                height={720}
+                height={560}
                 quality={100}
                 className="w-full h-full object-cover rounded-lg shadow-lg"
               />
