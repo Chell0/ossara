@@ -25,11 +25,12 @@ export default function Rassismus() {
 
         <section className="relative w-full min-h-screen text-[#ba334b]">
           <div className="flex md:flex-grow flex-row mb-10">
-            <div className="basis-full p-4">
-              <h2 className="text-7xl md:text-8xl font-bold leading-tight p-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, dolore repellat.
-              </h2>
+            <div className="basis-full">
+              <h3 className="text-6xl md:text-7xl font-semibold leading-tight m-6">
+                Sichtbarkeit schaffen, Strukturen verändern: Wir engagieren uns
+                gegen Anti- Schwarzen Rassismus und stärken die Stimmen von
+                BIPoC in politischen und gesellschaftlichen Prozessen.
+              </h3>
             </div>
           </div>
           <div className="flex md:flex-grow flex-row justify-end">

@@ -23,15 +23,17 @@ export default function Lobby() {
         <section className="relative w-full min-h-screen text-[#58bc90]">
           <div className="flex md:flex-grow flex-row mb-10">
             <div className="basis-full">
-              <h2 className="text-7xl md:text-8xl font-bold leading-tight p-8">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corrupti, dolore repellat.
-              </h2>
+              <h3 className="text-6xl md:text-7xl font-semibold leading-tight m-4">
+                Durch Netzwerk- und Lobbyarbeit setzen wir uns für mehr Rechte,
+                Sichtbarkeit und Teilhabe in Hamburg ein, um nachhaltige
+                Veränderungen auf politischer und gesellschaftlicher Ebene zu
+                erreichen.
+              </h3>
             </div>
           </div>
           <div className="flex md:flex-grow flex-row justify-end">
             <div className="basis-1/2 mr-10 mt-10 mb-20 text-gray-800">
-              <p className="text-md">
+              <p className="mt-4 text-md">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
                 Lobbyarbeit für die Belange von BIPoC und migrantischen
