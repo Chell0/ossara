@@ -15,9 +15,9 @@ const ContactPerson: React.FC<ContactPersonProps> = ({
         <Image
           src={imageSrc}
           alt={name}
-          width={224} // 28 x 4 (Tailwind's md:28)
-          height={224}
-          className="rounded-full object-cover bg-[#5a8e8e] shadow-lg"
+          width={208} // 52 x 4 (Tailwind's md:52)
+          height={208}
+          className="w-full h-full rounded-full object-cover bg-[#5a8e8e] shadow-lg"
         />
       </div>
 

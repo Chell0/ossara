@@ -83,7 +83,7 @@ export default function Integrative() {
                   position="Beratungs- und Bewerbungstrainerin"
                   email="Bewerbungstraining[@]ossara.de"
                   phone="(+49) 1575 1406 184"
-                  imageSrc="/contact-person/contact_person.png"
+                  imageSrc="/contact-person/contact_person.jpg"
                 />
               </div>
             </div>
@@ -157,7 +157,7 @@ export default function Integrative() {
                   position="Deutschtrainer für Sprachförderung und Prüfungsvorbereitung"
                   email="sprachfoerderung[a]ossara.de"
                   phone="(+49) 1590 6737147"
-                  imageSrc="/contact-person/contact_person.png"
+                  imageSrc="/contact-person/contact_person.jpg"
                 />
               </div>
             </div>
