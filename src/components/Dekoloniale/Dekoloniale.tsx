@@ -82,20 +82,20 @@ export default function Dekoloniale() {
                 <li>Veranstaltungsangebote und Community-Aktivitäten</li>
               </ul>
             </div>
-            <div className="basis-1/2 p-4">
+            <div className="basis-1/2 p-2">
               <div className="flex flex-col items-center w-full">
                 <h3 className="text-4xl font-semibold text-[#d3103e] mb-2">
                   Kontaktperson
                 </h3>
-                <hr className="w-16 border-2 border-[#d3103e] mb-6" />
+                <hr className="w-20 border-2 border-[#d3103e] mb-6" />
               </div>
-              <div className="flex flex-col items-center w-full shadow-md rounded-md">
+              <div className="flex flex-col items-center w-full">
                 <ContactPerson
                   name="Gaetan Tagba"
                   position="Projektkoordination"
                   email="gaetan.tagba[@]ossara.de"
                   phone="(+228) 91 077338"
-                  imageSrc="/contact-person/contact_person.png"
+                  imageSrc="/contact-person/contact_person.jpg"
                 />
               </div>
             </div>
