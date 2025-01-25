@@ -60,7 +60,7 @@ export default function Dekoloniale() {
         </section>
 
         {/* Kontaktperson */}
-        <section className="reltaive w-full min-h-screen text-[#d3103e] py-20">
+        <section className="relative w-full min-h-screen text-[#d3103e] py-20">
           <div className="flex md:flex-grow flex-row gap-6 m-8">
             <div className="basis-1/2 p-4">
               <p className="text-2xl font-semibold">
