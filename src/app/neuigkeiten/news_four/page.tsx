@@ -1,42 +1,42 @@
-import { bebasNeue } from "@/app/fonts";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-white relative">
       <main className="p-6">
         <NavBar />
-        {/* Date */}
-        <section className="text-center text-gray-800">
-          <p className="text-base font-semibold">10. November 2023</p>
-        </section>
-        {/* Title */}
-        <section className="text-[#ffb400] text-center py-6 mt-5">
-          <h2
-            className={`${bebasNeue.className} drop-shadow-xl text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight uppercase`}
+        <div className="container max-w-screen-lg mx-auto mt-20 bg-[#fff6ea] p-10 rounded-lg shadow-2xl">
+          {/* News Date */}
+          <h3 className="text-center text-gray-500 mb-5 uppercase">
+            10. November 2023
+          </h3>
+
+          {/* News Title */}
+          <h1
+            className={`mb-10 text-center text-[#eb7b24] text-2xl sm:text-lg md:text-xl lg:text-3xl font-bold uppercase leading-8 tracking-wide`}
           >
             Vielfalt im Fokus
-          </h2>
-        </section>
-        {/* Image */}
-        <section className="flex items-center justify-center mt-20">
-          <div className="relative rounded-xl shadow-xl overflow-hidden max-h-[480px]">
+          </h1>
+
+          {/* News Image */}
+          <div className="flex items-center justify-center mt-10 mb-5 max-w-screen-xl">
             <Image
               src={`/news/picture-3.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
-              width={400}
-              height={400}
-              className={`object-cover object-center`}
+              width={1080}
+              height={872}
+              priority
               quality={100}
+              className={`object-cover object-center rounded-md shadow-xl`}
+              style={{ maxHeight: "640px" }}
             />
           </div>
-        </section>
-        {/* Text */}
-        <section className="flex flex-col items-center justify-center mt-10">
-          <div className="w-full md:w-1/2">
-            <p className="mt-4 text-base text-gray-800">
+
+          {/* News Content */}
+          <section className="max-w-screen-lg mx-auto mt-20 prose prose-sm prose-stone prose-headings:text-2xl prose-headings:text-orange-500 prose-headings:font-semibold prose-a:text-orange-500 prose-a:target:_blank prose-a:rel:noreferrer">
+            <p className="mt-4 text-base text-[#eb7b24]">
               <b>Rückblick:</b>
             </p>
             <p className="mt-2 text-base text-gray-800">
@@ -51,19 +51,14 @@ export default function Page() {
               Blick nehmen. Welche Herausforderungen bringt die Thematik für
               Person of Color? Welche Dimensionen finden bis jetzt weniger
               Achtung oder werden in der Diskussion um das Thema nicht
-              berücksichtigt?
-            </p>
-            <p className="mt-4 text-base text-gray-800">
-              Am 10. November 2023 haben sich, im Rahmen der Woche der Vielfalt
-              des Bezirkes Hamburg Nord, vier Expert*innen dieser Thematik
-              gewidmet und in einem Live Podcast über relevante Themen
-              diskutiert.
-            </p>
-            <p className="mt-4 text-base text-gray-800">
-              Die Veröffentlichung des Live Podcast folgt in Kürze.
+              berücksichtigt? Am 10. November 2023 haben sich, im Rahmen der
+              Woche der Vielfalt des Bezirkes Hamburg Nord, vier Expert*innen
+              dieser Thematik gewidmet und in einem Live Podcast über relevante
+              Themen diskutiert. Die Veröffentlichung des Live Podcast folgt in
+              Kürze.
             </p>
             <p className="mt-4 text-base text-gray-800">Mit dabei waren:</p>
-            <ul className="mt-4 ml-10 space-y-2 text-sm font-semibold text-[#ffb400] list-disc">
+            <ul className="mt-4 ml-10 space-y-2 text-sm font-semibold text-[#eb7b24] list-disc">
               <li>
                 Tina Banze, Gründerin der Initiative intersektional deutsch
               </li>
@@ -85,8 +80,8 @@ export default function Page() {
               Gefördert wurde diese Veranstaltung durch das Bezirksamt Hamburg
               Nord.
             </p>
-          </div>
-        </section>
+          </section>
+        </div>
         <Footer />
       </main>
     </div>

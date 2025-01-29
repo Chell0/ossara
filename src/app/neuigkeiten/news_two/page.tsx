@@ -1,41 +1,41 @@
-import { bebasNeue } from "@/app/fonts";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-white relative">
       <main className="p-6">
         <NavBar />
-        {/* Date */}
-        <section className="text-center text-gray-800">
-          <p className="text-base font-semibold">11. März 2024</p>
-        </section>
-        {/* Title */}
-        <section className="text-[#ffb400] text-center py-6 mt-5">
-          <h2
-            className={`${bebasNeue.className} drop-shadow-xl text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight uppercase`}
+        <div className="container max-w-screen-lg mx-auto mt-20 bg-[#fff6ea] p-10 rounded-lg shadow-2xl">
+          {/* News Date */}
+          <h3 className="text-center text-gray-500 mb-5 uppercase">
+            11. März 2024
+          </h3>
+
+          {/* News Title */}
+          <h1
+            className={`mb-10 text-center text-[#eb7b24] text-2xl sm:text-lg md:text-xl lg:text-3xl font-bold uppercase leading-8 tracking-wide`}
           >
             Decolonize Schönheit
-          </h2>
-        </section>
-        {/* Image */}
-        <section className="flex items-center justify-center mt-20">
-          <div className="relative rounded-xl shadow-xl overflow-hidden max-h-[480px]">
+          </h1>
+
+          {/* News Image */}
+          <div className="flex items-center justify-center mt-10 mb-5 max-w-screen-xl">
             <Image
               src={`/news/picture-5.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
-              width={400}
-              height={400}
-              className={`object-cover object-center`}
+              width={1080}
+              height={872}
+              priority
               quality={100}
+              className={`object-cover object-center rounded-md shadow-xl`}
+              style={{ maxHeight: "640px" }}
             />
           </div>
-        </section>
-        {/* Text */}
-        <section className="flex flex-col items-center justify-center mt-10">
-          <div className="w-full md:w-1/2">
+
+          {/* News Content */}
+          <section className="max-w-screen-lg mx-auto mt-20 prose prose-sm prose-stone prose-headings:text-2xl prose-headings:text-orange-500 prose-headings:font-semibold prose-a:text-orange-500 prose-a:target:_blank prose-a:rel:noreferrer">
             <p className="mt-4 text-base text-gray-800">
               Save the Date: Podiumsdiskussion: Decolonize Schönheit
               <br />
@@ -47,26 +47,22 @@ export default function Page() {
               westlicher Schönheitsstandards einherging. Während des
               Kolonialismus wurden die Körper und Erscheinungsbilder der
               kolonisierten Völker oft als minderwertig angesehen und westliche
-              Schönheitsideale wurden als überlegen propagiert.
-            </p>
-            <p className="mt-4 text-base text-gray-800">
-              Dies führte dazu, dass viele Menschen in den kolonisierten
-              Gebieten begannen, ihre natürlichen körperlichen Merkmale zu
-              verbergen oder zu verändern, um den westlichen Standards zu
-              entsprechen. Dies konnte sich in Form von Hautbleichung,
-              Haarglättung oder anderen kosmetischen Eingriffen manifestieren.
+              Schönheitsideale wurden als überlegen propagiert. Dies führte
+              dazu, dass viele Menschen in den kolonisierten Gebieten begannen,
+              ihre natürlichen körperlichen Merkmale zu verbergen oder zu
+              verändern, um den westlichen Standards zu entsprechen. Dies konnte
+              sich in Form von Hautbleichung, Haarglättung oder anderen
+              kosmetischen Eingriffen manifestieren.
             </p>
             <p className="mt-4 text-base text-gray-800">
               Darüber hinaus wurden auch die körperlichen Merkmale der indigenen
               Völker von den Kolonisatoren oft exotisiert und fetischisiert.
               Dies führte dazu, dass bestimmte körperliche Merkmale als
               attraktiv oder wünschenswert angesehen wurden, während andere als
-              abstoßend oder minderwertig betrachtet wurden.
-            </p>
-            <p className="mt-4 text-base text-gray-800">
-              In vielen postkolonialen Gesellschaften haben diese Vorstellungen
-              von Körperidealen weiterhin einen starken Einfluss und führen zu
-              einer internalisierten Ablehnung der eigenen natürlichen Merkmale.
+              abstoßend oder minderwertig betrachtet wurden. In vielen
+              postkolonialen Gesellschaften haben diese Vorstellungen von
+              Körperidealen weiterhin einen starken Einfluss und führen zu einer
+              internalisierten Ablehnung der eigenen natürlichen Merkmale.
             </p>
             <p className="mt-4 text-base text-gray-800">
               Unsere *Decolonize-Veranstaltungsreihe* geht in die nächste Runde
@@ -80,7 +76,7 @@ export default function Page() {
               gesellschaftlichen Wandel notwendig?
             </p>
             <p className="mt-4 text-base text-gray-800">Panelbesetzung:</p>
-            <ul className="mt-2 ml-10 space-y-2 text-sm list-disc">
+            <ul className="mt-2 ml-10 space-y-2 text-sm list-disc text-[#eb7b24]">
               <li>
                 <b>Beatrace Angut Oola:</b> Kuratorin, Fashion Stylistin,
                 Cultural Creative Consulatant, Speaker, sowie Gastdozentin an
@@ -100,7 +96,7 @@ export default function Page() {
               </li>
             </ul>
             <p className="mt-4 text-base text-gray-800">Moderation:</p>
-            <ul className="mt-2 ml-10 space-y-2 text-sm list-disc">
+            <ul className="mt-2 ml-10 space-y-2 text-sm list-disc text-[#eb7b24]">
               <li>
                 <b>Maya Zaheer (sie/ihr):</b> studiert Visuelle Kommunikation an
                 der Kunsthochschule Berlin Weißensee, Grafikdesignerin und
@@ -111,17 +107,13 @@ export default function Page() {
               Dies ist die zweite Veranstaltung einer Decolonize-Reihe von
               Ossara e.V., die den interkulturellen Dialog und den Austausch von
               verschiedenen Stimmen und Perspektiven aus der Community fördert.
-            </p>
-            <p className="mt-4 text-base text-gray-800">
               Die Veranstaltungsreihe wird in Kooperation mit den Eine
-              Welt-Promotorinnen für Dekolonisierung organisiert.
+              Welt-Promotorinnen für Dekolonisierung organisiert. Diese
+              Veranstaltung wird durch die Norddeutsche Stiftung für Umwelt und
+              Entwicklung und Brot für die Welt gefördert.
             </p>
-            <p className="mt-4 text-base text-gray-800">
-              Diese Veranstaltung wird durch die Norddeutsche Stiftung für
-              Umwelt und Entwicklung und Brot für die Welt gefördert.
-            </p>
-          </div>
-        </section>
+          </section>
+        </div>
         <Footer />
       </main>
     </div>

@@ -1,45 +1,45 @@
-import { bebasNeue } from "@/app/fonts";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 
 export default function Page() {
   return (
-    <div>
+    <div className="bg-white relative">
       <main className="p-6">
         <NavBar />
-        {/* Date */}
-        <section className="text-center text-gray-800">
-          <p className="text-base font-semibold">06. November 2023</p>
-        </section>
-        {/* Title */}
-        <section className="text-[#ffb400] text-center py-6 mt-5">
-          <h2
-            className={`${bebasNeue.className} drop-shadow-xl text-6xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight uppercase`}
+        <div className="container max-w-screen-lg mx-auto mt-20 bg-[#fff6ea] p-10 rounded-lg shadow-2xl">
+          {/* News Date */}
+          <h3 className="text-center text-gray-500 mb-5 uppercase">
+            06. November 2023
+          </h3>
+
+          {/* News Title */}
+          <h1
+            className={`mb-10 text-center text-[#eb7b24] text-2xl sm:text-lg md:text-xl lg:text-3xl font-bold uppercase leading-8 tracking-wide`}
           >
             Podiumsdiskussion Decolonize Literatur
-          </h2>
-        </section>
-        {/* Image */}
-        <section className="flex items-center justify-center mt-20">
-          <div className="relative rounded-xl shadow-xl overflow-hidden max-h-[480px]">
+          </h1>
+
+          {/* News Image */}
+          <div className="flex items-center justify-center mt-10 mb-5 max-w-screen-xl">
             <Image
               src={`/news/picture-1.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
-              width={400}
-              height={400}
-              className={`object-cover object-center`}
+              width={1080}
+              height={872}
+              priority
               quality={100}
+              className={`object-cover object-center`}
+              style={{ maxHeight: "640px" }}
             />
           </div>
-        </section>
-        {/* Text */}
-        <section className="flex flex-col items-center justify-center mt-10">
-          <div className="w-full md:w-1/2">
-            <p className="mt-4 text-base text-gray-800">
+
+          {/* News Content */}
+          <section className="max-w-screen-lg mx-auto mt-20 prose prose-sm prose-stone prose-headings:text-2xl prose-headings:text-orange-500 prose-headings:font-semibold prose-a:text-orange-500 prose-a:target:_blank prose-a:rel:noreferrer">
+            <p className="mt-4 text-base text-[#eb7b24]">
               <b>Wann?</b> 06.11.2023, 18:30 Uhr
             </p>
-            <p className="mt-4 text-base text-gray-800">
+            <p className="mt-4 text-base text-[#eb7b24]">
               <b>Wo?</b> Bücherhalle Altona, Ottenser Hauptstr. 8-10, Mercado 2.
               Stock, 22765 Hamburg
             </p>
@@ -54,23 +54,21 @@ export default function Page() {
               dekonstruieren. Dies setzt voraus, dass Dekolonisierung als
               interdisziplinäres Querschnittsthema behandelt wird, und dazu
               ermutigt, marginalisierte Stimmen und Erfahrungen in den
-              Vordergrund zu stellen.
+              Vordergrund zu stellen. Bei unserer Auftaktveranstaltung
+              Decolonize Literatur wollen wir uns mit dekolonialen Perspektiven
+              auf die Literatur beschäftigen und uns kritisch mit den heutigen
+              Auswirkungen des Kolonialismus auf die Literaturbranche
+              auseinandersetzen. Wir analysieren den eurozentrischen Blick auf
+              Literatur und werfen in den Raum, wie die weiß dominierte
+              Gegenwartsliteratur Vorurteile und Stereotypen u. a. durch
+              Illustration, Sprache, im Verlagswesen reproduziert und wie neue
+              Repräsentationsräume für weitere Perspektiven geschaffen werden
+              können.
             </p>
-            <p className="mt-4 text-base text-gray-800">
-              Bei unserer Auftaktveranstaltung Decolonize Literatur wollen wir
-              uns mit dekolonialen Perspektiven auf die Literatur beschäftigen
-              und uns kritisch mit den heutigen Auswirkungen des Kolonialismus
-              auf die Literaturbranche auseinandersetzen. Wir analysieren den
-              eurozentrischen Blick auf Literatur und werfen in den Raum, wie
-              die weiß dominierte Gegenwartsliteratur Vorurteile und Stereotypen
-              u. a. durch Illustration, Sprache, im Verlagswesen reproduziert
-              und wie neue Repräsentationsräume für weitere Perspektiven
-              geschaffen werden können.
-            </p>
-            <p className="mt-4 text-base text-gray-800">
+            <p className="mt-4 text-base text-[#eb7b24]">
               <b>Podiumsgäste:</b> Millicent Adjei, Dayan Kodua, Dan Thy Nguyen
             </p>
-            <p className="mt-4 text-base text-gray-800">
+            <p className="mt-4 text-base text-[#eb7b24]">
               <b>Moderation:</b> Cane Çağlar
             </p>
             <div className="relative mt-20 overflow-hidden">
@@ -84,21 +82,14 @@ export default function Page() {
               />
             </div>
             <p className="mt-10 text-base text-gray-800">
-              Die Veranstaltung findet in deutscher Lautsprache statt.
-            </p>
-            <p className="mt-2 text-base text-gray-800">
-              Der Eintritt ist kostenlos.
-            </p>
-            <p className="mt-2 text-base text-gray-800">
-              Anmeldung bitte bis zum 05.11.2023.
-            </p>
-            <p className="mt-4 text-base text-gray-800">
-              Die Veranstaltung ist der Auftakt einer Decolonize-Reihe, die den
+              Die Veranstaltung findet in deutscher Lautsprache statt. Der
+              Eintritt ist kostenlos. Anmeldung bitte bis zum 05.11.2023. Die
+              Veranstaltung ist der Auftakt einer Decolonize-Reihe, die den
               interkulturellen Dialog und den Austausch von verschiedenen
               Stimmen und Perspektiven aus der Community fördert.
             </p>
-          </div>
-        </section>
+          </section>
+        </div>
         <Footer />
       </main>
     </div>
