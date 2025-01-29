@@ -35,134 +35,150 @@ export default function Neuigkeiten() {
 
   return (
     <>
-      <section className="container p-6 mx-auto mt-10">
-        {/* Toggle Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 my-10">
-          <button
-            onClick={() => {
-              setShowNeuigkeiten(true);
-              setSelectedCategory(null);
-            }}
-            className={`px-4 py-2 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto font-semibold shadow-xl rounded-lg transition ${
-              showNeuigkeiten
-                ? "bg-[#ffb400] text-white"
-                : "bg-gray-200 text-gray-700"
-            }`}
-          >
-            Neuigkeiten
-          </button>
-          <button
-            onClick={() => {
-              setShowNeuigkeiten(false);
-              setSelectedCategory(null);
-            }}
-            className={`px-4 py-2 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto font-semibold shadow-xl rounded-lg transition ${
-              !showNeuigkeiten
-                ? "bg-[#ffb400] text-white"
-                : "bg-gray-200 text-gray-700"
-            }`}
-          >
-            Neuigkeiten Archive
-          </button>
-
-          {/* Category Dropdown */}
-          <select
-            onChange={(e) => setSelectedCategory(e.target.value || null)}
-            className="px-4 py-2 font-semibold transition rounded-lg shadow-xl sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto bg-[#ffb400] text-white focus:outline-none focus:ring focus:ring-[#ffb400]"
-            defaultValue=""
-          >
-            <option value="">All Categories</option>
-            {categories.map((category) => (
-              <option key={category.id} value={category.name}>
-                {category.name}
-              </option>
-            ))}
-          </select>
-
-          {/* Search Input */}
-          <input
-            type="text"
-            placeholder="Search..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="px-4 py-2 font-semibold transition border text-gray-600 rounded-lg shadow-xl sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg sm:w-auto focus:outline-none focus:ring focus:ring-[#ffb400]"
-          />
-        </div>
-
-        {/* News Items */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-8"
+      <div className="mx-auto">
+        <header
+          className="min-h-96  w-full bg-cover bg-center relative mb-10 p-10"
+          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          {paginatedNews.length > 0 ? (
-            paginatedNews.map((news) => (
-              <motion.div
-                key={news.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                className="overflow-hidden bg-white shadow-md rounded-xl shadow-gray-400"
-              >
-                <div className={`h-64 w-full bg-gray-200`}>
-                  {/* News Image */}
-                  <Image
-                    src={news.image}
-                    alt={news.title}
-                    width={400}
-                    height={400}
-                    quality={100}
-                    className="object-cover object-center"
-                  />
-                </div>
-
-                {/* News Content */}
-                <div className="p-4 mt-20">
-                  <h3 className="mt-10 font-bold text-[#ffb400] text-lg">
-                    {news.title}
-                  </h3>
-                  <p className="mt-2 text-sm font-semibold text-gray-800">
-                    {news.date}
-                  </p>
-                  <p className="pt-2 text-sm text-gray-800 line-clamp-3">
-                    {news.content}
-                  </p>
-                  {/* <p className="pt-2 text-base font-bold text-blue-500">
-                    Category: {news.category}
-                  </p> */}
-                  <p className="mt-2 text-base">
-                    <button className="px-2 py-1 font-semibold text-white rounded-lg bg-[#ffb400]">
-                      <Link href={news.mehr}>Mehr lesen...</Link>
-                    </button>
-                  </p>
-                </div>
-              </motion.div>
-            ))
-          ) : (
-            <p className="text-lg font-bold text-center text-gray-600 col-span-full">
-              Unfortunately, no news available in this category.
-            </p>
-          )}
-        </motion.div>
-
-        {/* Pagination Controls */}
-        <div className="flex justify-center mt-8">
-          {Array.from({ length: pageCount }, (_, index) => (
+          <div
+            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+          >
+            <h1
+              className={`text-[#eb7b24] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+            >
+              Neuigkeiten
+            </h1>
+          </div>
+        </header>
+        <section className="container p-6">
+          {/* Toggle Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 my-10">
             <button
-              key={index}
-              onClick={() => setCurrentPage(index + 1)}
-              className={`px-3 py-1 mx-1 font-bold shadow-xl rounded ${
-                currentPage === index + 1
-                  ? "bg-[#ffb400] text-white"
-                  : "bg-gray-300 text-gray-700"
+              onClick={() => {
+                setShowNeuigkeiten(true);
+                setSelectedCategory(null);
+              }}
+              className={`px-8 py-4 sm:px-4 sm:py-2 text-xl md:px-6 md:py-3 sm:w-auto shadow-md rounded-xl transition ${
+                showNeuigkeiten
+                  ? "bg-[#eb7b24] text-white"
+                  : "bg-gray-200 text-[#eb7b24]"
               }`}
             >
-              {index + 1}
+              Neuigkeiten
             </button>
-          ))}
-        </div>
-      </section>
+            <button
+              onClick={() => {
+                setShowNeuigkeiten(false);
+                setSelectedCategory(null);
+              }}
+              className={`px-8 py-4 sm:px-4 sm:py-2 text-xl md:px-6 md:py-3 sm:w-auto shadow-md rounded-xl transition ${
+                !showNeuigkeiten
+                  ? "bg-[#eb7b24] text-white"
+                  : "bg-gray-200 text-[#eb7b24]"
+              }`}
+            >
+              Neuigkeiten Archive
+            </button>
+
+            {/* Category Dropdown */}
+            <div className="relative flex justify-center">
+              <select
+                onChange={(e) => setSelectedCategory(e.target.value || null)}
+                className="bg-[#eb7b24] text-white text-lg py-3 px-8 shadow-md rounded-xl appearance-none w-full"
+              >
+                <option value="">Alle Kategorien</option>
+                {categories.map((category) => (
+                  <option
+                    key={category.id}
+                    value={category.name}
+                    className="text-[#eb7b24] text-md bg-[#fff6ea] py-5"
+                  >
+                    {category.name}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none text-white font-semibold text-xl">
+                ▾{" "}
+              </div>
+            </div>
+          </div>
+
+          {/* News Items */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 mt-10 bg-[#fff6ea]"
+          >
+            {paginatedNews.length > 0 ? (
+              paginatedNews.map((news) => (
+                <motion.div
+                  key={news.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="max-w-screen-lg h-[450px] overflow-hidden shadow-xl rounded-lg"
+                >
+                  <div className={`relative h-72 w-full`}>
+                    {/* News Image */}
+                    <Image
+                      src={news.image}
+                      alt={news.title}
+                      fill
+                      // width={260}
+                      // height={260}
+                      quality={100}
+                      className="object-cover rounded-t-lg"
+                    />
+                  </div>
+
+                  {/* News Content */}
+                  <div className="p-5">
+                    <h3 className="font-bold text-xl sm:text-base mb-3 text-gray-800 hover:underline">
+                      <Link href={news.mehr}>{news.title}</Link>
+                    </h3>
+                    <p className="mb-2 text-sm font-semibold text-gray-800">
+                      {news.date}
+                    </p>
+                    <p className="text-sm text-gray-800 line-clamp-2">
+                      {news.content}
+                    </p>
+                    {/* <p className="pt-2 text-base font-bold text-blue-500">
+                    Category: {news.category}
+                  </p> */}
+                    {/* <p className="mt-2 text-base">
+                      <button className="px-2 py-1 font-semibold text-white rounded-lg bg-[#ffb400]">
+                        <Link href={news.mehr}>Mehr lesen...</Link>
+                      </button>
+                    </p> */}
+                  </div>
+                </motion.div>
+              ))
+            ) : (
+              <p className="text-xl font-bold text-center text-gray-800 col-span-full">
+                Unfortunately, no news available in this category.
+              </p>
+            )}
+          </motion.div>
+
+          {/* Pagination Controls */}
+          <div className="flex justify-center mt-8">
+            {Array.from({ length: pageCount }, (_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentPage(index + 1)}
+                className={`px-3 py-1 mx-1 font-bold shadow-xl rounded ${
+                  currentPage === index + 1
+                    ? "bg-[#eb7b24] text-white"
+                    : "bg-gray-300 text-gray-700"
+                }`}
+              >
+                {index + 1}
+              </button>
+            ))}
+          </div>
+        </section>
+      </div>
     </>
   );
 }
