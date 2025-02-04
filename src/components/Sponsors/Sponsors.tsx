@@ -1,4 +1,3 @@
-import { bebasNeue } from "@/app/fonts";
 import Image from "next/image";
 
 export default function Sponsors() {
