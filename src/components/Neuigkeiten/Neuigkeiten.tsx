@@ -9,19 +9,14 @@ import { archiveData, categories, newsData } from "../../../data";
 export default function Neuigkeiten() {
   const [showNeuigkeiten, setShowNeuigkeiten] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
   const allNews = showNeuigkeiten ? newsData : archiveData;
 
-  const filteredNews = allNews
-    .filter((news) => !selectedCategory || news.category === selectedCategory)
-    .filter(
-      (news) =>
-        news.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        news.content.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+  const filteredNews = allNews.filter(
+    (news) => !selectedCategory || news.category === selectedCategory
+  );
 
   const pageCount = Math.ceil(filteredNews.length / itemsPerPage);
   const paginatedNews = filteredNews.slice(
@@ -30,26 +25,23 @@ export default function Neuigkeiten() {
   );
 
   useEffect(() => {
-    setCurrentPage(1); // Reset to first page on category or search change
-  }, [selectedCategory, searchQuery, showNeuigkeiten]);
+    setCurrentPage(1); // Reset to first page on category change
+  }, [selectedCategory, showNeuigkeiten]);
 
   return (
     <>
       <div className="mx-auto">
         <header
-          className="min-h-96  w-full bg-cover bg-center relative mb-10 p-10"
+          className="min-h-96 w-full bg-cover bg-center relative mb-10 p-10"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
-          >
-            <h1
-              className={`text-[#eb7b24] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
-            >
+          <div className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start">
+            <h1 className="text-[#eb7b24] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20">
               Neuigkeiten
             </h1>
           </div>
         </header>
+
         <section className="container p-6">
           {/* Toggle Buttons */}
           <div className="flex flex-wrap justify-center gap-4 my-10">
@@ -98,7 +90,7 @@ export default function Neuigkeiten() {
                 ))}
               </select>
               <div className="absolute right-4 top-1/2 transform -translate-y-1/2 pointer-events-none text-white font-semibold text-xl">
-                ▾{" "}
+                ▾
               </div>
             </div>
           </div>
@@ -108,7 +100,7 @@ export default function Neuigkeiten() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10 bg-[#fff6ea]"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-10"
           >
             {paginatedNews.length > 0 ? (
               paginatedNews.map((news) => (
@@ -119,20 +111,16 @@ export default function Neuigkeiten() {
                   transition={{ duration: 0.3 }}
                   className="max-w-screen-lg h-[450px] overflow-hidden shadow-xl rounded-lg"
                 >
-                  <div className={`relative h-72 w-full`}>
-                    {/* News Image */}
+                  <div className="relative h-72 w-full">
                     <Image
                       src={news.image}
                       alt={news.title}
                       fill
-                      // width={260}
-                      // height={260}
                       quality={100}
                       className="object-cover rounded-t-lg"
                     />
                   </div>
 
-                  {/* News Content */}
                   <div className="p-5">
                     <h3 className="font-bold text-xl sm:text-base mb-3 text-gray-800 hover:underline">
                       <Link href={news.mehr}>{news.title}</Link>
@@ -143,14 +131,6 @@ export default function Neuigkeiten() {
                     <p className="text-sm text-gray-800 line-clamp-2">
                       {news.content}
                     </p>
-                    {/* <p className="pt-2 text-base font-bold text-blue-500">
-                    Category: {news.category}
-                  </p> */}
-                    {/* <p className="mt-2 text-base">
-                      <button className="px-2 py-1 font-semibold text-white rounded-lg bg-[#ffb400]">
-                        <Link href={news.mehr}>Mehr lesen...</Link>
-                      </button>
-                    </p> */}
                   </div>
                 </motion.div>
               ))

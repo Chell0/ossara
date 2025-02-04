@@ -7,7 +7,7 @@ export default function Page() {
     <div className="bg-white relative">
       <main className="p-6">
         <NavBar />
-        <div className="container max-w-screen-lg mx-auto mt-20 bg-[#fff6ea] p-10 rounded-lg shadow-2xl">
+        <div className="container max-w-screen-md mx-auto mt-20 bg-[#fff6ea] p-10 rounded-lg shadow-sm">
           {/* News Date */}
           <h3 className="text-center text-gray-500 mb-5 uppercase">
             06. November 2023
@@ -21,7 +21,7 @@ export default function Page() {
           </h1>
 
           {/* News Image */}
-          <div className="flex items-center justify-center mt-10 mb-5 max-w-screen-xl">
+          <div className="flex items-center justify-center mt-10 mb-5 max-w-screen-lg">
             <Image
               src={`/news/picture-1.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
@@ -35,7 +35,7 @@ export default function Page() {
           </div>
 
           {/* News Content */}
-          <section className="max-w-screen-lg mx-auto mt-20 prose prose-sm prose-stone prose-headings:text-2xl prose-headings:text-orange-500 prose-headings:font-semibold prose-a:text-orange-500 prose-a:target:_blank prose-a:rel:noreferrer">
+          <section className="max-w-screen-md mx-auto mt-20 prose prose-sm prose-stone prose-headings:text-2xl prose-headings:text-orange-500 prose-headings:font-semibold prose-a:text-orange-500 prose-a:target:_blank prose-a:rel:noreferrer">
             <p className="mt-4 text-base text-[#eb7b24]">
               <b>Wann?</b> 06.11.2023, 18:30 Uhr
             </p>

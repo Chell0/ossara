@@ -1,5 +1,5 @@
-"use client";
-
+import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -194,181 +194,87 @@ const formatDate = (dateString: string) => {
   });
 };
 
-export default function Veranstaltungen() {
+export default function Page() {
   const currentDate = new Date();
 
-  // Separate current and future events from past events
-  const currentAndFutureEvents = eventsData.filter(
-    (event) => new Date(event.date) >= currentDate
-  );
-  const pastEvents = eventsData.filter(
-    (event) => new Date(event.date) < currentDate
-  );
-
-  // Sort events in ascending order by date
-  currentAndFutureEvents.sort(
-    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
-  );
+  const pastEvents = eventsData
+    .filter((event) => new Date(event.date) < currentDate)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()); // Newest first
 
   return (
-    <>
-      <div className="mx-auto">
-        {/* Events Title */}
-        <header
-          className="min-h-96 w-full bg-cover bg-center relative mb-10 p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
-        >
-          <div className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start">
-            <h1 className="text-[#eb7b24] drop-shadow-xl text-[7rem] font-extrabold leading-tight uppercase ml-10 mt-20">
-              Veranstaltungen
-            </h1>
-          </div>
-        </header>
+    <div className="mx-auto">
+      <NavBar />
+      <header
+        className="min-h-96 w-full bg-cover bg-center relative mb-10 p-10"
+        style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+      >
+        <div className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start">
+          <h1 className="text-[#eb7b24] drop-shadow-xl text-[5rem] font-extrabold leading-tight uppercase pt-10 ml-10 mt-20">
+            Veranstaltungsarchiv
+          </h1>
+        </div>
+      </header>
 
-        {/* Current and Future Events */}
-        <h3 className="my-20 text-5xl font-semibold text-center text-[#eb7b24]">
-          Upcoming Events
-        </h3>
-
-        {/* Current and Future Events Section */}
-        <section className="m-10">
-          <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-3">
-            {currentAndFutureEvents.length > 0 ? (
-              currentAndFutureEvents.map((event) => (
-                <div
-                  key={event.id}
-                  className="max-w-screen-lg overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
-                >
-                  {/* Image section */}
-                  <div className="relative w-full h-56">
-                    <Image
-                      src={event.imageUrl}
-                      alt={event.title}
-                      fill
-                      // width={200}
-                      // height={100}
-                      quality={100}
-                      className="object-contain rounded-t-lg"
-                    />
-                  </div>
-
-                  {/* Content section */}
-                  <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
-                    {/* Event Title */}
-                    <h3 className="mt-2 text-base font-semibold text-gray-900">
-                      {event.title}
-                    </h3>
-
-                    {/* Event Type */}
-                    <div className="mt-2 text-sm text-gray-500">
-                      What: {event.type}
-                    </div>
-
-                    {/* Event Date & Time */}
-                    <div className="mt-2 text-sm text-gray-500">
-                      Wann: {formatDate(event.date)}, {event.time}
-                    </div>
-
-                    {/* Event Description */}
-                    <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
-                      {event.description}
-                    </p>
-
-                    {/* Event Read Now link */}
-                    <Link
-                      href={event.link}
-                      className="mt-4 text-sm text-[#eb7b24] hover:underline"
-                    >
-                      Read Now →
-                    </Link>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p className="text-xl font-bold text-center text-gray-800 col-span-full">
-                No upcoming events found.
-              </p>
-            )}
-          </div>
-        </section>
-
-        {/* Archived Events Section */}
-        <h3 className="pt-20 pb-10 text-5xl font-semibold text-center text-[#eb7b24]">
-          Veranstaltungsarchiv
-        </h3>
-
-        <section className="m-10">
-          <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-3">
-            {pastEvents.slice(0, 3).map((event) => (
-              <div
-                key={event.id}
-                className="max-w-screen-lg overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
-              >
-                {/* Image section */}
-                <div className="relative w-full h-56">
-                  <Image
-                    src={event.imageUrl}
-                    alt={event.title}
-                    fill
-                    quality={100}
-                    className="object-contain rounded-t-lg"
-                  />
-                </div>
-
-                {/* Content section */}
-                <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
-                  {/* Event Title */}
-                  <h3 className="mt-2 text-base font-semibold text-gray-900 line-clamp-2">
-                    {event.title}
-                  </h3>
-
-                  {/* Event Type */}
-                  <div className="mt-2 text-sm text-gray-500">
-                    What: {event.type}
-                  </div>
-
-                  {/* Event Date & Time */}
-                  <div className="mt-2 text-sm text-gray-500">
-                    Wann: {formatDate(event.date)}, {event.time}
-                  </div>
-
-                  {/* Event Description */}
-                  <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
-                    {event.description}
-                  </p>
-
-                  {/* Event Read Now link */}
-                  <Link
-                    href={event.link}
-                    className="mt-4 text-sm text-[#eb7b24] hover:underline"
-                  >
-                    Read Now →
-                  </Link>
-                </div>
+      <section className="m-10">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+          {pastEvents.map((event) => (
+            // Reuse your event card component here
+            <div
+              key={event.id}
+              className="max-w-screen-lg overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
+            >
+              {/* Image section */}
+              <div className="relative w-full h-56">
+                <Image
+                  src={event.imageUrl}
+                  alt={event.title}
+                  fill
+                  quality={100}
+                  className="object-contain rounded-t-lg"
+                />
               </div>
-            ))}
-          </div>
 
-          {/* Show "More Events" button if there are more than 3 archived events */}
-          {pastEvents.length > 3 && (
-            <div className="mt-10 text-center">
-              <Link
-                href="/veranstaltungen/archives"
-                className="px-8 py-3 text-lg font-semibold text-white bg-[#eb7b24] rounded-lg hover:bg-[#d96c1f] transition-colors"
-              >
-                Mehr Veranstaltungen anzeigen ({pastEvents.length - 3}+)
-              </Link>
+              {/* Content section */}
+              <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
+                {/* Event Title */}
+                <h3 className="mt-2 text-base font-semibold text-gray-900 line-clamp-2">
+                  {event.title}
+                </h3>
+
+                {/* Event Type */}
+                <div className="mt-2 text-sm text-gray-500">
+                  What: {event.type}
+                </div>
+
+                {/* Event Date & Time */}
+                <div className="mt-2 text-sm text-gray-500">
+                  Wann: {formatDate(event.date)}, {event.time}
+                </div>
+
+                {/* Event Description */}
+                <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
+                  {event.description}
+                </p>
+
+                {/* Event Read Now link */}
+                <Link
+                  href={event.link}
+                  className="mt-4 text-sm text-[#eb7b24] hover:underline"
+                >
+                  Read Now →
+                </Link>
+              </div>
             </div>
-          )}
+          ))}
+        </div>
 
-          {/* Empty state message */}
-          {pastEvents.length === 0 && (
-            <p className="text-center text-gray-600">
-              Keine archivierten Veranstaltungen gefunden.
-            </p>
-          )}
-        </section>
-      </div>
-    </>
+        {pastEvents.length === 0 && (
+          <p className="text-center text-gray-600">
+            Derzeit sind keine archivierten Veranstaltungen verfügbar.
+          </p>
+        )}
+      </section>
+      <Footer />
+    </div>
   );
 }
