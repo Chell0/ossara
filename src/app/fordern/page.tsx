@@ -3,13 +3,13 @@ import FördernUndSpenden from "@/components/FördernUndSpenden/FördernUndSpend
 import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
-	return (
-		<div>
-			<main className="p-6">
-				<NavBar />
-				<FördernUndSpenden />
-				<Footer />
-			</main>
-		</div>
-	);
+  return (
+    <div>
+      <main className="p-6">
+        <NavBar />
+        <FördernUndSpenden />
+        <Footer />
+      </main>
+    </div>
+  );
 }

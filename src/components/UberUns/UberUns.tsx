@@ -1,5 +1,6 @@
-import TeamSection from "@/components/UberUns/TeamSection/TeamSection";
 import Image from "next/image";
+
+import TeamSection from "@/components/UberUns/TeamSection/TeamSection";
 
 export default function UberUns() {
   return (

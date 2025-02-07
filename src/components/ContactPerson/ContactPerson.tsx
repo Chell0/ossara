@@ -1,5 +1,6 @@
-import { ContactPersonProps } from "@/app/lib/interface";
 import Image from "next/image";
+
+import { ContactPersonProps } from "@/app/lib/interface";
 
 const ContactPerson: React.FC<ContactPersonProps> = ({
   name,

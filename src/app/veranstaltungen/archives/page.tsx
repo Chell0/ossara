@@ -1,7 +1,8 @@
-import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 import Link from "next/link";
+
+import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/NavBar";
 
 type Event = {
   id: number;

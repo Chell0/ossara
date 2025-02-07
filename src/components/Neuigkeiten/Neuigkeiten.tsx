@@ -1,9 +1,10 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+
 import { archiveData, categories, newsData } from "../../../data";
 
 export default function Neuigkeiten() {
@@ -15,13 +16,13 @@ export default function Neuigkeiten() {
   const allNews = showNeuigkeiten ? newsData : archiveData;
 
   const filteredNews = allNews.filter(
-    (news) => !selectedCategory || news.category === selectedCategory
+    (news) => !selectedCategory || news.category === selectedCategory,
   );
 
   const pageCount = Math.ceil(filteredNews.length / itemsPerPage);
   const paginatedNews = filteredNews.slice(
     (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage
+    currentPage * itemsPerPage,
   );
 
   useEffect(() => {

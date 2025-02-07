@@ -1,6 +1,6 @@
+import EineWeltPromotorinnen from "@/components/EineWeltPromotorinnen/EineWeltPromotorinnen";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
-import EineWeltPromotorinnen from "@/components/EineWeltPromotorinnen/EineWeltPromotorinnen";
 
 export default function Page() {
   return (

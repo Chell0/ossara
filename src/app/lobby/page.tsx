@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
 import Lobby from "@/components/Lobby/Lobby";
+import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (

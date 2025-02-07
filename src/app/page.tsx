@@ -1,10 +1,11 @@
+import Image from "next/image";
+
 import Footer from "@/components/Footer/Footer";
 import Donate from "@/components/Home/Donate/Donate";
 import Gallery from "@/components/Home/Gallery/Gallery";
 import HeaderCarousel from "@/components/Home/HeaderCarousel/HeaderCarousel";
 import NavBar from "@/components/NavBar/NavBar";
 import NewsLetter from "@/components/Newsletter/Newsletter";
-import Image from "next/image";
 
 export default function Home() {
   return (
