@@ -1,6 +1,14 @@
 {
   "extends": "next/core-web-vitals",
   "plugins": ["prettier", "simple-import-sort", "@typescript-eslint"],
+  "parserOptions": {
+    "project": "./tsconfig.json"  // Ensure this points to your TypeScript config
+  },
+  "settings": {
+    "react": {
+      "version": "detect"  // Automatically detect React version
+    }
+  },
   "rules": {
     "prettier/prettier": "error",
     "no-unused-vars": "warn",
@@ -19,31 +27,19 @@
           {
             "groups": [
               // Packages `react` related packages come first.
-              [
-                "^react",
-                "^@?\\w",
-                "^@mui",
-                "^next",
-                "^@emotion",
-                "^@chakra-ui"
-              ],
+              ["^react", "^@?\\w", "^@mui", "^next", "^@emotion", "^@chakra-ui"],
               ["^(@|components)(/.*|$)", "^sections", "^pages", "^data"],
               // Side effect imports
               ["^\\u0000"],
               // Parent imports. Put `..` last.
-              ["^\\.\\.(?|/?$)", "^\\.\\./?$"],
+              ["^\\.\\./?$"],
               // Other relative imports. Put same-folder imports and `.` last.
               ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
               // Style imports. Put all css/sass imports after.
               ["^.+\\.?(css)$"]
             ]
           }
-        ]
-      }
-    },
-    {
-      "files": ["*.ts", "*.tsx"],
-      "rules": {
+        ],
         "@typescript-eslint/no-unused-vars": "off",
         "react/display-name": "off"
       }

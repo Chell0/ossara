@@ -1,4 +1,4 @@
-import Engagieren from "@/components/Engagieren/Engagieren";
+import BecomeMember from "@/components/BecomeMember/BecomeMember";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 
@@ -7,7 +7,7 @@ export default function Page() {
     <div>
       <main className="bg-[#fef5db]">
         <NavBar />
-        <Engagieren />
+        <BecomeMember />
         <Footer />
       </main>
     </div>
