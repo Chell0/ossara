@@ -1,6 +1,7 @@
-import ContactPerson from "@/components/ContactPerson/ContactPerson";
 import Image from "next/image";
 import Link from "next/link";
+
+import ContactPerson from "@/components/ContactPerson/ContactPerson";
 
 export default function Dekoloniale() {
   return (
@@ -43,9 +44,9 @@ export default function Dekoloniale() {
                 ein, koloniale Strukturen zu hinterfragen und bestehende
                 Machtungleichheiten zu überwinden. In enger Zusammenarbeit mit
                 lokalen Partner:innen in <b>Togo</b>, <b>Benin</b> und{" "}
-                <b>Côte d'Ivoire</b> arbeiten wir daran, die Selbstbestimmung
-                der Gemeinschaften zu stärken und die Lebensbedingungen
-                langfristig zu verbessern.
+                <b>Côte d&apos;Ivoire</b> arbeiten wir daran, die
+                Selbstbestimmung der Gemeinschaften zu stärken und die
+                Lebensbedingungen langfristig zu verbessern.
               </p>
               <p className="mt-4">
                 Dabei legen wir großen Wert auf diasporische Stimmen, die
@@ -150,8 +151,8 @@ export default function Dekoloniale() {
               <Image
                 src={`/bgs/img1.jpg`}
                 alt="Dekoloniale Photo"
-                width={480}
-                height={690}
+                width="480"
+                height="690"
                 quality={100}
                 className="w-full h-full object-cover shadow-lg"
               />
