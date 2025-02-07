@@ -1,6 +1,11 @@
 {
   "extends": "next/core-web-vitals",
-  "plugins": ["prettier", "simple-import-sort", "@typescript-eslint"],
+  "plugins": [
+    "prettier",
+    "unused-imports",
+    "simple-import-sort",
+    "@typescript-eslint"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json" // Ensure this points to your TypeScript config
   },
