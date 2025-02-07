@@ -21,8 +21,8 @@ export default function Home() {
             <Image
               src={`/bgs/img1.jpg`}
               alt="About Photo"
-              width={480}
-              height={640}
+              width="480"
+              height="640"
               quality={100}
               className="w-full h-auto rounded-lg shadow-lg"
             />

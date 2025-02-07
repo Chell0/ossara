@@ -1,7 +1,8 @@
-import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 import Link from "next/link";
+
+import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
@@ -26,8 +27,8 @@ export default function Page() {
             <Image
               src={`/news/picture-4.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
-              width={1080}
-              height={872}
+              width="1080"
+              height="872"
               priority
               quality={100}
               className={`object-contain object-center rounded-md`}
