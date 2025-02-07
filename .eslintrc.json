@@ -2,11 +2,11 @@
   "extends": "next/core-web-vitals",
   "plugins": ["prettier", "simple-import-sort", "@typescript-eslint"],
   "parserOptions": {
-    "project": "./tsconfig.json"  // Ensure this points to your TypeScript config
+    "project": "./tsconfig.json" // Ensure this points to your TypeScript config
   },
   "settings": {
     "react": {
-      "version": "detect"  // Automatically detect React version
+      "version": "detect" // Automatically detect React version
     }
   },
   "rules": {
@@ -16,7 +16,9 @@
     "func-names": "off",
     "no-process-exit": "off",
     "object-shorthand": "off",
-    "simple-import-sort/exports": "error"
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
+    "unused-imports/no-unused-imports": "error"
   },
   "overrides": [
     {
@@ -27,7 +29,14 @@
           {
             "groups": [
               // Packages `react` related packages come first.
-              ["^react", "^@?\\w", "^@mui", "^next", "^@emotion", "^@chakra-ui"],
+              [
+                "^react",
+                "^@?\\w",
+                "^@mui",
+                "^next",
+                "^@emotion",
+                "^@chakra-ui"
+              ],
               ["^(@|components)(/.*|$)", "^sections", "^pages", "^data"],
               // Side effect imports
               ["^\\u0000"],

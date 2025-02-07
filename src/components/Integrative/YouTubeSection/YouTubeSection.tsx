@@ -1,7 +1,8 @@
 "use client";
 
-import { YouTubeSectionProps } from "@/app/lib/interface";
 import YouTube, { YouTubeProps } from "react-youtube";
+
+import { YouTubeSectionProps } from "@/app/lib/interface";
 
 export default function YouTubeSection({ videoId }: YouTubeSectionProps) {
   const onPlayerReady: YouTubeProps["onReady"] = (event) => {

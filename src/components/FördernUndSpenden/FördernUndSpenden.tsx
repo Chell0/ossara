@@ -1,8 +1,8 @@
-import { bebasNeue } from "@/app/fonts";
-import DonationForm from "@/components/FördernUndSpenden/DonationForm/DonationForm";
-import DonationQuestions from "@/components/FördernUndSpenden/DonationQuestions/DonationQuestions";
 import Image from "next/image";
 import Link from "next/link";
+
+import DonationForm from "@/components/FördernUndSpenden/DonationForm/DonationForm";
+import DonationQuestions from "@/components/FördernUndSpenden/DonationQuestions/DonationQuestions";
 
 export default function FördernUndSpenden() {
   return (
@@ -11,7 +11,7 @@ export default function FördernUndSpenden() {
         {/* Banner Section */}
         <section className="text-[#ffb400] text-center py-12">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
+            className={`drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
           >
             Fördern und Spenden
           </h1>
@@ -22,15 +22,15 @@ export default function FördernUndSpenden() {
             <Image
               src={`/bgs/donate.jpg`}
               alt="About Photo"
-              width={350}
-              height={350}
+              width="350"
+              height="350"
               quality={100}
               className="object-contain w-full h-auto shadow-lg rounded-2xl"
             />
           </div>
           <div className="w-full md:w-1/2">
             <h3
-              className={`${bebasNeue.className} text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
+              className={`text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
             >
               Hilf uns mit Deiner Spende
             </h3>

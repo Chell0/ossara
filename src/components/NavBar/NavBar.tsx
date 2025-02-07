@@ -1,8 +1,9 @@
 "use client";
 
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
+
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 
 export default function NavBar() {

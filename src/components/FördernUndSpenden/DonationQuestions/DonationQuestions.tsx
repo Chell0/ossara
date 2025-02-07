@@ -1,4 +1,3 @@
-import { bebasNeue } from "@/app/fonts";
 import Link from "next/link";
 
 export default function DonationQuestions() {
@@ -7,7 +6,7 @@ export default function DonationQuestions() {
       <div className="bg-gray-100 text-gray-800 py-16 px-6 sm:px-12 lg:px-24 mt-20 rounded-xl shadow-xl">
         <div className="max-w-3xl mx-auto text-center">
           <h3
-            className={`${bebasNeue.className} text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
+            className={`text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
           >
             Häufige fragen zu spenden an Ossara
           </h3>

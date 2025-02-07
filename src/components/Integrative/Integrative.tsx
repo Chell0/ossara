@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import ContactPerson from "@/components/ContactPerson/ContactPerson";
 import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
-import Image from "next/image";
 
 export default function Integrative() {
   return (

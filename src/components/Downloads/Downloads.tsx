@@ -1,4 +1,3 @@
-import { bebasNeue } from "@/app/fonts";
 import Link from "next/link";
 
 export default function Downloads() {
@@ -8,7 +7,7 @@ export default function Downloads() {
         {/* Title Section */}
         <header className="text-[#ffb400] text-center py-12">
           <h1
-            className={`${bebasNeue.className} drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
+            className={`drop-shadow-xl text-8xl font-bold leading-tight uppercase`}
           >
             Downloads
           </h1>
