@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar/NavBar";
 export default function Page() {
   return (
     <div>
-      <main className="p-6">
+      <main className="bg-[#fef5db]">
         <NavBar />
         <FördernUndSpenden />
         <Footer />

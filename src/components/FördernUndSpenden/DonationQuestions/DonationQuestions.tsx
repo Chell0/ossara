@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function DonationQuestions() {
   return (
     <>
-      <div className="bg-gray-100 text-gray-800 py-16 px-6 sm:px-12 lg:px-24 mt-20 rounded-xl shadow-xl">
-        <div className="max-w-3xl mx-auto text-center">
-          <h3
-            className={`text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
+      <div className="h-screen w-full relative">
+        <div className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8">
+          <h2
+            className={`text-[#fcc41b] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-center drop-shadow-sm`}
           >
             Häufige fragen zu spenden an Ossara
-          </h3>
-          <p className="mt-2 text-base">
+          </h2>
+          <p className="max-w-2xl mt-4 text-gray-500 text-lg">
             Wie lautet das Spendenkonto? Ihr könnt einmalig oder wiederkehrend
             über das Spendenformular spenden. Falls es Euch lieber ist, könnt
             ihr auch die Kontoverbindung verwenden:
@@ -19,47 +19,47 @@ export default function DonationQuestions() {
             <p className="text-lg font-bold text-gray-950 uppercase">
               Ossara e.V.
             </p>
-            <p className="text-lg font-bold text-orange-500">
+            <p className="text-lg font-bold text-gray-700">
               Steuernummer:{" "}
-              <span className="text-lg font-semibold text-blue-500">
+              <span className="text-lg font-semibold text-gray-500">
                 17 / 451 / 09817
               </span>
             </p>
-            <p className="text-lg font-semibold text-orange-500">
+            <p className="text-lg font-semibold text-gray-700">
               Spendenkonto:{" "}
-              <span className="text-lg font-semibold text-blue-500">
+              <span className="text-lg font-semibold text-gray-500">
                 Hamburger Volksbank
               </span>
             </p>
-            <p className="text-lg font-semibold text-orange-500">
+            <p className="text-lg font-semibold text-gray-700">
               IBAN:{" "}
-              <span className="text-lg font-semibold text-blue-500">
+              <span className="text-lg font-semibold text-gray-500">
                 DE68 2019 0003 0006 0538 07
               </span>
             </p>
-            <p className="text-lg font-semibold text-orange-500">
+            <p className="text-lg font-semibold text-gray-700">
               Amtsgericht Hamburg:{" "}
-              <span className="text-lg font-semibold text-blue-500">
+              <span className="text-lg font-semibold text-gray-500">
                 VR 23447
               </span>
             </p>
           </div>
           <div className="mt-6 text-center">
             <p className="text-lg font-bold text-gray-950">Kontakt</p>
-            <p className="text-lg font-semibold text-orange-500">
+            <p className="text-lg font-semibold text-gray-700">
               Tel.:{" "}
               <Link
                 href="tel:+4915213062798"
-                className="text-lg font-semibold text-blue-500 hover:underline"
+                className="text-lg font-semibold text-gray-500 hover:underline"
               >
                 (+49) 152 1306 2798
               </Link>
             </p>
-            <p className="text-lg font-semibold text-orange-500">
+            <p className="text-lg font-semibold text-gray-700">
               E-Mail:{" "}
               <Link
                 href="mailto:spenden@eoto-archiv.de"
-                className="text-lg font-semibold text-blue-500 hover:underline"
+                className="text-lg font-semibold text-gray-500 hover:underline"
               >
                 info@ossara.de
               </Link>
