@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import DonationForm from "@/components/FördernUndSpenden/DonationForm/DonationForm";
@@ -7,48 +6,46 @@ import DonationQuestions from "@/components/FördernUndSpenden/DonationQuestions
 export default function FördernUndSpenden() {
   return (
     <>
-      <div className="container mx-auto">
+      <div>
         {/* Banner Section */}
-        <section className="text-[#ffb400] text-center py-12">
-          <h1
-            className={`drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
+        <header
+          className="h-screen w-full bg-cover bg-center relative p-10"
+          style={{ backgroundImage: "url(/bgs/donate.jpg)" }}
+        >
+          <div
+            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
           >
-            Fördern und Spenden
-          </h1>
-        </section>
-
-        <section className="flex flex-col items-center py-10 mx-10 mt-20 mb-20 md:flex-row gap-20">
-          <div className="flex-shrink-0 w-full md:w-1/2">
-            <Image
-              src={`/bgs/donate.jpg`}
-              alt="About Photo"
-              width="350"
-              height="350"
-              quality={100}
-              className="object-contain w-full h-auto shadow-lg rounded-2xl"
-            />
+            <h1
+              className={`text-[#fcc41b] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
+            >
+              Fördern.
+              <br /> und.
+              <br /> Spenden.
+            </h1>
           </div>
-          <div className="w-full md:w-1/2">
-            <h3
-              className={`text-[#ffb400] text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center drop-shadow-sm`}
+        </header>
+
+        <section className="h-screen w-full relative">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8">
+            <h2
+              className={`text-[#fcc41b] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-center drop-shadow-sm`}
             >
               Hilf uns mit Deiner Spende
-            </h3>
-            <p className="mt-4 text-gray-500 text-base">
+            </h2>
+            <p className="max-w-xl mt-4 text-gray-500 text-base">
               Einmalige und regelmäßige Spenden der{" "}
               <span className="font-bold text-black">OSSARA Community</span>{" "}
               ermöglichen unsere Arbeit. Durch Deinen Beitrag stellst Du sicher,
               dass wir uns auf unsere Arbeit konzentrieren und diese auch in
               Zukunft unabhängig gestalten können.
             </p>
-            <button className="bg-[#ffb400] hover:bg-blended-gradient mt-5 px-8 py-4 rounded-2xl shadow-xl">
-              <Link
-                href="#donation-form"
-                className="font-semibold text-white text-base"
-              >
-                Jetzt Spenden
-              </Link>
-            </button>
+            <Link
+              href="#donation-form"
+              aria-label="Donate"
+              className="px-8 py-4 text-xl font-medium text-white bg-[#ffb400] rounded-lg hover:bg-[#e6a200] transition-colors"
+            >
+              Jetzt Spenden
+            </Link>
           </div>
         </section>
 
