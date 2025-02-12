@@ -1,7 +1,7 @@
+import PhoneIcon from "@heroicons/react/solid/PhoneIcon";
 import Image from "next/image";
 
 import { ContactPersonProps } from "@/app/lib/interface";
-import PhoneIcon from "@heroicons/react/solid/PhoneIcon";
 
 const ContactPerson: React.FC<ContactPersonProps> = ({
   name,
