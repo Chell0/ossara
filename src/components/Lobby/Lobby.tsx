@@ -21,19 +21,19 @@ export default function Lobby() {
         </header>
 
         <section className="relative w-full min-h-screen text-[#58bc90]">
-          <div className="flex md:flex-grow flex-row mb-10">
+          <div className="flex flex-col md:flex-row md:flex-grow">
             <div className="basis-full">
-              <h3 className="text-6xl md:text-7xl font-semibold leading-tight m-4">
+              <h2 className="m-4 text-5xl md:text-6xl font-semibold leading-tight">
                 Durch Netzwerk- und Lobbyarbeit setzen wir uns für mehr Rechte,
                 Sichtbarkeit und Teilhabe in Hamburg ein, um nachhaltige
                 Veränderungen auf politischer und gesellschaftlicher Ebene zu
                 erreichen.
-              </h3>
+              </h2>
             </div>
           </div>
-          <div className="flex md:flex-grow flex-row justify-end">
-            <div className="basis-1/2 mr-10 mt-10 mb-20 text-gray-800">
-              <p className="mt-4 text-md">
+          <div className="flex flex-col md:flex-row justify-end">
+            <div className="basis-2/3 p-2 text-gray-700">
+              <p className="mt-20 text-xl">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
                 Lobbyarbeit für die Belange von BIPoC und migrantischen
@@ -42,7 +42,7 @@ export default function Lobby() {
                 für mehr Sichtbarkeit, Rechte und Teilhabe dieser Gruppen in
                 Hamburg ein.
               </p>
-              <p className="mt-4 text-md">
+              <p className="mt-2 text-xl">
                 Darüber hinaus bieten wir Unterstützung und Starthilfe für
                 andere Initiativen, die sich mit ähnlichen Themen beschäftigen,
                 und fördern die Vernetzung von Akteur:innen, Vereinen und
@@ -55,54 +55,56 @@ export default function Lobby() {
         </section>
 
         {/*Netzwerkarbeit*/}
-        <section className="relative w-full min-h-screen text-[#58bc90]">
-          <div className="flex md:flex-grow flex-row gap-10 m-8">
-            <div className="basis-1/2 p-4">
-              <h3
-                className={`text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-left drop-shadow-md`}
-              >
-                NETZ:WERKSTATT – Netzwerken mal anders
-              </h3>
-              <p className="mt-4 text-gray-800 text-md">
-                Die NETZ:WERKSTATT bietet einmal im Monat einen Raum, in dem
-                Netzwerken und kreatives Arbeiten miteinander verbunden werden.
-                In einer offenen und einladenden Atmosphäre haben Teilnehmende
-                die Möglichkeit, ihre Ideen auszutauschen und gleichzeitig
-                kreative Prozesse zu erleben.
-              </p>
-              <p className="mt-4 text-gray-800 text-md">
-                Unter der Leitung von Fabienne Schöter, Kunsttherapeutin, wird
-                die Veranstaltung monatlich verschiedene kreative Ansätze
-                bieten, die den Austausch und das gegenseitige Lernen fördern.
-                Wir verstehen diesen Raum als Braver Space, in dem wir uns mutig
-                ausdrücken und uns gegenseitig stärken können. Hier sind alle
-                willkommen, die sich für eine solidarische Gesellschaft
-                einsetzen und offen für interkulturellen Austausch sind.
-              </p>
-              <p className="mt-4 text-gray-800 text-md">
-                Wann & Wo?
-                <br />
-                Die Veranstaltung findet einmal im Monat statt. Verfolgt unsere
-                Veranstaltungsankündigungen und meldet euch an, um keine Termine
-                zu verpassen!
-                <br />
-                <b className="text-[#58bc90]">Ort:</b>{" "}
-                <span className="text-[#58bc90]">
-                  SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
-                </span>
-              </p>
-              <p className="mt-4 text-gray-800 text-md">
-                Die Teilnahme ist kostenlos.
-              </p>
-            </div>
-            <div className="basis-1/2 flex justify-center items-center p-4 h-[480px] md:h-[560px]">
+        <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 md:flex-row md:gap-12 md:px-8">
+          {/* Text Content */}
+          <div className="flex flex-1 flex-col justify-center md:w-1/2">
+            <h3
+              className={`text-[#58bc90] text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-left`}
+            >
+              NETZ:WERKSTATT – Netzwerken mal anders
+            </h3>
+            <p className="mt-4 text-gray-800 text-md">
+              Die NETZ:WERKSTATT bietet einmal im Monat einen Raum, in dem
+              Netzwerken und kreatives Arbeiten miteinander verbunden werden. In
+              einer offenen und einladenden Atmosphäre haben Teilnehmende die
+              Möglichkeit, ihre Ideen auszutauschen und gleichzeitig kreative
+              Prozesse zu erleben.
+            </p>
+            <p className="mt-4 text-gray-800 text-md">
+              Unter der Leitung von Fabienne Schöter, Kunsttherapeutin, wird die
+              Veranstaltung monatlich verschiedene kreative Ansätze bieten, die
+              den Austausch und das gegenseitige Lernen fördern. Wir verstehen
+              diesen Raum als Braver Space, in dem wir uns mutig ausdrücken und
+              uns gegenseitig stärken können. Hier sind alle willkommen, die
+              sich für eine solidarische Gesellschaft einsetzen und offen für
+              interkulturellen Austausch sind.
+            </p>
+            <p className="mt-4 text-gray-800 text-md">
+              Wann & Wo?
+              <br />
+              Die Veranstaltung findet einmal im Monat statt. Verfolgt unsere
+              Veranstaltungsankündigungen und meldet euch an, um keine Termine
+              zu verpassen!
+              <br />
+              <b className="text-[#58bc90]">Ort:</b>{" "}
+              <span className="text-[#58bc90]">
+                SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
+              </span>
+            </p>
+            <p className="text-gray-800 text-md">
+              Die Teilnahme ist kostenlos.
+            </p>
+          </div>
+          {/* Image Container */}
+          <div className="flex flex-1 items-center justify-center md:w-1/2">
+            <div className="relative h-[60vh] w-full max-w-2xl md:h-[70vh]">
               <Image
                 src={`/bgs/img1.jpg`}
                 alt="About Photo"
-                width={480}
-                height={560}
+                fill
                 quality={100}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
+                className="rounded-xl object-cover shadow-2xl"
+                priority
               />
             </div>
           </div>

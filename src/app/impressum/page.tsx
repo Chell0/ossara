@@ -4,15 +4,22 @@ import NavBar from "@/components/NavBar/NavBar";
 export default function Page() {
   return (
     <div>
-      <main className="p-6">
+      <main className="bg-[#fef5db]">
         <NavBar />
-        <div className="text-[#ffb400] text-center py-12 mt-10">
-          <h1
-            className={`drop-shadow-xl text-8xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight uppercase`}
+        <header
+          className="h-screen w-full bg-cover bg-center relative p-10"
+          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+        >
+          <div
+            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
           >
-            Impressum
-          </h1>
-        </div>
+            <h1
+              className={`text-[#ffb400] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
+            >
+              Impressum.
+            </h1>
+          </div>
+        </header>
         <div className="p-10 mx-5 mt-10">
           <div>
             <h4 className="text-2xl font-semibold text-[#ffb400]">
