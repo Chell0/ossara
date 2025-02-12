@@ -7,7 +7,7 @@ export default function Sponsors() {
       <section className="flex items-center justify-center w-full">
         <div className="max-w-3xl mx-auto">
           <h3
-            className={`text-[#eb7b24] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-md`}
+            className={`text-[#eb7b24] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center`}
           >
             Unsere Förderer
           </h3>

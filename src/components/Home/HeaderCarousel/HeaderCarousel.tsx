@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
+import { useState } from "react";
 
 const images = [
   {
@@ -54,45 +54,47 @@ export default function HeaderCarousel() {
 
   return (
     <>
-      <header className="relative w-full h-screen overflow-hidden rounded-lg">
-        {/* Carousel Images */}
-        {/* <div className="flex w-full h-full transition-transform duration-500"> */}
-        <div className="flex w-full h-96 md:h-[600px] lg:h-[800px] transition-transform duration-500">
-          {images.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute w-full h-full ${
-                index === currentIndex ? "opacity-100" : "opacity-0"
-              } transition-opacity duration-700`}
-            >
-              <Image
-                src={image.src}
-                fill={true}
-                alt={`Slide ${index + 1}`}
-                className="object-cover w-full h-full"
-              />
-              {/* Description Box */}
-              <div className="absolute p-5 m-10 text-base text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg bg-opacity-90">
-                {image.description}
+      <div>
+        <header className="relative w-full h-screen overflow-hidden">
+          {/* Carousel Images */}
+          <div className="flex w-full h-full transition-transform duration-500">
+            {images.map((image, index) => (
+              <div
+                key={index}
+                className={`absolute inset-0 w-full h-full ${
+                  index === currentIndex ? "opacity-100" : "opacity-0"
+                } transition-opacity duration-700`}
+              >
+                <Image
+                  src={image.src}
+                  fill
+                  alt={`Slide ${index + 1}`}
+                  className="object-cover"
+                  priority={index === currentIndex}
+                />
+                {/* Description Box */}
+                <div className="absolute p-5 m-10 text-base text-gray-800 rounded-lg bottom-10 right-4 bg-main-bg/90 backdrop-blur-sm">
+                  {image.description}
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute p-2 text-white bg-black bg-opacity-50 bottom-4 right-20 rounded-3xl hover:bg-opacity-75"
-        >
-          &#8592;
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute p-2 text-white bg-black bg-opacity-50 bottom-4 right-4 rounded-3xl hover:bg-opacity-75"
-        >
-          &#8594;
-        </button>
-      </header>
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            className="absolute p-3 text-white transform -translate-y-1/2 bg-black/50 top-1/2 left-4 rounded-xl hover:bg-black/75"
+          >
+            &#8592;
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute p-3 text-white transform -translate-y-1/2 bg-black/50 top-1/2 right-4 rounded-xl hover:bg-black/75"
+          >
+            &#8594;
+          </button>
+        </header>
+      </div>
     </>
   );
 }

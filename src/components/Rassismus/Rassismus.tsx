@@ -24,18 +24,18 @@ export default function Rassismus() {
         </header>
 
         <section className="relative w-full min-h-screen text-[#ba334b]">
-          <div className="flex md:flex-grow flex-row mb-10">
-            <div className="basis-full">
-              <h3 className="text-6xl md:text-7xl font-semibold leading-tight m-6">
+          <div className="flex flex-col md:flex-row md:flex-grow">
+            <div className="basis-full m-4">
+              <p className="text-5xl md:text-6xl font-semibold leading-tight">
                 Sichtbarkeit schaffen, Strukturen verändern: Wir engagieren uns
                 gegen Anti- Schwarzen Rassismus und stärken die Stimmen von
                 BIPoC in politischen und gesellschaftlichen Prozessen.
-              </h3>
+              </p>
             </div>
           </div>
-          <div className="flex md:flex-grow flex-row justify-end">
-            <div className="basis-1/2 mr-10 mt-20 mb-20">
-              <p className="text-base">
+          <div className="flex md:flex-grow flex-row justify-end mt-10">
+            <div className="basis-2/3 p-2 text-gray-700">
+              <p className="text-lg">
                 Ossara e.V. setzt sich in Hamburg aktiv dafür ein,{" "}
                 <b>Anti-Schwarzen Rassismus</b> sichtbar zu machen und Räume für{" "}
                 <b>Empowerment und Austausch</b> für BIPoC zu schaffen. Unsere{" "}
@@ -44,7 +44,7 @@ export default function Rassismus() {
                 <b>Anti-Schwarzem Rassismus</b> und das aktive Arbeiten gegen
                 rassistische Strukturen.
               </p>
-              <p className="text-base mt-4">
+              <p className="mt-2 text-lg">
                 Ein wesentlicher Bestandteil unserer Arbeit ist die Mitwirkung
                 am{" "}
                 <b>
@@ -58,7 +58,7 @@ export default function Rassismus() {
                 betroffenen Gemeinschaften in politischen und gesellschaftlichen
                 Entscheidungsprozessen zu stärken.
               </p>
-              <p className="text-base mt-4">
+              <p className="mt-2 text-lg">
                 Dieser Bereich unserer Arbeit befindet sich noch im Aufbau, aber
                 wir sind fest entschlossen, ihn weiter auszubauen und das
                 Bewusstsein für <b>Anti-Schwarzen Rassismus</b> zu stärken, um
