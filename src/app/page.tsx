@@ -1,34 +1,36 @@
 import Image from "next/image";
 
 import Footer from "@/components/Footer/Footer";
-import Donate from "@/components/Home/Donate/Donate";
 import Gallery from "@/components/Home/Gallery/Gallery";
 import HeaderCarousel from "@/components/Home/HeaderCarousel/HeaderCarousel";
 import NavBar from "@/components/NavBar/NavBar";
-import NewsLetter from "@/components/Newsletter/Newsletter";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div>
-      <main className="container p-6 mx-auto">
+      <main className="bg-[#fef5db]">
         <NavBar />
         {/* Carousel */}
-        <section className="mt-20">
-          <HeaderCarousel />
-        </section>
-        <section className="flex flex-col items-center gap-10 py-10 mx-10 mt-20 mb-20 md:flex-row">
-          <div className="flex-shrink-0 w-full md:w-1/2">
-            <Image
-              src={`/bgs/img1.jpg`}
-              alt="About Photo"
-              width="480"
-              height="640"
-              quality={100}
-              className="w-full h-auto rounded-lg shadow-lg"
-            />
+        <HeaderCarousel />
+        <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 md:flex-row md:gap-12 md:px-8">
+          {/* Image Container */}
+          <div className="flex flex-1 items-center justify-center md:w-1/2">
+            <div className="relative h-[60vh] w-full max-w-2xl md:h-[70vh]">
+              <Image
+                src={`/bgs/img1.jpg`}
+                alt="About Photo"
+                fill
+                quality={100}
+                className="rounded-xl object-cover shadow-2xl"
+                priority
+              />
+            </div>
           </div>
-          <div className="w-full md:w-1/2">
-            <p className="mt-4 text-base text-gray-700">
+
+          {/* Text Content */}
+          <div className="flex flex-1 flex-col justify-center md:w-1/2">
+            <p className="text-lg leading-relaxed text-gray-700 md:text-xl md:leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
               eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.
@@ -45,18 +47,33 @@ export default function Home() {
           </div>
         </section>
         {/* Gallery Section */}
-        <section className="min-h-screen mt-10">
-          <Gallery />
-        </section>
-        {/* Support Section & Newsletter Section */}
-        <section className="flex flex-col items-center gap-10 mt-10 mb-20 md:flex-row">
-          <div className="flex-shrink-0 w-full md:w-1/2">
-            <Donate />
-          </div>
-          <div className="w-full md:w-1/2">
-            <NewsLetter />
-          </div>
-        </section>
+        <Gallery />
+        {/* Support Section */}
+        <div
+          className={`flex justify-between items-center border border-[#fcc41b] rounded-xl p-8 shadow-sm max-w-4xl mx-auto mt-10`}
+        >
+          <p className={`text-gray-800 text-lg`}>
+            Unterstütze Uns Und Werde Supporter*in
+          </p>
+          <Link
+            href={`/fordern`}
+            className={`flex items-center space-x-2 px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-sm bg-[#fcc41b] text-white`}
+          >
+            Fördern & Spenden
+          </Link>
+        </div>
+        {/* Newsletter Section */}
+        <div
+          className={`flex justify-between items-center border border-[#fcc41b] rounded-xl p-8 shadow-sm max-w-4xl mx-auto mt-10`}
+        >
+          <p className={`text-gray-800 text-lg`}>Anmeldung zum Newsletter</p>
+          <Link
+            href={`#`}
+            className={`flex items-center space-x-2 px-8 py-4 text-base sm:px-4 sm:py-2 md:px-6 md:py-3 font-semibold rounded-xl shadow-sm bg-[#fcc41b] text-white`}
+          >
+            Anmelden
+          </Link>
+        </div>
         <Footer />
       </main>
     </div>
