@@ -47,7 +47,7 @@ export default function UberUns() {
               >
                 Über Uns
               </h3>
-              <p className="mt-6 text-md text-gray-800">
+              <p className="mt-6 text-md text-black">
                 Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
                 sich mit einer dekolonialen Perspektive für Bildung, Gesundheit
                 und interkulturelle Vielfalt einsetzt. Wir hinterfragen
@@ -55,7 +55,7 @@ export default function UberUns() {
                 gleichwertige Zusammenarbeit, die auf Respekt, Solidarität und
                 Selbstbestimmung beruht.
               </p>
-              <p className="mt-6 text-md text-gray-800">
+              <p className="mt-6 text-md text-black">
                 Neben unserer internationalen Arbeit in Westafrika (Togo, Benin,
                 Côte d’Ivoire) engagieren wir uns auch in Hamburg. Hier bieten
                 wir integrative Stadtteilarbeit an und unterstützen mit
@@ -65,7 +65,7 @@ export default function UberUns() {
                 Anti-Schwarzem Rassismus auseinander und schaffen Begegnungs-
                 und empowernde Räume für BIPoC.
               </p>
-              <p className="mt-6 text-md text-gray-800">
+              <p className="mt-6 text-md text-black">
                 Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende
                 und nachhaltige Veränderung nur durch einen dekolonialen und
                 machtkritischen Ansatz erreicht werden kann, der die Stimmen und
@@ -82,16 +82,16 @@ export default function UberUns() {
           <div className="flex md:flex-grow flex-row gap-10 m-8">
             <div className="basis-1/2 p-4">
               <h3
-                className={`text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-left drop-shadow-sm`}
+                className={`text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-left`}
               >
                 Verein
               </h3>
-              <p className="mt-4 text-gray-800 text-md">
+              <p className="mt-4 text-black text-base">
                 Als eingetragener Verein (VR 23447) sind wir politisch und
                 konfessionell neutral. Unsere Arbeit umfasst ein breites
                 Spektrum an Tätigkeitsfeldern, darunter:
               </p>
-              <ul className="mt-4 ml-10 space-y-2 text-base font-semibold text-[#f7cc55] list-disc">
+              <ul className="mt-4 ml-5 space-y-1 text-base font-semibold text-[#f7cc55] list-disc">
                 <li>Bildung</li>
                 <li>Kunst- und Kulturförderung</li>
                 <li>Nachhaltige internationale Zusammenarbeit</li>
@@ -106,14 +106,14 @@ export default function UberUns() {
                 </li>
                 <li>Unterstützung hilfsbedürftiger Menschen</li>
               </ul>
-              <p className="mt-4 text-md text-gray-800">
+              <p className="mt-4 text-base text-black">
                 Unsere Projekte werden durch ein starkes Netzwerk aus
                 engagierten Mitgliedern, Mitarbeiter:innen, ehrenamtlichen
                 Helfer:innen und Partnerorganisationen unterstützt. Dabei setzen
                 wir auf die Vielfalt an Erfahrungen und Fähigkeiten in unserem
                 Team, um effektiv, konstruktiv und nachhaltig zu arbeiten.
               </p>
-              <p className="mt-4 text-md text-gray-800">
+              <p className="mt-4 text-base text-black">
                 Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit,
                 sich durch Praktika oder freiwillige Mitarbeit aktiv in Hamburg
                 oder im westafrikanischen Büro einzubringen. Wer uns in unserer
@@ -122,15 +122,18 @@ export default function UberUns() {
                 gerechteren und solidarischeren Zukunft zu arbeiten.
               </p>
             </div>
-            <div className="basis-1/2 flex justify-center items-center p-4 h-[600px] md:h-[700px]">
-              <Image
-                src={`/bgs/img1.jpg`}
-                alt="About Photo"
-                width={480}
-                height={700}
-                quality={100}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-              />
+            <div className="basis-1/2">
+              <div className="relative w-full h-[560px] md:h-[620px]">
+                <Image
+                  src={`/bgs/img1.jpg`}
+                  alt="About Photo"
+                  width={480}
+                  height={620}
+                  quality={100}
+                  priority
+                  className="w-full h-full object-cover shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </section>
@@ -149,24 +152,26 @@ export default function UberUns() {
 
         {/* History Section */}
         <section className="relative w-full min-h-screen mt-20">
-          <div className="flex md:flex-grow flex-row gap-10 m-8">
-            <div className="flex justify-center items-center basis-1/2 p-4 h-[560px] md:h-[500px]">
-              <Image
-                src={`/bgs/img1.jpg`}
-                alt="History Photo"
-                width={480}
-                height={500}
-                quality={100}
-                className="w-full h-full object-cover rounded-lg shadow-lg"
-              />
+          <div className="flex md:flex-grow flex-row gap-8 m-4">
+            <div className="basis-1/2">
+              <div className="relative h-[55vh] w-full md:h-[62vh]">
+                <Image
+                  src={`/bgs/img1.jpg`}
+                  alt="History Photo"
+                  fill
+                  quality={100}
+                  priority
+                  className="w-full h-full object-cover shadow-lg"
+                />
+              </div>
             </div>
-            <div className="basis-1/2 p-4">
+            <div className="basis-1/2">
               <h3
-                className={`text-5xl sm:text-2xl md:text-4xl lg:text-6xl text-[#f7cc55] font-bold text-left drop-shadow-sm`}
+                className={`text-5xl sm:text-2xl md:text-4xl lg:text-6xl text-[#f7cc55] font-semibold text-left`}
               >
                 Unsere Geschichte
               </h3>
-              <p className="text-gray-800 text-md mt-4">
+              <p className="text-black text-base mt-4">
                 Ossara e.V. wurde am 28. Oktober 2017 gegründet, um eine
                 dekoloniale und machtkritische internationale Zusammenarbeit zu
                 fördern. Der Name „Ossara“, der in der Lamba-Sprache aus dem
@@ -175,7 +180,7 @@ export default function UberUns() {
                 Zusammenarbeit und die Stärkung der Selbstbestimmung erreicht
                 wird.
               </p>
-              <p className="text-md mt-4 text-gray-800">
+              <p className="text-base mt-4 text-black">
                 Unsere ersten Projekte begannen in Togo, wo wir mit lokalen
                 Partner:innen Bildungs- und Infrastrukturprojekte durchführten.
                 Im Laufe der Jahre haben wir unsere Arbeit auf weitere
@@ -184,7 +189,7 @@ export default function UberUns() {
                 BIPoC-Communities sowie die Bekämpfung von Rassismus und
                 Diskriminierung konzentriert.
               </p>
-              <p className="text-md mt-4 text-gray-800">
+              <p className="text-base mt-4 text-black">
                 Heute ist Ossara e.V. ein Verein, der nicht nur in Westafrika
                 aktiv ist, sondern auch auf lokaler Ebene durch
                 entwicklungspolitische Bildungsarbeit, Empowerment und

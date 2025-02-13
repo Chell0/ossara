@@ -16,13 +16,13 @@ export default function Home() {
         <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 md:flex-row md:gap-12 md:px-8">
           {/* Image Container */}
           <div className="flex flex-1 items-center justify-center md:w-1/2">
-            <div className="relative h-[60vh] w-full max-w-2xl md:h-[70vh]">
+            <div className="relative h-[30vh] w-full max-w-2xl md:h-[40vh]">
               <Image
                 src={`/bgs/img1.jpg`}
                 alt="About Photo"
                 fill
                 quality={100}
-                className="rounded-xl object-cover shadow-2xl"
+                className="object-cover shadow-2xl"
                 priority
               />
             </div>
@@ -30,7 +30,7 @@ export default function Home() {
 
           {/* Text Content */}
           <div className="flex flex-1 flex-col justify-center md:w-1/2">
-            <p className="text-lg leading-relaxed text-gray-700 md:text-xl md:leading-loose">
+            <p className="text-base leading-relaxed text-black md:text-md md:leading-loose">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
               eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.

@@ -11,7 +11,7 @@ export default function Promo() {
             <div
               className={`flex justify-between items-center border border-[#eb7b24] rounded-xl p-4 shadow-sm max-w-md  mx-auto`}
             >
-              <p className={`text-lg text-[#eb7b24]`}>
+              <p className={`text-base text-black`}>
                 Promo Dekolonisierung Flyer
               </p>
               <button className="px-4 py-4 text-md font-semibold rounded-xl shadow-xl bg-[#eb7b24] text-white">
@@ -48,7 +48,7 @@ export default function Promo() {
             <div
               className={`flex justify-between items-center border border-[#eb7b24] rounded-xl p-4 shadow-sm max-w-md`}
             >
-              <p className={`text-lg text-[#eb7b24]`}>Flyer HH Promotorinnen</p>
+              <p className={`text-base text-black`}>Flyer HH Promotorinnen</p>
               <button className="px-4 py-4 text-md font-semibold rounded-xl shadow-xl bg-[#eb7b24] text-white">
                 <Link
                   href={`/files/dekolonisierung.pdf`}

@@ -13,7 +13,7 @@ export default function DonationForm() {
           >
             Deine Spende
           </h2>
-          <p className="max-w-xl mt-4 text-gray-700 text-base">
+          <p className="max-w-xl mt-4 text-black text-base">
             Mit Deiner Hilfe können wir wichtige Arbeit leisten, die sonst nicht
             möglich wäre. <b>OSSARA e.V.</b> empowert Schwarze Menschen,
             Menschen afrikanischer Herkunft. Dafür brauchen wir einen langen

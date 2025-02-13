@@ -5,7 +5,7 @@ import Rassismus from "@/components/Rassismus/Rassismus";
 export default function Page() {
   return (
     <div>
-      <main className=" bg-[#f7e1a5]">
+      <main className=" bg-[#f7e6ca]">
         <NavBar />
         <Rassismus />
         <Footer />

@@ -10,26 +10,17 @@ export default function YouTubeSection({ videoId }: YouTubeSectionProps) {
   };
 
   const playerOptions: YouTubeProps["opts"] = {
-    height: "100%", // Make height responsive
-    width: "100%", // Make width responsive
+    height: "240", // Make height responsive
+    width: "520", // Make width responsive
     playerVars: {
       autoplay: 0,
     },
   };
 
   return (
-    <section className="w-full h-full rounded-xl overflow-hidden">
+    <section className="rounded-xl py-10">
       {/* YouTube Video Player */}
-      <div className="relative w-full h-0 pb-[56.25%]">
-        {" "}
-        {/* 16:9 Aspect Ratio */}
-        <YouTube
-          videoId={videoId}
-          opts={playerOptions}
-          onReady={onPlayerReady}
-          className="absolute top-0 left-0 w-full h-full"
-        />
-      </div>
+      <YouTube videoId={videoId} opts={playerOptions} onReady={onPlayerReady} />
     </section>
   );
 }

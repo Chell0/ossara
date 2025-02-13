@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import ContactPerson from "@/components/ContactPerson/ContactPerson";
 import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
 
@@ -23,28 +21,22 @@ export default function Integrative() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#fcc41b] p-8">
-          {/* Heading Section */}
-          <div className="flex flex-col md:flex-row md:flex-grow">
+        <section className="relative w-full min-h-screen text-[#fcc41b]">
+          <div className="flex md:flex-grow flex-row pt-5">
             <div className="basis-full">
-              <h2 className="text-6xl md:text-7xl font-semibold leading-tight">
+              <p className="text-[5rem] font-semibold leading-none p-2">
                 Mit niederschwelliger Beratung und praxisnaher Unterstützung
                 schaffen wir berufliche Perspektiven und fördern erfolgreiche
                 Integration.
-              </h2>
+              </p>
             </div>
           </div>
-
-          {/* Content Section */}
-          <div className="flex flex-col md:flex-row gap-8 mt-8">
-            {/* YouTube Video Section */}
-            <div className="basis-1/2 flex justify-center items-center h-[360px] md:h-[480px] mt-2">
+          <div className="flex md:flex-grow flex-row gap-10 mt-20 m-6">
+            <div className="basis-1/2 flex justify-center items-center mx-3 h-[360px] md:h-[480px]">
               <YouTubeSection videoId="xpWWgOP5QuE" />
             </div>
-
-            {/* Text Section */}
-            <div className="basis-1/2 p-4">
-              <p className="text-lg text-gray-700">
+            <div className="basis-1/2 mt-20 pt-10">
+              <p className="text-md text-black">
                 Ossara e.V. bietet eine niedrigschwellige Sozialberatung und
                 Bewerbungshilfe für Geflüchtete und Interessierte. In
                 wöchentlichen Terminen unterstützen wir bei der Orientierung im
@@ -65,156 +57,138 @@ export default function Integrative() {
         </section>
 
         {/* Bewerbungstraining */}
-        <section className="h-screen w-full relative">
-          <div className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8">
-            <h2 className="text-[#fcc41b] text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight">
+        <section className="relative w-full min-h-screen text-[#fcc41b]">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pt-20">
+            {/* Heading Section */}
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-4">
               Beratungs- und Bewerbungstraining
             </h2>
 
-            <div className="flex flex-col items-center">
-              <div className="text-center mb-12">
-                <h3 className="text-3xl md:text-4xl font-semibold text-[#fcc41b] mb-4">
-                  Kontaktperson
-                </h3>
-                <hr className="w-16 border-2 border-[#fcc41b] mx-auto" />
+            {/* Content Section */}
+            <div className="flex md:flex-grow flex-row gap-6 mt-20 m-6">
+              {/* Left Column - Text Content */}
+              <div className="basis-1/2">
+                <div className="space-y-1 p-4">
+                  <p className="text-md md:text-lg text-black leading-relaxed">
+                    Ossara e.V. bietet einmal wöchentlich eine niedrigschwellige
+                    Sozialberatung bzw. Orientierungshilfe an und unterstützt
+                    Interessierte bei Bewerbungen.
+                  </p>
+                  <div>
+                    <strong className="block text-md md:text-lg text-black">
+                      Wo:
+                    </strong>
+                    <p className="text-md md:text-lg">
+                      In den Räumlichkeiten des Sportvereins SV Groß Borstel am
+                      Brödermannsweg 31, 22453 Hamburg und digital
+                    </p>
+                  </div>
+
+                  <div>
+                    <strong className="block text-base md:text-md text-black">
+                      Wann:
+                    </strong>
+                    <p className="text-md md:text-lg">
+                      Freitags von 10:00 - 13:00 Uhr und nach Vereinbarung
+                    </p>
+                  </div>
+
+                  <div>
+                    <strong className="block text-md md:text-lg text-black">
+                      Für wen:
+                    </strong>
+                    <p className="text-md md:text-lg">
+                      Geflüchtete aus naheliegenden Unterkünften und
+                      Interessierte
+                    </p>
+                  </div>
+                </div>
               </div>
 
-              <ContactPerson
-                name="Katja Heyn"
-                position="Beratungs- und Bewerbungstrainerin"
-                email="Bewerbungstraining[at]ossara.de"
-                phone="(+49) 1575 1406 184"
-                imageSrc="/contact-person/contact_person.jpg"
-              />
-            </div>
-          </div>
-        </section>
+              {/* Right Column - Contact Card */}
+              <div className="basis-1/2 mt-4">
+                <div className="text-center">
+                  <h3 className="text-black text-3xl md:text-4xl font-semibold mb-4">
+                    Kontaktperson
+                  </h3>
+                  <hr className="w-16 border-2 mx-auto border-black" />
 
-        <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 md:flex-row md:gap-12 md:px-8">
-          {/* Image Container */}
-          <div className="flex flex-1 items-center justify-center md:w-1/2">
-            <div className="relative h-[60vh] w-full max-w-2xl md:h-[70vh]">
-              <Image
-                src="/bgs/img1.jpg"
-                alt="Integrative Photo"
-                fill
-                quality={100}
-                className="rounded-xl object-cover shadow-2xl"
-              />
-            </div>
-          </div>
-
-          {/* Text Content */}
-          <div className="flex flex-1 flex-col justify-center md:w-1/2">
-            <p className="text-3xl md:text-4xl text-gray-700 leading-tight">
-              Ossara e.V. bietet einmal wöchentlich eine niedrigschwellige
-              Sozialberatung bzw. Orientierungshilfe an und unterstützt
-              Interessierte bei Bewerbungen.
-            </p>
-
-            <div className="space-y-3">
-              <div>
-                <p className="mt-2 text-xl md:text-2xl text-gray-700">
-                  <strong className="block">Wo:</strong>
-                  <span className="text-[#fcc41b]">
-                    In den Räumlichkeiten des Sportvereins SV Groß Borstel am
-                    Brödermannsweg 31, 22453 Hamburg und digital
-                  </span>
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xl md:text-2xl text-gray-700">
-                  <strong className="block mb-1">Wann:</strong>
-                  <span className="text-[#fcc41b]">
-                    Freitags von 10:00 - 13:00 Uhr und nach Vereinbarung
-                  </span>
-                </p>
-              </div>
-
-              <div>
-                <p className="text-xl md:text-2xl text-gray-700">
-                  <strong className="block mb-1">Für wen:</strong>
-                  <span className="text-[#fcc41b]">
-                    Geflüchtete aus naheliegenden Unterkünften und Interessierte
-                  </span>
-                </p>
+                  <ContactPerson
+                    name="Katja Heyn"
+                    position="Beratungs- und Bewerbungstrainerin"
+                    email="Bewerbungstraining[at]ossara.de"
+                    phone="(+49) 1575 1406 184"
+                    imageSrc="/contact-person/contact_person.jpg"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         {/* Sprachförderung */}
-        <section className="h-screen w-full relative">
-          <div className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8">
-            <h2
-              className={`text-[#fcc41b] text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight`}
-            >
+        <section className="relative w-full min-h-screen text-[#fcc41b]">
+          <div className="absolute inset-0 flex flex-col items-center justify-center pt-20">
+            {/* Heading Section */}
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4">
               Sprachförderung- und Prüfungsvorbereitung
             </h2>
 
-            <div className="flex flex-col items-center">
-              <div className="text-center mb-12">
-                <h3 className="text-3xl md:text-4xl font-semibold text-[#fcc41b] mb-4">
-                  Kontaktperson
-                </h3>
-                <hr className="w-16 border-2 border-[#fcc41b] mx-auto" />
+            {/* Content Section */}
+            <div className="flex md:flex-grow flex-row gap-3 mt-20">
+              {/* Left Column - Text Content */}
+              <div className="basis-1/2 p-8">
+                <div>
+                  <p className="text-base leading-relaxed text-black md:text-md">
+                    Mit unserer Sprachförderung möchten wir den Teilnehmenden
+                    helfen, ihre Sprachkenntnisse im formellen Kontext zu
+                    verbessern, ihre schriftliche Kompetenz zu fördern und einen
+                    Raum für interkulturellen Austausch zu bieten.
+                  </p>
+                  <p className="mt-2 text-base md:text-md leading-tight text-black">
+                    Die Prüfungsvorbereitung findet montags und dienstags von
+                    10:00 bis 13:00 Uhr statt. Unser Ziel ist es, die
+                    Teilnehmenden gezielt auf ihre Abschlussprüfungen
+                    vorzubereiten, indem wir sowohl schriftliche als auch
+                    mündliche Prüfungsfähigkeiten trainieren. In Kleingruppen
+                    werden Prüfungssituationen simuliert und das richtige
+                    Verhalten in Prüfungen geübt.
+                  </p>
+                  <p className="mt-2 text-base leading-tight md:text-md text-black">
+                    Die gängigen Prüfungen umfassen:
+                  </p>
+                  <ul className="text-base md:text-md pl-5 mt-2 space-y-1 font-semibold text-[#fcc41b] list-disc">
+                    <li>Zertifikat Deutsch Telc A1, A2, B1, DTZ, B2, C1</li>
+                    <li>Goethe Zertifikat A1, A2, B1, B2, C1</li>
+                  </ul>
+                  <p className="mt-2 text-base leading-tight md:text-md text-black">
+                    <b>PS :</b>{" "}
+                    <span className="text-base leading-tight md:text-md text-black">
+                      Wir führen keine Prüfungen durch und übernehmen keine
+                      Prüfungsgebühren.
+                    </span>
+                  </p>
+                </div>
               </div>
 
-              <ContactPerson
-                name="Hayford Anyidoho"
-                position="Deutschtrainer für Sprachförderung und Prüfungsvorbereitung"
-                email="sprachfoerderung[at]ossara.de"
-                phone="(+49) 1590 6737147"
-                imageSrc="/contact-person/contact_person.jpg"
-              />
-            </div>
-          </div>
-        </section>
+              {/* Right Column - Contact Card */}
+              <div className="basis-1/2 mt-8">
+                <div className="text-center">
+                  <h3 className="text-black text-3xl md:text-4xl font-semibold mb-4">
+                    Kontaktperson
+                  </h3>
+                  <hr className="w-16 border-2 mx-auto border-black" />
+                </div>
 
-        <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 md:flex-row md:gap-12 md:px-8">
-          {/* Image Container */}
-          <div className="flex flex-1 items-center justify-center md:w-1/2">
-            <div className="relative h-[60vh] w-full max-w-2xl md:h-[70vh]">
-              <Image
-                src={`/bgs/img1.jpg`}
-                alt="About Photo"
-                fill
-                quality={100}
-                className="rounded-xl object-cover shadow-2xl"
-                priority
-              />
+                <ContactPerson
+                  name="Hayford Anyidoho"
+                  position="Deutschtrainer für Sprachförderung und Prüfungsvorbereitung"
+                  email="sprachfoerderung[at]ossara.de"
+                  phone="(+49) 1590 6737147"
+                  imageSrc="/contact-person/contact_person.jpg"
+                />
+              </div>
             </div>
-          </div>
-          <div className="flex flex-1 flex-col justify-center md:w-1/2">
-            <p className="text-lg leading-tight text-gray-700 md:text-xl">
-              Mit unserer Sprachförderung möchten wir den Teilnehmenden helfen,
-              ihre Sprachkenntnisse im formellen Kontext zu verbessern, ihre
-              schriftliche Kompetenz zu fördern und einen Raum für
-              interkulturellen Austausch zu bieten.
-            </p>
-            <p className="mt-4 text-lg md:text-xl leading-tight text-gray-700">
-              Die Prüfungsvorbereitung findet montags und dienstags von 10:00
-              bis 13:00 Uhr statt. Unser Ziel ist es, die Teilnehmenden gezielt
-              auf ihre Abschlussprüfungen vorzubereiten, indem wir sowohl
-              schriftliche als auch mündliche Prüfungsfähigkeiten trainieren. In
-              Kleingruppen werden Prüfungssituationen simuliert und das richtige
-              Verhalten in Prüfungen geübt.
-            </p>
-            <p className="mt-4 text-lg leading-tight md:text-xl text-gray-700">
-              Die gängigen Prüfungen umfassen:
-            </p>
-            <ul className="text-lg md:text-xl pl-5 mt-2 space-y-2 font-semibold text-[#fcc41b] list-disc">
-              <li>Zertifikat Deutsch Telc A1, A2, B1, DTZ, B2, C1</li>
-              <li>Goethe Zertifikat A1, A2, B1, B2, C1</li>
-            </ul>
-            <p className="mt-4 text-lg leading-tight md:text-xl text-gray-700">
-              <b>PS :</b>{" "}
-              <span className="text-lg leading-tight md:text-xl text-gray-700">
-                Wir führen keine Prüfungen durch und übernehmen keine
-                Prüfungsgebühren.
-              </span>
-            </p>
           </div>
         </section>
       </div>

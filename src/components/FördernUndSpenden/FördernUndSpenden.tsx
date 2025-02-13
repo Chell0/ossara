@@ -32,9 +32,9 @@ export default function FördernUndSpenden() {
             >
               Hilf uns mit Deiner Spende
             </h2>
-            <p className="max-w-xl mt-4 text-gray-500 text-base">
+            <p className="max-w-xl mt-4 text-black text-base">
               Einmalige und regelmäßige Spenden der{" "}
-              <span className="font-bold text-black">OSSARA Community</span>{" "}
+              <span className="font-bold text-[#fcc41b]">OSSARA Community</span>{" "}
               ermöglichen unsere Arbeit. Durch Deinen Beitrag stellst Du sicher,
               dass wir uns auf unsere Arbeit konzentrieren und diese auch in
               Zukunft unabhängig gestalten können.

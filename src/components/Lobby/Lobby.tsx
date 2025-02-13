@@ -21,19 +21,19 @@ export default function Lobby() {
         </header>
 
         <section className="relative w-full min-h-screen text-[#58bc90]">
-          <div className="flex flex-col md:flex-row md:flex-grow">
+          <div className="flex md:flex-grow flex-row">
             <div className="basis-full">
-              <h2 className="m-4 text-5xl md:text-6xl font-semibold leading-tight">
+              <p className="text-[4rem] font-semibold leading-none p-2 mb-20">
                 Durch Netzwerk- und Lobbyarbeit setzen wir uns für mehr Rechte,
                 Sichtbarkeit und Teilhabe in Hamburg ein, um nachhaltige
                 Veränderungen auf politischer und gesellschaftlicher Ebene zu
                 erreichen.
-              </h2>
+              </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-end">
-            <div className="basis-2/3 p-2 text-gray-700">
-              <p className="mt-20 text-xl">
+          <div className="flex md:flex-grow flex-row justify-end mt-20 m-6">
+            <div className="basis-1/2 text-black">
+              <p className="text-base">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
                 Lobbyarbeit für die Belange von BIPoC und migrantischen
@@ -42,7 +42,7 @@ export default function Lobby() {
                 für mehr Sichtbarkeit, Rechte und Teilhabe dieser Gruppen in
                 Hamburg ein.
               </p>
-              <p className="mt-2 text-xl">
+              <p className="mt-2 text-base">
                 Darüber hinaus bieten wir Unterstützung und Starthilfe für
                 andere Initiativen, die sich mit ähnlichen Themen beschäftigen,
                 und fördern die Vernetzung von Akteur:innen, Vereinen und
@@ -63,14 +63,14 @@ export default function Lobby() {
             >
               NETZ:WERKSTATT – Netzwerken mal anders
             </h3>
-            <p className="mt-4 text-gray-800 text-md">
+            <p className="mt-2 text-base">
               Die NETZ:WERKSTATT bietet einmal im Monat einen Raum, in dem
               Netzwerken und kreatives Arbeiten miteinander verbunden werden. In
               einer offenen und einladenden Atmosphäre haben Teilnehmende die
               Möglichkeit, ihre Ideen auszutauschen und gleichzeitig kreative
               Prozesse zu erleben.
             </p>
-            <p className="mt-4 text-gray-800 text-md">
+            <p className="mt-2 text-base">
               Unter der Leitung von Fabienne Schöter, Kunsttherapeutin, wird die
               Veranstaltung monatlich verschiedene kreative Ansätze bieten, die
               den Austausch und das gegenseitige Lernen fördern. Wir verstehen
@@ -79,7 +79,7 @@ export default function Lobby() {
               sich für eine solidarische Gesellschaft einsetzen und offen für
               interkulturellen Austausch sind.
             </p>
-            <p className="mt-4 text-gray-800 text-md">
+            <p className="mt-2 text-base">
               Wann & Wo?
               <br />
               Die Veranstaltung findet einmal im Monat statt. Verfolgt unsere
@@ -91,9 +91,7 @@ export default function Lobby() {
                 SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
               </span>
             </p>
-            <p className="text-gray-800 text-md">
-              Die Teilnahme ist kostenlos.
-            </p>
+            <p className="text-base">Die Teilnahme ist kostenlos.</p>
           </div>
           {/* Image Container */}
           <div className="flex flex-1 items-center justify-center md:w-1/2">
@@ -103,7 +101,7 @@ export default function Lobby() {
                 alt="About Photo"
                 fill
                 quality={100}
-                className="rounded-xl object-cover shadow-2xl"
+                className="object-cover shadow-2xl"
                 priority
               />
             </div>

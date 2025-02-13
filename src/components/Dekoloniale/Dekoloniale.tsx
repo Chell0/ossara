@@ -24,10 +24,10 @@ export default function Dekoloniale() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#d3103e]">
+        <section className="relative w-full min-h-screen text-[#d3103e] pb-20">
           <div className="flex flex-col md:flex-row md:flex-grow">
-            <div className="basis-full m-4">
-              <p className="text-5xl md:text-6xl font-semibold leading-tight">
+            <div className="basis-full">
+              <p className="text-[4rem] font-semibold leading-none p-2 mb-20">
                 Mit dekolonialer Perspektive setzen wir Projekte um, die die
                 lokale Selbstbestimmung stärken, nachhaltige Verbesserungen in
                 den Lebensbedingungen ermöglichen und langfristige
@@ -35,8 +35,8 @@ export default function Dekoloniale() {
               </p>
             </div>
           </div>
-          <div className="flex md:flex-grow flex-row justify-end">
-            <div className="basis-2/3 p-2 text-gray-700 text-lg">
+          <div className="flex md:flex-grow flex-row justify-end mt-20">
+            <div className="basis-1/2 text-black text-base p-2">
               <p className="mt-4">
                 Ossara e.V. verfolgt einen dekolonialen Ansatz in der
                 internationalen Zusammenarbeit, um gleichwertige Partnerschaften
@@ -61,14 +61,14 @@ export default function Dekoloniale() {
         </section>
 
         {/* Kontaktperson */}
-        <section className="relative w-full min-h-screen text-[#d3103e] py-12">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-col lg:flex-row gap-8 md:gap-12">
-              <div className="w-full lg:w-1/2 p-4 space-y-6">
-                <p className="text-4xl font-semibold">
+        <section className="relative w-full min-h-screen text-[#d3103e]">
+          <div className="absolute inset-0 flex flex-row items-center justify-center">
+            <div className="flex md:flex-grow flex-row gap-3 md:gap-6">
+              <div className="basis-1/2 m-2">
+                <p className="text-2xl md:text-3xl lg:text-4xl mb-2 text-center font-semibold leading-none">
                   Unsere Projekte umfassen:
                 </p>
-                <ul className="mt-4 ml-10 text-2xl md:text-3xl list-disc text-gray-700 leading-tight space-y-2">
+                <ul className="ml-20 mt-4 text-base list-disc text-black space-y-2">
                   <li>
                     Bau von Schulgebäuden, Sanitäranlagen, Spielplätzen und
                     Brunnen
@@ -84,22 +84,22 @@ export default function Dekoloniale() {
                   <li>Veranstaltungsangebote und Community-Aktivitäten</li>
                 </ul>
               </div>
-              <div className="w-full lg:w-1/2 p-4">
-                <div className="text-center mb-8">
-                  <h3 className="text-[#d3103e] text-4xl md:text-5xl font-semibold mb-4">
+
+              {/* Contact Section */}
+              <div className="basis-1/2">
+                <div className="text-center">
+                  <h3 className="text-[#d3103e] text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
                     Kontaktperson
                   </h3>
                   <hr className="w-24 border-2 mx-auto border-[#d3103e]" />
                 </div>
-                <div className="flex justify-center">
-                  <ContactPerson
-                    name="Gaetan Tagba"
-                    position="Projektkoordination"
-                    email="gaetan.tagba[at]ossara.de"
-                    phone="(+228) 91 077338"
-                    imageSrc="/contact-person/contact_person.jpg"
-                  />
-                </div>
+                <ContactPerson
+                  name="Gaetan Tagba"
+                  position="Projektkoordination"
+                  email="gaetan.tagba[at]ossara.de"
+                  phone="(+228) 91 077338"
+                  imageSrc="/contact-person/contact_person.jpg"
+                />
               </div>
             </div>
           </div>
@@ -107,57 +107,61 @@ export default function Dekoloniale() {
 
         {/* Projektprozess */}
         <section className="relative w-full min-h-screen">
-          <div className="flex md:flex-grow flex-row gap-10 m-8">
-            <div className="basis-1/2 p-4">
-              <h3
-                className={`text-[#d3103e] text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-left drop-shadow-sm`}
-              >
-                Projektprozess
-              </h3>
-              <p className="mt-2 text-lg text-gray-700">
-                Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
-                Anfragen aus der lokalen Bevölkerung oder Partnerorganisationen.{" "}
-                <b>Die aktive Beteiligung der lokalen Gemeinschaften</b> an
-                allen Projektphasen ist für uns entscheidend, um
-                sicherzustellen, dass Projekte ihren Bedürfnissen entsprechen.
-                Nach einem Feldbesuch, bei dem wir uns intensiv mit den
-                Betroffenen intensiv austauschen und wichtige Daten sammeln,
-                wird ein Projektantrag erstellt.
-              </p>
-              <p className="mt-2 text-lg text-gray-700">
-                Die Fördermittelakquise kann mehrere Monate bis Jahre dauern.
-                Sobald die Mittel gesichert sind, startet die Umsetzung des
-                Projekts in enger Zusammenarbeit mit lokalen Partner:innen. Wir
-                begleiten den Prozess und stellen sicher, dass die
-                Qualitätsstandards sowie die Fristen eingehalten werden.
-              </p>
-              <p className="mt-2 text-lg text-gray-700">
-                Nach dem Projektabschluss erfolgen eine Evaluierung und
-                regelmäßige Nachkontrollen (Monitoring), um die Nachhaltigkeit
-                des Projektes sicherzustellen. Dies wird durch (un-)angekündigte
-                Besuche und Projektreisen gewährleistet und die regelmäßigen
-                Kontakte unter allen Beteiligten.
-              </p>
-              <button className="mt-5 px-8 py-4 text-md sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-lg shadow-xl bg-[#d3103e] text-white">
-                <Link
-                  href={`/projects`}
-                  rel="noopener noreferrer"
-                  className={`flex items-center space-x-2`}
+          <div className="absolute inset-0 flex flex-col intems-center justify-center">
+            <div className="flex md:flex-grow flex-row gap-6 m-6">
+              <div className="basis-1/2">
+                <h3
+                  className={`text-[#d3103e] text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-left`}
                 >
-                  Aktuelle Projekte
-                </Link>
-              </button>
-            </div>
-
-            <div className="basis-1/2 flex justify-center items-center p-4 h-[600px] md:h-[690px]">
-              <Image
-                src={`/bgs/img1.jpg`}
-                alt="Dekoloniale Photo"
-                width="480"
-                height="690"
-                quality={100}
-                className="w-full h-full object-cover rounded-xl shadow-lg"
-              />
+                  Projektprozess
+                </h3>
+                <p className="mt-2 text-base text-black">
+                  Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
+                  Anfragen aus der lokalen Bevölkerung oder
+                  Partnerorganisationen.{" "}
+                  <b>Die aktive Beteiligung der lokalen Gemeinschaften</b> an
+                  allen Projektphasen ist für uns entscheidend, um
+                  sicherzustellen, dass Projekte ihren Bedürfnissen entsprechen.
+                  Nach einem Feldbesuch, bei dem wir uns intensiv mit den
+                  Betroffenen intensiv austauschen und wichtige Daten sammeln,
+                  wird ein Projektantrag erstellt.
+                </p>
+                <p className="mt-2 text-base text-black">
+                  Die Fördermittelakquise kann mehrere Monate bis Jahre dauern.
+                  Sobald die Mittel gesichert sind, startet die Umsetzung des
+                  Projekts in enger Zusammenarbeit mit lokalen Partner:innen.
+                  Wir begleiten den Prozess und stellen sicher, dass die
+                  Qualitätsstandards sowie die Fristen eingehalten werden.
+                </p>
+                <p className="mt-2 text-base text-black">
+                  Nach dem Projektabschluss erfolgen eine Evaluierung und
+                  regelmäßige Nachkontrollen (Monitoring), um die Nachhaltigkeit
+                  des Projektes sicherzustellen. Dies wird durch
+                  (un-)angekündigte Besuche und Projektreisen gewährleistet und
+                  die regelmäßigen Kontakte unter allen Beteiligten.
+                </p>
+                <button className="mt-5 px-8 py-4 text-md sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-lg shadow-xl bg-[#d3103e] text-white">
+                  <Link
+                    href={`/projects`}
+                    rel="noopener noreferrer"
+                    className={`flex items-center space-x-2`}
+                  >
+                    Aktuelle Projekte
+                  </Link>
+                </button>
+              </div>
+              <div className="basis-1/2">
+                <div className="relative h-[60vh] w-full md:h-[70vh]">
+                  <Image
+                    src={`/bgs/img1.jpg`}
+                    alt="Dekoloniale Photo"
+                    fill
+                    priority
+                    quality={100}
+                    className="object-cover shadow-lg"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
