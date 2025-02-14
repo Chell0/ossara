@@ -1,9 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
+
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import { useState } from "react";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,20 +12,117 @@ export default function NavBar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setActiveSubMenu(null); // Reset submenu when closing main menu
   };
 
   const toggleSubMenu = (menuName: string) => {
     setActiveSubMenu(activeSubMenu === menuName ? null : menuName);
   };
 
+  // Unified menu configuration
+  const menuItems = [
+    // Left Column
+    {
+      name: "ÜBER UNS",
+      href: "/uber",
+      items: [
+        { name: "Uber Uns", href: "#uber" },
+        { name: "Verein", href: "#verein" },
+        { name: "Team", href: "#team" },
+        { name: "Geschichte", href: "#geschichte" }, // Fixed typo
+      ],
+    },
+
+    // Right Column
+    {
+      name: "INTEGRATIVE STADTTEILARBEIT",
+      href: "/integrative",
+      items: [
+        { name: "Integrative Stadtteilarbeit", href: "#integrative" },
+        { name: "Bewerbungstraining", href: "#bewerbungstraining" },
+        { name: "Sprachforderung", href: "#sprachforderung" },
+      ],
+    },
+    // Left Column
+    {
+      name: "VERANSTALTUNGEN",
+      href: "/veranstaltungen",
+      items: [],
+    },
+    // Right Column
+    {
+      name: "LOBBY UND NETZWERKARBEIT",
+      href: "/lobby",
+      items: [],
+    },
+    // Left Column
+    {
+      name: "NEUIGKEITEN",
+      href: "/neuigkeiten",
+      items: [],
+    },
+
+    // Right Column
+    {
+      name: "DEKOLONIALE BILDUNGSARBEIT",
+      href: "/bildungsarbeit",
+      items: [
+        { name: "Dekoloniale Bildungsarbeit", href: "#bildungsarbeit" },
+        { name: "Machtbewusst-Hamburg", href: "#machtbewusst" },
+        { name: "Eine Welt-Promotorinnen Programm", href: "#promotorinnen" },
+      ],
+    },
+    // Left Column
+    {
+      name: "ENGAGIEREN",
+      href: "/engagieren",
+      items: [
+        { name: "Engagieren", href: "#engagieren" },
+        { name: "Stellenausschreibungen", href: "#stellenausschreibungen" }, // Fixed typo
+        { name: "Mitglied Werden", href: "#mitglied-werden" },
+        { name: "Ehrenamtliches Engagement", href: "#ehrenamt" },
+      ],
+    },
+    // Right Column
+    {
+      name: "ANTI-SCHWARZER RASSISMUS",
+      href: "/rassismus",
+      items: [],
+    },
+    // Left Column
+    {
+      name: "FÖRDERN & SPENDEN",
+      href: "/fordern",
+      items: [
+        { name: "Fördern & Spenden", href: "#fordern" },
+        { name: "Donate", href: "#donate" },
+      ],
+    },
+    // Right Column
+    {
+      name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
+      href: "/dekoloniale",
+      items: [
+        {
+          name: "Dekolonial Global",
+          href: "#dekoloniale",
+        },
+        { name: "Projekte", href: "#projekte" },
+      ],
+    },
+    // Left Column
+    { name: "DOWNLOADS", href: "/downloads", items: [] },
+  ];
+
   return (
-    <>
-      <nav className="bg-opacity-70 fixed w-full z-50">
-        <div className="flex justify-between items-center mx-10 mt-3">
-          {/* Menu Icon */}
-          <div className="flex items-center space-x-4 -mt-6">
+    <nav className="bg-main-bg bg-opacity-20 fixed w-full z-50">
+      {/* Top Navigation Bar */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Mobile Menu Button */}
+          <div className="flex items-center space-x-2">
             <button
-              className="block focus:outline-none text-[#58bc90]"
+              className="text-black focus:outline-none block"
               onClick={toggleMenu}
             >
               {menuOpen ? (
@@ -33,182 +131,99 @@ export default function NavBar() {
                 <MenuIcon className="w-8 h-8" />
               )}
             </button>
-            <span className="font-medium text-2xl text-white">Menu</span>
+            {/* <span className="font-medium mt-1 text-2xl text-black block">
+              Menu
+            </span> */}
           </div>
 
           {/* Logo */}
-          <div className="hidden md:block">
-            <Link href="/">
+          <div className="flex-shrink-0">
+            <Link href="/" className="block">
               <Image
                 src="/logos/ossara_logo.png"
                 alt="Ossara Logo"
-                className="object-contain"
-                width={200}
-                height={200}
+                width={160}
+                height={60}
+                className="h-12 w-auto object-contain"
+                priority
               />
             </Link>
           </div>
         </div>
+      </div>
 
-        {/* Full-Viewport Menu */}
-        {menuOpen && (
-          <div className="fixed inset-0 z-50 overflow-y-auto bg-[#fef5db] text-[#f7cc55] sm:p-8">
-            {/* Logo */}
-            <div className="flex justify-start">
-              <Link href="/">
-                <h1 className={` text-6xl font-bold drop-shadow-sm uppercase `}>
-                  Ossara
-                </h1>
+      {/* Full-Screen Menu */}
+      {menuOpen && (
+        <div className="fixed inset-0 z-50 bg-[#fef5db] overflow-y-auto">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {/* Menu Header */}
+            <div className="flex justify-between items-center mb-10">
+              <Link
+                href="/"
+                className="text-5xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
+              >
+                Ossara
               </Link>
-            </div>
-            {/* Close Icon */}
-            <div className="flex justify-end">
-              <button onClick={toggleMenu}>
+              <button
+                onClick={toggleMenu}
+                className="text-gray-600 hover:text-gray-800"
+              >
                 <XIcon className="w-10 h-10" />
               </button>
             </div>
 
-            <div className="flex flex-col mt-8 md:flex-row md:mt-10 space-y-8 md:space-y-0 md:space-x-8">
-              {/* Left Column: Main Menu with Sub-Menus */}
-              <ul
-                className={` w-full pr-0 text-4xl font-bold space-y-6 md:w-1/2 md:pr-8`}
-              >
-                {[
-                  { name: "NEUIGKEITEN", items: [], href: "/neuigkeiten" },
-                  {
-                    name: "VERANSTALTUNGEN",
-                    items: [],
-                    href: "/veranstaltungen",
-                  },
-                  {
-                    name: "ÜBER UNS",
-                    items: ["Verein", "Team", "Gechichte"],
-                    href: "/uber",
-                  },
-                  {
-                    name: "ENGAGIEREN",
-                    items: [
-                      "Stellenausschreibungen",
-                      `Mitglied Werden`,
-                      "Ehrenamtliches Engagement",
-                    ],
-                    href: "/engagieren",
-                  },
-                  {
-                    name: "FÖRDERN & SPENDEN",
-                    items: ["Donate", "Partnerships"],
-                    href: "/fordern",
-                  },
-                  { name: "DOWNLOADS", items: [], href: "/downloads" },
-                ].map((menu, index) => (
-                  <li key={index}>
-                    <div className="flex items-center justify-between">
-                      <Link
-                        href={menu.href}
-                        className={`cursor-pointer ${
-                          activeSubMenu === menu.name ? "text-[#f7cc55]" : ""
-                        }`}
+            {/* Responsive Menu Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {menuItems.map((menu, index) => (
+                <div key={index} className="group">
+                  <div className="flex justify-between items-center">
+                    <Link
+                      href={menu.items.length > 0 ? "#" : menu.href}
+                      className={`text-3xl lg:text-4xl font-bold ${
+                        menu.items.length > 0
+                          ? "cursor-pointer text-[#f7cc55] hover:text-[#e6b845]"
+                          : "text-[#f7cc55] hover:text-[#e6b845]"
+                      }`}
+                      onClick={(e) => {
+                        if (menu.items.length > 0) {
+                          e.preventDefault();
+                          toggleSubMenu(menu.name);
+                        }
+                      }}
+                    >
+                      {menu.name}
+                    </Link>
+                    {menu.items.length > 0 && (
+                      <button
                         onClick={() => toggleSubMenu(menu.name)}
+                        className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-3xl w-8 h-8 flex items-center justify-center"
                       >
-                        {menu.name}
-                      </Link>
-                      {menu.items.length > 0 && (
-                        <button onClick={() => toggleSubMenu(menu.name)}>
-                          {activeSubMenu === menu.name ? "−" : "+"}
-                        </button>
-                      )}
-                    </div>
-                    {activeSubMenu === menu.name && menu.items.length > 0 && (
-                      <ul className="pl-4 font-medium text-base space-y-1">
-                        {menu.items.map((item, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              href={`#${item.toLowerCase().replace(/ /g, "-")}`}
-                              className="cursor-pointer"
-                            >
-                              - {item}
-                            </Link>
-                            {/* <Link href={`/${menu.name.toLowerCase()}#${item.toLowerCase().replace(/ /g, "-")}`} className="cursor-pointer">- {item}</Link> */}
-                          </li>
-                        ))}
-                      </ul>
+                        {activeSubMenu === menu.name ? "−" : "+"}
+                      </button>
                     )}
-                  </li>
-                ))}
-              </ul>
+                  </div>
 
-              {/* Right Column: Sub-Menus */}
-              <ul
-                className={` w-full pl-0 text-4xl font-bold space-y-6 md:w-1/2 md:pl-8`}
-              >
-                {[
-                  {
-                    name: "INTEGRATIVE STADTTEILARBEIT",
-                    items: ["Bewerbungstraining", "Sprachforderung"],
-                    href: "/integrative",
-                  },
-                  {
-                    name: "LOBBY UND NETZWERKARBEIT",
-                    items: [],
-                    href: "/lobby",
-                  },
-                  {
-                    name: "DEKOLONIALE BILDUNGSARBEIT",
-                    items: [
-                      "Eine Welt-Promotorinnen Programm",
-                      "Machtbewusst-Hamburg",
-                    ],
-                    href: "/bildungsarbeit",
-                  },
-                  {
-                    name: "ANTI-SCHWARZER RASSISMUS",
-                    items: [],
-                    href: "/rassismus",
-                  },
-                  {
-                    name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
-                    items: ["Projekte"],
-                    href: "/dekoloniale",
-                  },
-                ].map((menu, index) => (
-                  <li key={index}>
-                    <div className="flex items-center justify-between">
-                      <Link
-                        href={menu.href}
-                        className={`cursor-pointer ${
-                          activeSubMenu === menu.name ? "text-[#f7cc55]" : ""
-                        }`}
-                        onClick={() => toggleSubMenu(menu.name)}
-                      >
-                        {menu.name}
-                      </Link>
-                      {menu.items.length > 0 && (
-                        <button onClick={() => toggleSubMenu(menu.name)}>
-                          {activeSubMenu === menu.name ? "−" : "+"}
-                        </button>
-                      )}
-                    </div>
-                    {activeSubMenu === menu.name && menu.items.length > 0 && (
-                      <ul className="pl-4 font-medium text-base space-y-1">
-                        {menu.items.map((item, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              href={`#${item.toLowerCase().replace(/ /g, "-")}`}
-                              className="cursor-pointer"
-                            >
-                              - {item}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
-              </ul>
+                  {activeSubMenu === menu.name && menu.items.length > 0 && (
+                    <ul className="pl-4 mt-2 space-y-2">
+                      {menu.items.map((item, subIndex) => (
+                        <li key={subIndex}>
+                          <Link
+                            href={`${menu.href}${item.href}`}
+                            className="text-lg text-[#f7cc55]"
+                            onClick={toggleMenu}
+                          >
+                            - {item.name}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              ))}
             </div>
           </div>
-        )}
-      </nav>
-    </>
+        </div>
+      )}
+    </nav>
   );
 }

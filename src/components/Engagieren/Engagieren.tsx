@@ -10,6 +10,7 @@ export default function Engagieren() {
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
+            id="engagieren"
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
           >
             <h1
@@ -21,11 +22,11 @@ export default function Engagieren() {
         </header>
 
         {/* Stellenausschreibungen */}
-        <section
-          id="stellenausschreibungen"
-          className="relative h-screen w-full"
-        >
-          <div className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8">
+        <section className="relative h-screen w-full">
+          <div
+            id="stellenausschreibungen"
+            className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8"
+          >
             <h2 className="text-8xl font-semibold text-center text-[#fcc41b]">
               Job Openings
             </h2>
@@ -65,11 +66,13 @@ export default function Engagieren() {
 
         {/* Mitglied Werden */}
         <section
-          id="mitglied_werden"
           className="h-screen w-full bg-cover bg-center relative"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center pl-10 gap-8">
+          <div
+            id="mitglied-werden"
+            className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center pl-10 gap-8"
+          >
             <h2 className="text-[#fcc41b] drop-shadow-md text-6xl xl:text-[6rem] font-extrabold leading-tight uppercase">
               Become a Member
             </h2>
@@ -88,11 +91,11 @@ export default function Engagieren() {
         </section>
 
         {/* Ehrenamtliches Engagement */}
-        <section
-          id="ehrenamtliches_engagement"
-          className="relative h-screen w-full"
-        >
-          <div className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8">
+        <section className="relative h-screen w-full">
+          <div
+            id="ehrenamt"
+            className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8"
+          >
             <h2 className="text-8xl font-semibold text-center text-[#fcc41b]">
               Volunteer Opportunities
             </h2>

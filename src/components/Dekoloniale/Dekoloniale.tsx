@@ -12,6 +12,7 @@ export default function Dekoloniale() {
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
+            id="dekoloniale"
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
           >
             <h1
@@ -107,7 +108,10 @@ export default function Dekoloniale() {
 
         {/* Projektprozess */}
         <section className="relative w-full min-h-screen">
-          <div className="absolute inset-0 flex flex-col intems-center justify-center">
+          <div
+            id="projekte"
+            className="absolute inset-0 flex flex-col intems-center justify-center"
+          >
             <div className="flex md:flex-grow flex-row gap-6 m-6">
               <div className="basis-1/2">
                 <h3
