@@ -11,6 +11,7 @@ export default function UberUns() {
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
+            id="uber"
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
           >
             <h1
@@ -78,7 +79,10 @@ export default function UberUns() {
         </section>
 
         {/* Verein */}
-        <section className="relative w-full min-h-screen text-[#f7cc55]">
+        <section
+          id="verein"
+          className="relative w-full min-h-screen text-[#f7cc55]"
+        >
           <div className="flex md:flex-grow flex-row gap-10 m-8">
             <div className="basis-1/2 p-4">
               <h3
@@ -139,9 +143,8 @@ export default function UberUns() {
         </section>
 
         {/* Team Section */}
-        <section className="mt-28 pb-20">
+        <section id="team" className="mt-28 pb-20">
           <h3
-            id="team"
             className={`text-[#f7cc55] text-center text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight drop-shadow-sm`}
           >
             Das Team
@@ -152,7 +155,7 @@ export default function UberUns() {
 
         {/* History Section */}
         <section className="relative w-full min-h-screen mt-20">
-          <div className="flex md:flex-grow flex-row gap-8 m-4">
+          <div id="geschichte" className="flex md:flex-grow flex-row gap-8 m-4">
             <div className="basis-1/2">
               <div className="relative h-[55vh] w-full md:h-[62vh]">
                 <Image

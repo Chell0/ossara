@@ -13,6 +13,7 @@ export default function FördernUndSpenden() {
           style={{ backgroundImage: "url(/bgs/donate.jpg)" }}
         >
           <div
+            id="fordern"
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
           >
             <h1
@@ -40,7 +41,7 @@ export default function FördernUndSpenden() {
               Zukunft unabhängig gestalten können.
             </p>
             <Link
-              href="#donation-form"
+              href="#donate"
               aria-label="Donate"
               className="px-8 py-4 text-xl font-medium text-white bg-[#ffb400] rounded-lg hover:bg-[#e6a200] transition-colors"
             >
