@@ -85,7 +85,7 @@ export default function Bildungsarbeit() {
                       alt="Machtbewusst Photo"
                       fill
                       quality={100}
-                      className="object-cover shadow-2xl"
+                      className="object-cover rounded-md shadow-2xl"
                       priority
                     />
                   </Link>
@@ -182,7 +182,7 @@ export default function Bildungsarbeit() {
                     width={480}
                     height={480}
                     quality={100}
-                    className="w-full h-full object-cover shadow-lg"
+                    className="w-full h-full object-cover rounded-md shadow-lg"
                   />
                 </div>
               </div>

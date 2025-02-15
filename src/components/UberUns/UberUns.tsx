@@ -79,98 +79,98 @@ export default function UberUns() {
         </section>
 
         {/* Verein */}
-        <section
-          id="verein"
-          className="relative w-full min-h-screen text-[#f7cc55]"
-        >
-          <div className="flex md:flex-grow flex-row gap-10 m-8">
-            <div className="basis-1/2 p-4">
-              <h3
-                className={`text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-left`}
-              >
+        <section className="relative w-full min-h-screen flex items-center justify-center py-16 px-4 sm:px-8">
+          <div
+            id="verein"
+            className="flex flex-col md:flex-row gap-8 max-w-7xl w-full items-stretch"
+          >
+            {/* Text Content */}
+            <div className="md:basis-1/2 flex flex-col justify-center p-4 md:p-8">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-center md:text-left text-[#f7cc55]">
                 Verein
               </h3>
-              <p className="mt-4 text-black text-base">
-                Als eingetragener Verein (VR 23447) sind wir politisch und
-                konfessionell neutral. Unsere Arbeit umfasst ein breites
-                Spektrum an Tätigkeitsfeldern, darunter:
-              </p>
-              <ul className="mt-4 ml-5 space-y-1 text-base font-semibold text-[#f7cc55] list-disc">
-                <li>Bildung</li>
-                <li>Kunst- und Kulturförderung</li>
-                <li>Nachhaltige internationale Zusammenarbeit</li>
-                <li>Hilfe für Geflüchtete, Verfolgte und Kriegsopfer</li>
-                <li>
-                  Förderung von internationaler Verständigung, Toleranz und
-                  kultureller Vielfalt
-                </li>
-                <li>
-                  Verbesserung der öffentlichen Gesundheitsversorgung und
-                  Gesundheitsfürsorge
-                </li>
-                <li>Unterstützung hilfsbedürftiger Menschen</li>
-              </ul>
-              <p className="mt-4 text-base text-black">
-                Unsere Projekte werden durch ein starkes Netzwerk aus
-                engagierten Mitgliedern, Mitarbeiter:innen, ehrenamtlichen
-                Helfer:innen und Partnerorganisationen unterstützt. Dabei setzen
-                wir auf die Vielfalt an Erfahrungen und Fähigkeiten in unserem
-                Team, um effektiv, konstruktiv und nachhaltig zu arbeiten.
-              </p>
-              <p className="mt-4 text-base text-black">
-                Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit,
-                sich durch Praktika oder freiwillige Mitarbeit aktiv in Hamburg
-                oder im westafrikanischen Büro einzubringen. Wer uns in unserer
-                Arbeit unterstützen möchte, ist herzlich eingeladen, zu spenden
-                oder Mitglied zu werden und gemeinsam mit uns an einer
-                gerechteren und solidarischeren Zukunft zu arbeiten.
-              </p>
+              <div className="space-y-4 text-base md:text-lg">
+                <p className="text-gray-800">
+                  Als eingetragener Verein (VR 23447) sind wir politisch und
+                  konfessionell neutral. Unsere Arbeit umfasst ein breites
+                  Spektrum an Tätigkeitsfeldern, darunter:
+                </p>
+                <ul className="ml-5 space-y-2 font-semibold text-[#f7cc55] list-disc">
+                  <li>Bildung</li>
+                  <li>Kunst- und Kulturförderung</li>
+                  <li>Nachhaltige internationale Zusammenarbeit</li>
+                  <li>Hilfe für Geflüchtete, Verfolgte und Kriegsopfer</li>
+                  <li>
+                    Förderung von internationaler Verständigung, Toleranz und
+                    kultureller Vielfalt
+                  </li>
+                  <li>
+                    Verbesserung der öffentlichen Gesundheitsversorgung und
+                    Gesundheitsfürsorge
+                  </li>
+                  <li>Unterstützung hilfsbedürftiger Menschen</li>
+                </ul>
+                <p className="text-gray-800">
+                  Unsere Projekte werden durch ein starkes Netzwerk aus
+                  engagierten Mitgliedern, Mitarbeiter:innen, ehrenamtlichen
+                  Helfer:innen und Partnerorganisationen unterstützt.
+                </p>
+                <p className="text-gray-800">
+                  Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit,
+                  sich durch Praktika oder freiwillige Mitarbeit aktiv in
+                  Hamburg oder im westafrikanischen Büro einzubringen.
+                </p>
+              </div>
             </div>
-            <div className="basis-1/2">
-              <div className="relative w-full h-[560px] md:h-[620px]">
+
+            {/* Image Container */}
+            <div className="md:basis-1/2 flex items-center justify-center p-4">
+              <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">
                 <Image
-                  src={`/bgs/img1.jpg`}
+                  src="/bgs/img1.jpg"
                   alt="About Photo"
-                  width={480}
-                  height={620}
+                  fill
                   quality={100}
                   priority
-                  className="w-full h-full object-cover shadow-lg"
+                  className="object-cover rounded-lg shadow-xl"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
           </div>
         </section>
-
         {/* Team Section */}
-        <section id="team" className="mt-28 pb-20">
+        <section id="team" className="py-16 px-4 sm:px-6 lg:px-8 xl:py-24">
           <h3
-            className={`text-[#f7cc55] text-center text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight drop-shadow-sm`}
+            className="text-[#f7cc55] text-center text-4xl font-bold leading-tight drop-shadow-sm
+                md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 md:mb-16 lg:mb-20"
           >
             Das Team
           </h3>
-          {/* Team Photo Grid  */}
           <TeamSection />
         </section>
 
         {/* History Section */}
-        <section className="relative w-full min-h-screen mt-20">
-          <div id="geschichte" className="flex md:flex-grow flex-row gap-8 m-4">
-            <div className="basis-1/2">
-              <div className="relative h-[55vh] w-full md:h-[62vh]">
+        <section
+          id="geschichte"
+          className="relative w-full min-h-screen flex items-center justify-center py-16 px-4 sm:px-8"
+        >
+          <div className="flex flex-col md:flex-row gap-8 max-w-7xl w-full items-stretch">
+            <div className="md:basis-1/2 flex items-center justify-center p-4">
+              <div className="relative h-[55vh] w-full md:h-[64vh]">
                 <Image
                   src={`/bgs/img1.jpg`}
                   alt="History Photo"
                   fill
                   quality={100}
                   priority
-                  className="w-full h-full object-cover shadow-lg"
+                  className="w-full h-full object-cover rounded-md shadow-lg"
                 />
               </div>
             </div>
-            <div className="basis-1/2">
+            <div className="md:basis-1/2 flex flex-col justify-center p-4">
               <h3
-                className={`text-5xl sm:text-2xl md:text-4xl lg:text-6xl text-[#f7cc55] font-semibold text-left`}
+                className={`text-4xl md:text-5xl lg:text-6xl text-[#f7cc55] font-semibold text-left`}
               >
                 Unsere Geschichte
               </h3>

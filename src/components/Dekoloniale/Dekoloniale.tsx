@@ -107,64 +107,81 @@ export default function Dekoloniale() {
         </section>
 
         {/* Projektprozess */}
-        <section className="relative w-full min-h-screen">
-          <div
-            id="projekte"
-            className="absolute inset-0 flex flex-col intems-center justify-center"
-          >
-            <div className="flex md:flex-grow flex-row gap-6 m-6">
-              <div className="basis-1/2">
-                <h3
-                  className={`text-[#d3103e] text-5xl sm:text-3xl md:text-4xl lg:text-6xl font-semibold text-left`}
-                >
-                  Projektprozess
-                </h3>
-                <p className="mt-2 text-base text-black">
+        <section
+          id="projekte"
+          className="relative w-full min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8"
+        >
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 max-w-7xl w-full items-center justify-center">
+            {/* Text Content */}
+            <div className="md:basis-1/2 flex flex-col justify-center p-4 md:p-6 lg:p-8">
+              <h3
+                className="text-[#d3103e] text-4xl font-semibold text-center md:text-left
+                    md:text-5xl lg:text-6xl mb-6 md:mb-8"
+              >
+                Projektprozess
+              </h3>
+
+              <div className="space-y-1 md:space-y-2 text-base">
+                <p className="text-black">
                   Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
                   Anfragen aus der lokalen Bevölkerung oder
                   Partnerorganisationen.{" "}
-                  <b>Die aktive Beteiligung der lokalen Gemeinschaften</b> an
-                  allen Projektphasen ist für uns entscheidend, um
+                  <strong className="font-semibold">
+                    Die aktive Beteiligung der lokalen Gemeinschaften
+                  </strong>{" "}
+                  an allen Projektphasen ist für uns entscheidend, um
                   sicherzustellen, dass Projekte ihren Bedürfnissen entsprechen.
-                  Nach einem Feldbesuch, bei dem wir uns intensiv mit den
-                  Betroffenen intensiv austauschen und wichtige Daten sammeln,
-                  wird ein Projektantrag erstellt.
                 </p>
-                <p className="mt-2 text-base text-black">
-                  Die Fördermittelakquise kann mehrere Monate bis Jahre dauern.
+
+                <p className="text-black">
+                  Nach einem Feldbesuch, bei dem wir uns intensiv mit den
+                  Betroffenen austauschen und wichtige Daten sammeln, wird ein
+                  Projektantrag erstellt. Die Fördermittelakquise kann mehrere
+                  Monate bis Jahre dauern.
+                </p>
+
+                <p className="text-black">
                   Sobald die Mittel gesichert sind, startet die Umsetzung des
                   Projekts in enger Zusammenarbeit mit lokalen Partner:innen.
                   Wir begleiten den Prozess und stellen sicher, dass die
                   Qualitätsstandards sowie die Fristen eingehalten werden.
                 </p>
-                <p className="mt-2 text-base text-black">
+
+                <p className="text-black">
                   Nach dem Projektabschluss erfolgen eine Evaluierung und
                   regelmäßige Nachkontrollen (Monitoring), um die Nachhaltigkeit
-                  des Projektes sicherzustellen. Dies wird durch
-                  (un-)angekündigte Besuche und Projektreisen gewährleistet und
-                  die regelmäßigen Kontakte unter allen Beteiligten.
+                  des Projektes sicherzustellen.
                 </p>
-                <button className="mt-5 px-8 py-4 text-md sm:px-4 sm:py-2 md:px-6 md:py-3 rounded-lg shadow-xl bg-[#d3103e] text-white">
-                  <Link
-                    href={`/projects`}
-                    rel="noopener noreferrer"
-                    className={`flex items-center space-x-2`}
-                  >
-                    Aktuelle Projekte
-                  </Link>
-                </button>
               </div>
-              <div className="basis-1/2">
-                <div className="relative h-[60vh] w-full md:h-[70vh]">
-                  <Image
-                    src={`/bgs/img1.jpg`}
-                    alt="Dekoloniale Photo"
-                    fill
-                    priority
-                    quality={100}
-                    className="object-cover shadow-lg"
-                  />
-                </div>
+
+              <div className="flex justify-start mt-2 md:mt-4">
+                <Link
+                  href="/projects"
+                  className="px-6 py-3 md:px-8 md:py-4 text-base md:text-lg
+                   rounded-lg shadow-lg bg-[#d3103e] text-white hover:bg-[#b20e35]
+                   transition-colors duration-300 inline-block"
+                >
+                  Aktuelle Projekte
+                </Link>
+              </div>
+            </div>
+
+            {/* Image Container */}
+            <div className="md:basis-1/2 w-full max-w-2xl md:max-w-none">
+              <div
+                className="relative h-full w-full aspect-square md:aspect-auto
+                     min-h-[400px] md:min-h-[600px] rounded-lg overflow-hidden
+                     shadow-xl"
+              >
+                <Image
+                  src="/bgs/img1.jpg"
+                  alt="Projektprozess Visualisierung"
+                  fill
+                  quality={100}
+                  priority
+                  className="object-cover"
+                  sizes="(max-width: 768px) 90vw, 50vw"
+                />
               </div>
             </div>
           </div>
