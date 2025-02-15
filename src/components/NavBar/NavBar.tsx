@@ -131,9 +131,9 @@ export default function NavBar() {
                 <MenuIcon className="w-8 h-8" />
               )}
             </button>
-            {/* <span className="font-medium mt-1 text-2xl text-black block">
+            <span className="font-medium mt-1 text-2xl text-black block">
               Menu
-            </span> */}
+            </span>
           </div>
 
           {/* Logo */}
