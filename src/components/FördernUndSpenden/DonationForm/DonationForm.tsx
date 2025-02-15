@@ -5,7 +5,7 @@ export default function DonationForm() {
     <>
       <section className="h-screen w-full relative bg-[#fcc41b]">
         <div
-          id="donation-form"
+          id="donate"
           className="absolute inset-0 flex flex-col items-center justify-center pl-10 gap-8"
         >
           <h2

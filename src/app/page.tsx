@@ -22,7 +22,7 @@ export default function Home() {
                 alt="About Photo"
                 fill
                 quality={100}
-                className="object-cover shadow-2xl"
+                className="object-cover rounded-md shadow-2xl"
                 priority
               />
             </div>

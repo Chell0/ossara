@@ -78,34 +78,45 @@ export default function TeamSection() {
 
   return (
     <>
-      <section className="p-6">
-        <div className="grid grid-cols-1 gap-4 p-4 sm:grid-cols-2 md:grid-cols-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+                     sm:gap-6 md:gap-8"
+        >
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative aspect-w-16 h-72 overflow-hidden shadow-xl group"
+              className="relative aspect-square w-full overflow-hidden rounded-lg shadow-xl
+                      hover:shadow-2xl transition-all duration-300 group"
             >
               <Image
-                fill={true}
                 src={image.src}
-                alt={`Image ${index + 1}`}
-                className="object-cover w-full h-full transition-all duration-300 transform group-hover:brightness-50"
+                alt={`Portrait of ${image.name}`}
+                fill
+                sizes="(max-width: 640px) 90vw,
+                     (max-width: 768px) 45vw,
+                     (max-width: 1024px) 30vw,
+                     23vw"
+                className="object-cover transition-transform duration-300 group-hover:scale-105"
+                quality={90}
+                priority={index < 4} // Only prioritize first 4 images
               />
-              <div className="absolute inset-x-0 bottom-0 flex flex-col space-y-1 bg-black bg-opacity-70 p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                <p className="font-extrabold text-left text-white text-lg uppercase">
+
+              <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black/70">
+                <p className="font-bold text-white text-sm sm:text-base md:text-lg truncate">
                   {image.name}
                 </p>
-                <p className="font-medium text-left text-white text-base">
+                <p className="text-white text-xs sm:text-sm md:text-base opacity-90 truncate">
                   {image.position}
                 </p>
-                <p className="font-medium text-left text-white text-base">
+                <p className="text-white text-xs sm:text-sm opacity-80 truncate">
                   {image.büro}
                 </p>
               </div>
             </div>
           ))}
         </div>
-      </section>
+      </div>
     </>
   );
 }

@@ -10,6 +10,7 @@ export default function Integrative() {
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
+            id="integrative"
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
           >
             <h1
@@ -57,7 +58,10 @@ export default function Integrative() {
         </section>
 
         {/* Bewerbungstraining */}
-        <section className="relative w-full min-h-screen text-[#fcc41b]">
+        <section
+          id="bewerbungstraining"
+          className="relative w-full min-h-screen text-[#fcc41b]"
+        >
           <div className="absolute inset-0 flex flex-col items-center justify-center pt-20">
             {/* Heading Section */}
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-4">
@@ -128,7 +132,10 @@ export default function Integrative() {
 
         {/* Sprachförderung */}
         <section className="relative w-full min-h-screen text-[#fcc41b]">
-          <div className="absolute inset-0 flex flex-col items-center justify-center pt-20">
+          <div
+            id="sprachforderung"
+            className="absolute inset-0 flex flex-col items-center justify-center pt-20"
+          >
             {/* Heading Section */}
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4">
               Sprachförderung- und Prüfungsvorbereitung

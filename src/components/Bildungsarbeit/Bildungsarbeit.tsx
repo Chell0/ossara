@@ -10,6 +10,7 @@ export default function Bildungsarbeit() {
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
+            id="bildungsarbeit"
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
           >
             <h1
@@ -67,7 +68,10 @@ export default function Bildungsarbeit() {
 
         {/* MachtBewusst */}
         <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div className="absolute inset-0 flex flex-col intems-center justify-center">
+          <div
+            id="machtbewusst"
+            className="absolute inset-0 flex flex-col intems-center justify-center"
+          >
             <div className="flex md:flex-grow flex-row gap-6 pt-20 m-6">
               <div className="basis-2/3">
                 <div className="relative h-[60vh] w-full md:h-[70vh]">
@@ -81,7 +85,7 @@ export default function Bildungsarbeit() {
                       alt="Machtbewusst Photo"
                       fill
                       quality={100}
-                      className="object-cover shadow-2xl"
+                      className="object-cover rounded-md shadow-2xl"
                       priority
                     />
                   </Link>
@@ -128,7 +132,10 @@ export default function Bildungsarbeit() {
 
         {/* Eine Welt-Promotorinnen */}
         <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div className="absolute inset-0 flex flex-col intems-center justify-center">
+          <div
+            id="promotorinnen"
+            className="absolute inset-0 flex flex-col intems-center justify-center"
+          >
             <div className="flex md:flex-grow flex-row gap-6 pt-10 mt-20 m-6">
               <div className="basis-1/2">
                 <h3
@@ -175,7 +182,7 @@ export default function Bildungsarbeit() {
                     width={480}
                     height={480}
                     quality={100}
-                    className="w-full h-full object-cover shadow-lg"
+                    className="w-full h-full object-cover rounded-md shadow-lg"
                   />
                 </div>
               </div>

@@ -24,7 +24,7 @@ export default function Gallery() {
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full aspect-square overflow-hidden shadow-xl group rounded-xl"
+                className="relative w-full aspect-square overflow-hidden shadow-xl group rounded-2xl"
               >
                 <Image
                   fill
