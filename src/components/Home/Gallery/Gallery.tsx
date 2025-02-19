@@ -18,9 +18,9 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="min-h-screen w-full p-4 flex items-center justify-center">
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 auto-rows-fr">
+      <div className="min-h-screen w-full p-4 sm:p-6 md:p-8 flex items-center justify-center">
+        <div className="w-full max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 auto-rows-fr">
             {images.map((image, index) => (
               <div
                 key={index}

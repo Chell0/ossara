@@ -4,23 +4,26 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <>
-      <footer className="p-6 mt-20 border-t-2 border-black">
-        <div className="container flex flex-col items-center mx-auto text-center md:flex-row md:justify-between md:text-left">
-          <p className="text-base font-medium">
+    <footer className="p-4 md:p-6 mt-12 md:mt-20 border-t-2 border-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
+          {/* Copyright Text */}
+          <p className="text-sm md:text-base font-medium text-center md:text-left mb-4 md:mb-0">
             Copyright ©{currentYear} Ossara. All Rights Reserved.
           </p>
-          <div className="flex flex-col mt-4 md:mt-0 md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-4">
+
+          {/* Links Grid */}
+          <div className="w-full md:w-auto grid grid-cols-2 gap-2 sm:gap-3 md:flex md:items-center md:space-x-4">
             <Link
               href="/datenschutz"
-              className="text-base font-medium hover:text-[#ba334b]"
+              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Datenschutz"
             >
               Datenschutz
             </Link>
             <Link
               href="/impressum"
-              className="text-base font-medium hover:text-[#ba334b]"
+              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Impressum"
             >
               Impressum
@@ -29,7 +32,7 @@ export default function Footer() {
               href="https://www.instagram.com/ossaraev/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base font-medium hover:text-[#ba334b]"
+              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Instagram"
             >
               Instagram
@@ -38,7 +41,7 @@ export default function Footer() {
               href="https://www.facebook.com/ossara.de/?ref=page_internal"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base font-medium hover:text-[#ba334b]"
+              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Facebook"
             >
               Facebook
@@ -47,14 +50,14 @@ export default function Footer() {
               href="https://www.youtube.com/channel/UCe7W9SFkK9y9AyAfknQYvIw"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-base font-medium hover:text-[#ba334b]"
+              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="YouTube"
             >
               YouTube
             </Link>
           </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 }
