@@ -213,17 +213,13 @@ export default function Veranstaltungen() {
   return (
     <>
       <div className="mx-auto">
-        {/* Events Title */}
+        {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-10"
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
-          >
-            <h1
-              className={`text-[#eb7b24] drop-shadow-xl text-[7rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
-            >
+          <div className="absolute inset-0 bg-black bg-opacity-70 flex items-start justify-start">
+            <h1 className="text-[#eb7b24] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight drop-shadow-xl uppercase p-4 sm:p-6 md:p-8 ml-4 sm:ml-6 md:ml-8 mt-16 sm:mt-20 md:mt-24">
               Veranstaltungen.
             </h1>
           </div>
