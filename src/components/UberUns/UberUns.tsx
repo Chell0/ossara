@@ -81,11 +81,11 @@ export default function UberUns() {
             className="flex flex-col md:flex-row gap-8 max-w-7xl w-full items-stretch"
           >
             {/* Text Content */}
-            <div className="md:basis-1/2 flex flex-col justify-center p-4 md:p-8">
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-center md:text-left text-[#f7cc55]">
+            <div className="md:basis-1/2 flex flex-col justify-center p-4 sm:p-6 md:p-8">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-center md:text-left text-[#f7cc55]">
                 Verein
               </h3>
-              <div className="space-y-4 text-base md:text-lg">
+              <div className="space-y-4 text-sm sm:text-base md:text-lg">
                 <p className="text-gray-800">
                   Als eingetragener Verein (VR 23447) sind wir politisch und
                   konfessionell neutral. Unsere Arbeit umfasst ein breites
@@ -121,7 +121,7 @@ export default function UberUns() {
 
             {/* Image Container */}
             <div className="md:basis-1/2 flex items-center justify-center p-4">
-              <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
                 <Image
                   src="/bgs/img1.jpg"
                   alt="About Photo"
@@ -135,6 +135,7 @@ export default function UberUns() {
             </div>
           </div>
         </section>
+
         {/* Team Section */}
         <section id="team" className="py-16 px-4 sm:px-6 lg:px-8 xl:py-24">
           <h3
