@@ -20,11 +20,9 @@ export default function UberUns() {
 
         {/* Über uns */}
         <section className="relative w-full min-h-screen">
-          <div
-            id="uber"
-            className="flex md:flex-grow flex-row gap-10 pt-10 m-8"
-          >
-            <div className="relative flex justify-center items-center basis-1/4 p-4 h-[360px] md:h-[400px] mt-20">
+          <div id="uber" className="flex flex-col md:flex-row gap-10 pt-10 m-8">
+            {/* Image Container */}
+            <div className="relative w-full md:basis-1/4 p-4 h-[360px] md:h-[400px] mt-20">
               <Image
                 src="/bgs/img1.jpg"
                 alt="About Photo"
@@ -36,18 +34,17 @@ export default function UberUns() {
               {/* Tape effect */}
               <div
                 className="absolute top-[-10px] right-[10px] w-20 h-10 bg-[#f7cc55] opacity-80 rotate-12 
-                  before:absolute before:w-full before:h-full before:bg-title-bg before:rotate-[-6deg] 
-                  before:opacity-50 before:top-0 before:left-0 before:content-['']"
+          before:absolute before:w-full before:h-full before:bg-title-bg before:rotate-[-6deg] 
+          before:opacity-50 before:top-0 before:left-0 before:content-['']"
               />
             </div>
 
-            <div className="basis-3/4 p-6 mt-10">
-              <h3
-                className={`text-[#f7cc55] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-sm uppercase pt-10`}
-              >
+            {/* Text Content */}
+            <div className="w-full md:basis-3/4 p-6 mt-10">
+              <h3 className="text-[#f7cc55] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center drop-shadow-sm uppercase pt-10">
                 Über Uns
               </h3>
-              <p className="mt-6 text-md text-black">
+              <p className="mt-6 text-base text-black">
                 Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
                 sich mit einer dekolonialen Perspektive für Bildung, Gesundheit
                 und interkulturelle Vielfalt einsetzt. Wir hinterfragen
@@ -55,7 +52,7 @@ export default function UberUns() {
                 gleichwertige Zusammenarbeit, die auf Respekt, Solidarität und
                 Selbstbestimmung beruht.
               </p>
-              <p className="mt-6 text-md text-black">
+              <p className="mt-6 text-base text-black">
                 Neben unserer internationalen Arbeit in Westafrika (Togo, Benin,
                 Côte d’Ivoire) engagieren wir uns auch in Hamburg. Hier bieten
                 wir integrative Stadtteilarbeit an und unterstützen mit
@@ -65,7 +62,7 @@ export default function UberUns() {
                 Anti-Schwarzem Rassismus auseinander und schaffen Begegnungs-
                 und empowernde Räume für BIPoC.
               </p>
-              <p className="mt-6 text-md text-black">
+              <p className="mt-6 text-base text-black">
                 Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende
                 und nachhaltige Veränderung nur durch einen dekolonialen und
                 machtkritischen Ansatz erreicht werden kann, der die Stimmen und
