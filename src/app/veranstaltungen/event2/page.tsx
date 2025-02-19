@@ -5,8 +5,8 @@ import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
-    <div className="bg-[#fff6ea] relative">
-      <main className="p-6">
+    <div className="bg-[rgb(255,246,234)] relative">
+      <main className="p-1">
         <NavBar />
         <div className="container max-w-screen-md mx-auto mt-20 p-10">
           {/* Events Image */}
