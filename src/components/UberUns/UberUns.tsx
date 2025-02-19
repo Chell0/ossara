@@ -22,10 +22,10 @@ export default function UberUns() {
         <section className="relative w-full min-h-screen">
           <div
             id="uber"
-            className="flex flex-col md:flex-row gap-6 lg:gap-10 px-4 sm:px-6 lg:px-8 py-10 md:py-12"
+            className="flex flex-col md:flex-row gap-6 lg:gap-10 px-4 sm:px-6 lg:px-8 py-10 md:py-12 items-center"
           >
             {/* Image Container */}
-            <div className="relative w-full md:basis-1/3 lg:basis-1/4 p-4 h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] mt-12 md:mt-20">
+            <div className="relative w-full md:basis-1/3 lg:basis-1/4 p-4 flex items-center justify-center h-[300px] sm:h-[360px] md:h-[420px] lg:h-[480px]">
               <Image
                 src="/bgs/img1.jpg"
                 alt="About Photo"
@@ -44,7 +44,7 @@ export default function UberUns() {
 
             {/* Text Content */}
             <div className="w-full md:basis-2/3 lg:basis-3/4 p-4 sm:p-6 mt-8 md:mt-10">
-              <h3 className="text-[#f7cc55] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center md:text-left drop-shadow-sm uppercase pt-6 md:pt-10">
+              <h3 className="text-[#f7cc55] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center drop-shadow-sm uppercase pt-6 md:pt-10">
                 Über Uns
               </h3>
               <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
@@ -153,22 +153,22 @@ export default function UberUns() {
           className="relative w-full min-h-screen flex items-center justify-center py-16 px-4 sm:px-8"
         >
           <div className="flex flex-col md:flex-row gap-8 max-w-7xl w-full items-stretch">
-            <div className="md:basis-1/2 flex items-center justify-center p-4">
-              <div className="relative h-[55vh] w-full md:h-[64vh]">
+            {/* Image Column */}
+            <div className="md:basis-1/2 flex items-center justify-center p-4 flex-1">
+              <div className="relative w-full min-h-[300px] md:min-h-full">
                 <Image
-                  src={`/bgs/img1.jpg`}
+                  src="/bgs/img1.jpg"
                   alt="History Photo"
                   fill
                   quality={100}
                   priority
-                  className="w-full h-full object-cover rounded-md shadow-lg"
+                  className="object-cover rounded-md shadow-lg"
                 />
               </div>
             </div>
-            <div className="md:basis-1/2 flex flex-col justify-center p-4">
-              <h3
-                className={`text-4xl md:text-5xl lg:text-6xl text-[#f7cc55] font-semibold text-left`}
-              >
+            {/* Text Column */}
+            <div className="md:basis-1/2 flex flex-col justify-center p-4 flex-1">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl text-[#f7cc55] font-semibold text-left">
                 Unsere Geschichte
               </h3>
               <p className="text-black text-base mt-4">
