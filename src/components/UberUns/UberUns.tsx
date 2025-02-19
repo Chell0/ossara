@@ -138,10 +138,7 @@ export default function UberUns() {
 
         {/* Team Section */}
         <section id="team" className="py-16 px-4 sm:px-6 lg:px-8 xl:py-24">
-          <h3
-            className="text-[#f7cc55] text-center text-4xl font-bold leading-tight drop-shadow-sm
-                md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 md:mb-16 lg:mb-20"
-          >
+          <h3 className="text-[#f7cc55] text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight drop-shadow-sm mb-12 md:mb-16 lg:mb-20">
             Das Team
           </h3>
           <TeamSection />
