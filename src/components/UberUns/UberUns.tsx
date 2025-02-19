@@ -20,31 +20,34 @@ export default function UberUns() {
 
         {/* Über uns */}
         <section className="relative w-full min-h-screen">
-          <div id="uber" className="flex flex-col md:flex-row gap-10 pt-10 m-8">
+          <div
+            id="uber"
+            className="flex flex-col md:flex-row gap-6 lg:gap-10 px-4 sm:px-6 lg:px-8 py-10 md:py-12"
+          >
             {/* Image Container */}
-            <div className="relative w-full md:basis-1/4 p-4 h-[360px] md:h-[400px] mt-20">
+            <div className="relative w-full md:basis-1/3 lg:basis-1/4 p-4 h-[280px] sm:h-[320px] md:h-[360px] lg:h-[400px] mt-12 md:mt-20">
               <Image
                 src="/bgs/img1.jpg"
                 alt="About Photo"
                 quality={100}
                 width={480}
                 height={400}
-                className="w-full h-full shadow-lg transform -rotate-[5deg]"
+                className="w-full h-full object-cover shadow-lg transform -rotate-[5deg] hover:rotate-0 transition-transform duration-300"
               />
               {/* Tape effect */}
               <div
-                className="absolute top-[-10px] right-[10px] w-20 h-10 bg-[#f7cc55] opacity-80 rotate-12 
+                className="absolute top-[-10px] right-[10px] w-16 sm:w-20 h-8 sm:h-10 bg-[#f7cc55] opacity-80 rotate-12 
           before:absolute before:w-full before:h-full before:bg-title-bg before:rotate-[-6deg] 
           before:opacity-50 before:top-0 before:left-0 before:content-['']"
               />
             </div>
 
             {/* Text Content */}
-            <div className="w-full md:basis-3/4 p-6 mt-10">
-              <h3 className="text-[#f7cc55] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center drop-shadow-sm uppercase pt-10">
+            <div className="w-full md:basis-2/3 lg:basis-3/4 p-4 sm:p-6 mt-8 md:mt-10">
+              <h3 className="text-[#f7cc55] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center md:text-left drop-shadow-sm uppercase pt-6 md:pt-10">
                 Über Uns
               </h3>
-              <p className="mt-6 text-base text-black">
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
                 Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
                 sich mit einer dekolonialen Perspektive für Bildung, Gesundheit
                 und interkulturelle Vielfalt einsetzt. Wir hinterfragen
@@ -52,7 +55,7 @@ export default function UberUns() {
                 gleichwertige Zusammenarbeit, die auf Respekt, Solidarität und
                 Selbstbestimmung beruht.
               </p>
-              <p className="mt-6 text-base text-black">
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
                 Neben unserer internationalen Arbeit in Westafrika (Togo, Benin,
                 Côte d’Ivoire) engagieren wir uns auch in Hamburg. Hier bieten
                 wir integrative Stadtteilarbeit an und unterstützen mit
@@ -62,7 +65,7 @@ export default function UberUns() {
                 Anti-Schwarzem Rassismus auseinander und schaffen Begegnungs-
                 und empowernde Räume für BIPoC.
               </p>
-              <p className="mt-6 text-base text-black">
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
                 Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende
                 und nachhaltige Veränderung nur durch einen dekolonialen und
                 machtkritischen Ansatz erreicht werden kann, der die Stimmen und
