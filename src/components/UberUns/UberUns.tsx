@@ -6,17 +6,13 @@ export default function UberUns() {
   return (
     <>
       <div className="mx-auto">
+        {/* Header */}
         <header
           className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div
-            id="uber"
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
-          >
-            <h1
-              className={`text-[#f7cc55] text-[8rem] font-extrabold leading-tight drop-shadow-xl uppercase p-6 ml-10 mt-20`}
-            >
+          <div className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start">
+            <h1 className="text-[#f7cc55] text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] font-extrabold leading-tight drop-shadow-xl uppercase p-6 ml-10 mt-20">
               Inside.
             </h1>
           </div>
@@ -24,7 +20,10 @@ export default function UberUns() {
 
         {/* Über uns */}
         <section className="relative w-full min-h-screen">
-          <div className="flex md:flex-grow flex-row gap-10 pt-10 m-8">
+          <div
+            id="uber"
+            className="flex md:flex-grow flex-row gap-10 pt-10 m-8"
+          >
             <div className="relative flex justify-center items-center basis-1/4 p-4 h-[360px] md:h-[400px] mt-20">
               <Image
                 src="/bgs/img1.jpg"
