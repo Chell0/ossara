@@ -6,17 +6,13 @@ export default function UberUns() {
   return (
     <>
       <div className="mx-auto">
+        {/* Header */}
         <header
           className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div
-            id="uber"
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
-          >
-            <h1
-              className={`text-[#f7cc55] text-[8rem] font-extrabold leading-tight drop-shadow-xl uppercase p-6 ml-10 mt-20`}
-            >
+          <div className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start">
+            <h1 className="text-[#f7cc55] text-[4rem] sm:text-[6rem] md:text-[8rem] lg:text-[10rem] font-extrabold leading-tight drop-shadow-xl uppercase p-6 ml-10 mt-20">
               Inside.
             </h1>
           </div>
@@ -24,31 +20,34 @@ export default function UberUns() {
 
         {/* Über uns */}
         <section className="relative w-full min-h-screen">
-          <div className="flex md:flex-grow flex-row gap-10 pt-10 m-8">
-            <div className="relative flex justify-center items-center basis-1/4 p-4 h-[360px] md:h-[400px] mt-20">
+          <div
+            id="uber"
+            className="flex flex-col md:flex-row gap-6 lg:gap-10 px-4 sm:px-6 lg:px-8 py-10 md:py-12 items-center"
+          >
+            {/* Image Container */}
+            <div className="relative w-full md:basis-1/3 lg:basis-1/4 p-4 flex items-center justify-center h-[300px] sm:h-[360px] md:h-[420px] lg:h-[480px]">
               <Image
                 src="/bgs/img1.jpg"
                 alt="About Photo"
                 quality={100}
                 width={480}
                 height={400}
-                className="w-full h-full shadow-lg transform -rotate-[5deg]"
+                className="w-full h-full object-cover shadow-lg transform -rotate-[5deg] hover:rotate-0 transition-transform duration-300"
               />
               {/* Tape effect */}
               <div
-                className="absolute top-[-10px] right-[10px] w-20 h-10 bg-[#f7cc55] opacity-80 rotate-12 
-                  before:absolute before:w-full before:h-full before:bg-title-bg before:rotate-[-6deg] 
-                  before:opacity-50 before:top-0 before:left-0 before:content-['']"
+                className="absolute top-[-10px] right-[10px] w-16 sm:w-20 h-8 sm:h-10 bg-[#f7cc55] opacity-80 rotate-12 
+          before:absolute before:w-full before:h-full before:bg-title-bg before:rotate-[-6deg] 
+          before:opacity-50 before:top-0 before:left-0 before:content-['']"
               />
             </div>
 
-            <div className="basis-3/4 p-6 mt-10">
-              <h3
-                className={`text-[#f7cc55] text-6xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-center drop-shadow-sm uppercase pt-10`}
-              >
+            {/* Text Content */}
+            <div className="w-full md:basis-2/3 lg:basis-3/4 p-4 sm:p-6 mt-8 md:mt-10">
+              <h3 className="text-[#f7cc55] text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-center drop-shadow-sm uppercase pt-6 md:pt-10">
                 Über Uns
               </h3>
-              <p className="mt-6 text-md text-black">
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
                 Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
                 sich mit einer dekolonialen Perspektive für Bildung, Gesundheit
                 und interkulturelle Vielfalt einsetzt. Wir hinterfragen
@@ -56,7 +55,7 @@ export default function UberUns() {
                 gleichwertige Zusammenarbeit, die auf Respekt, Solidarität und
                 Selbstbestimmung beruht.
               </p>
-              <p className="mt-6 text-md text-black">
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
                 Neben unserer internationalen Arbeit in Westafrika (Togo, Benin,
                 Côte d’Ivoire) engagieren wir uns auch in Hamburg. Hier bieten
                 wir integrative Stadtteilarbeit an und unterstützen mit
@@ -66,7 +65,7 @@ export default function UberUns() {
                 Anti-Schwarzem Rassismus auseinander und schaffen Begegnungs-
                 und empowernde Räume für BIPoC.
               </p>
-              <p className="mt-6 text-md text-black">
+              <p className="mt-4 sm:mt-6 text-sm sm:text-base text-black leading-relaxed">
                 Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende
                 und nachhaltige Veränderung nur durch einen dekolonialen und
                 machtkritischen Ansatz erreicht werden kann, der die Stimmen und
@@ -85,11 +84,11 @@ export default function UberUns() {
             className="flex flex-col md:flex-row gap-8 max-w-7xl w-full items-stretch"
           >
             {/* Text Content */}
-            <div className="md:basis-1/2 flex flex-col justify-center p-4 md:p-8">
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-center md:text-left text-[#f7cc55]">
+            <div className="md:basis-1/2 flex flex-col justify-center p-4 sm:p-6 md:p-8">
+              <h3 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-6 text-center md:text-left text-[#f7cc55]">
                 Verein
               </h3>
-              <div className="space-y-4 text-base md:text-lg">
+              <div className="space-y-4 text-sm sm:text-base md:text-lg">
                 <p className="text-gray-800">
                   Als eingetragener Verein (VR 23447) sind wir politisch und
                   konfessionell neutral. Unsere Arbeit umfasst ein breites
@@ -125,7 +124,7 @@ export default function UberUns() {
 
             {/* Image Container */}
             <div className="md:basis-1/2 flex items-center justify-center p-4">
-              <div className="relative w-full h-full min-h-[400px] md:min-h-[500px]">
+              <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
                 <Image
                   src="/bgs/img1.jpg"
                   alt="About Photo"
@@ -139,12 +138,10 @@ export default function UberUns() {
             </div>
           </div>
         </section>
+
         {/* Team Section */}
         <section id="team" className="py-16 px-4 sm:px-6 lg:px-8 xl:py-24">
-          <h3
-            className="text-[#f7cc55] text-center text-4xl font-bold leading-tight drop-shadow-sm
-                md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-12 md:mb-16 lg:mb-20"
-          >
+          <h3 className="text-[#f7cc55] text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold leading-tight drop-shadow-sm mb-12 md:mb-16 lg:mb-20">
             Das Team
           </h3>
           <TeamSection />
@@ -156,22 +153,22 @@ export default function UberUns() {
           className="relative w-full min-h-screen flex items-center justify-center py-16 px-4 sm:px-8"
         >
           <div className="flex flex-col md:flex-row gap-8 max-w-7xl w-full items-stretch">
-            <div className="md:basis-1/2 flex items-center justify-center p-4">
-              <div className="relative h-[55vh] w-full md:h-[64vh]">
+            {/* Image Column */}
+            <div className="md:basis-1/2 flex items-center justify-center p-4 flex-1">
+              <div className="relative w-full min-h-[300px] md:min-h-full">
                 <Image
-                  src={`/bgs/img1.jpg`}
+                  src="/bgs/img1.jpg"
                   alt="History Photo"
                   fill
                   quality={100}
                   priority
-                  className="w-full h-full object-cover rounded-md shadow-lg"
+                  className="object-cover rounded-md shadow-lg"
                 />
               </div>
             </div>
-            <div className="md:basis-1/2 flex flex-col justify-center p-4">
-              <h3
-                className={`text-4xl md:text-5xl lg:text-6xl text-[#f7cc55] font-semibold text-left`}
-              >
+            {/* Text Column */}
+            <div className="md:basis-1/2 flex flex-col justify-center p-4 flex-1">
+              <h3 className="text-4xl md:text-5xl lg:text-6xl text-[#f7cc55] font-semibold text-left">
                 Unsere Geschichte
               </h3>
               <p className="text-black text-base mt-4">

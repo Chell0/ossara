@@ -79,24 +79,17 @@ export default function TeamSection() {
   return (
     <>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
-                     sm:gap-6 md:gap-8"
-        >
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 md:gap-8">
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative aspect-square w-full overflow-hidden rounded-lg shadow-xl
-                      hover:shadow-2xl transition-all duration-300 group"
+              className="relative aspect-square w-full overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 group"
             >
               <Image
                 src={image.src}
                 alt={`Portrait of ${image.name}`}
                 fill
-                sizes="(max-width: 640px) 90vw,
-                     (max-width: 768px) 45vw,
-                     (max-width: 1024px) 30vw,
-                     23vw"
+                sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 quality={90}
                 priority={index < 4} // Only prioritize first 4 images
