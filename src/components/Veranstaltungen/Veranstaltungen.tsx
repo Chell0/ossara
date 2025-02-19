@@ -218,8 +218,8 @@ export default function Veranstaltungen() {
           className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-70 flex items-start justify-start">
-            <h1 className="text-[#eb7b24] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight drop-shadow-xl uppercase p-4 sm:p-6 md:p-8 ml-4 sm:ml-6 md:ml-8 mt-16 sm:mt-20 md:mt-24">
+          <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start">
+            <h1 className="text-[#eb7b24] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-0 md:ml-10 md:mt-20 text-2xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl">
               Veranstaltungen.
             </h1>
           </div>
@@ -231,53 +231,47 @@ export default function Veranstaltungen() {
         </h3>
 
         {/* Current and Future Events Section */}
-        <section className="m-10">
-          <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-3">
+        <section className="mx-4 my-8 md:m-10">
+          <div className="grid grid-cols-1 gap-5 mt-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {currentAndFutureEvents.length > 0 ? (
               currentAndFutureEvents.map((event) => (
                 <div
                   key={event.id}
-                  className="max-w-screen-lg overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
+                  className="flex flex-col h-full overflow-hidden transition-transform duration-300 bg-white rounded-lg shadow-lg hover:scale-105"
                 >
                   {/* Image section */}
-                  <div className="relative w-full h-56">
+                  <div className="relative w-full aspect-video sm:aspect-square lg:aspect-video">
                     <Image
                       src={event.imageUrl}
                       alt={event.title}
                       fill
-                      // width={200}
-                      // height={100}
                       quality={100}
-                      className="object-contain rounded-t-lg"
+                      className="object-cover"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                   </div>
 
                   {/* Content section */}
-                  <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
-                    {/* Event Title */}
-                    <h3 className="mt-2 text-base font-semibold text-gray-900">
+                  <div className="flex flex-col flex-1 p-4 sm:p-5 lg:p-6">
+                    <h3 className="text-sm font-semibold text-gray-900 lg:text-base">
                       {event.title}
                     </h3>
 
-                    {/* Event Type */}
-                    <div className="mt-2 text-sm text-gray-500">
+                    <div className="mt-2 text-xs text-gray-500 sm:mt-3 sm:text-sm">
                       What: {event.type}
                     </div>
 
-                    {/* Event Date & Time */}
-                    <div className="mt-2 text-sm text-gray-500">
+                    <div className="mt-1 text-xs text-gray-500 sm:mt-2 sm:text-sm">
                       Wann: {formatDate(event.date)}, {event.time}
                     </div>
 
-                    {/* Event Description */}
-                    <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
+                    <p className="mt-2 text-xs leading-relaxed text-gray-600 line-clamp-3 sm:mt-3 sm:text-sm">
                       {event.description}
                     </p>
 
-                    {/* Event Read Now link */}
                     <Link
                       href={event.link}
-                      className="mt-4 text-sm text-[#eb7b24] hover:underline"
+                      className="mt-3 text-xs font-medium text-[#eb7b24] hover:underline sm:mt-4 sm:text-sm"
                     >
                       Read Now →
                     </Link>
@@ -285,7 +279,7 @@ export default function Veranstaltungen() {
                 </div>
               ))
             ) : (
-              <p className="text-xl font-bold text-center text-gray-800 col-span-full">
+              <p className="py-8 text-lg font-bold text-center text-gray-800 col-span-full sm:text-xl">
                 No upcoming events found.
               </p>
             )}
@@ -293,30 +287,34 @@ export default function Veranstaltungen() {
         </section>
 
         {/* Archived Events Section */}
-        <h3 className="pt-20 pb-10 text-5xl font-semibold text-center text-[#eb7b24]">
+        <h3
+          className="pt-10 pb-6 text-3xl font-semibold leading-tight text-center text-[#eb7b24] 
+              md:pt-16 md:pb-8 md:text-4xl md:leading-snug 
+              lg:pt-20 lg:pb-10 lg:text-5xl lg:leading-normal"
+        >
           Veranstaltungsarchiv
         </h3>
 
-        <section className="m-10">
-          <div className="grid grid-cols-1 gap-6 mt-10 md:grid-cols-3">
+        <section className="px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
             {pastEvents.slice(0, 3).map((event) => (
               <div
                 key={event.id}
-                className="max-w-screen-lg overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
+                className="w-full overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
               >
                 {/* Image section */}
-                <div className="relative w-full h-56">
+                <div className="relative w-full h-48 sm:h-56 md:h-64">
                   <Image
                     src={event.imageUrl}
                     alt={event.title}
                     fill
                     quality={100}
-                    className="object-contain rounded-t-lg"
+                    className="object-cover rounded-t-lg"
                   />
                 </div>
 
                 {/* Content section */}
-                <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
+                <div className="p-4 sm:p-6 flex flex-col">
                   {/* Event Title */}
                   <h3 className="mt-2 text-base font-semibold text-gray-900 line-clamp-2">
                     {event.title}
@@ -351,10 +349,10 @@ export default function Veranstaltungen() {
 
           {/* Show "More Events" button if there are more than 3 archived events */}
           {pastEvents.length > 3 && (
-            <div className="mt-10 text-center">
+            <div className="mt-8 sm:mt-10 text-center">
               <Link
                 href="/veranstaltungen/archives"
-                className="px-8 py-3 text-lg font-semibold text-white bg-[#eb7b24] rounded-lg hover:bg-[#d96c1f] transition-colors"
+                className="inline-block px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-lg font-semibold text-white bg-[#eb7b24] rounded-lg hover:bg-[#d96c1f] transition-colors"
               >
                 Mehr Veranstaltungen anzeigen ({pastEvents.length - 3}+)
               </Link>
