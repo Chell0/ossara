@@ -226,7 +226,7 @@ export default function Veranstaltungen() {
         </header>
 
         {/* Current and Future Events */}
-        <h3 className="my-20 text-5xl font-semibold text-center text-[#eb7b24]">
+        <h3 className="my-12 sm:my-16 md:my-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#eb7b24]">
           Upcoming Events
         </h3>
 
