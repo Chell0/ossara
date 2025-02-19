@@ -295,15 +295,17 @@ export default function Veranstaltungen() {
           Veranstaltungsarchiv
         </h3>
 
-        <section className="px-4 sm:px-6 md:px-10 py-6 sm:py-8 md:py-10">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:gap-8">
+        <section className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {pastEvents.slice(0, 3).map((event) => (
               <div
                 key={event.id}
                 className="w-full overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
               >
                 {/* Image section */}
-                <div className="relative w-full h-48 sm:h-56 md:h-64">
+                <div className="relative w-full aspect-[4/3]">
+                  {" "}
+                  {/* Standard aspect ratio */}
                   <Image
                     src={event.imageUrl}
                     alt={event.title}
