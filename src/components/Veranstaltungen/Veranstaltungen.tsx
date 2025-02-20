@@ -219,7 +219,7 @@ export default function Veranstaltungen() {
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start">
-            <h1 className="text-[#eb7b24] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-0 md:ml-10 md:mt-20 text-2xl sm:text-3xl md:text-6xl lg:text-7xl xl:text-8xl">
+            <h1 className="text-[#eb7b24] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-20 md:ml-10 md:mt-28 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
               Veranstaltungen.
             </h1>
           </div>
