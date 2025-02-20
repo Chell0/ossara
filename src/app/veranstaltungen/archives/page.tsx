@@ -206,37 +206,38 @@ export default function Page() {
     <div className="mx-auto">
       <NavBar />
       <header
-        className="min-h-96 w-full bg-cover bg-center relative mb-10 p-10"
+        className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
         style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
       >
-        <div className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start">
-          <h1 className="text-[#eb7b24] drop-shadow-xl text-[5rem] font-extrabold leading-tight uppercase pt-10 ml-10 mt-20">
-            Veranstaltungsarchiv
+        <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start">
+          <h1 className="text-[#eb7b24] drop-shadow-xl font-extrabold uppercase text-center md:text-left p-4 sm:p-6 md:p-8 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl md:mt-20">
+            Veranstaltungsarchiv.
           </h1>
         </div>
       </header>
 
-      <section className="m-10">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+      <section className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {pastEvents.map((event) => (
-            // Reuse your event card component here
             <div
               key={event.id}
-              className="max-w-screen-lg overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
+              className="w-full overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
             >
               {/* Image section */}
-              <div className="relative w-full h-56">
+              <div className="relative w-full aspect-[4/3]">
+                {" "}
+                {/* Adjust aspect ratio as needed */}
                 <Image
                   src={event.imageUrl}
                   alt={event.title}
                   fill
                   quality={100}
-                  className="object-contain rounded-t-lg"
+                  className="object-cover rounded-t-lg"
                 />
               </div>
 
               {/* Content section */}
-              <div className="p-6 h-[calc(100%-12rem)] flex flex-col">
+              <div className="p-4 sm:p-6 flex flex-col">
                 {/* Event Title */}
                 <h3 className="mt-2 text-base font-semibold text-gray-900 line-clamp-2">
                   {event.title}
@@ -269,6 +270,7 @@ export default function Page() {
           ))}
         </div>
 
+        {/* Empty state message */}
         {pastEvents.length === 0 && (
           <p className="text-center text-gray-600">
             Derzeit sind keine archivierten Veranstaltungen verfügbar.
