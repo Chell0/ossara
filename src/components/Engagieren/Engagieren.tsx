@@ -6,15 +6,15 @@ export default function Engagieren() {
       <div>
         {/* Page Header */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-10"
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
             id="engagieren"
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+            className={`absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start`}
           >
             <h1
-              className={`text-[#fcc41b] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
+              className={`text-[#fcc41b] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-20 md:ml-10 md:mt-28 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl`}
             >
               Engagieren.
             </h1>
