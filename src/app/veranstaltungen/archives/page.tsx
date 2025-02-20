@@ -210,7 +210,7 @@ export default function Page() {
         style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start">
-          <h1 className="text-[#eb7b24] drop-shadow-xl font-extrabold uppercase text-center md:text-left p-4 sm:p-6 md:p-8 text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl md:mt-20">
+          <h1 className="text-[#eb7b24] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-20 md:ml-10 md:mt-28 text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
             Veranstaltungsarchiv.
           </h1>
         </div>
