@@ -48,7 +48,7 @@ export default function Neuigkeiten() {
         </header>
 
         {/* News Section */}
-        <section className="min-h-screen w-full bg-white">
+        <section className="min-h-screen w-full">
           <div className="container mx-auto p-4 sm:p-6 md:p-8">
             {/* Toggle Buttons */}
             <div className="flex flex-wrap justify-center gap-4 my-10">
