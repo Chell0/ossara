@@ -5,17 +5,16 @@ export default function Integrative() {
   return (
     <>
       <div>
+        {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-10"
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
             id="integrative"
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+            className="absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start"
           >
-            <h1
-              className={`text-[#fcc41b] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
-            >
+            <h1 className="text-[#fcc41b] drop-shadow-xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 ml-2 sm:ml-4 md:ml-6 lg:ml-8 mt-16 sm:mt-20 md:mt-24 lg:mt-28">
               Stadtteil. <br />
               arbeit.
             </h1>
