@@ -1,8 +1,8 @@
 "use client";
-import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 import { archiveData, categories, newsData } from "../../../data";
 
@@ -31,23 +31,25 @@ export default function Neuigkeiten() {
   return (
     <>
       <div>
+        {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-10"
+          className="min-h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
+            className={`absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start`}
           >
             <h1
-              className={`text-[#eb7b24] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
+              className={`text-[#eb7b24] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-0 md:ml-10 md:mt-20 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl`}
             >
               Neuigkeiten.
             </h1>
           </div>
         </header>
 
+        {/* News Section */}
         <section className="min-h-screen w-full">
-          <div className="top-10">
+          <div className="container mx-auto p-4 sm:p-6 md:p-8">
             {/* Toggle Buttons */}
             <div className="flex flex-wrap justify-center gap-4 my-10">
               <button
@@ -55,7 +57,7 @@ export default function Neuigkeiten() {
                   setShowNeuigkeiten(true);
                   setSelectedCategory(null);
                 }}
-                className={`px-8 py-4 sm:px-4 sm:py-2 text-xl md:px-6 md:py-3 sm:w-auto shadow-md rounded-xl transition ${
+                className={`px-6 py-3 sm:px-8 sm:py-4 text-lg sm:text-xl shadow-md rounded-xl transition ${
                   showNeuigkeiten
                     ? "bg-[#eb7b24] text-white"
                     : "bg-gray-200 text-[#eb7b24]"
@@ -68,7 +70,7 @@ export default function Neuigkeiten() {
                   setShowNeuigkeiten(false);
                   setSelectedCategory(null);
                 }}
-                className={`px-8 py-4 sm:px-4 sm:py-2 text-xl md:px-6 md:py-3 sm:w-auto shadow-md rounded-xl transition ${
+                className={`px-6 py-3 sm:px-8 sm:py-4 text-lg sm:text-xl shadow-md rounded-xl transition ${
                   !showNeuigkeiten
                     ? "bg-[#eb7b24] text-white"
                     : "bg-gray-200 text-[#eb7b24]"
@@ -78,10 +80,10 @@ export default function Neuigkeiten() {
               </button>
 
               {/* Category Dropdown */}
-              <div className="relative flex justify-center">
+              <div className="relative w-full sm:w-auto">
                 <select
                   onChange={(e) => setSelectedCategory(e.target.value || null)}
-                  className="bg-[#eb7b24] text-white text-lg py-3 px-8 shadow-md rounded-xl appearance-none w-full"
+                  className="bg-[#eb7b24] text-white text-lg py-3 px-8 shadow-md rounded-xl appearance-none w-full sm:w-auto"
                 >
                   <option value="">Alle Kategorien</option>
                   {categories.map((category) => (
@@ -105,7 +107,7 @@ export default function Neuigkeiten() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-10 mt-10 mx-auto"
+              className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10"
             >
               {paginatedNews.length > 0 ? (
                 paginatedNews.map((news) => (
@@ -114,9 +116,9 @@ export default function Neuigkeiten() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="max-w-screen-lg h-[450px] overflow-hidden shadow-xl rounded-lg"
+                    className="w-full h-auto overflow-hidden shadow-xl rounded-lg"
                   >
-                    <div className="relative h-72 w-full">
+                    <div className="relative h-48 sm:h-56 w-full">
                       <Image
                         src={news.image}
                         alt={news.title}
@@ -126,14 +128,14 @@ export default function Neuigkeiten() {
                       />
                     </div>
 
-                    <div className="p-5">
-                      <h3 className="font-bold text-xl sm:text-base mb-3 text-gray-800 hover:underline">
+                    <div className="p-4 sm:p-5">
+                      <h3 className="font-bold text-lg sm:text-xl mb-2 text-gray-800 hover:underline">
                         <Link href={news.mehr}>{news.title}</Link>
                       </h3>
                       <p className="mb-2 text-sm font-semibold text-gray-800">
                         {news.date}
                       </p>
-                      <p className="text-sm text-gray-800 line-clamp-2">
+                      <p className="text-sm text-gray-800 line-clamp-3">
                         {news.content}
                       </p>
                     </div>
