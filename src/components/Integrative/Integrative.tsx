@@ -127,7 +127,7 @@ export default function Integrative() {
 
               {/* Right Column - Contact Card */}
               <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                <div className="bg-white/90 rounded-xl p-4 md:p-6 lg:p-8">
+                <div className="rounded-xl p-4 md:p-6 lg:p-8">
                   <ContactPerson
                     name="Katja Heyn"
                     position="Beratungs- und Bewerbungstrainerin"
