@@ -3,9 +3,9 @@ import Image from "next/image";
 export default function TeamSection() {
   const images = [
     {
-      src: "/team/SalwaTchakala.JPG",
-      name: "Salwa Tchakala",
-      position: "Assistentin der Geschäftsführung",
+      src: "/team/jonDoe.jpeg",
+      name: "John Doe",
+      position: "Projektmanager",
       büro: "Kara, Togo",
     },
     {
@@ -45,9 +45,9 @@ export default function TeamSection() {
       büro: "Kara, Togo",
     },
     {
-      src: "/team/NataanmanLare.JPG",
-      name: "Nataan-man Lare",
-      position: "Assistentin für Projektmanagement",
+      src: "/team/jonDoe.jpeg",
+      name: "John Doe",
+      position: "Projektmanager",
       büro: "Kara, Togo",
     },
     {
@@ -63,15 +63,15 @@ export default function TeamSection() {
       büro: "Kara, Togo",
     },
     {
-      src: "/team/NataanmanLare.JPG",
-      name: "Nataan-man Lare",
-      position: "Assistentin für Projektmanagement",
+      src: "/team/jonDoe.jpeg",
+      name: "John Doe",
+      position: "Projektmanager",
       büro: "Kara, Togo",
     },
     {
-      src: "/team/Logtabamaana.JPG",
-      name: "B. Logtaba Maana",
-      position: "Leitung Monitoring und Evaluation",
+      src: "/team/NataanmanLare.JPG",
+      name: "Nataan-man Lare",
+      position: "Assistentin für Projektmanagement",
       büro: "Kara, Togo",
     },
   ];
