@@ -22,21 +22,30 @@ export default function Integrative() {
         </header>
 
         <section className="relative w-full min-h-screen text-[#fcc41b]">
-          <div className="flex md:flex-grow flex-row pt-5">
-            <div className="basis-full">
-              <p className="text-[5rem] font-semibold leading-none p-2">
+          <div className="flex flex-col pt-6 md:pt-8 lg:pt-12">
+            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
+              <p
+                className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+                font-semibold leading-normal
+                tracking-tight md:tracking-normal
+                pb-6 sm:pb-8 md:pb-12
+                px-2 sm:px-4 md:px-0"
+              >
                 Mit niederschwelliger Beratung und praxisnaher Unterstützung
                 schaffen wir berufliche Perspektiven und fördern erfolgreiche
                 Integration.
               </p>
             </div>
           </div>
-          <div className="flex md:flex-grow flex-row gap-10 mt-20 m-6">
-            <div className="basis-1/2 flex justify-center items-center mx-3 h-[360px] md:h-[480px]">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-10 md:mt-20 px-4 md:m-4">
+            {/* YouTube Video Section */}
+            <div className="w-full md:basis-1/2 mt-4 md:mt-8 lg:mt-12 pt-4 md:pt-8 lg:pt-12 px-4 sm:px-0">
               <YouTubeSection videoId="xpWWgOP5QuE" />
             </div>
-            <div className="basis-1/2 mt-20 pt-10">
-              <p className="text-md text-black">
+
+            {/* Text Section */}
+            <div className="w-full md:basis-1/2 mt-4 md:mt-12 lg:mt-16 pt-4 md:pt-8 lg:pt-12 px-4 md:px-5 mb-10">
+              <p className="text-sm xs:text-base sm:text-[15px] md:text-lg leading-relaxed md:leading-normal text-black max-w-3xl mx-auto">
                 Ossara e.V. bietet eine niedrigschwellige Sozialberatung und
                 Bewerbungshilfe für Geflüchtete und Interessierte. In
                 wöchentlichen Terminen unterstützen wir bei der Orientierung im
@@ -59,48 +68,56 @@ export default function Integrative() {
         {/* Bewerbungstraining */}
         <section
           id="bewerbungstraining"
-          className="relative w-full min-h-screen text-[#fcc41b]"
+          className="relative w-full min-h-[50vh] md:min-h-screen py-12 md:py-24 lg:py-32 text-[#fcc41b]"
         >
-          <div className="absolute inset-0 flex flex-col items-center justify-center pt-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             {/* Heading Section */}
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight mb-4">
+            <h2
+              className="text-4xl xs:text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[4.5rem] 
+                  font-semibold leading-tight md:leading-normal text-center 
+                  mb-6 sm:mb-8 md:mb-10"
+            >
               Beratungs- und Bewerbungstraining
             </h2>
 
             {/* Content Section */}
-            <div className="flex md:flex-grow flex-row gap-6 mt-20 m-6">
+            <div
+              className="w-full flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-16 
+                   mt-10 md:mt-16 lg:mt-20"
+            >
               {/* Left Column - Text Content */}
-              <div className="basis-1/2">
-                <div className="space-y-1 p-4">
-                  <p className="text-md md:text-lg text-black leading-relaxed">
-                    Ossara e.V. bietet einmal wöchentlich eine niedrigschwellige
-                    Sozialberatung bzw. Orientierungshilfe an und unterstützt
-                    Interessierte bei Bewerbungen.
-                  </p>
+              <div className="w-full lg:w-1/2 space-y-2 md:space-y-4">
+                <p className="text-base sm:text-sm md:text-lg text-black leading-normal">
+                  Ossara e.V. bietet einmal wöchentlich eine niedrigschwellige
+                  Sozialberatung bzw. Orientierungshilfe an und unterstützt
+                  Interessierte bei Bewerbungen.
+                </p>
+
+                <div className="space-y-1 md:space-y-2">
                   <div>
-                    <strong className="block text-md md:text-lg text-black">
+                    <strong className="block text-md sm:text-base md:text-lg text-black">
                       Wo:
                     </strong>
-                    <p className="text-md md:text-lg">
+                    <p className="text-base">
                       In den Räumlichkeiten des Sportvereins SV Groß Borstel am
                       Brödermannsweg 31, 22453 Hamburg und digital
                     </p>
                   </div>
 
                   <div>
-                    <strong className="block text-base md:text-md text-black">
+                    <strong className="block text-md sm:text-base md:text-lg text-black">
                       Wann:
                     </strong>
-                    <p className="text-md md:text-lg">
+                    <p className="text-base">
                       Freitags von 10:00 - 13:00 Uhr und nach Vereinbarung
                     </p>
                   </div>
 
                   <div>
-                    <strong className="block text-md md:text-lg text-black">
+                    <strong className="block text-md sm:text-base md:text-lg text-black">
                       Für wen:
                     </strong>
-                    <p className="text-md md:text-lg">
+                    <p className="text-base">
                       Geflüchtete aus naheliegenden Unterkünften und
                       Interessierte
                     </p>
@@ -109,13 +126,8 @@ export default function Integrative() {
               </div>
 
               {/* Right Column - Contact Card */}
-              <div className="basis-1/2 mt-4">
-                <div className="text-center">
-                  <h3 className="text-black text-3xl md:text-4xl font-semibold mb-4">
-                    Kontaktperson
-                  </h3>
-                  <hr className="w-16 border-2 mx-auto border-black" />
-
+              <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
+                <div className="bg-white/90 rounded-xl p-4 md:p-6 lg:p-8">
                   <ContactPerson
                     name="Katja Heyn"
                     position="Beratungs- und Bewerbungstrainerin"
@@ -130,61 +142,59 @@ export default function Integrative() {
         </section>
 
         {/* Sprachförderung */}
-        <section className="relative w-full min-h-screen text-[#fcc41b]">
-          <div
-            id="sprachforderung"
-            className="absolute inset-0 flex flex-col items-center justify-center pt-20"
-          >
+        <section
+          id="sprachforderung"
+          className="relative w-full min-h-[50vh] md:min-h-screen py-12 mg:py-24 lg:py-32 text-[#fcc41b]"
+        >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             {/* Heading Section */}
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-4">
+            <h2 className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] font-semibold leading-tight md:leading-normal text-center mb-6 sm:mb-8 md:mb-10">
               Sprachförderung- und Prüfungsvorbereitung
             </h2>
 
             {/* Content Section */}
-            <div className="flex md:flex-grow flex-row gap-3 mt-20">
+            <div className="w-full flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-16 mt-10 md:mt-16 lg:mt-20">
               {/* Left Column - Text Content */}
-              <div className="basis-1/2 p-8">
-                <div>
-                  <p className="text-base leading-relaxed text-black md:text-md">
-                    Mit unserer Sprachförderung möchten wir den Teilnehmenden
-                    helfen, ihre Sprachkenntnisse im formellen Kontext zu
-                    verbessern, ihre schriftliche Kompetenz zu fördern und einen
-                    Raum für interkulturellen Austausch zu bieten.
-                  </p>
-                  <p className="mt-2 text-base md:text-md leading-tight text-black">
-                    Die Prüfungsvorbereitung findet montags und dienstags von
-                    10:00 bis 13:00 Uhr statt. Unser Ziel ist es, die
-                    Teilnehmenden gezielt auf ihre Abschlussprüfungen
-                    vorzubereiten, indem wir sowohl schriftliche als auch
-                    mündliche Prüfungsfähigkeiten trainieren. In Kleingruppen
-                    werden Prüfungssituationen simuliert und das richtige
-                    Verhalten in Prüfungen geübt.
-                  </p>
-                  <p className="mt-2 text-base leading-tight md:text-md text-black">
-                    Die gängigen Prüfungen umfassen:
-                  </p>
-                  <ul className="text-base md:text-md pl-5 mt-2 space-y-1 font-semibold text-[#fcc41b] list-disc">
-                    <li>Zertifikat Deutsch Telc A1, A2, B1, DTZ, B2, C1</li>
-                    <li>Goethe Zertifikat A1, A2, B1, B2, C1</li>
-                  </ul>
-                  <p className="mt-2 text-base leading-tight md:text-md text-black">
-                    <b>PS :</b>{" "}
-                    <span className="text-base leading-tight md:text-md text-black">
-                      Wir führen keine Prüfungen durch und übernehmen keine
-                      Prüfungsgebühren.
-                    </span>
-                  </p>
-                </div>
+              <div className="w-full lg:w-1/2">
+                <p className="text-base text-black">
+                  Mit unserer Sprachförderung möchten wir den Teilnehmenden
+                  helfen, ihre Sprachkenntnisse im formellen Kontext zu
+                  verbessern, ihre schriftliche Kompetenz zu fördern und einen
+                  Raum für interkulturellen Austausch zu bieten.
+                </p>
+                <p className="text-base text-black">
+                  Die Prüfungsvorbereitung findet montags und dienstags von
+                  10:00 bis 13:00 Uhr statt. Unser Ziel ist es, die
+                  Teilnehmenden gezielt auf ihre Abschlussprüfungen
+                  vorzubereiten, indem wir sowohl schriftliche als auch
+                  mündliche Prüfungsfähigkeiten trainieren. In Kleingruppen
+                  werden Prüfungssituationen simuliert und das richtige
+                  Verhalten in Prüfungen geübt.
+                </p>
+                <p className="text-base text-black">
+                  Die gängigen Prüfungen umfassen:
+                </p>
+                <ul className="text-base pl-5 mt-2 space-y-1 font-semibold text-[#fcc41b] list-disc">
+                  <li>Zertifikat Deutsch Telc A1, A2, B1, DTZ, B2, C1</li>
+                  <li>Goethe Zertifikat A1, A2, B1, B2, C1</li>
+                </ul>
+                <p className="text-base text-black">
+                  <b>PS :</b>{" "}
+                  <span className="text-base text-black">
+                    Wir führen keine Prüfungen durch und übernehmen keine
+                    Prüfungsgebühren.
+                  </span>
+                </p>
               </div>
 
               {/* Right Column - Contact Card */}
-              <div className="basis-1/2 mt-8">
-                <div className="text-center">
+              <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
+                {/* <div className="text-center">
                   <h3 className="text-black text-3xl md:text-4xl font-semibold mb-4">
                     Kontaktperson
                   </h3>
                   <hr className="w-16 border-2 mx-auto border-black" />
-                </div>
+                </div> */}
 
                 <ContactPerson
                   name="Hayford Anyidoho"
