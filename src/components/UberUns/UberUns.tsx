@@ -131,7 +131,7 @@ export default function UberUns() {
                   fill
                   quality={100}
                   priority
-                  className="object-cover rounded-lg shadow-xl"
+                  className="object-cover shadow-xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -162,7 +162,7 @@ export default function UberUns() {
                   fill
                   quality={100}
                   priority
-                  className="object-cover rounded-md shadow-lg"
+                  className="object-cover shadow-lg"
                 />
               </div>
             </div>

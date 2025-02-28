@@ -83,7 +83,7 @@ export default function TeamSection() {
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative aspect-square w-full overflow-hidden rounded-lg shadow-xl hover:shadow-2xl transition-all duration-300 group"
+              className="relative aspect-square w-full overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group"
             >
               <Image
                 src={image.src}

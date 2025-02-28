@@ -127,15 +127,19 @@ export default function Integrative() {
 
               {/* Right Column - Contact Card */}
               <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                <div className="rounded-xl p-4 md:p-6 lg:p-8">
-                  <ContactPerson
-                    name="Katja Heyn"
-                    position="Beratungs- und Bewerbungstrainerin"
-                    email="Bewerbungstraining[at]ossara.de"
-                    phone="(+49) 1575 1406 184"
-                    imageSrc="/contact-person/contact_person.jpg"
-                  />
+                <div className="text-center mb-6">
+                  <h3 className="text-black text-3xl md:text-4xl font-semibold">
+                    Kontaktperson
+                  </h3>
+                  <hr className="w-16 border-2 mx-auto border-black" />
                 </div>
+                <ContactPerson
+                  name="Katja Heyn"
+                  position="Beratungs- und Bewerbungstrainerin"
+                  email="Bewerbungstraining[at]ossara.de"
+                  phone="(+49) 1575 1406 184"
+                  imageSrc="/contact-person/contact_person.jpg"
+                />
               </div>
             </div>
           </div>
@@ -189,12 +193,12 @@ export default function Integrative() {
 
               {/* Right Column - Contact Card */}
               <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                {/* <div className="text-center">
-                  <h3 className="text-black text-3xl md:text-4xl font-semibold mb-4">
+                <div className="text-center mb-6">
+                  <h3 className="text-black text-3xl md:text-4xl font-semibold">
                     Kontaktperson
                   </h3>
                   <hr className="w-16 border-2 mx-auto border-black" />
-                </div> */}
+                </div>
 
                 <ContactPerson
                   name="Hayford Anyidoho"
