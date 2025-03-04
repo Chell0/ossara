@@ -111,7 +111,7 @@ export default function EineWeltPromotorinnen() {
                     position="Projektkoordination"
                     email="sonia.octavio[at]ossara.de"
                     phone="(+49) 157-3572-1433"
-                    imageSrc="/team/sonia.jpg"
+                    imageSrc="/uber-uns/team/sonia2.jpg"
                   />
                 </div>
               </div>
@@ -130,7 +130,7 @@ export default function EineWeltPromotorinnen() {
                     position="Projektkoordination"
                     email="catherine.schlueter[a]ossara.de"
                     phone="(+49) 157-3572-2762"
-                    imageSrc="/team/catherine.jpg"
+                    imageSrc="/uber-uns/team/catherine.jpg"
                   />
                 </div>
               </div>
