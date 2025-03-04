@@ -13,10 +13,11 @@ export default function Dekoloniale() {
         >
           <div
             id="dekoloniale"
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+            className={`absolute top-0 left-0 right-0 inset-0 flex items-start justify-start`}
           >
             <h1
               className={`text-[#d3103e] text-[8rem] font-extrabold leading-tight drop-shadow-xl uppercase p-6 ml-10 mt-20`}
+              style={{ textShadow: "1px 1px 2px #333333" }}
             >
               DEKOLONIAL.
               <br />

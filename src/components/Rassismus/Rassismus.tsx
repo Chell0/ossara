@@ -9,10 +9,11 @@ export default function Rassismus() {
           style={{ backgroundImage: "url(/rassismus/img-54.jpg)" }}
         >
           <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+            className={`absolute top-0 left-0 right-0 inset-0 flex items-start justify-start`}
           >
             <h1
               className={`text-[#b7410e] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+              style={{ textShadow: "1px 1px 2px #222222" }}
             >
               Anti.
               <br />
