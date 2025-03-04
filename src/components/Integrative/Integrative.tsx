@@ -8,7 +8,7 @@ export default function Integrative() {
         {/* Header Section */}
         <header
           className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          style={{ backgroundImage: "url(/integrative/img-05.jpg)" }}
         >
           <div
             id="integrative"
