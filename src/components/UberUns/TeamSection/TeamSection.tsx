@@ -21,7 +21,7 @@ export default function TeamSection() {
       büro: "Hamburg, Germany",
     },
     {
-      src: "/team/SalwaTchakala.JPG",
+      src: "/uber-uns/team/SalwaTchakala.JPG",
       name: "Salwa Tchakala",
       position: "Assistentin der Geschäftsführung",
       büro: "Kara, Togo",
@@ -45,7 +45,7 @@ export default function TeamSection() {
       büro: "Hamburg, Germany",
     },
     {
-      src: "/team/jonDoe.jpeg",
+      src: "/uber-uns/team/jonDoe.jpeg",
       name: "John Doe",
       position: "Projektmanager",
       büro: "Kara, Togo",
@@ -69,7 +69,7 @@ export default function TeamSection() {
       büro: "Hamburg, Germany",
     },
     {
-      src: "/team/NataanmanLare.JPG",
+      src: "/uber-uns/team/NataanmanLare.JPG",
       name: "Nataan-man Lare",
       position: "Assistentin für Projektmanagement",
       büro: "Kara, Togo",
