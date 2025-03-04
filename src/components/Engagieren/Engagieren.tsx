@@ -10,10 +10,11 @@ export default function Engagieren() {
       >
         <div
           id="engagieren"
-          className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start"
+          className="absolute inset-0 flex items-center justify-center md:items-start md:justify-start"
         >
           <h1
-            className={`text-[#fcc41b] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-20 md:ml-10 md:mt-28 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl`}
+            className={`text-[#fcc41b] shadow-gray-900 drop-shadow-2xl font-extrabold uppercase p-4 ml-0 mt-20 md:ml-10 md:mt-28 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl`}
+            style={{ textShadow: "1px 1px 2px #444444" }}
           >
             Engagieren.
           </h1>

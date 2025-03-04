@@ -7,14 +7,15 @@ export default function Bildungsarbeit() {
       <div className="mx-auto">
         <header
           className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          style={{ backgroundImage: "url(/bildungsarbeit/img-49.jpg)" }}
         >
           <div
             id="bildungsarbeit"
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+            className={`absolute top-0 left-0 right-0 inset-0 flex items-start justify-start`}
           >
             <h1
-              className={`text-[#eb7b24] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+              className={`text-[#eb7b24] drop-shadow-2xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+              style={{ textShadow: "1px 1px 2px #666666" }}
             >
               Macht.
               <br />
@@ -81,7 +82,7 @@ export default function Bildungsarbeit() {
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src={`/macht-bewusst/img-49.jpg`}
+                      src={`/sections/machtbewusst.png`}
                       alt="Machtbewusst Photo"
                       fill
                       quality={100}

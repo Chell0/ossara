@@ -9,10 +9,11 @@ export default function Lobby() {
           style={{ backgroundImage: "url(/loby/img-27.jpg)" }}
         >
           <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
+            className={`absolute top-0 left-0 right-0 inset-0 flex items-start justify-start`}
           >
             <h1
-              className={`text-[#58bc90] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+              className={`text-[#58bc90] text-shadow-[#000000] drop-shadow-2xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
+              style={{ textShadow: "1px 1px 2px #444444" }}
             >
               Lokal.
               <br /> Vernetzt.

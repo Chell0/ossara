@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function TeamSection() {
   const images = [
     {
-      src: "/uber-uns/team/new-team/img-09.jpg",
+      src: "/uber-uns/team/new-team/img-23.jpg",
       name: "John Doe",
       position: "Projektmanager",
       büro: "Hamburg, Germany",
@@ -27,21 +27,15 @@ export default function TeamSection() {
       büro: "Kara, Togo",
     },
     {
-      src: "/uber-uns/team/new-team/img-23.jpg",
-      name: "John Doe",
-      position: "Assistentin der Geschäftsführung",
-      büro: "Hamburg, Germany",
-    },
-    {
-      src: "/uber-uns/team/new-team/img-33.jpg",
+      src: "/uber-uns/team/new-team/img-43.jpg",
       name: "John Doe",
       position: "Assistentin für Projektmanagement",
       büro: "Hamburg, Germany",
     },
     {
-      src: "/uber-uns/team/new-team/img-34.jpg",
+      src: "/uber-uns/team/new-team/img-49.jpg",
       name: "John Doe",
-      position: "Leitung Monitoring und Evaluation",
+      position: "Assistentin der Geschäftsführung",
       büro: "Hamburg, Germany",
     },
     {
@@ -51,13 +45,19 @@ export default function TeamSection() {
       büro: "Kara, Togo",
     },
     {
-      src: "/uber-uns/team/new-team/img-43.jpg",
+      src: "/uber-uns/team/new-team/img-34.jpg",
+      name: "John Doe",
+      position: "Leitung Monitoring und Evaluation",
+      büro: "Hamburg, Germany",
+    },
+    {
+      src: "/uber-uns/team/new-team/img-33.jpg",
       name: "John Doe",
       position: "Assistentin der Geschäftsführung",
       büro: "Hamburg, Germany",
     },
     {
-      src: "/uber-uns/team/new-team/img-49.jpg",
+      src: "/uber-uns/team/new-team/img-09.jpg",
       name: "John Doe",
       position: "Projektmanager",
       büro: "Hamburg, Germany",
@@ -91,7 +91,7 @@ export default function TeamSection() {
                 fill
                 sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
-                quality={90}
+                quality={100}
                 priority={index < 4} // Only prioritize first 4 images
               />
 
