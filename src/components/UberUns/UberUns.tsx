@@ -124,14 +124,14 @@ export default function UberUns() {
 
             {/* Image Container */}
             <div className="md:basis-1/2 flex items-center justify-center p-4">
-              <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
+              <div className="relative w-full h-full min-h-[300px] sm:min-h-[400px] md:min-h-[470px]">
                 <Image
-                  src="/bgs/img1.jpg"
+                  src="/uber-uns/img-57.jpg"
                   alt="About Photo"
                   fill
                   quality={100}
                   priority
-                  className="object-cover shadow-xl"
+                  className="object-cover shadow-xl rounded-md"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
@@ -157,12 +157,12 @@ export default function UberUns() {
             <div className="md:basis-1/2 flex items-center justify-center p-4 flex-1">
               <div className="relative w-full min-h-[300px] md:min-h-full">
                 <Image
-                  src="/bgs/img1.jpg"
+                  src="/uber-uns/geschichte/img-42.jpg"
                   alt="History Photo"
                   fill
                   quality={100}
                   priority
-                  className="object-cover shadow-lg"
+                  className="object-cover shadow-lg rounded-md"
                 />
               </div>
             </div>

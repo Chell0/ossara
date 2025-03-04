@@ -6,7 +6,7 @@ export default function Lobby() {
       <div className="mx-auto">
         <header
           className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          style={{ backgroundImage: "url(/loby/img-27.jpg)" }}
         >
           <div
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
@@ -97,11 +97,11 @@ export default function Lobby() {
           <div className="flex flex-1 items-center justify-center md:w-1/2">
             <div className="relative h-[60vh] w-full max-w-2xl md:h-[70vh]">
               <Image
-                src={`/bgs/img1.jpg`}
+                src={`/loby/netz-werkstatt/img-36.jpg`}
                 alt="About Photo"
                 fill
                 quality={100}
-                className="object-cover shadow-2xl"
+                className="object-cover rounded-md shadow-2xl"
                 priority
               />
             </div>

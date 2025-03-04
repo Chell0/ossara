@@ -81,7 +81,7 @@ export default function Bildungsarbeit() {
                     rel="noopener noreferrer"
                   >
                     <Image
-                      src={`/sections/machtbewusst.png`}
+                      src={`/macht-bewusst/img-49.jpg`}
                       alt="Machtbewusst Photo"
                       fill
                       quality={100}
