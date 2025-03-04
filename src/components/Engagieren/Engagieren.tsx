@@ -6,7 +6,7 @@ export default function Engagieren() {
       {/* Page Header */}
       <header
         className="min-h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
-        style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+        style={{ backgroundImage: "url(/engagieren/engagieren.jpg)" }}
       >
         <div
           id="engagieren"

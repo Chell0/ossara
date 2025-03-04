@@ -9,7 +9,7 @@ export default function Dekoloniale() {
       <div className="mx-auto">
         <header
           className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          style={{ backgroundImage: "url(/dekoloniale/img-40.jpg)" }}
         >
           <div
             id="dekoloniale"

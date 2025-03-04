@@ -6,7 +6,7 @@ export default function Rassismus() {
       <div className="mx-auto">
         <header
           className="h-screen w-full bg-cover bg-center relative"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          style={{ backgroundImage: "url(/rassismus/img-54.jpg)" }}
         >
           <div
             className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start`}
