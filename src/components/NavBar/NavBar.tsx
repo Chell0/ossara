@@ -1,9 +1,8 @@
 "use client";
 
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
-
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { useState } from "react";
 
 export default function NavBar() {
@@ -12,129 +11,90 @@ export default function NavBar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setActiveSubMenu(null); // Reset submenu when closing main menu
+    setActiveSubMenu(null);
   };
 
   const toggleSubMenu = (menuName: string) => {
     setActiveSubMenu(activeSubMenu === menuName ? null : menuName);
   };
 
-  // Unified menu configuration
-  const menuItems = [
-    // Left Column
+  // Split menu items into left and right columns
+  const leftMenuItems = [
+    { name: "NEUIGKEITEN", href: "/neuigkeiten", items: [] },
+    { name: "VERANSTALTUNGEN", href: "/veranstaltungen", items: [] },
     {
       name: "ÜBER UNS",
       href: "/uber",
       items: [
-        { name: "Uber Uns", href: "#uber" },
         { name: "Verein", href: "#verein" },
         { name: "Team", href: "#team" },
-        { name: "Geschichte", href: "#geschichte" }, // Fixed typo
+        { name: "Geschichte", href: "#geschichte" },
       ],
     },
-
-    // Right Column
-    {
-      name: "INTEGRATIVE STADTTEILARBEIT",
-      href: "/integrative",
-      items: [
-        { name: "Integrative Stadtteilarbeit", href: "#integrative" },
-        { name: "Bewerbungstraining", href: "#bewerbungstraining" },
-        { name: "Sprachforderung", href: "#sprachforderung" },
-      ],
-    },
-    // Left Column
-    {
-      name: "VERANSTALTUNGEN",
-      href: "/veranstaltungen",
-      items: [],
-    },
-    // Right Column
-    {
-      name: "LOBBY UND NETZWERKARBEIT",
-      href: "/lobby",
-      items: [],
-    },
-    // Left Column
-    {
-      name: "NEUIGKEITEN",
-      href: "/neuigkeiten",
-      items: [],
-    },
-
-    // Right Column
-    {
-      name: "DEKOLONIALE BILDUNGSARBEIT",
-      href: "/bildungsarbeit",
-      items: [
-        { name: "Dekoloniale Bildungsarbeit", href: "#bildungsarbeit" },
-        { name: "Machtbewusst-Hamburg", href: "#machtbewusst" },
-        { name: "Eine Welt-Promotorinnen Programm", href: "#promotorinnen" },
-      ],
-    },
-    // Left Column
     {
       name: "ENGAGIEREN",
       href: "/engagieren",
       items: [
-        { name: "Engagieren", href: "#engagieren" },
-        { name: "Stellenausschreibungen", href: "#stellenausschreibungen" }, // Fixed typo
+        { name: "Stellenausschreibungen", href: "#stellenausschreibungen" },
         { name: "Mitglied Werden", href: "#mitglied-werden" },
         { name: "Ehrenamtliches Engagement", href: "#ehrenamt" },
       ],
     },
-    // Right Column
-    {
-      name: "ANTI-SCHWARZER RASSISMUS",
-      href: "/rassismus",
-      items: [],
-    },
-    // Left Column
     {
       name: "FÖRDERN & SPENDEN",
       href: "/fordern",
+      items: [{ name: "Donate", href: "#donate" }],
+    },
+    { name: "DOWNLOADS", href: "/downloads", items: [] },
+  ];
+
+  const rightMenuItems = [
+    {
+      name: "INTEGRATIVE STADTTEILARBEIT",
+      href: "/integrative",
       items: [
-        { name: "Fördern & Spenden", href: "#fordern" },
-        { name: "Donate", href: "#donate" },
+        { name: "Bewerbungstraining", href: "#bewerbungstraining" },
+        { name: "Sprachforderung", href: "#sprachforderung" },
       ],
     },
-    // Right Column
+    { name: "LOBBY UND NETZWERKARBEIT", href: "/lobby", items: [] },
+    {
+      name: "DEKOLONIALE BILDUNGSARBEIT",
+      href: "/bildungsarbeit",
+      items: [
+        { name: "Machtbewusst-Hamburg", href: "#machtbewusst" },
+        { name: "Eine Welt-Promotorinnen Programm", href: "#promotorinnen" },
+      ],
+    },
+    { name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: [] },
     {
       name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
       href: "/dekoloniale",
-      items: [
-        {
-          name: "Dekolonial Global",
-          href: "#dekoloniale",
-        },
-        { name: "Projekte", href: "#projekte" },
-      ],
+      items: [{ name: "Projekte", href: "#projekte" }],
     },
-    // Left Column
-    { name: "DOWNLOADS", href: "/downloads", items: [] },
   ];
 
   return (
     <>
-      <nav className="bg-main-bg bg-opacity-20 fixed w-full z-50">
+      <nav className="w-full z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Menu Toggle Button */}
             <div className="flex items-center space-x-2">
               <button
                 className="text-black focus:outline-none"
                 onClick={toggleMenu}
               >
                 {menuOpen ? (
-                  <XIcon className="w-8 h-8" />
+                  <XIcon className="w-6 h-6 md:w-8 md:h-8" />
                 ) : (
-                  <MenuIcon className="w-8 h-8" />
+                  <MenuIcon className="w-6 h-6 md:w-8 md:h-8" />
                 )}
               </button>
-              <span className="font-medium mt-1 text-2xl text-black">Menu</span>
+              <span className="font-medium mt-1 text-xl md:text-2xl text-black">
+                Menu
+              </span>
             </div>
 
-            {/* Logo */}
             <div className="flex-shrink-0">
               <Link href="/" className="block">
                 <Image
@@ -142,7 +102,7 @@ export default function NavBar() {
                   alt="Ossara Logo"
                   width={160}
                   height={60}
-                  className="h-12 w-auto object-contain"
+                  className="h-10 md:h-12 w-auto object-contain"
                   priority
                 />
               </Link>
@@ -150,15 +110,13 @@ export default function NavBar() {
           </div>
         </div>
 
-        {/* Full-Screen Menu Overlay */}
         {menuOpen && (
           <div className="fixed inset-0 z-50 bg-[#fef5db] overflow-y-auto">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-              {/* Menu Header */}
-              <div className="flex justify-between items-center mb-10">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
+              <div className="flex justify-between items-center mb-6 md:mb-10">
                 <Link
                   href="/"
-                  className="text-5xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
+                  className="text-4xl md:text-7xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
                 >
                   Ossara
                 </Link>
@@ -166,58 +124,90 @@ export default function NavBar() {
                   onClick={toggleMenu}
                   className="text-gray-600 hover:text-gray-800"
                 >
-                  <XIcon className="w-10 h-10" />
+                  <XIcon className="w-8 h-8 md:w-10 md:h-10" />
                 </button>
               </div>
 
-              {/* Navigation Links */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                {menuItems.map((menu, index) => (
-                  <div key={index} className="group">
-                    <div className="flex justify-between items-center">
-                      <Link
-                        href={menu.items.length > 0 ? "#" : menu.href}
-                        className={`text-3xl lg:text-4xl font-bold ${
-                          menu.items.length > 0
-                            ? "cursor-pointer text-[#f7cc55] hover:text-[#e6b845]"
-                            : "text-[#f7cc55] hover:text-[#e6b845]"
-                        }`}
-                        onClick={(e) => {
-                          if (menu.items.length > 0) {
-                            e.preventDefault();
-                            toggleSubMenu(menu.name);
-                          }
-                        }}
-                      >
-                        {menu.name}
-                      </Link>
-                      {menu.items.length > 0 && (
-                        <button
-                          onClick={() => toggleSubMenu(menu.name)}
-                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-3xl w-8 h-8 flex items-center justify-center"
+              <div className="flex flex-col md:flex-row md:mt-10 space-y-6 md:space-y-0 md:space-x-8">
+                {/* Left Column */}
+                <ul className="w-full pr-0 space-y-4 md:space-y-6 md:w-1/2 md:pr-8">
+                  {leftMenuItems.map((menu, index) => (
+                    <li key={index}>
+                      <div className="flex justify-between items-center">
+                        <Link
+                          href={menu.href}
+                          className="text-2xl md:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
+                          onClick={toggleMenu}
                         >
-                          {activeSubMenu === menu.name ? "−" : "+"}
-                        </button>
+                          {menu.name}
+                        </Link>
+                        {menu.items.length > 0 && (
+                          <button
+                            onClick={() => toggleSubMenu(menu.name)}
+                            className="text-[#f7cc55] hover:text-[#e6b845] ml-2 md:ml-4 text-xl md:text-3xl w-6 h-6 md:w-8 md:h-8 flex items-center justify-center"
+                          >
+                            {activeSubMenu === menu.name ? "−" : "+"}
+                          </button>
+                        )}
+                      </div>
+                      {activeSubMenu === menu.name && menu.items.length > 0 && (
+                        <ul className="pl-4 mt-1 md:mt-2 text-lg md:text-xl font-medium">
+                          {menu.items.map((item, subIndex) => (
+                            <li key={subIndex}>
+                              <Link
+                                href={`${menu.href}${item.href}`}
+                                className="text-[#f7cc55] hover:text-[#e6b845]"
+                                onClick={toggleMenu}
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
                       )}
-                    </div>
+                    </li>
+                  ))}
+                </ul>
 
-                    {activeSubMenu === menu.name && menu.items.length > 0 && (
-                      <ul className="pl-4 mt-2 space-y-2">
-                        {menu.items.map((item, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              href={`${menu.href}${item.href}`}
-                              className="text-lg text-[#f7cc55]"
-                              onClick={toggleMenu}
-                            >
-                              - {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
-                ))}
+                {/* Right Column */}
+                <ul className="w-full pl-0 space-y-4 md:space-y-6 md:w-1/2 md:pl-8">
+                  {rightMenuItems.map((menu, index) => (
+                    <li key={index}>
+                      <div className="flex justify-between items-center">
+                        <Link
+                          href={menu.href}
+                          className="text-2xl md:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
+                          onClick={toggleMenu}
+                        >
+                          {menu.name}
+                        </Link>
+                        {menu.items.length > 0 && (
+                          <button
+                            onClick={() => toggleSubMenu(menu.name)}
+                            className="text-[#f7cc55] hover:text-[#e6b845] ml-2 md:ml-4 text-xl md:text-3xl w-8 h-8 md:w-10 md:h-10 flex items-center justify-center"
+                          >
+                            {activeSubMenu === menu.name ? "−" : "+"}
+                          </button>
+                        )}
+                      </div>
+                      {activeSubMenu === menu.name && menu.items.length > 0 && (
+                        <ul className="pl-4 mt-1 md:mt-2 text-lg md:text-xl font-medium">
+                          {menu.items.map((item, subIndex) => (
+                            <li key={subIndex}>
+                              <Link
+                                href={`${menu.href}${item.href}`}
+                                className="text-[#f7cc55] hover:text-[#e6b845]"
+                                onClick={toggleMenu}
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
