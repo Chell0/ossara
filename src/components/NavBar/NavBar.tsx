@@ -67,9 +67,10 @@ export default function NavBar() {
 
   const rightMenuItems = [
     {
-      name: "STADTTEILARBEIT",
+      name: "INTEGRATIVE STADTTEILARBEIT",
       href: "/stadtteilarbeit",
       items: [
+        { name: "Stadtteilarbeit", href: "#stadtteilarbeit" },
         { name: "Bewerbungstraining", href: "#bewerbungstraining" },
         { name: "Sprachförderung", href: "#sprachförderung" },
       ],
