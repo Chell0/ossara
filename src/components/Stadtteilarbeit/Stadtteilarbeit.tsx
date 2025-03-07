@@ -1,7 +1,7 @@
 import ContactPerson from "@/components/ContactPerson/ContactPerson";
-import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
+import YouTubeSection from "@/components/Stadtteilarbeit/YouTubeSection/YouTubeSection";
 
-export default function Integrative() {
+export default function Stadtteilarbeit() {
   return (
     <>
       <div>
