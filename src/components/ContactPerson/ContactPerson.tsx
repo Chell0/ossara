@@ -24,7 +24,7 @@ const ContactPerson: React.FC<ContactPersonProps> = ({
 
       {/* Contact Information */}
       <div className="text-black text-center sm:text-left">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 md:mb-3">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-3">
           {name}
         </h2>
         <p className="text-xs sm:text-base mb-2 md:mb-3">{position}</p>
