@@ -1,14 +1,17 @@
 "use client";
 
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import { useEffect, useState } from "react";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
+  const [showNav, setShowNav] = useState(true);
 
+  // Toggle main menu and reset submenu state
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     setActiveSubMenu(null);
@@ -17,6 +20,20 @@ export default function NavBar() {
   const toggleSubMenu = (menuName: string) => {
     setActiveSubMenu(activeSubMenu === menuName ? null : menuName);
   };
+
+  // Hide the top navbar when scrolling down (unless the menu is open)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setShowNav(false);
+      } else {
+        setShowNav(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Split menu items into left and right columns
   const leftMenuItems = [
@@ -43,18 +60,18 @@ export default function NavBar() {
     {
       name: "FÖRDERN & SPENDEN",
       href: "/fordern",
-      items: [{ name: "Donate", href: "#donate" }],
+      items: [],
     },
     { name: "DOWNLOADS", href: "/downloads", items: [] },
   ];
 
   const rightMenuItems = [
     {
-      name: "INTEGRATIVE STADTTEILARBEIT",
-      href: "/integrative",
+      name: "STADTTEILARBEIT",
+      href: "/stadtteilarbeit",
       items: [
         { name: "Bewerbungstraining", href: "#bewerbungstraining" },
-        { name: "Sprachforderung", href: "#sprachforderung" },
+        { name: "Sprachförderung", href: "#sprachförderung" },
       ],
     },
     { name: "LOBBY UND NETZWERKARBEIT", href: "/lobby", items: [] },
@@ -63,25 +80,36 @@ export default function NavBar() {
       href: "/bildungsarbeit",
       items: [
         { name: "Machtbewusst-Hamburg", href: "#machtbewusst" },
-        { name: "Eine Welt-Promotorinnen Programm", href: "#promotorinnen" },
+        {
+          name: "Eine Welt-Promotorinnen Programm",
+          href: "/eine_welt_promotorinnen",
+        },
+        { name: "Dekoloniale Bildungsreisen", href: "#bildungsreisen" },
+        { name: "KoRaBi", href: "#korabi" },
       ],
     },
     { name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: [] },
     {
       name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
       href: "/dekoloniale",
-      items: [{ name: "Projekte", href: "#projekte" }],
+      items: [
+        { name: "Projekte", href: "#projekte" },
+        { name: "Partner", href: "#partner" },
+      ],
     },
   ];
 
+  // Render the top navbar only if at the very top or when the menu is open
+  if (!showNav && !menuOpen) return null;
+
   return (
     <>
-      <nav className="w-full z-50">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <button
-                className="text-black focus:outline-none"
+                className="text-slate-600 focus:outline-none"
                 onClick={toggleMenu}
               >
                 {menuOpen ? (
@@ -90,8 +118,8 @@ export default function NavBar() {
                   <MenuIcon className="w-6 h-6 md:w-8 md:h-8" />
                 )}
               </button>
-              <span className="font-medium mt-1 text-xl md:text-2xl text-black">
-                Menu
+              <span className="font-medium mt-1 text-xl md:text-3xl text-slate-600">
+                Menü
               </span>
             </div>
 
@@ -155,7 +183,11 @@ export default function NavBar() {
                           {menu.items.map((item, subIndex) => (
                             <li key={subIndex}>
                               <Link
-                                href={`${menu.href}${item.href}`}
+                                href={
+                                  item.href.startsWith("#")
+                                    ? `${menu.href}${item.href}`
+                                    : item.href
+                                }
                                 className="text-[#f7cc55] hover:text-[#e6b845]"
                                 onClick={toggleMenu}
                               >
@@ -170,7 +202,7 @@ export default function NavBar() {
                 </ul>
 
                 {/* Right Column */}
-                <ul className="w-full pl-0 space-y-4 md:space-y-6 md:w-1/2 md:pl-8">
+                <ul className="w-full pl-0 space-y-4 md:space-y-6 md:w-1/2 md:pl-4">
                   {rightMenuItems.map((menu, index) => (
                     <li key={index}>
                       <div className="flex justify-between items-center">
@@ -195,7 +227,11 @@ export default function NavBar() {
                           {menu.items.map((item, subIndex) => (
                             <li key={subIndex}>
                               <Link
-                                href={`${menu.href}${item.href}`}
+                                href={
+                                  item.href.startsWith("#")
+                                    ? `${menu.href}${item.href}`
+                                    : item.href
+                                }
                                 className="text-[#f7cc55] hover:text-[#e6b845]"
                                 onClick={toggleMenu}
                               >
