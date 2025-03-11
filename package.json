@@ -17,6 +17,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-youtube": "10.1.0",
+    "tailwind-scrollbar-hide": "^2.0.0",
     "vercel": "^41.1.4"
   },
   "devDependencies": {
