@@ -1,13 +1,13 @@
 import Footer from "@/components/Footer/Footer";
-import Integrative from "@/components/Integrative/Integrative";
+import Korabi from "@/components/Korabi/Korabi";
 import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div>
-      <main className="bg-[#fef5db]">
+      <main className="bg-[#fff6ea]">
         <NavBar />
-        <Integrative />
+        <Korabi />
         <Footer />
       </main>
     </div>

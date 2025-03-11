@@ -1,21 +1,20 @@
+import Image from "next/image";
+
 import ContactPerson from "@/components/ContactPerson/ContactPerson";
-import Promo from "@/components/Dekolonisierung/Dekolonisierung";
+import Promo from "@/components/EineWeltPromotorinnen/Promo/Promo";
 import Sponsors from "@/components/Sponsors/Sponsors";
 
 export default function EineWeltPromotorinnen() {
   return (
     <>
-      <div className="mx-auto">
+      <div>
+        {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
+          style={{ backgroundImage: "url(/uber-uns/geschichte/img-42.jpg)" }}
         >
-          <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-60 flex items-start justify-start text-left`}
-          >
-            <h1
-              className={`text-[#eb7b24] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
-            >
+          <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
+            <h1 className="text-[#eb7b24] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-2 sm:mt-4 md:mt-6 lg:mt-8">
               Dekoloniale.
               <br />
               Perspektiven.
@@ -24,18 +23,20 @@ export default function EineWeltPromotorinnen() {
         </header>
 
         <section className="relative w-full min-h-screen text-[#eb7b24] pb-20">
-          <div className="flex flex-col md:flex-row md:flex-grow">
-            <div className="basis-full">
-              <p className="text-[4rem] font-semibold leading-none p-2 mb-20">
-                Dekoloniale Perspektiven durchbrechen anhaltenden koloniale
-                Machtstrukturen und eröffnen neue Wege des Denkens und Handelns,
-                die Vielfalt und Gerechtigkeit in den Mittelpunkt stellen.
-              </p>
-            </div>
+          <div className="basis-full mx-auto">
+            <p
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+                font-semibold leading-normal tracking-normal
+                pb-20 p-6"
+            >
+              Dekoloniale Perspektiven durchbrechen anhaltenden koloniale
+              Machtstrukturen und eröffnen neue Wege des Denkens und Handelns,
+              die Vielfalt und Gerechtigkeit in den Mittelpunkt stellen.
+            </p>
           </div>
-          <div className="flex md:flex-grow flex-row gap-10 pt-10 mx-6 mt-20 text-black">
+          <div className="flex md:flex-grow flex-row gap-10 pt-20 pb-20 m-8 mt-20 text-black">
             <div className="basis-1/2">
-              <p className="text-base">
+              <p className="text-lg">
                 Obwohl die meisten ehemaligen Kolonien schon vor Jahrzehnten
                 ihre Freiheit erlangt haben, gibt es immer noch koloniale
                 Kontinuitäten, die weltweit das kollektive Gedächtnis der weißen
@@ -44,20 +45,17 @@ export default function EineWeltPromotorinnen() {
                 Machtasymmetrien, Ausbeutung und das Fortbestehen des
                 strukturellen und institutionellen Rassismus, der insbesondere
                 Menschen aus dem Globalen Süden und solche, die in der Diaspora
-                leben, betrifft.
-              </p>
-              <p className="mt-4 text-base">
-                Als Hafenstadt war Hamburg viele Jahrhunderte lang eine der
-                bedeutendsten Kolonialmetropolen in Europa und auch heute noch
-                erinnern zahlreiche Orte an ihre Kolonialgeschichte. Die Stadt
-                muss sich deshalb dazu verpflichten, die vielfältigen kolonialen
-                Verflechtungen und ihre Auswirkungen auf unsere heutige
-                Gesellschaft zu hinterfragen und der Öffentlichkeit zu
-                vermitteln.
+                leben, betrifft. Als Hafenstadt war Hamburg viele Jahrhunderte
+                lang eine der bedeutendsten Kolonialmetropolen in Europa und
+                auch heute noch erinnern zahlreiche Orte an ihre
+                Kolonialgeschichte. Die Stadt muss sich deshalb dazu
+                verpflichten, die vielfältigen kolonialen Verflechtungen und
+                ihre Auswirkungen auf unsere heutige Gesellschaft zu
+                hinterfragen und der Öffentlichkeit zu vermitteln.
               </p>
             </div>
             <div className="basis-1/2">
-              <p className="text-base">
+              <p className="text-lg">
                 Als Eine Welt-Promotorinnen für Dekolonisierung wollen wir uns
                 dafür engagieren, Partizipationsprozesse zu fördern und
                 postkoloniale, dekoloniale und diasporische Stimmen
@@ -67,10 +65,8 @@ export default function EineWeltPromotorinnen() {
                 und neue regionale und überregionale Kooperationen anstoßen. Mit
                 unserer Arbeit tragen wir auch zur Implementierung der 17
                 UN-Nachhaltigkeitsziele bei, wobei ein Schwerpunkt auf den Kampf
-                gegen weniger Ungleichheit (Ziel 10) auf der Welt liegt.
-              </p>
-              <p className="mt-4 text-base">
-                Die Fachstelle Dekoloniserung ist Teil des bundeweiten Eine
+                gegen weniger Ungleichheit (Ziel 10) auf der Welt liegt. Die
+                Fachstelle Dekoloniserung ist Teil des bundeweiten Eine
                 Welt-Promotor*innen- Programm das in Hamburg von der
                 Netzwerkstelle von hamburg.global koordiniert wird. Aktuell gibt
                 es neben unseren Stellen Promotor*innen in den Bereichen Fairer
@@ -80,17 +76,17 @@ export default function EineWeltPromotorinnen() {
           </div>
         </section>
 
-        {/* Vernetzung */}
-        <section className="relative w-full min-h-screen pb-20">
+        {/* Vernetzung & Beratung */}
+        <section className="relative w-full min-h-screen">
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <div className="flex md:flex-grow flex-row gap-6 md:gap-10 mt-10">
+            <div className="flex md:flex-grow flex-row gap-10 mt-20 pt-20 pb-20">
               {/* Vernetzung Content */}
               <div className="basis-1/2">
-                <h3 className="text-[#eb7b24] text-2xl md:text-3xl lg:text-4xl mb-2 font-semibold text-center leading-tight">
+                <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl mb-2 font-semibold text-center leading-tight">
                   Vernetzung
                 </h3>
                 <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
-                <p className="max-w-xl text-lg leading-tight mt-10">
+                <p className="max-w-xl text-xl leading-tight mt-10">
                   Aufbau von einem Netzwerk und Unterstützung von Akteur*innen
                   deren Fokus auf der aktiven Mitgestaltung des
                   gesamtstädtischen Dekolonisierungsprozess und dekolonialen
@@ -102,7 +98,7 @@ export default function EineWeltPromotorinnen() {
               {/* Contact Section */}
               <div className="basis-1/2">
                 <div className="text-center">
-                  <h3 className="text-[#eb7b24] text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
+                  <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
                     Kontaktperson
                   </h3>
                   <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
@@ -116,12 +112,12 @@ export default function EineWeltPromotorinnen() {
                 </div>
               </div>
             </div>
-            {/* Beratung */}
-            <div className="flex md:flex-grow flex-row gap-8 md:gap-12 mt-16 m-2">
+            {/* Beratung Content */}
+            <div className="flex md:flex-grow flex-row gap-10 pb-20 pt-20 mt-20">
               {/* Contact Section */}
               <div className="basis-1/2">
                 <div className="text-center">
-                  <h3 className="text-[#eb7b24] text-2xl md:text-3xl lg:text-4xl font-semibold mb-2">
+                  <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
                     Kontaktperson
                   </h3>
                   <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
@@ -135,11 +131,11 @@ export default function EineWeltPromotorinnen() {
                 </div>
               </div>
               <div className="basis-1/2">
-                <h3 className="text-[#eb7b24] text-2xl md:text-3xl lg:text-4xl mb-2 font-semibold text-center leading-tight">
+                <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl mb-2 font-semibold text-center leading-tight">
                   Beratung
                 </h3>
                 <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
-                <p className="max-w-xl text-lg leading-tight mt-10">
+                <p className="max-w-xl text-xl leading-tight mt-10">
                   Beratung von zivilgesellschaftlichen Initiativen und
                   Multiplikator*innen, die sich über bisherige Akteur*innen und
                   deren Projekte im gesamtstädtischen Dekolonisierungsprozess
@@ -151,17 +147,46 @@ export default function EineWeltPromotorinnen() {
           </div>
         </section>
 
-        {/* Downloads */}
-        <section className="relative w-full min-h-fit text-[#eb7b24]">
-          <div className="flex md:flex-grow flex-row pt-10 mt-10 mb-10">
-            <div className="basis-full text-center">
-              <h3 className={`text-5xl md:text-4xl lg:text-6xl font-bold`}>
+        {/* Photo Carousel Section */}
+        <section className="w-full overflow-hidden py-12 md:py-16 px-4">
+          <div className="max-w-6xl mx-auto pt-20 pb-20 mt-40">
+            <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-hide">
+              {Array.from({ length: 10 }).map((_, index) => (
+                <div
+                  key={index}
+                  className="relative h-48 w-[40vw] flex-shrink-0 snap-center sm:h-56 md:h-64 lg:h-72 lg:w-[30vw]"
+                >
+                  {/* <img
+                    src={`https://picsum.photos/seed/${index}/400`}
+                    alt={`Gallery ${index + 1}`}
+                    className="h-full w-full rounded-xl object-cover shadow-lg"
+                    loading="lazy"
+                  /> */}
+                  <Image
+                    src={`/images/carousel/image-${index + 1}.jpg`}
+                    alt={`Carousel image ${index + 1}`}
+                    fill
+                    sizes="(max-width: 768px) 60vw, 50vw"
+                    className="object-cover shadow-lg"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Downloads Section */}
+        <section className="relative w-full text-[#eb7b24]">
+          <div className="mx-auto px-4 py-12 md:py-16 lg:py-20">
+            {/* Header */}
+            <div className="text-center mb-12 md:mb-16 lg:mb-20">
+              <h3 className="text-4xl font-bold md:text-5xl lg:text-6xl">
                 Downloads
               </h3>
             </div>
-          </div>
-          <div className="flex md:flex-grow flex-row">
-            <div className="basis-full">
+
+            {/* Promo Component */}
+            <div className="max-w-7xl mx-auto">
               <Promo />
             </div>
           </div>

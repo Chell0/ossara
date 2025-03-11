@@ -1,44 +1,35 @@
 import ContactPerson from "@/components/ContactPerson/ContactPerson";
-import YouTubeSection from "@/components/Integrative/YouTubeSection/YouTubeSection";
+import YouTubeSection from "@/components/Stadtteilarbeit/YouTubeSection/YouTubeSection";
 
-export default function Integrative() {
+export default function Stadtteilarbeit() {
   return (
     <>
       <div>
         {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
+          className="h-screen w-full bg-cover bg-center relative p-4"
           style={{ backgroundImage: "url(/integrative/img-05.jpg)" }}
         >
-          <div
-            id="integrative"
-            className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start"
-          >
-            <h1
-              className="text-[#fcc41b] drop-shadow-2xl text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 ml-2 sm:ml-4 md:ml-6 lg:ml-8 mt-16 sm:mt-20 md:mt-24 lg:mt-28"
-              style={{ textShadow: "1px 1px 2px #444444" }}
-            >
-              Stadtteil. <br />
+          <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
+            <h1 className="text-[#fcc41b] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-2 sm:mt-4 md:mt-6 lg:mt-8">
+              Stadtteil.
+              <br />
               arbeit.
             </h1>
           </div>
         </header>
 
         <section className="relative w-full min-h-screen text-[#fcc41b]">
-          <div className="flex flex-col pt-6 md:pt-8 lg:pt-12">
-            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-              <p
-                className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
-                font-semibold leading-normal
-                tracking-tight md:tracking-normal
-                pb-6 sm:pb-8 md:pb-12
-                px-2 sm:px-4 md:px-0"
-              >
-                Mit niederschwelliger Beratung und praxisnaher Unterstützung
-                schaffen wir berufliche Perspektiven und fördern erfolgreiche
-                Integration.
-              </p>
-            </div>
+          <div className="basis-full mx-auto">
+            <p
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+                font-semibold leading-normal tracking-normal
+                pb-20 p-8"
+            >
+              Mit niederschwelliger Beratung und praxisnaher Unterstützung
+              schaffen wir berufliche Perspektiven und fördern erfolgreiche
+              Integration.
+            </p>
           </div>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-10 md:mt-20 px-4 md:m-4">
             {/* YouTube Video Section */}
@@ -47,7 +38,7 @@ export default function Integrative() {
             </div>
 
             {/* Text Section */}
-            <div className="w-full md:basis-1/2 mt-4 md:mt-12 lg:mt-16 pt-4 md:pt-8 lg:pt-12 px-4 md:px-5 mb-10">
+            <div className="w-full md:basis-1/2 mt-4 md:mt-12 lg:mt-16 pt-4 md:pt-8 lg:pt-12 px-4 md:px-5 mb-20">
               <p className="text-sm xs:text-base sm:text-[15px] md:text-lg leading-relaxed md:leading-normal text-black max-w-3xl mx-auto">
                 Ossara e.V. bietet eine niedrigschwellige Sozialberatung und
                 Bewerbungshilfe für Geflüchtete und Interessierte. In
@@ -68,6 +59,66 @@ export default function Integrative() {
           </div>
         </section>
 
+        {/* Stadtteilarbeit */}
+        <section
+          id="stadtteilarbeit"
+          className="relative w-full min-h-[50vh] md:min-h-screen py-12 md:py-24 lg:py-32 text-[#fcc41b]"
+        >
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
+            {/* Heading Section */}
+            <div className="absolute top-20 left-8 right-0 flex items-start justify-start">
+              <h2
+                className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] 
+                  font-semibold leading-tight md:leading-normal text-left
+                  mb-4 sm:mb-6 md:mb-8"
+              >
+                Stadtteilarbeit
+              </h2>
+            </div>
+
+            {/* Content Section */}
+            <div
+              className="w-full flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-16 
+                   mt-10 md:mt-16 lg:mt-20"
+            >
+              {/* Left Column - Text Content */}
+              <div className="w-full lg:w-1/2 space-y-2 md:space-y-4">
+                <p className="text-base sm:text-sm md:text-lg text-black leading-normal">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatem, illum illo maiores ratione aspernatur quis quidem
+                  expedita autem unde iste similique nisi sapiente itaque.
+                  Ducimus odit nisi a aperiam. Lorem ipsum dolor, sit amet
+                  consectetur adipisicing elit. Totam excepturi enim
+                  consequatur? Vitae cupiditate similique non minus odit
+                  commodi, labore ea obcaecati quaerat sunt, corrupti cumque
+                  consectetur atque? Corporis, perspiciatis! Lorem ipsum dolor
+                  sit amet, consectetur adipisicing elit. Perferendis a beatae
+                  quidem officiis porro eum veritatis consectetur quos!
+                  Voluptates ea magnam aspernatur, veniam quo odit accusamus
+                  quae necessitatibus. Sunt, repellat.
+                </p>
+              </div>
+
+              {/* Right Column - Contact Card */}
+              <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
+                <div className="text-center mb-6">
+                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl font-semibold">
+                    Kontaktperson
+                  </h3>
+                  <hr className="w-16 border-2 mx-auto border-[#fcc41b]" />
+                </div>
+                <ContactPerson
+                  name="John Doe"
+                  position="Stadtteilarbeit"
+                  email="stadtteilarbeit[at]ossara.de"
+                  phone="(+49) 1575 1406 184"
+                  imageSrc="/contact-person/contact_person.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Bewerbungstraining */}
         <section
           id="bewerbungstraining"
@@ -75,13 +126,15 @@ export default function Integrative() {
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             {/* Heading Section */}
-            <h2
-              className="text-4xl xs:text-[2.5rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[4.5rem] 
-                  font-semibold leading-tight md:leading-normal text-center 
-                  mb-6 sm:mb-8 md:mb-10"
-            >
-              Beratungs- und Bewerbungstraining
-            </h2>
+            <div className="absolute top-20 left-8 right-0 flex items-start justify-start">
+              <h2
+                className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] 
+                  font-semibold leading-tight md:leading-normal text-left
+                  mb-4 sm:mb-6 md:mb-8"
+              >
+                Beratungs- und Bewerbungstraining
+              </h2>
+            </div>
 
             {/* Content Section */}
             <div
@@ -131,10 +184,10 @@ export default function Integrative() {
               {/* Right Column - Contact Card */}
               <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
                 <div className="text-center mb-6">
-                  <h3 className="text-black text-3xl md:text-4xl font-semibold">
+                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl font-semibold">
                     Kontaktperson
                   </h3>
-                  <hr className="w-16 border-2 mx-auto border-black" />
+                  <hr className="w-16 border-2 mx-auto border-[#fcc41b]" />
                 </div>
                 <ContactPerson
                   name="Katja Heyn"
@@ -155,9 +208,11 @@ export default function Integrative() {
         >
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
             {/* Heading Section */}
-            <h2 className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] font-semibold leading-tight md:leading-normal text-center mb-6 sm:mb-8 md:mb-10">
-              Sprachförderung- und Prüfungsvorbereitung
-            </h2>
+            <div className="absolute top-20 left-8 right-0 flex items-start justify-start">
+              <h2 className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] font-semibold leading-tight md:leading-normal mb-4 sm:mb-6 md:mb-8">
+                Sprachförderung- und Prüfungsvorbereitung
+              </h2>
+            </div>
 
             {/* Content Section */}
             <div className="w-full flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-16 mt-10 md:mt-16 lg:mt-20">
@@ -197,10 +252,10 @@ export default function Integrative() {
               {/* Right Column - Contact Card */}
               <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
                 <div className="text-center mb-6">
-                  <h3 className="text-black text-3xl md:text-4xl font-semibold">
+                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl font-semibold">
                     Kontaktperson
                   </h3>
-                  <hr className="w-16 border-2 mx-auto border-black" />
+                  <hr className="w-16 border-2 mx-auto border-[#fcc41b]" />
                 </div>
 
                 <ContactPerson
