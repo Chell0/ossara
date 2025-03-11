@@ -110,7 +110,7 @@ export default function NavBar() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <button
-                className="text-slate-600 focus:outline-none"
+                className="text-black focus:outline-none"
                 onClick={toggleMenu}
               >
                 {menuOpen ? (
@@ -119,7 +119,7 @@ export default function NavBar() {
                   <MenuIcon className="w-6 h-6 md:w-8 md:h-8" />
                 )}
               </button>
-              <span className="font-medium mt-1 text-xl md:text-3xl text-slate-600">
+              <span className="font-medium mt-1 text-xl md:text-3xl text-black">
                 Menü
               </span>
             </div>
