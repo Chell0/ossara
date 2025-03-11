@@ -24,14 +24,14 @@ const ContactPerson: React.FC<ContactPersonProps> = ({
 
       {/* Contact Information */}
       <div className="text-black text-center sm:text-left">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 md:mb-3">
+        <h2 className="text2xl sm:text-3xl md:text-4xl font-semibold mb-2">
           {name}
         </h2>
-        <p className="text-xs sm:text-base mb-2 md:mb-3">{position}</p>
-        <p className="text-xs sm:text-base">
+        <p className="text-xl">{position}</p>
+        <p className="text-lg">
           <span className="font-semibold">E-Mail:</span> {email}
         </p>
-        <p className="text-xs sm:text-base">
+        <p className="text-lg">
           <span className="font-semibold">Telefon:</span> {phone}
         </p>
       </div>
