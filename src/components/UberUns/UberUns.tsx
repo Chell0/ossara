@@ -8,11 +8,11 @@ export default function UberUns() {
       <div>
         {/* Header */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
+          style={{ backgroundImage: "url(/loby/img-27.jpg)" }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center md:items-start md:justify-start">
-            <h1 className="text-[#f7cc55] drop-shadow-xl font-extrabold uppercase p-4 ml-0 mt-0 md:ml-10 md:mt-20 text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+          <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
+            <h1 className="text-[#f7cc55] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-2 sm:mt-4 md:mt-6 lg:mt-8">
               Inside.
             </h1>
           </div>
@@ -27,7 +27,7 @@ export default function UberUns() {
             {/* Image Container */}
             <div className="relative w-full md:basis-1/3 lg:basis-1/4 p-4 flex items-center justify-center h-[300px] sm:h-[360px] md:h-[420px] lg:h-[480px]">
               <Image
-                src="/bgs/img1.jpg"
+                src="/rassismus/img-54.jpg"
                 alt="About Photo"
                 quality={100}
                 width={480}
