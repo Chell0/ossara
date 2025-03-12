@@ -59,12 +59,12 @@ export default function Dekoloniale() {
         {/* Kontaktperson */}
         <section className="relative w-full min-h-screen text-[#d3103e]">
           <div className="absolute inset-0 flex flex-row items-center justify-center">
-            <div className="flex md:flex-grow flex-row gap-3 md:gap-6">
+            <div className="flex md:flex-grow flex-row gap-10">
               <div className="basis-1/2 m-2">
-                <p className="text-2xl md:text-3xl lg:text-4xl ml-16 mb-2 text-left font-semibold leading-none">
+                <p className="text-3xl md:text-4xl lg:text-5xl ml-16 mb-2 text-left font-semibold leading-none">
                   Unsere Projekte umfassen:
                 </p>
-                <ul className="ml-20 mt-4 text-base list-disc text-black space-y-2">
+                <ul className="ml-20 mt-4 text-lg list-disc text-black space-y-2">
                   <li>
                     Bau von Schulgebäuden, Sanitäranlagen, Spielplätzen und
                     Brunnen
@@ -116,36 +116,24 @@ export default function Dekoloniale() {
                 Projektprozess
               </h3>
 
-              <div className="space-y-1 md:space-y-2 text-base">
-                <p className="text-black">
+              <div className="space-y-1 md:space-y-2">
+                <p className="text-black text-lg">
                   Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
                   Anfragen aus der lokalen Bevölkerung oder
-                  Partnerorganisationen.{" "}
-                  <strong className="font-semibold">
-                    Die aktive Beteiligung der lokalen Gemeinschaften
-                  </strong>{" "}
-                  an allen Projektphasen ist für uns entscheidend, um
-                  sicherzustellen, dass Projekte ihren Bedürfnissen entsprechen.
-                </p>
-
-                <p className="text-black">
-                  Nach einem Feldbesuch, bei dem wir uns intensiv mit den
-                  Betroffenen austauschen und wichtige Daten sammeln, wird ein
-                  Projektantrag erstellt. Die Fördermittelakquise kann mehrere
-                  Monate bis Jahre dauern.
-                </p>
-
-                <p className="text-black">
+                  Partnerorganisationen. Die aktive Beteiligung der lokalen
+                  Gemeinschaften an allen Projektphasen ist für uns
+                  entscheidend, um sicherzustellen, dass Projekte ihren
+                  Bedürfnissen entsprechen. Nach einem Feldbesuch, bei dem wir
+                  uns intensiv mit den Betroffenen austauschen und wichtige
+                  Daten sammeln, wird ein Projektantrag erstellt. Die
+                  Fördermittelakquise kann mehrere Monate bis Jahre dauern.
                   Sobald die Mittel gesichert sind, startet die Umsetzung des
                   Projekts in enger Zusammenarbeit mit lokalen Partner:innen.
                   Wir begleiten den Prozess und stellen sicher, dass die
-                  Qualitätsstandards sowie die Fristen eingehalten werden.
-                </p>
-
-                <p className="text-black">
-                  Nach dem Projektabschluss erfolgen eine Evaluierung und
-                  regelmäßige Nachkontrollen (Monitoring), um die Nachhaltigkeit
-                  des Projektes sicherzustellen.
+                  Qualitätsstandards sowie die Fristen eingehalten werden. Nach
+                  dem Projektabschluss erfolgen eine Evaluierung und regelmäßige
+                  Nachkontrollen (Monitoring), um die Nachhaltigkeit des
+                  Projektes sicherzustellen.
                 </p>
               </div>
 
@@ -215,42 +203,30 @@ export default function Dekoloniale() {
                 Projektpartner
               </h3>
 
-              <div className="space-y-1 md:space-y-2 text-base">
-                <p className="text-black">
-                  Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
+              <div className="space-y-1 md:space-y-2">
+                <p className="text-black text-lg">
+                  Der Projektpartner bei Ossara e.V. beginnt mit der Annahme von
                   Anfragen aus der lokalen Bevölkerung oder
-                  Partnerorganisationen.{" "}
-                  <strong className="font-semibold">
-                    Die aktive Beteiligung der lokalen Gemeinschaften
-                  </strong>{" "}
-                  an allen Projektphasen ist für uns entscheidend, um
-                  sicherzustellen, dass Projekte ihren Bedürfnissen entsprechen.
-                </p>
-
-                <p className="text-black">
-                  Nach einem Feldbesuch, bei dem wir uns intensiv mit den
-                  Betroffenen austauschen und wichtige Daten sammeln, wird ein
-                  Projektantrag erstellt. Die Fördermittelakquise kann mehrere
-                  Monate bis Jahre dauern.
-                </p>
-
-                <p className="text-black">
+                  Partnerorganisationen. Die aktive Beteiligung der lokalen
+                  Gemeinschaften an allen Projektphasen ist für uns
+                  entscheidend, um sicherzustellen, dass Projekte ihren
+                  Bedürfnissen entsprechen. Nach einem Feldbesuch, bei dem wir
+                  uns intensiv mit den Betroffenen austauschen und wichtige
+                  Daten sammeln, wird ein Projektantrag erstellt. Die
+                  Fördermittelakquise kann mehrere Monate bis Jahre dauern.
                   Sobald die Mittel gesichert sind, startet die Umsetzung des
                   Projekts in enger Zusammenarbeit mit lokalen Partner:innen.
                   Wir begleiten den Prozess und stellen sicher, dass die
-                  Qualitätsstandards sowie die Fristen eingehalten werden.
-                </p>
-
-                <p className="text-black">
-                  Nach dem Projektabschluss erfolgen eine Evaluierung und
-                  regelmäßige Nachkontrollen (Monitoring), um die Nachhaltigkeit
-                  des Projektes sicherzustellen.
+                  Qualitätsstandards sowie die Fristen eingehalten werden. Nach
+                  dem Projektabschluss erfolgen eine Evaluierung und regelmäßige
+                  Nachkontrollen (Monitoring), um die Nachhaltigkeit des
+                  Projektes sicherzustellen.
                 </p>
               </div>
 
               <div className="flex justify-start mt-2 md:mt-4">
                 <Link
-                  href="/project_partners"
+                  href="/projekt_partners"
                   className="px-6 py-3 md:px-8 md:py-4 text-base md:text-lg
                    rounded-lg shadow-lg bg-[#d3103e] text-white hover:bg-[#b20e35]
                    transition-colors duration-300 inline-block"

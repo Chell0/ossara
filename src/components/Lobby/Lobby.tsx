@@ -3,53 +3,49 @@ import Image from "next/image";
 export default function Lobby() {
   return (
     <>
-      <div className="mx-auto">
+      <div>
+        {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative mb-10 p-10"
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
           style={{ backgroundImage: "url(/loby/img-27.jpg)" }}
         >
-          <div
-            className={`absolute top-0 left-0 right-0 inset-0 flex items-start justify-start`}
-          >
-            <h1
-              className={`text-[#58bc90] text-shadow-[#000000] drop-shadow-2xl text-[8rem] font-extrabold leading-tight uppercase ml-10 mt-20`}
-              style={{ textShadow: "1px 1px 2px #444444" }}
-            >
+          <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
+            <h1 className="text-[#58bc90] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-2 sm:mt-4 md:mt-6 lg:mt-8">
               Lokal.
-              <br /> Vernetzt.
+              <br />
+              Vernetzt.
             </h1>
           </div>
         </header>
 
         <section className="relative w-full min-h-screen text-[#58bc90]">
-          <div className="flex md:flex-grow flex-row">
-            <div className="basis-full">
-              <p className="text-[4rem] font-semibold leading-none p-2 mb-20">
-                Durch Netzwerk- und Lobbyarbeit setzen wir uns für mehr Rechte,
-                Sichtbarkeit und Teilhabe in Hamburg ein, um nachhaltige
-                Veränderungen auf politischer und gesellschaftlicher Ebene zu
-                erreichen.
-              </p>
-            </div>
+          <div className="basis-full mx-auto">
+            <p
+              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
+                font-semibold leading-normal tracking-normal
+                pb-20 p-6"
+            >
+              Durch Netzwerk- und Lobbyarbeit setzen wir uns für mehr Rechte,
+              Sichtbarkeit und Teilhabe in Hamburg ein, um nachhaltige
+              Veränderungen auf politischer und gesellschaftlicher Ebene zu
+              erreichen.
+            </p>
           </div>
-          <div className="flex md:flex-grow flex-row justify-end mt-20 m-6">
-            <div className="basis-1/2 text-black">
-              <p className="text-base">
+          <div className="flex md:flex-grow flex-row justify-end mt-20 pb-20">
+            <div className="basis-1/2 text-black pt-20 mr-10">
+              <p className="text-2xl">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
                 Lobbyarbeit für die Belange von BIPoC und migrantischen
                 Mitbürger:innen, um ihre Stimme in politischen und
                 gesellschaftlichen Prozessen zu stärken. Wir setzen uns aktiv
                 für mehr Sichtbarkeit, Rechte und Teilhabe dieser Gruppen in
-                Hamburg ein.
-              </p>
-              <p className="mt-2 text-base">
-                Darüber hinaus bieten wir Unterstützung und Starthilfe für
-                andere Initiativen, die sich mit ähnlichen Themen beschäftigen,
-                und fördern die Vernetzung von Akteur:innen, Vereinen und
-                Organisationen. Durch den Austausch von Wissen, Ressourcen und
-                Erfahrungen tragen wir dazu bei, eine nachhaltige Veränderung
-                auf politischer und sozialer Ebene zu erreichen.
+                Hamburg ein. Darüber hinaus bieten wir Unterstützung und
+                Starthilfe für andere Initiativen, die sich mit ähnlichen Themen
+                beschäftigen, und fördern die Vernetzung von Akteur:innen,
+                Vereinen und Organisationen. Durch den Austausch von Wissen,
+                Ressourcen und Erfahrungen tragen wir dazu bei, eine nachhaltige
+                Veränderung auf politischer und sozialer Ebene zu erreichen.
               </p>
             </div>
           </div>
@@ -64,35 +60,28 @@ export default function Lobby() {
             >
               NETZ:WERKSTATT – Netzwerken mal anders
             </h3>
-            <p className="mt-2 text-base">
+            <p className="mt-2 text-lg">
               Die NETZ:WERKSTATT bietet einmal im Monat einen Raum, in dem
               Netzwerken und kreatives Arbeiten miteinander verbunden werden. In
               einer offenen und einladenden Atmosphäre haben Teilnehmende die
               Möglichkeit, ihre Ideen auszutauschen und gleichzeitig kreative
-              Prozesse zu erleben.
-            </p>
-            <p className="mt-2 text-base">
-              Unter der Leitung von Fabienne Schöter, Kunsttherapeutin, wird die
-              Veranstaltung monatlich verschiedene kreative Ansätze bieten, die
-              den Austausch und das gegenseitige Lernen fördern. Wir verstehen
-              diesen Raum als Braver Space, in dem wir uns mutig ausdrücken und
-              uns gegenseitig stärken können. Hier sind alle willkommen, die
-              sich für eine solidarische Gesellschaft einsetzen und offen für
-              interkulturellen Austausch sind.
-            </p>
-            <p className="mt-2 text-base">
-              Wann & Wo?
-              <br />
-              Die Veranstaltung findet einmal im Monat statt. Verfolgt unsere
-              Veranstaltungsankündigungen und meldet euch an, um keine Termine
-              zu verpassen!
+              Prozesse zu erleben. Unter der Leitung von Fabienne Schöter,
+              Kunsttherapeutin, wird die Veranstaltung monatlich verschiedene
+              kreative Ansätze bieten, die den Austausch und das gegenseitige
+              Lernen fördern. Wir verstehen diesen Raum als Braver Space, in dem
+              wir uns mutig ausdrücken und uns gegenseitig stärken können. Hier
+              sind alle willkommen, die sich für eine solidarische Gesellschaft
+              einsetzen und offen für interkulturellen Austausch sind. Wann &
+              Wo? Die Veranstaltung findet einmal im Monat statt. Verfolgt
+              unsere Veranstaltungsankündigungen und meldet euch an, um keine
+              Termine zu verpassen!
               <br />
               <b className="text-[#58bc90]">Ort:</b>{" "}
               <span className="text-[#58bc90]">
                 SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
               </span>
             </p>
-            <p className="text-base">Die Teilnahme ist kostenlos.</p>
+            <p className="text-lg">Die Teilnahme ist kostenlos.</p>
           </div>
           {/* Image Container */}
           <div className="flex flex-1 items-center justify-center md:w-1/2">

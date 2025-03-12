@@ -8,9 +8,9 @@ export default function LandingSection() {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="/bgs/img1.jpg" // Update with your image path
+          src="/bgs/img1.jpg"
           fill
-          alt="Main campaign visual"
+          alt="Home Page Header image"
           className="object-cover"
           priority
         />
@@ -25,13 +25,6 @@ export default function LandingSection() {
               <span className="block">Loremipsum dolor</span>
               <span className="block">Lorem sit</span>
             </h1>
-
-            {/* <p className="text-lg md:text-xl lg:text-2xl font-medium mt-4 md:mt-6">
-              Erkunden Sie auf unserer Themenseite die
-              <button className="ml-3 underline underline-offset-4 hover:opacity-80 transition-opacity">
-                Zusammenhänge
-              </button>
-            </p> */}
           </div>
         </div>
       </div>
