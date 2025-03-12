@@ -11,14 +11,13 @@ export default function Home() {
     <div>
       <main className="bg-[#fef5db]">
         <NavBar />
-        {/* Carousel */}
         <LandingSection />
         <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:flex-row md:gap-12 md:px-8 lg:px-12 xl:px-20">
           {/* Image Container */}
           <div className="flex flex-1 items-center justify-center w-full md:w-1/2">
             <div className="relative w-full max-w-2xl h-[35vh] sm:h-[40vh] md:h-[45vh] lg:h-[50vh]">
               <Image
-                src="/bgs/img1.jpg"
+                src="/engagieren/engagieren.jpg"
                 alt="About Photo"
                 fill
                 quality={100}

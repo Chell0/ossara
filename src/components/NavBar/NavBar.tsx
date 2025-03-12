@@ -94,8 +94,8 @@ export default function NavBar() {
       name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
       href: "/dekoloniale",
       items: [
-        { name: "Projekte", href: "#projekte" },
-        { name: "Partner", href: "#partner" },
+        { name: "Projekte", href: "/projects" },
+        { name: "Partner", href: "/projekt_partners" },
       ],
     },
   ];

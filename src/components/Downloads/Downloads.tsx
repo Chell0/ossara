@@ -4,17 +4,10 @@ export default function Downloads() {
   return (
     <>
       <div>
-        {/* Banner Section */}
-        <header
-          className="min-h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
-        >
-          <div
-            className={`absolute inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
-          >
-            <h1
-              className={`text-[#fcc41b] drop-shadow-xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight uppercase p-4 sm:p-6 ml-4 sm:ml-6 md:ml-8 lg:ml-10 mt-20 sm:mt-26`}
-            >
+        {/* Header Section */}
+        <header className="min-h-fit w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10">
+          <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
+            <h1 className="text-[#fcc41b] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-20">
               Downloads
             </h1>
           </div>
@@ -22,9 +15,9 @@ export default function Downloads() {
 
         {/* General Info Section */}
         <div
-          className={`flex justify-center items-center max-w-4xl mx-auto mt-10 sm:mt-20 mb-10 sm:mb-20 p-4 sm:p-6`}
+          className={`flex justify-center items-center max-w-4xl mx-auto mt-20 mb-10 sm:mb-20 p-4 sm:p-6`}
         >
-          <p className="text-sm sm:text-base md:text-lg text-center">
+          <p className="text-lg text-center pt-20 mt-20">
             Allgemeine Infos zu Ossara finden Sie{" "}
             <button className="p-1 sm:p-0.5 font-semibold text-white rounded-lg bg-[#fcc41b] hover:bg-[#e6a200] transition-colors">
               <Link href={`/uber`}>hier</Link>

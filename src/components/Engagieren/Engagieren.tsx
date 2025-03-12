@@ -3,19 +3,13 @@ import Link from "next/link";
 export default function Engagieren() {
   return (
     <div>
-      {/* Page Header */}
+      {/* Header Section */}
       <header
-        className="min-h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8"
+        className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
         style={{ backgroundImage: "url(/engagieren/engagieren.jpg)" }}
       >
-        <div
-          id="engagieren"
-          className="absolute inset-0 flex items-center justify-center md:items-start md:justify-start"
-        >
-          <h1
-            className={`text-[#fcc41b] shadow-gray-900 drop-shadow-2xl font-extrabold uppercase p-4 ml-0 mt-20 md:ml-10 md:mt-28 text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl`}
-            style={{ textShadow: "1px 1px 2px #444444" }}
-          >
+        <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
+          <h1 className="text-[#fcc41b] text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-2 sm:mt-4 md:mt-6 lg:mt-8">
             Engagieren.
           </h1>
         </div>
@@ -27,7 +21,7 @@ export default function Engagieren() {
           id="stellenausschreibungen"
           className="w-full max-w-6xl flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center text-[#fcc41b]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-center text-[#fcc41b]">
             Job Openings
           </h2>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-center text-gray-800">
@@ -67,13 +61,13 @@ export default function Engagieren() {
       {/* Mitglied Werden */}
       <section
         className="min-h-screen w-full bg-cover bg-center relative"
-        style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+        style={{ backgroundImage: "url(/bgs/img-46.jpg)" }}
       >
         <div
           id="mitglied-werden"
-          className="absolute inset-0 bg-black bg-opacity-70 flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 gap-4 sm:gap-6 md:gap-8"
+          className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 gap-4 sm:gap-6 md:gap-8"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-[#fcc41b] drop-shadow-md font-extrabold leading-tight uppercase">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#fcc41b] drop-shadow-md font-extrabold leading-tight uppercase">
             Become a Member
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-white max-w-xl text-center">
@@ -96,7 +90,7 @@ export default function Engagieren() {
           id="ehrenamt"
           className="w-full max-w-6xl flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-semibold text-center text-[#fcc41b]">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-center text-[#fcc41b]">
             Volunteer Opportunities
           </h2>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-center text-gray-800">

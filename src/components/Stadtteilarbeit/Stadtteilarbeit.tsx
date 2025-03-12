@@ -7,7 +7,7 @@ export default function Stadtteilarbeit() {
       <div>
         {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-4"
+          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
           style={{ backgroundImage: "url(/integrative/img-05.jpg)" }}
         >
           <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
@@ -19,19 +19,19 @@ export default function Stadtteilarbeit() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#fcc41b]">
+        <section className="relative w-full min-h-screen text-[#fcc41b] pb-20">
           <div className="basis-full mx-auto">
             <p
               className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
                 font-semibold leading-normal tracking-normal
-                pb-20 p-8"
+                pb-20 p-6"
             >
               Mit niederschwelliger Beratung und praxisnaher Unterstützung
               schaffen wir berufliche Perspektiven und fördern erfolgreiche
               Integration.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row gap-4 md:gap-6 mt-10 md:mt-20 px-4 md:m-4">
+          <div className="flex flex-col md:flex-row gap-6 mt-10 md:mt-20 px-4 md:m-4">
             {/* YouTube Video Section */}
             <div className="w-full md:basis-1/2 mt-4 md:mt-8 lg:mt-12 pt-4 md:pt-8 lg:pt-12 px-4 sm:px-0">
               <YouTubeSection videoId="xpWWgOP5QuE" />
@@ -68,9 +68,9 @@ export default function Stadtteilarbeit() {
             {/* Heading Section */}
             <div className="absolute top-20 left-8 right-0 flex items-start justify-start">
               <h2
-                className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] 
+                className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl
                   font-semibold leading-tight md:leading-normal text-left
-                  mb-4 sm:mb-6 md:mb-8"
+                  mb-4"
               >
                 Stadtteilarbeit
               </h2>
@@ -82,7 +82,7 @@ export default function Stadtteilarbeit() {
                    mt-10 md:mt-16 lg:mt-20"
             >
               {/* Left Column - Text Content */}
-              <div className="w-full lg:w-1/2 space-y-2 md:space-y-4">
+              <div className="w-full lg:w-1/2 space-y-2">
                 <p className="text-base sm:text-sm md:text-lg text-black leading-normal">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Voluptatem, illum illo maiores ratione aspernatur quis quidem
@@ -100,12 +100,12 @@ export default function Stadtteilarbeit() {
               </div>
 
               {/* Right Column - Contact Card */}
-              <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                <div className="text-center mb-6">
-                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl font-semibold">
+              <div className="w-full lg:w-1/2">
+                <div className="text-center">
+                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
                     Kontaktperson
                   </h3>
-                  <hr className="w-16 border-2 mx-auto border-[#fcc41b]" />
+                  <hr className="w-24 border-2 mx-auto border-[#fcc41b]" />
                 </div>
                 <ContactPerson
                   name="John Doe"
@@ -128,9 +128,9 @@ export default function Stadtteilarbeit() {
             {/* Heading Section */}
             <div className="absolute top-20 left-8 right-0 flex items-start justify-start">
               <h2
-                className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl xl:text-[3.5rem] 
+                className="text-3xl xs:text-[1.5rem] sm:text-4xl md:text-5xl lg:text-6xl
                   font-semibold leading-tight md:leading-normal text-left
-                  mb-4 sm:mb-6 md:mb-8"
+                  mb-4"
               >
                 Beratungs- und Bewerbungstraining
               </h2>
@@ -143,7 +143,7 @@ export default function Stadtteilarbeit() {
             >
               {/* Left Column - Text Content */}
               <div className="w-full lg:w-1/2 space-y-2 md:space-y-4">
-                <p className="text-base sm:text-sm md:text-lg text-black leading-normal">
+                <p className="text-lg text-black leading-normal">
                   Ossara e.V. bietet einmal wöchentlich eine niedrigschwellige
                   Sozialberatung bzw. Orientierungshilfe an und unterstützt
                   Interessierte bei Bewerbungen.
@@ -151,29 +151,19 @@ export default function Stadtteilarbeit() {
 
                 <div className="space-y-1 md:space-y-2">
                   <div>
-                    <strong className="block text-md sm:text-base md:text-lg text-black">
-                      Wo:
-                    </strong>
-                    <p className="text-base">
+                    <p className="text-lg mt-4">
+                      <span className="text-black pr-1 font-bold">Wo:</span>
                       In den Räumlichkeiten des Sportvereins SV Groß Borstel am
                       Brödermannsweg 31, 22453 Hamburg und digital
                     </p>
-                  </div>
-
-                  <div>
-                    <strong className="block text-md sm:text-base md:text-lg text-black">
-                      Wann:
-                    </strong>
-                    <p className="text-base">
+                    <p className="text-lg mt-4">
+                      <span className="text-black pr-1 font-bold">Wann:</span>
                       Freitags von 10:00 - 13:00 Uhr und nach Vereinbarung
                     </p>
-                  </div>
-
-                  <div>
-                    <strong className="block text-md sm:text-base md:text-lg text-black">
-                      Für wen:
-                    </strong>
-                    <p className="text-base">
+                    <p className="text-lg mt-4">
+                      <span className="text-black pr-1 font-bold">
+                        Für wen:
+                      </span>
                       Geflüchtete aus naheliegenden Unterkünften und
                       Interessierte
                     </p>
@@ -182,12 +172,12 @@ export default function Stadtteilarbeit() {
               </div>
 
               {/* Right Column - Contact Card */}
-              <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                <div className="text-center mb-6">
-                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl font-semibold">
+              <div className="w-full lg:w-1/2">
+                <div className="text-center">
+                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
                     Kontaktperson
                   </h3>
-                  <hr className="w-16 border-2 mx-auto border-[#fcc41b]" />
+                  <hr className="w-24 border-2 mx-auto border-[#fcc41b]" />
                 </div>
                 <ContactPerson
                   name="Katja Heyn"
@@ -215,34 +205,31 @@ export default function Stadtteilarbeit() {
             </div>
 
             {/* Content Section */}
-            <div className="w-full flex flex-col lg:flex-row gap-8 md:gap-12 xl:gap-16 mt-10 md:mt-16 lg:mt-20">
+            <div className="w-full flex flex-col lg:flex-row gap-10 mt-10 md:mt-16 lg:mt-20">
               {/* Left Column - Text Content */}
               <div className="w-full lg:w-1/2">
-                <p className="text-base text-black">
+                <p className="text-lg text-black">
                   Mit unserer Sprachförderung möchten wir den Teilnehmenden
                   helfen, ihre Sprachkenntnisse im formellen Kontext zu
                   verbessern, ihre schriftliche Kompetenz zu fördern und einen
-                  Raum für interkulturellen Austausch zu bieten.
+                  Raum für interkulturellen Austausch zu bieten. Die
+                  Prüfungsvorbereitung findet montags und dienstags von 10:00
+                  bis 13:00 Uhr statt. Unser Ziel ist es, die Teilnehmenden
+                  gezielt auf ihre Abschlussprüfungen vorzubereiten, indem wir
+                  sowohl schriftliche als auch mündliche Prüfungsfähigkeiten
+                  trainieren. In Kleingruppen werden Prüfungssituationen
+                  simuliert und das richtige Verhalten in Prüfungen geübt.
                 </p>
-                <p className="text-base text-black">
-                  Die Prüfungsvorbereitung findet montags und dienstags von
-                  10:00 bis 13:00 Uhr statt. Unser Ziel ist es, die
-                  Teilnehmenden gezielt auf ihre Abschlussprüfungen
-                  vorzubereiten, indem wir sowohl schriftliche als auch
-                  mündliche Prüfungsfähigkeiten trainieren. In Kleingruppen
-                  werden Prüfungssituationen simuliert und das richtige
-                  Verhalten in Prüfungen geübt.
-                </p>
-                <p className="text-base text-black">
+                <p className="text-lg text-black">
                   Die gängigen Prüfungen umfassen:
                 </p>
                 <ul className="text-base pl-5 mt-2 space-y-1 font-semibold text-[#fcc41b] list-disc">
                   <li>Zertifikat Deutsch Telc A1, A2, B1, DTZ, B2, C1</li>
                   <li>Goethe Zertifikat A1, A2, B1, B2, C1</li>
                 </ul>
-                <p className="text-base text-black">
+                <p className="text-lg text-black">
                   <b>PS :</b>{" "}
-                  <span className="text-base text-black">
+                  <span className="text-lg text-black">
                     Wir führen keine Prüfungen durch und übernehmen keine
                     Prüfungsgebühren.
                   </span>
@@ -250,12 +237,12 @@ export default function Stadtteilarbeit() {
               </div>
 
               {/* Right Column - Contact Card */}
-              <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                <div className="text-center mb-6">
-                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl font-semibold">
+              <div className="w-full lg:w-1/2">
+                <div className="text-center">
+                  <h3 className="text-[#fcc41b] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
                     Kontaktperson
                   </h3>
-                  <hr className="w-16 border-2 mx-auto border-[#fcc41b]" />
+                  <hr className="w-24 border-2 mx-auto border-[#fcc41b]" />
                 </div>
 
                 <ContactPerson
