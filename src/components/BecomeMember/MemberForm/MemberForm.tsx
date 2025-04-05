@@ -4,9 +4,9 @@ export default function MemberForm() {
       <h2 className="text-4xl font-bold text-center mb-6">
         Beitrittserklärung
       </h2>
-      <p className="text-center text-gray-600 text-base mb-6">
+      {/* <p className="text-center text-gray-600 text-base mb-6">
         (bitte kopieren und im Freundes- und Bekanntenkreis verteilen)
-      </p>
+      </p> */}
 
       <form className="space-y-6">
         {/* Form Fields */}
@@ -100,7 +100,7 @@ export default function MemberForm() {
         </div>
 
         {/* Checkboxes */}
-        <div className="mt-4 space-y-4">
+        {/* <div className="mt-4 space-y-4">
           <label className="flex items-start space-x-2">
             <input type="checkbox" className="w-5 h-5" />
             <span className="text-base text-gray-700">
@@ -127,7 +127,7 @@ export default function MemberForm() {
               gilt als Nachweis)
             </span>
           </label>
-        </div>
+        </div> */}
 
         <div className="mt-6">
           <button

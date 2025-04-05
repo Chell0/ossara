@@ -189,7 +189,7 @@ const formatDate = (dateString: string) => {
   return new Date(dateString).toLocaleDateString("de-DE", {
     timeZone: "Europe/Berlin",
     day: "numeric",
-    month: "long",
+    month: "numeric",
     year: "numeric",
   });
 };
@@ -215,11 +215,39 @@ export default function Veranstaltungen() {
       <div>
         {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative p-4 sm:p-6 md:p-8 lg:p-10"
-          style={{ backgroundImage: "url(/loby/netz-werkstatt/img-36.jpg)" }}
+          className="h-screen w-full bg-cover bg-center relative"
+          style={{
+            backgroundImage:
+              "url(/images/Veranstaltungen/OSSARA_Lobbyarbeit_Netzwerken.jpg)",
+          }}
         >
-          <div className="absolute top-0 left-0 right-0 inset-0 flex items-start justify-start">
-            <h1 className="text-[#eb7b24] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-tight uppercase p-2 sm:p-4 md:p-6 lg:p-8 mt-2 sm:mt-4 md:mt-6 lg:mt-8">
+          {/* Spacer matching navbar height */}
+          <div
+            className="
+    h-16 xs:h-18 sm:h-20 md:h-22 md2:h-24 
+    tab:h-28 tab-xl:h-30 lg:h-32 xl:h-40 
+    2xl:h-44 3xl:h-48 land-xs:h-16 land-sm:h-20"
+          />
+
+          <div className="absolute inset-0 flex items-start justify-start">
+            <h1
+              className="text-[#eb7b24] font-extrabold leading-tight uppercase 
+      xs:text-2xl sm:text-4xl md:text-5xl md2:text-6xl tab:text-7xl tab-xl:text-8xl 
+      lg:text-9xl xl:text-9xl 2xl:text-9xl 3xl:text-[11rem] 
+      
+      /* Horizontal alignment matching navbar */
+      xs:ml-3 sm:ml-4 md:ml-6 md2:ml-8 tab:ml-10 tab-xl:ml-12 
+      lg:ml-14 xl:ml-16 2xl:ml-18 3xl:ml-20
+      
+      /* Increased vertical spacing */
+      mt-8 xs:mt-10 sm:mt-12 md:mt-14 md2:mt-16 
+      tab:mt-20 tab-xl:mt-24 lg:mt-28 xl:mt-32 
+      2xl:mt-36 3xl:mt-40
+      land-xs:mt-6 land-sm:mt-8
+      
+      /* Fine-tune positioning */
+      transform translate-y-1"
+            >
               Veranstaltungen.
             </h1>
           </div>
@@ -237,7 +265,7 @@ export default function Veranstaltungen() {
               currentAndFutureEvents.map((event) => (
                 <div
                   key={event.id}
-                  className="flex flex-col h-full overflow-hidden transition-transform duration-300 bg-white rounded-lg shadow-lg hover:scale-105"
+                  className="flex flex-col h-full overflow-hidden transition-transform duration-300 rounded-lg shadow-lg hover:scale-105"
                 >
                   {/* Image section */}
                   <div className="relative w-full aspect-video sm:aspect-square lg:aspect-video">
@@ -298,10 +326,7 @@ export default function Veranstaltungen() {
         <section className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {pastEvents.slice(0, 3).map((event) => (
-              <div
-                key={event.id}
-                className="w-full overflow-hidden transition-transform duration-300 transform bg-white rounded-lg shadow-lg hover:scale-105"
-              >
+              <div key={event.id} className="w-full overflow-hidden">
                 {/* Image section */}
                 <div className="relative w-full aspect-[4/3]">
                   {" "}
@@ -313,29 +338,38 @@ export default function Veranstaltungen() {
                     quality={100}
                     className="object-cover rounded-t-lg"
                   />
+                  {/* Event Date & Time */}
+                  <div className="text-2xl text-[#eb7b24] text-right font-semibold">
+                    {formatDate(event.date)}
+                    {/* {event.time} */}
+                  </div>
                 </div>
 
                 {/* Content section */}
-                <div className="p-4 sm:p-6 flex flex-col">
+                <div className="flex flex-col">
+                  {/* Event Date & Time */}
+                  {/* <div className="text-2xl text-[#eb7b24] text-right font-semibold"> */}
+                  {/* {formatDate(event.date)} */}
+                  {/* {event.time} */}
+                  {/* </div> */}
+
                   {/* Event Title */}
-                  <h3 className="mt-2 text-base font-semibold text-gray-900 line-clamp-2">
+                  <h3 className="mt-2 uppercase text-lg font-semibold text-black line-clamp-2">
                     {event.title}
                   </h3>
 
                   {/* Event Type */}
-                  <div className="mt-2 text-sm text-gray-500">
-                    What: {event.type}
-                  </div>
+                  <div className="text-sm text-gray-500">{event.type}</div>
 
                   {/* Event Date & Time */}
-                  <div className="mt-2 text-sm text-gray-500">
-                    Wann: {formatDate(event.date)}, {event.time}
-                  </div>
+                  {/* <div className="mt-2 text-sm text-gray-500">
+                    {formatDate(event.date)}, {event.time}
+                  </div> */}
 
                   {/* Event Description */}
-                  <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
+                  {/* <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
                     {event.description}
-                  </p>
+                  </p> */}
 
                   {/* Event Read Now link */}
                   <Link

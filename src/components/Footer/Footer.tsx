@@ -4,26 +4,26 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="p-4 md:p-6 mt-12 md:mt-20 border-t-2 border-black">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center space-y-4 md:flex-row md:justify-between md:space-y-0">
-          {/* Copyright Text */}
-          <p className="text-sm md:text-base font-medium text-center md:text-left mb-4 md:mb-0">
-            Copyright ©{currentYear} Ossara. All Rights Reserved.
+    <footer className="mt-12 tab:mt-20 border-t-2 border-black py-6 px-4 xs:px-5 sm:px-6 md2:px-8 tab:px-10 lg:px-12 xl:px-16 2xl:px-20">
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="flex flex-col tab:flex-row items-center justify-between gap-4 tab:gap-6">
+          {/* Copyright */}
+          <p className="text-xs sm:text-sm md:text-base font-medium text-center tab:text-left">
+            © {currentYear} Ossara
           </p>
 
-          {/* Links Grid */}
-          <div className="w-full md:w-auto grid grid-cols-2 gap-2 sm:gap-3 md:flex md:items-center md:space-x-4">
+          {/* Links */}
+          <div className="w-full tab:w-auto grid grid-cols-2 xs:grid-cols-3 md2:grid-cols-5 gap-2 sm:gap-3 tab:flex tab:items-center tab:gap-5 tab:justify-end">
             <Link
               href="/datenschutz"
-              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
+              className="text-xs sm:text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Datenschutz"
             >
               Datenschutz
             </Link>
             <Link
               href="/impressum"
-              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
+              className="text-xs sm:text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Impressum"
             >
               Impressum
@@ -32,7 +32,7 @@ export default function Footer() {
               href="https://www.instagram.com/ossaraev/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
+              className="text-xs sm:text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Instagram"
             >
               Instagram
@@ -41,7 +41,7 @@ export default function Footer() {
               href="https://www.facebook.com/ossara.de/?ref=page_internal"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
+              className="text-xs sm:text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="Facebook"
             >
               Facebook
@@ -50,7 +50,7 @@ export default function Footer() {
               href="https://www.youtube.com/channel/UCe7W9SFkK9y9AyAfknQYvIw"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
+              className="text-xs sm:text-sm md:text-base font-medium hover:text-[#ba334b] text-center"
               aria-label="YouTube"
             >
               YouTube

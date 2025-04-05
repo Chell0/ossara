@@ -8,16 +8,29 @@ import NavBar from "@/components/NavBar/NavBar";
 
 export default function Home() {
   return (
-    <div>
-      <main className="bg-[#fef5db]">
+    <div className="overflow-hidden">
+      <main className="bg-[#fef5db] relative">
         <NavBar />
         <LandingSection />
-        <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 py-12 sm:px-6 sm:py-16 md:flex-row md:gap-12 md:px-8 lg:px-12 xl:px-20">
+        <section
+          className="flex flex-col items-center justify-center 
+    gap-4 xs:gap-5 sm:gap-6 md:gap-7 md2:gap-8 tab:gap-10 tab-xl:gap-12 lg:gap-14 xl:gap-16 2xl:gap-20 
+    px-2 xs:px-3 sm:px-4 md:px-5 md2:px-6 tab:px-8 tab-xl:px-10 lg:px-12 xl:px-14 2xl:px-16 
+    py-6 xs:py-8 sm:py-10 md:py-12 md2:py-14 tab:py-16 tab-xl:py-20 lg:py-24 xl:py-28 2xl:py-32 
+    min-h-[50vh] xs:min-h-[55vh] sm:min-h-[60vh] md:min-h-[65vh] md2:min-h-[70vh] tab:min-h-screen 
+    tab:flex-row"
+        >
           {/* Image Container */}
-          <div className="flex flex-1 items-center justify-center w-full md:w-1/2">
-            <div className="relative w-full max-w-2xl h-[35vh] sm:h-[40vh] md:h-[45vh] lg:h-[50vh]">
+          <div
+            className="flex flex-1 items-center justify-center w-full 
+      tab:basis-1/2"
+          >
+            <div
+              className="relative w-full max-w-xs xs:max-w-sm sm:max-w-md md:max-w-lg md2:max-w-xl tab:max-w-md tab-xl:max-w-lg lg:max-w-xl xl:max-w-2xl 2xl:max-w-3xl 
+        h-[20vh] xs:h-[25vh] sm:h-[30vh] md:h-[35vh] md2:h-[40vh] tab:h-[45vh] tab-xl:h-[50vh] lg:h-[55vh] xl:h-[60vh] 2xl:h-[65vh]"
+            >
               <Image
-                src="/engagieren/engagieren.jpg"
+                src="/images/Neuigkeiten/OSSARA_Arbeitssituation.jpg"
                 alt="About Photo"
                 fill
                 quality={100}
@@ -28,8 +41,14 @@ export default function Home() {
           </div>
 
           {/* Text Content */}
-          <div className="flex flex-1 flex-col justify-center w-full md:w-1/2">
-            <p className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed text-black">
+          <div
+            className="flex flex-1 flex-col justify-center w-full 
+      tab:basis-1/2"
+          >
+            <p
+              className="text-[10px] xs:text-xs sm:text-sm md:text-base md2:text-base tab:text-base tab-xl:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl 
+        leading-relaxed text-black"
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
               elementum accumsan fermentum. Pellentesque suscipit vestibulum est
               eget scelerisque. Nunc faucibus lacus sed nibh fermentum lobortis.

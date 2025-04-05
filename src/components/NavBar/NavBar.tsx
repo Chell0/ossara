@@ -106,32 +106,59 @@ export default function NavBar() {
   return (
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
+        <div
+          className="container mx-auto 
+      px-2 xs:px-3 sm:px-4 md:px-6 md2:px-8 
+      tab:px-10 tab-xl:px-12 lg:px-14 xl:px-16 
+      2xl:px-18 3xl:px-20 land-xs:px-4 land-sm:px-6 
+      pt-1 xs:pt-2 sm:pt-3 md:pt-4 tab:pt-5"
+        >
+          <div
+            className="flex justify-between items-center 
+      h-12 xs:h-14 sm:h-16 md:h-18 md2:h-20 
+      tab:h-24 tab-xl:h-28 lg:h-30 xl:h-32 
+      2xl:h-36 3xl:h-40 land-xs:h-12 land-sm:h-16"
+          >
+            {/* Menu Button */}
+            <div className="flex items-center gap-1 xs:gap-2 sm:gap-3 md:gap-4">
               <button
                 className="text-black focus:outline-none"
                 onClick={toggleMenu}
               >
                 {menuOpen ? (
-                  <XIcon className="w-6 h-6 md:w-8 md:h-8" />
+                  <XIcon
+                    className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 md2:w-9 md2:h-9 
+                    tab:w-10 tab:h-10 tab-xl:w-11 tab-xl:h-11 lg:w-12 lg:h-12 xl:w-13 xl:h-13 
+                    2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 land-xs:w-6 land-xs:h-6 land-sm:w-8 land-sm:h-8"
+                  />
                 ) : (
-                  <MenuIcon className="w-6 h-6 md:w-8 md:h-8" />
+                  <MenuIcon
+                    className="w-5 h-5 xs:w-6 xs:h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 md2:w-9 md2:h-9 
+                    tab:w-10 tab:h-10 tab-xl:w-11 tab-xl:h-11 lg:w-12 lg:h-12 xl:w-13 xl:h-13 
+                    2xl:w-14 2xl:h-14 3xl:w-16 3xl:h-16 land-xs:w-6 land-xs:h-6 land-sm:w-8 land-sm:h-8"
+                  />
                 )}
               </button>
-              <span className="font-medium mt-1 text-xl md:text-3xl text-black">
+              <span
+                className="font-medium text-base xs:text-lg sm:text-xl md:text-2xl md2:text-3xl 
+                tab:text-3xl tab-xl:text-4xl lg:text-4xl xl:text-4xl 2xl:text-5xl 3xl:text-5xl 
+                land-xs:text-lg land-sm:text-xl"
+              >
                 Menü
               </span>
             </div>
 
             <div className="flex-shrink-0">
-              <Link href="/" className="block">
+              <Link href="/">
                 <Image
                   src="/logos/ossara_logo.png"
                   alt="Ossara Logo"
                   width={160}
                   height={60}
-                  className="h-10 md:h-12 w-auto object-contain"
+                  className="w-auto 
+                  h-8 xs:h-9 sm:h-10 md:h-12 md2:h-14 tab:h-16 tab-xl:h-18 
+                  lg:h-20 xl:h-22 2xl:h-24 3xl:h-26 land-xs:h-8 land-sm:h-10 
+                  object-contain"
                   priority
                 />
               </Link>
