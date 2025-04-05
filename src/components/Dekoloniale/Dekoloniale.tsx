@@ -45,23 +45,33 @@ export default function Dekoloniale() {
               fördern.
             </p>
           </div>
-          <div className="flex md:flex-grow flex-row justify-end mt-20 pb-20">
-            <div className="basis-1/2 text-black pt-20 mr-10">
-              <p className="text-2xl">
+          <div
+            className="w-full 
+    pt-6 xs:pt-8 sm:pt-10 md:pt-12 md2:pt-16 tab:pt-20 tab-xl:pt-24 lg:pt-28 xl:pt-32 2xl:pt-40 
+    pb-6 xs:pb-8 sm:pb-10 md:pb-12 md2:pb-16 tab:pb-20 tab-xl:pb-24 lg:pb-28 xl:pb-32 2xl:pb-40 
+    mt-6 xs:mt-8 sm:mt-10 md:mt-12 md2:mt-16 tab:mt-20 tab-xl:mt-24 lg:mt-28 xl:mt-32 2xl:mt-40 
+    px-2 xs:px-3 sm:px-4 md:px-5 md2:px-6 tab:px-8 tab-xl:px-10 lg:px-12 xl:px-14 2xl:px-16 
+    text-black"
+          >
+            <div className="basis-full">
+              <p
+                className="text-[14px] xs:text-[16px] sm:text-lg md:text-xl md2:text-xl tab:text-2xl tab-xl:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 
+        text-center"
+              >
                 Ossara e.V. verfolgt einen dekolonialen Ansatz in der
                 internationalen Zusammenarbeit, um gleichwertige Partnerschaften
                 und nachhaltige Entwicklung zu fördern. Wir setzen uns dafür
                 ein, koloniale Strukturen zu hinterfragen und bestehende
                 Machtungleichheiten zu überwinden. In enger Zusammenarbeit mit
-                lokalen Partner:innen in Togo, Benin und Côte d&apos;Ivoire
-                arbeiten wir daran, die Selbstbestimmung der Gemeinschaften zu
-                stärken und die Lebensbedingungen langfristig zu verbessern.
-                Dabei legen wir großen Wert auf diasporische Stimmen, die
-                Beteiligung der Menschen vor Ort und die Berücksichtigung ihrer
-                Perspektiven. Unsere Projekte werden auf Augenhöhe und
-                partizipativ entwickelt, um gemeinsam die sozialen und
-                wirtschaftlichen Herausforderungen zu bewältigen und eine
-                gerechte, inklusive Zukunft zu gestalten.
+                lokalen Partner:innen in Togo, Benin und Côte d'Ivoire arbeiten
+                wir daran, die Selbstbestimmung der Gemeinschaften zu stärken
+                und die Lebensbedingungen langfristig zu verbessern. Dabei legen
+                wir großen Wert auf diasporische Stimmen, die Beteiligung der
+                Menschen vor Ort und die Berücksichtigung ihrer Perspektiven.
+                Unsere Projekte werden auf Augenhöhe und partizipativ
+                entwickelt, um gemeinsam die sozialen und wirtschaftlichen
+                Herausforderungen zu bewältigen und eine gerechte, inklusive
+                Zukunft zu gestalten.
               </p>
             </div>
           </div>
