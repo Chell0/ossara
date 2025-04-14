@@ -6,22 +6,19 @@ export default function Lobby() {
       <div>
         {/* Header Section */}
         <header
-          className="w-full bg-cover bg-center relative 
-    h-[50vh] xs:h-[55vh] sm:h-[60vh] md:h-[65vh] md2:h-[70vh] tab:h-[85vh] tab-xl:h-[90vh] lg:h-[95vh] xl:h-screen 2xl:h-screen"
+          className="w-full relative bg-[#f7e6ca] h-[50vh] 
+    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
+    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
           style={{
             backgroundImage:
               "url(/images/Lobby/LOBBYARBEIT_LOKAL.VERNETZT.jpg)",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain", // This ensures the entire image is visible
           }}
         >
-          {/* Spacer matching navbar height */}
-          <div className="h-12 xs:h-14 sm:h-16 md:h-18 md2:h-20 tab:h-24 tab-xl:h-28 lg:h-30 xl:h-32 2xl:h-36" />
-
-          <div className="absolute inset-0 flex items-start justify-start">
-            <h1
-              className="text-[#58bc90] font-extrabold leading-tight text-2xl xs:text-3xl sm:text-4xl md:text-5xl md2:text-6xl tab:text-7xl tab-xl:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[11rem] 
-        pl-2 xs:pl-4 sm:pl-5 md:pl-8 md2:pl-8 tab:pl-11 tab-xl:pl-12 lg:pl-14 xl:pl-16 2xl:pl-16 
-        pt-5 xs:pt-14 sm:pt-16 md:pt-20 md2:pt-24 tab:pt-28 tab-xl:pt-32 lg:pt-36 xl:pt-40 2xl:pt-48"
-            >
+          <div className="absolute bottom-3 left-4">
+            <h1 className="text-[#58bc90] font-extrabold leading-tight uppercase text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[8rem] 3xl:text-[14rem] pl-4 pt-10">
               Lokal.
               <br />
               Vernetzt.
@@ -29,22 +26,21 @@ export default function Lobby() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#58bc90]">
-          <div className="basis-full mx-auto">
-            <p
-              className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl 
-      font-semibold leading-relaxed md:leading-normal tracking-normal 
-      py-8 p-8"
-            >
+        <section className="relative w-full min-h-screen text-[#58bc90] pb-20 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20">
+          {/* BIG TEXT */}
+          <div className="mx-auto pt-12 mb-12 xs:mb-14 sm:mb-16 md:mb-18 lg:mb-22 xl:mb-26 2xl:mb-32 3xl:mb-44">
+            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem]  font-semibold leading-normal tracking-normal">
               Durch Netzwerk- und Lobbyarbeit setzen wir uns für mehr Rechte,
               Sichtbarkeit und Teilhabe in Hamburg ein, um nachhaltige
               Veränderungen auf politischer und gesellschaftlicher Ebene zu
               erreichen.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-end mt-10 xs:mt-12 sm:mt-16 md:mt-20 lg:mt-24 xl:mt-28 2xl:mt-32 pb-10 xs:pb-12 sm:pb-16 md:pb-20 lg:pb-24 xl:pb-28 2xl:pb-32">
-            <div className="w-full md:basis-full text-gray-800 pt-10 xs:pt-12 sm:pt-16 md:pt-20 lg:pt-24 p-4 xs:p-5 sm:p-6 md:p-7 lg:p-8 xl:p-10 2xl:p-12">
-              <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl leading-normal sm:leading-relaxed md:leading-relaxed">
+
+          {/* small text */}
+          <div className="w-full flex justify-center">
+            <div className="max-w-full w-full">
+              <p className="text-sm xs:text-base xs2:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl leading-relaxed text-left text-black">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
                 Lobbyarbeit für die Belange von BIPoC und migrantischen
@@ -63,14 +59,14 @@ export default function Lobby() {
         </section>
 
         {/*Netzwerkarbeit*/}
-        <section className="flex min-h-screen flex-col items-center justify-center gap-6 xs:gap-7 sm:gap-8 md:gap-10 lg:gap-12 px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 xs:py-12 sm:py-14 md:py-16 lg:py-20 md:flex-row">
+        <section className="flex min-h-screen flex-col items-center justify-center gap-8 px-4 xs:px-2 sm:px-3 md:px-5 lg:px-6 xl:px-7 2xl:px-8 3xl:px-10 py-10 xs:py-12 sm:py-14 md:py-16 lg:py-20 md:flex-row">
           {/* Text Content */}
-          <div className="flex flex-col justify-center basis-full md:basis-1/2 lg:basis-2/5 xl:basis-2/5 p-4 xs:p-5 sm:p-6">
-            <h3 className="text-[#58bc90] text-3xl xs:text-3.5xl sm:text-4xl md:text-4.5xl lg:text-5xl xl:text-5.5xl 2xl:text-6xl font-bold text-left leading-tight xs:leading-snug sm:leading-normal">
-              NETZ:WERKSTATT – Netzwerken mal anders
+          <div className="flex flex-col justify-center w-full md:w-1/2 p-2">
+            <h3 className="text-[#58bc90] text-base xs:text-lg xs2:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-7xl font-bold text-left leading-tight xs:leading-snug sm:leading-normal">
+              NETZ:WERKSTATT –<br /> Netzwerken mal anders
             </h3>
-            <div className="space-y-4 xs:space-y-5 sm:space-y-6 mt-4 xs:mt-5 sm:mt-6">
-              <p className="text-base xs:text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl leading-relaxed sm:leading-loose">
+            <div className="mt-2">
+              <p className="text-base md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-4xl leading-relaxed sm:leading-loose">
                 Die NETZ:WERKSTATT bietet einmal im Monat einen Raum, in dem
                 Netzwerken und kreatives Arbeiten miteinander verbunden werden.
                 In einer offenen und einladenden Atmosphäre haben Teilnehmende
@@ -87,28 +83,29 @@ export default function Lobby() {
                 Veranstaltungsankündigungen und meldet euch an, um keine Termine
                 zu verpassen!
                 <br />
-                <b className="text-[#58bc90]">Ort:</b>{" "}
-                <span className="text-[#58bc90]">
-                  SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
+                <span className="text-[#58bc90] text-base md:text-sm lg:text-base xl:text-lg 2xl:text-xl 3xl:text-4xl">
+                  <b>Ort:</b> SV Groß Borstel, Brödermannsweg 31, 22453 Hamburg.
                 </span>
-              </p>
-              <p className="text-base xs:text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl">
+                <br />
                 Die Teilnahme ist kostenlos.
               </p>
             </div>
           </div>
 
           {/* Image Container */}
-          <div className="flex items-center justify-center basis-full md:basis-1/2 lg:basis-3/5 xl:basis-3/5 p-4 xs:p-5 sm:p-6">
-            <div className="relative w-full h-[50vh] xs:h-[55vh] sm:h-[60vh] md:h-[65vh] lg:h-[70vh] xl:h-[75vh] 2xl:h-[80vh] max-w-2xl">
+          <div className="flex items-center justify-center w-full md:w-1/2 p-2 xs:p-3 sm:p-4">
+            <div
+              className="relative w-full h-auto"
+              style={{ aspectRatio: "3/2" }}
+            >
               <Image
                 src="/images/Lobby/Netzwerkstatt/NETZWERKSTATT.jpg"
                 alt="Netzwerkstatt Photo"
                 fill
                 quality={100}
-                className="object-cover rounded-lg shadow-xl xs:shadow-2xl"
+                className="object-contain md:object-cover shadow-xl"
                 priority
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 40vw"
               />
             </div>
           </div>
