@@ -36,13 +36,13 @@ const ContactPerson: React.FC<ContactPersonProps> = ({
         >
           {name}
         </h2>
-        <p className="text-[10px] xs:text-xs xs2:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl mb-2">
+        <p className="text-[10px] xs:text-xs xs2:text-sm sm:text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-4xl mb-2">
           {position}
         </p>
-        <p className="text-[10px] xs:text-xs xs2:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl">
+        <p className="text-[10px] xs:text-xs xs2:text-sm sm:text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-4xl">
           <span className="font-semibold">E-Mail:</span> {email}
         </p>
-        <p className="text-[10px] xs:text-xs xs2:text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl">
+        <p className="text-[10px] xs:text-xs xs2:text-sm sm:text-base md:text-md lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-4xl">
           <span className="font-semibold">Telefon:</span> {phone}
         </p>
       </div>
