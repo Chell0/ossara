@@ -27,13 +27,10 @@ export default function EineWeltPromotorinnen() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#eb7b24] pb-20">
-          <div className="basis-full mx-auto">
-            <p
-              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
-                font-semibold leading-normal tracking-normal
-                pb-20 p-6"
-            >
+        <section className="relative w-full min-h-screen text-[#58bc90] pb-20 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20">
+          {/* BIG TEXT */}
+          <div className="mx-auto pt-12 mb-12 xs:mb-14 sm:mb-16 md:mb-18 lg:mb-22 xl:mb-26 2xl:mb-32 3xl:mb-44">
+            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem]  font-semibold leading-normal tracking-normal">
               Dekoloniale Perspektiven durchbrechen anhaltenden koloniale
               Machtstrukturen und eröffnen neue Wege des Denkens und Handelns,
               die Vielfalt und Gerechtigkeit in den Mittelpunkt stellen.
@@ -86,11 +83,11 @@ export default function EineWeltPromotorinnen() {
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <div className="flex md:flex-grow flex-row gap-10 mt-20 pt-20 pb-20">
               {/* Vernetzung Content */}
-              <div className="basis-1/2">
-                <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl mb-2 font-semibold text-center leading-tight">
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-10 lg:pt-0">
+                <h3 className="text-[#eb7b24] text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-2">
                   Vernetzung
                 </h3>
-                <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
+                <hr className="w-24 border-2 mb-6 lg:mx-0 mx-auto border-[#eb7b24]" />
                 <p className="max-w-xl text-xl leading-tight mt-10">
                   Aufbau von einem Netzwerk und Unterstützung von Akteur*innen
                   deren Fokus auf der aktiven Mitgestaltung des
@@ -101,45 +98,41 @@ export default function EineWeltPromotorinnen() {
               </div>
 
               {/* Contact Section */}
-              <div className="basis-1/2">
-                <div className="text-center">
-                  <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
-                    Kontaktperson
-                  </h3>
-                  <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
-                  <ContactPerson
-                    name="Sonia Octavio"
-                    position="Projektkoordination"
-                    email="sonia.octavio[at]ossara.de"
-                    phone="(+49) 157-3572-1433"
-                    imageSrc="/uber-uns/team/sonia2.jpg"
-                  />
-                </div>
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-10 lg:pt-0">
+                <h3 className="text-[#eb7b24] text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-2">
+                  Kontaktperson
+                </h3>
+                <hr className="w-24 border-2 mb-6 lg:mx-0 mx-auto border-[#eb7b24]" />
+                <ContactPerson
+                  name="Sonia Octavio"
+                  position="Fachpromotorin Dekolonisierung mit dem Schwerpunkt Vernetzung"
+                  email="sonia.octavio[at]ossara.de"
+                  phone="(+49) 157-3572-1433"
+                  imageSrc="/images/UberUns/Team/Sonia.jpg"
+                />
               </div>
             </div>
             {/* Beratung Content */}
             <div className="flex md:flex-grow flex-row gap-10 pb-20 pt-20 mt-20">
               {/* Contact Section */}
-              <div className="basis-1/2">
-                <div className="text-center">
-                  <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2">
-                    Kontaktperson
-                  </h3>
-                  <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
-                  <ContactPerson
-                    name="Catherine Schlüter"
-                    position="Projektkoordination"
-                    email="catherine.schlueter[a]ossara.de"
-                    phone="(+49) 157-3572-2762"
-                    imageSrc="/uber-uns/team/catherine.jpg"
-                  />
-                </div>
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-10 lg:pt-0">
+                <h3 className="text-[#eb7b24] text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-2">
+                  Kontaktperson
+                </h3>
+                <hr className="w-24 border-2 mb-6 lg:mx-0 mx-auto border-[#eb7b24]" />
+                <ContactPerson
+                  name="Catherine Schlüter"
+                  position="Fachpromotorin Dekolonisierung mit dem Schwerpunkt Beratung"
+                  email="catherine.schlueter[a]ossara.de"
+                  phone="(+49) 157-3572-2762"
+                  imageSrc="/images/UberUns/Team/OSSARA_Portrait_CatherineSchlueter.jpg"
+                />
               </div>
-              <div className="basis-1/2">
-                <h3 className="text-[#eb7b24] text-3xl md:text-4xl lg:text-5xl mb-2 font-semibold text-center leading-tight">
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-10 lg:pt-0">
+                <h3 className="text-[#eb7b24] text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-2">
                   Beratung
                 </h3>
-                <hr className="w-24 border-2 mx-auto border-[#eb7b24]" />
+                <hr className="w-24 border-2 mb-6 lg:mx-0 mx-auto border-[#eb7b24]" />
                 <p className="max-w-xl text-xl leading-tight mt-10">
                   Beratung von zivilgesellschaftlichen Initiativen und
                   Multiplikator*innen, die sich über bisherige Akteur*innen und
@@ -154,24 +147,18 @@ export default function EineWeltPromotorinnen() {
 
         {/* Photo Carousel Section */}
         <section className="w-full overflow-hidden py-12 md:py-16 px-4">
-          <div className="max-w-6xl mx-auto pt-20 pb-20 mt-40">
+          <div className="max-w-7xl mx-auto pt-20 pb-20 mt-40">
             <div className="flex snap-x snap-mandatory gap-6 overflow-x-auto pb-8 scrollbar-hide">
               {Array.from({ length: 10 }).map((_, index) => (
                 <div
                   key={index}
-                  className="relative h-48 w-[40vw] flex-shrink-0 snap-center sm:h-56 md:h-64 lg:h-72 lg:w-[30vw]"
+                  className="relative h-56 w-[35vw] flex-shrink-0 snap-center sm:h-64 md:h-72 lg:h-80 lg:w-[25vw]"
                 >
-                  {/* <img
-                    src={`https://picsum.photos/seed/${index}/400`}
-                    alt={`Gallery ${index + 1}`}
-                    className="h-full w-full rounded-xl object-cover shadow-lg"
-                    loading="lazy"
-                  /> */}
                   <Image
                     src={`/images/carousel/image-${index + 1}.jpg`}
                     alt={`Carousel image ${index + 1}`}
                     fill
-                    sizes="(max-width: 768px) 60vw, 50vw"
+                    sizes="(max-width: 1024px) 80vw, 60vw"
                     className="object-cover shadow-lg"
                   />
                 </div>
