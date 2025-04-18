@@ -22,37 +22,25 @@ export default function LandingSection() {
         <div>
           <div
             className="text-white space-y-1
-                xs:space-y-1.5
-                xs2:space-y-2
-                sm2:space-y-2.5
-                md:space-y-3
-                tab-sm:space-y-4
-                tab:space-y-5
-                tab-xl:space-y-6
-                xl:space-y-7
-                3xl:space-y-8"
+          xs:space-y-1.5
+          xs2:space-y-2
+          sm:space-y-2.5
+          md:space-y-3
+          lg:space-y-4
+          xl:space-y-6
+          2xl:space-y-7
+          3xl:space-y-8"
           >
             <h1
-              className="text-3xl font-bold
-                  xs:text-[34px]
-                  xs2:text-[38px]
-                  sm:text-[42px]
-                  sm2:text-[46px]
-                  md:text-5xl
-                  md2:text-[54px]
-                  tab-sm:text-6xl
-                  tab:text-[68px]
-                  tab-lg:text-7xl
-                  tab-xl:text-7xl
-                  lg:text-9xl
-                  lg2:text-[100px]
-                  xl:text-[100px]
-                  xl2:text-[120px]
-                  2xl:text-[120px]
-                  3xl:text-[140px]
-                  land-xs:text-2xl
-                  land-sm:text-3xl
-                  leading-[1.1] md:leading-[1.05] uppercase"
+              className="text-3xl font-bold leading-[1.1] uppercase
+            xs:text-[34px]
+            xs2:text-[38px]
+            sm:text-[42px]
+            md:text-5xl md:leading-[1.05]
+            lg:text-7xl
+            xl:text-[90px]
+            2xl:text-[110px]
+            3xl:text-[130px]"
             >
               <span className="block">GEMEINSAM GEGEN</span>
               <span className="block">Loremipsum dolor</span>
