@@ -22,6 +22,8 @@
     "vercel": "^41.1.4"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.16",
     "@types/node": "22.9.1",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
