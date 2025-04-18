@@ -28,13 +28,17 @@ export default function DonationForm() {
           className="max-w-md xs:max-w-lg sm:max-w-xl md:max-w-2xl md2:max-w-3xl tab:max-w-4xl tab-xl:max-w-5xl lg:max-w-6xl xl:max-w-7xl 2xl:max-w-7xl 
             mt-2 xs:mt-3 sm:mt-4 md:mt-5 md2:mt-6 tab:mt-8 tab-xl:mt-10 lg:mt-12 xl:mt-14 2xl:mt-16 
             text-black text-[9px] xs:text-[10px] sm:text-xs md:text-sm md2:text-base tab:text-lg tab-xl:text-xl lg:text-xl xl:text-2xl 2xl:text-2xl 
-            text-center"
+            text-left"
         >
-          Mit Deiner Hilfe können wir wichtige Arbeit leisten, die sonst nicht
-          möglich wäre. <b>OSSARA e.V.</b> empowert Schwarze Menschen, Menschen
-          afrikanischer Herkunft. Dafür brauchen wir einen langen Atem! Hier
-          kannst Du uns einmalig mit Deiner Spende oder regelmäßig als{" "}
-          <b>OSSARA Community Support</b> unterstützen:
+          Mit deiner Spende unterstützt du vielfältige Projekte für soziale
+          Gerechtigkeit, Bildung, Empowerment und nachhaltige Entwicklung –
+          lokal wie global. Insbesondere fördern wir die dekoloniale
+          internationale Zusammenarbeit, die auf Gleichberechtigung,
+          respektvollen Austausch und den Abbau struktureller Ungerechtigkeiten
+          abzielt. Dein Beitrag hilft uns, Projekte zu stärken, die den
+          Austausch von Wissen und Ressourcen auf Augenhöhe ermöglichen und die
+          historischen Lasten der Kolonialisierung überwinden. Vielen Dank für
+          dein Engagement und deine Unterstützung!
         </p>
 
         {/* Paypal Link */}
