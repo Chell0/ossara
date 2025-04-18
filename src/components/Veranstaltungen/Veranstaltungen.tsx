@@ -9,6 +9,7 @@ type Event = {
   type: string;
   date: string; // Format: 'YYYY-MM-DD'
   time: string;
+  location: string;
   link: string;
   description: string;
   imageUrl: string;
@@ -21,6 +22,7 @@ const eventsData: Event[] = [
     type: "Podiumsdiskussion",
     date: "2024-11-26",
     time: "18:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event1",
     description:
       "In unserer bevorstehenden Veranstaltung werden wir die vielschichtige Beziehung zwischen Kirche und Kolonialismus beleuchten und die weitreichenden Auswirkungen dieser Verbindung auf die globalen Gesellschaften untersuchen. Wir werden dabei die missionarischen Aktivitäten der Kirchen, ihre Rolle bei der Legitimation kolonialer Unternehmungen und die Folgen für Bildung und Kultur in betroffenen Regionen thematisieren. Zudem werfen wir einen Blick auf die heutige Partnerschaftsarbeit und zeigen verschiedene Perspektiven auf – von der Unterstützung des Kolonialismus durch die Kirche bis hin zu den Widerstandsbewegungen innerhalb kirchlicher Gemeinschaften.",
@@ -32,6 +34,7 @@ const eventsData: Event[] = [
     type: "Netzwerken und Workshop",
     date: "2024-10-24",
     time: "18:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event2",
     description:
       "Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen von kreativen Angeboten zu verbinden. Was: Teller bemalen - Hier kannst du deinen neuen Lieblings Frühstücksteller oder einen Wandteller gestalten Mit Fabienne Schöter, Kunsttherapeutin",
@@ -43,6 +46,7 @@ const eventsData: Event[] = [
     type: "Netzwerken und Workshop",
     date: "2024-09-19",
     time: "18:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event3",
     description:
       "Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen von kreativen Angeboten zu verbinden. Was: Gemeinsam werden wir die Technik des Linoldruckes kennenlernen und uns hier ausprobieren. Mit Fabienne Schöter, Kunsttherapeutin.",
@@ -54,6 +58,7 @@ const eventsData: Event[] = [
     type: "Podiumsdiskussion",
     date: "2024-09-09",
     time: "18:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event4",
     description:
       "In der Fortsetzung der Decolonize-Reihe wollen wir uns mit den historischen Bezügen und Kontinuitäten des Kolonialismus in der Hamburger Polizei auseinandersetzen. Dabei liegt der Fokus auf strukturellem Rassismus, wie zum Beispiel Racial Profiling, und den notwendigen Dekolonisierungsprozessen. Wir werden untersuchen, wie die Polizei während der Kolonialzeit koloniale Interessen durchsetzte und welche Maßnahmen heute erforderlich sind, um diese Strukturen zu überwinden..",
@@ -65,6 +70,7 @@ const eventsData: Event[] = [
     type: "Podiumsdiskussion",
     date: "2024-05-30",
     time: "18:00 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event5",
     description:
       "Im Rahmen der Europawoche 2024 findet die Podiumsdiskussion „Europas koloniale Vergangenheit. Impulse und Initiativen zur dekolonialen Auseinandersetzung“ statt, die sich mit den aktuellen Ansätzen europäischer Länder zur Aufarbeitung ihrer kolonialen Geschichte beschäftigt. Diskutiert werden Themen wie Restitution, Entschädigung und die Rückgabe kulturellen Erbes sowie der interkulturelle Dialog und der Bewusstseinsprozess in der Zivilbevölkerung. Die Veranstaltung beleuchtet sowohl erfolgreiche dekoloniale Projekte als auch bestehende Herausforderungen und Bedarfe im Kontext der kolonialen Aufarbeitung.",
@@ -76,6 +82,7 @@ const eventsData: Event[] = [
     type: "Podiumsdiskussion",
     date: "2024-03-11",
     time: "18:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event6",
     description:
       "Unsere Decolonize-Veranstaltungsreihe setzt sich diesmal mit dem Thema Schönheits- und Körperideale auseinander und untersucht die koloniale Prägung von gesellschaftlichen Schönheitsvorstellungen. Wir fragen, wie „Schönheit“ in unseren Biografien verankert ist und wie diese Ideale mit bestehenden Machtstrukturen kollidieren. Ziel ist es, durch Empowerment und dekoloniale Perspektiven einen gesellschaftlichen Wandel zu fördern und bestehende Schönheitsnormen zu hinterfragen.",
@@ -87,6 +94,7 @@ const eventsData: Event[] = [
     type: "Vernetzung",
     date: "2024-05-08",
     time: "18:00 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event7",
     description:
       "Am 08. Mai 2024 lädt der 11. Runde Tisch Koloniales Erbe von 18 bis 21 Uhr zu einem zivilgesellschaftlichen Austausch und einer Diskussion über den Fortschritt der Dekolonisierungsprojekte im Jupiter in der Mönckebergstraße 2-4 in Hamburg ein. Der Eintritt ist frei und die Veranstaltung ist öffentlich, wobei Beiträge zu aktuellen Projekten vorab an Catherine Schlüter gesendet werden können, spontane Beiträge sind ebenfalls willkommen.",
@@ -98,6 +106,7 @@ const eventsData: Event[] = [
     type: "Podiumsdiskussion",
     date: "2023-11-06",
     time: "18:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event8",
     description:
       "Die Auftaktveranstaltung „Decolonize Literatur“ widmet sich der kritischen Auseinandersetzung mit den dekolonialen Perspektiven auf die Literatur. Wir analysieren, wie der eurozentrische Blick in der Literaturbranche Vorurteile und Stereotypen durch Sprache, Illustration und das Verlagswesen fortsetzt. Ziel ist es, neue Repräsentationsräume zu schaffen und marginalisierte Perspektiven stärker in den Fokus zu rücken.",
@@ -109,6 +118,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2023-06-25",
     time: "15:00 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event9",
     description:
       "Eine Tanz-Methode zur Selbstreflexion und Selbstwahrnehmung. Für BIPoC*. __ *(Schwarze, Indigene und Menschen of Color: Menschen, die Rassismus erfahren.)",
@@ -120,6 +130,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2023-06-10",
     time: "10:00 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event10",
     description:
       "WenDo heißt die eigenen Handlungsmöglichkeiten kennen, das eigene Gefühl ernst nehmen und Vertrauen in die eigene Stärke und Wehrhaftigkeit haben. So können Konflikte und Bedrohungssituationen erfolgreich gelöst werden. Auf der Arbeit, in der U-Bahn, im Freund*innenkreis oder der Familie.",
@@ -131,6 +142,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2024-06-07",
     time: "17:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event11",
     description:
       "Rassistische Strukturen machen krank und zeigen ihre Spuren auch im Gesundheitswesen. Im Afrozensus 2020 berichten fast 7 von 10 Menschen über Rassismuserfahrung in ärztlicher Behandlung. In der Ausbildung von Gesundheitspersonal gibt es keine strukturierte Weiterbildung über Rassismus und andere Diskriminierungsformen. Dieser Workshop ist ein (Er-)Forschungsraum für Austausch, Reflexion, Bewegung und Strategien in gemeinsamen und geschützteren Räumen.",
@@ -143,6 +155,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2023-06-05",
     time: "17:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event12",
     description:
       "Eine Form von Rassismus, die zu den alltäglichen und chronischen Belastungen von rassifizierten Menschen zählt und häufig im Therapiekontext reproduziert wird, sind Mikroaggressionen. Mikroaggressionen sind alles andere als harmlos: sie können traumatischen Stress auslösen. Wir beschäftigen uns mit diesem Zusammenhang und der Frage, wie Empowerment und Widerstand die Psyche schützen können.",
@@ -154,6 +167,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2023-05-20",
     time: "12:00 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event13",
     description:
       "Dieser Workshop bietet Raum für Verbindungen. Mit kreativen Methoden wollen wir Verbindungen reaktivieren, schaffen, besprechen und uns wieder mehr mit uns selbst und miteinander verbunden fühlen.",
@@ -165,6 +179,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2023-05-13",
     time: "13:00 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event14",
     description:
       "Yoga ist in den letzten Jahren immer beliebter geworden. Obwohl stark verwestlicht und eingenommen von mehrheitlich weißen, schlanken und reichen Frauen*, gehen die Ursprünge des Yoga nicht nur auf Indien zurück. Wie wir inzwischen wissen, ist diese heilige Praxis auch auf dem afrikanischen Kontinent verwurzelt. All gender/gemischter Kurs für BPoC Teilnahme ohne/mit geringen (A1) Deutschkenntnissen möglich!",
@@ -177,6 +192,7 @@ const eventsData: Event[] = [
     type: "Workshop",
     date: "2023-05-12",
     time: "16:30 Uhr",
+    location: "Hamburg Nord",
     link: "/veranstaltungen/event15",
     description:
       "Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in Deutschland anzugehen.",
@@ -214,50 +230,32 @@ export default function Veranstaltungen() {
     <>
       <div>
         {/* Header Section */}
-        <header
-          className="h-screen w-full bg-cover bg-center relative"
-          style={{
-            backgroundImage:
-              "url(/images/Veranstaltungen/OSSARA_Lobbyarbeit_Netzwerken.jpg)",
-          }}
-        >
-          {/* Spacer matching navbar height */}
-          <div
-            className="
-    h-16 xs:h-18 sm:h-20 md:h-22 md2:h-24 
-    tab:h-28 tab-xl:h-30 lg:h-32 xl:h-40 
-    2xl:h-44 3xl:h-48 land-xs:h-16 land-sm:h-20"
-          />
+        <header className="relative w-full h-screen">
+          {/* BackgroundImage */}
+          <div className="absolute inset-0 w-full h-full">
+            <Image
+              src="/images/Veranstaltungen/OSSARA_Lobbyarbeit_Netzwerken.jpg"
+              fill
+              alt="Home Page Header image"
+              className="object-cover"
+              priority
+              sizes="(max-width: 320px) 100vw, (max-width: 1920px) 100vw, 100vw"
+            />
+          </div>
 
-          <div className="absolute inset-0 flex items-start justify-start">
-            <h1
-              className="text-[#eb7b24] font-extrabold leading-tight uppercase 
-      xs:text-2xl sm:text-4xl md:text-5xl md2:text-6xl tab:text-7xl tab-xl:text-8xl 
-      lg:text-9xl xl:text-9xl 2xl:text-9xl 3xl:text-[11rem] 
-      
-      /* Horizontal alignment matching navbar */
-      xs:ml-3 sm:ml-4 md:ml-6 md2:ml-8 tab:ml-10 tab-xl:ml-12 
-      lg:ml-14 xl:ml-16 2xl:ml-18 3xl:ml-20
-      
-      /* Increased vertical spacing */
-      mt-8 xs:mt-10 sm:mt-12 md:mt-14 md2:mt-16 
-      tab:mt-20 tab-xl:mt-24 lg:mt-28 xl:mt-32 
-      2xl:mt-36 3xl:mt-40
-      land-xs:mt-6 land-sm:mt-8
-      
-      /* Fine-tune positioning */
-      transform translate-y-1"
-            >
-              Veranstaltungen.
-            </h1>
+          {/* Text Section */}
+          <div className="absolute bottom-3 left-4">
+            <div className="space-y-1 xs:space-y-1.5 xs2:space-y-2 sm2:space-y-2.5 md:space-y-3 tab-sm:space-y-4 tab:space-y-5 tab-xl:space-y-6 xl:space-y-7 3xl:space-y-8">
+              <h1 className="text-[#eb7b24] text-3xl font-bold xs:text-[34px] xs2:text-[38px] sm:text-[42px] md:text-5xl lg:text-9xl xl:text-[100px] 2xl:text-[120px] 3xl:text-[140px] leading-[1.1] md:leading-[1.05] uppercase">
+                <span className="block">Veranstaltungen.</span>
+              </h1>
+            </div>
           </div>
         </header>
-
         {/* Current and Future Events */}
         <h3 className="my-12 sm:my-16 md:my-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#eb7b24]">
           Upcoming Events
         </h3>
-
         {/* Current and Future Events Section */}
         <section className="mx-4 my-8 md:m-10">
           <div className="grid grid-cols-1 gap-5 mt-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -301,7 +299,7 @@ export default function Veranstaltungen() {
                       href={event.link}
                       className="mt-3 text-xs font-medium text-[#eb7b24] hover:underline sm:mt-4 sm:text-sm"
                     >
-                      Read Now →
+                      Mehr →
                     </Link>
                   </div>
                 </div>
@@ -313,7 +311,6 @@ export default function Veranstaltungen() {
             )}
           </div>
         </section>
-
         {/* Archived Events Section */}
         <h3
           className="pt-10 pb-6 text-3xl font-semibold leading-tight text-center text-[#eb7b24] 
@@ -324,83 +321,44 @@ export default function Veranstaltungen() {
         </h3>
 
         <section className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {pastEvents.slice(0, 3).map((event) => (
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {pastEvents.slice(0, 15).map((event) => (
               <div key={event.id} className="w-full overflow-hidden">
-                {/* Image section */}
-                <div className="relative w-full aspect-[4/3]">
-                  {" "}
-                  {/* Standard aspect ratio */}
+                {/* Image Section */}
+                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-lg">
                   <Image
                     src={event.imageUrl}
                     alt={event.title}
                     fill
                     quality={100}
-                    className="object-cover rounded-t-lg"
+                    className="object-cover"
                   />
-                  {/* Event Date & Time */}
-                  <div className="text-2xl text-[#eb7b24] text-right font-semibold">
-                    {formatDate(event.date)}
-                    {/* {event.time} */}
+                  {/* Rectangular badge for date and time */}
+                  <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 text-center">
+                    <div className="text-sm font-semibold">
+                      {formatDate(event.date)}
+                    </div>
+                    <div className="text-xs">{event.time}</div>
                   </div>
                 </div>
 
-                {/* Content section */}
+                {/* Content Section */}
                 <div className="flex flex-col">
-                  {/* Event Date & Time */}
-                  {/* <div className="text-2xl text-[#eb7b24] text-right font-semibold"> */}
-                  {/* {formatDate(event.date)} */}
-                  {/* {event.time} */}
-                  {/* </div> */}
-
-                  {/* Event Title */}
-                  <h3 className="mt-2 uppercase text-lg font-semibold text-black line-clamp-2">
+                  <h3 className="mt-2 uppercase text-xl font-semibold text-[#eb7b24] line-clamp-2">
                     {event.title}
                   </h3>
-
-                  {/* Event Type */}
                   <div className="text-sm text-gray-500">{event.type}</div>
-
-                  {/* Event Date & Time */}
-                  {/* <div className="mt-2 text-sm text-gray-500">
-                    {formatDate(event.date)}, {event.time}
-                  </div> */}
-
-                  {/* Event Description */}
-                  {/* <p className="mt-3 text-sm text-gray-600 leading-relaxed line-clamp-3">
-                    {event.description}
-                  </p> */}
-
-                  {/* Event Read Now link */}
+                  <div className="text-sm text-gray-500">@{event.location}</div>
                   <Link
                     href={event.link}
-                    className="mt-4 text-sm text-[#eb7b24] hover:underline"
+                    className="mt-4 text-sm text-black hover:underline"
                   >
-                    Read Now →
+                    Mehr →
                   </Link>
                 </div>
               </div>
             ))}
           </div>
-
-          {/* Show "More Events" button if there are more than 3 archived events */}
-          {pastEvents.length > 3 && (
-            <div className="mt-8 sm:mt-10 text-center">
-              <Link
-                href="/veranstaltungen/archives"
-                className="inline-block px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-lg font-semibold text-white bg-[#eb7b24] rounded-lg hover:bg-[#d96c1f] transition-colors"
-              >
-                Mehr Veranstaltungen anzeigen ({pastEvents.length - 3}+)
-              </Link>
-            </div>
-          )}
-
-          {/* Empty state message */}
-          {pastEvents.length === 0 && (
-            <p className="text-center text-gray-600">
-              Keine archivierten Veranstaltungen gefunden.
-            </p>
-          )}
         </section>
       </div>
     </>
