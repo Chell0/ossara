@@ -9,21 +9,18 @@ export default function Dekoloniale() {
       <div>
         {/* Header Section */}
         <header
-          className="w-full bg-cover bg-center relative 
-    h-[50vh] xs:h-[55vh] sm:h-[60vh] md:h-[65vh] md2:h-[70vh] tab:h-[85vh] tab-xl:h-[90vh] lg:h-[95vh] xl:h-screen 2xl:h-screen"
+          className="w-full relative bg-center bg-cover h-[50vh] 
+    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
+    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
           style={{
             backgroundImage:
               "url(/images/InternationaleZusammenarbeit/INTERNATIONALEZUSAMMENARBEIT.jpg)",
           }}
         >
-          {/* Spacer matching navbar height */}
-          <div className="h-12 xs:h-14 sm:h-16 md:h-18 md2:h-20 tab:h-24 tab-xl:h-28 lg:h-30 xl:h-32 2xl:h-36" />
-
-          <div className="absolute inset-0 flex items-start justify-start">
+          <div className="absolute bottom-3 left-4">
             <h1
-              className="text-[#d3103e] font-extrabold leading-tight uppercase text-2xl xs:text-3xl sm:text-4xl md:text-5xl md2:text-6xl tab:text-7xl tab-xl:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[11rem] 
-        pl-2 xs:pl-4 sm:pl-5 md:pl-8 md2:pl-8 tab:pl-11 tab-xl:pl-12 lg:pl-14 xl:pl-16 2xl:pl-16 
-        pt-5 xs:pt-14 sm:pt-16 md:pt-20 md2:pt-24 tab:pt-28 tab-xl:pt-32 lg:pt-36 xl:pt-40 2xl:pt-48"
+              className="text-[#d3103e] font-extrabold leading-tight uppercase text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
+        xl:text-8xl 2xl:text-9xl 3xl:text-[14rem] pl-4 pt-10"
             >
               DEKOLONIAL.
               <br />
@@ -32,32 +29,21 @@ export default function Dekoloniale() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#d3103e] pb-20">
-          <div className="basis-full mx-auto">
-            <p
-              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
-                font-semibold leading-normal tracking-normal
-                pb-20 p-6"
-            >
+        <section className="relative w-full min-h-screen text-[#d3103e] pb-20 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20">
+          {/* BIG TEXT */}
+          <div className="mx-auto pt-8 mb-12 xs:mb-14 sm:mb-16 md:mb-18 lg:mb-22 xl:mb-26 2xl:mb-32 3xl:mb-44">
+            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem]  font-semibold leading-normal tracking-normal">
               Mit dekolonialer Perspektive setzen wir Projekte um, die die
               lokale Selbstbestimmung stärken, nachhaltige Verbesserungen in den
               Lebensbedingungen ermöglichen und langfristige Partnerschaften
               fördern.
             </p>
           </div>
-          <div
-            className="w-full 
-    pt-6 xs:pt-8 sm:pt-10 md:pt-12 md2:pt-16 tab:pt-20 tab-xl:pt-24 lg:pt-28 xl:pt-32 2xl:pt-40 
-    pb-6 xs:pb-8 sm:pb-10 md:pb-12 md2:pb-16 tab:pb-20 tab-xl:pb-24 lg:pb-28 xl:pb-32 2xl:pb-40 
-    mt-6 xs:mt-8 sm:mt-10 md:mt-12 md2:mt-16 tab:mt-20 tab-xl:mt-24 lg:mt-28 xl:mt-32 2xl:mt-40 
-    px-2 xs:px-3 sm:px-4 md:px-5 md2:px-6 tab:px-8 tab-xl:px-10 lg:px-12 xl:px-14 2xl:px-16 
-    text-black"
-          >
-            <div className="basis-full">
-              <p
-                className="text-[14px] xs:text-[16px] sm:text-lg md:text-xl md2:text-xl tab:text-2xl tab-xl:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 
-        text-center"
-              >
+
+          {/* small text */}
+          <div className="w-full flex justify-center">
+            <div className="max-w-full">
+              <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-black leading-relaxed text-left">
                 Ossara e.V. verfolgt einen dekolonialen Ansatz in der
                 internationalen Zusammenarbeit, um gleichwertige Partnerschaften
                 und nachhaltige Entwicklung zu fördern. Wir setzen uns dafür
@@ -77,11 +63,10 @@ export default function Dekoloniale() {
           </div>
         </section>
 
-        {/* Kontaktperson */}
-        <section className="relative w-full min-h-screen text-[#d3103e]">
-          <div className="absolute inset-0 flex flex-row items-center justify-center">
+        <section className="relative w-full min-h-screen py-12 xs2:py-16 sm:py-20 md:py-24 lg:py-32 xl:py-36 2xl:py-40 3xl:py-48 text-[#d3103e]">
+          <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 flex flex-col items-center justify-center">
             <div className="flex md:flex-grow flex-row gap-10">
-              <div className="basis-1/2 m-2">
+              <div className="w-full lg:w-1/2 space-y-2 md:space-y-4 flex justify-center">
                 <p className="text-3xl md:text-4xl lg:text-5xl ml-16 mb-2 text-left font-semibold leading-none">
                   Unsere Projekte umfassen:
                 </p>
@@ -102,22 +87,20 @@ export default function Dekoloniale() {
                 </ul>
               </div>
 
-              {/* Contact Section */}
-              <div className="basis-1/2">
-                <div className="text-center">
-                  <h3 className="text-[#d3103e] text-3xl md:text-4xl lg:text-5xl font-semibold mb-2 mt-20">
-                    Kontaktperson
-                  </h3>
-                  <hr className="w-24 border-2 mx-auto border-[#d3103e]" />
-                </div>
-                <ContactPerson
-                  name="Gaetan Tagba"
-                  position="Projektkoordination"
-                  email="gaetan.tagba[at]ossara.de"
-                  phone="(+228) 91 077338"
-                  imageSrc="/contact-person/contact_person.jpg"
-                />
+              {/* Right Column - Contact Card */}
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-10 lg:pt-0">
+                <h3 className="text-[#d3103e] text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-2">
+                  Kontaktperson
+                </h3>
+                <hr className="w-24 border-2 mb-6 mx-auto lg:mx-0 border-[#d3103e]" />
               </div>
+              <ContactPerson
+                name="Gaetan Tagba"
+                position="Projektmanagement"
+                email="gaetan.tagba[at]ossara.de"
+                phone="(+228) 91 077338"
+                imageSrc="/images/UberUns/Team/GaetanTagba.jpg"
+              />
             </div>
           </div>
         </section>

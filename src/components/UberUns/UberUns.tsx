@@ -8,21 +8,18 @@ export default function UberUns() {
       <div>
         {/* Header */}
         <header
-          className="w-full bg-cover bg-center relative 
-    h-[50vh] xs:h-[55vh] sm:h-[60vh] md:h-[65vh] md2:h-[70vh] tab:h-[85vh] tab-xl:h-[90vh] lg:h-[95vh] xl:h-screen 2xl:h-screen"
+          className="w-full relative bg-center bg-cover h-[50vh] 
+    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
+    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
           style={{
             backgroundImage: "url(/images/UberUns/ÜBERUNS_INSIDE.jpg)",
           }}
         >
-          {/* Spacer matching navbar height */}
-          <div className="h-12 xs:h-14 sm:h-16 md:h-18 md2:h-20 tab:h-24 tab-xl:h-28 lg:h-30 xl:h-32 2xl:h-36" />
-
-          <div className="absolute inset-0 flex items-start justify-start">
+          <div className="absolute bottom-3 left-4">
             <h1
               className="text-[#f7cc55] font-extrabold leading-tight uppercase 
-        text-2xl xs:text-3xl sm:text-4xl md:text-5xl md2:text-6xl tab:text-7xl tab-xl:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[11rem] 
-        pl-2 xs:pl-4 sm:pl-5 md:pl-8 md2:pl-8 tab:pl-11 tab-xl:pl-12 lg:pl-14 xl:pl-16 2xl:pl-16 
-        pt-5 xs:pt-14 sm:pt-16 md:pt-20 md2:pt-24 tab:pt-28 tab-xl:pt-32 lg:pt-36 xl:pt-40 2xl:pt-48"
+        text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
+        xl:text-9xl 2xl:text-[12rem] 3xl:text-[14rem] pl-4 pt-10"
             >
               Inside.
             </h1>
@@ -30,13 +27,13 @@ export default function UberUns() {
         </header>
 
         {/* Über uns */}
-        <section className="relative w-full min-h-screen flex items-center justify-center">
+        <section className="bg-[#fff6ea] relative w-full min-h-screen flex items-center justify-center">
           <div className="flex flex-col md2:flex-row gap-6 xs:gap-7 sm:gap-8 md:gap-10 tab:gap-12 lg:gap-14 px-4 xs:px-5 sm:px-6 md:px-8 tab:px-10 lg:px-12 xl:px-14 2xl:px-16 py-10 xs:py-12 sm:py-14 md:py-16 tab:py-20 lg:py-24 w-full max-w-7xl mx-auto">
             {/* Image Container - Updated with better aspect ratio */}
             <div className="relative w-full md2:basis-2/5 lg:basis-1/3 p-4 xs:p-5 flex items-center justify-center h-[280px] xs:h-[320px] sm:h-[360px] md:h-[400px] md2:h-[440px] tab:h-[480px] lg:h-[520px] xl:h-[560px] 2xl:h-[600px]">
               <div className="relative w-full h-full overflow-hidden shadow-lg xs:shadow-xl sm:shadow-2xl transform -rotate-2 hover:rotate-0 transition-all duration-500 ease-in-out">
                 <Image
-                  src="/images/UberUns/ÜBERUNS_SMALL PICTURE.jpg"
+                  src="/images/UberUns/uber-uns.jpg"
                   alt="Team members working together at Ossara"
                   quality={100}
                   fill
@@ -55,7 +52,7 @@ export default function UberUns() {
 
             {/* Text Content - Updated with better typography */}
             <div className="w-full md2:basis-3/5 lg:basis-2/3 p-4 xs:p-5 sm:p-6 flex flex-col justify-center">
-              <h3 className="text-[#f7cc55] text-3xl xs:text-4xl sm:text-5xl md:text-5.5xl tab:text-6xl lg:text-6.5xl xl:text-7xl 2xl:text-8xl font-bold text-center drop-shadow-md uppercase pb-6 xs:pb-8 tab:pb-10 tracking-tight">
+              <h3 className="text-[#eb7b24] text-3xl xs:text-4xl sm:text-5xl md:text-5.5xl tab:text-6xl lg:text-6.5xl xl:text-7xl 2xl:text-8xl font-bold text-center drop-shadow-md uppercase pb-6 xs:pb-8 tab:pb-10 tracking-tight">
                 Über Uns
               </h3>
               <div className="space-y-4 xs:space-y-5 sm:space-y-6">
@@ -144,7 +141,7 @@ export default function UberUns() {
                   fill
                   quality={100}
                   priority
-                  className="object-cover shadow-xl rounded-md"
+                  className="object-cover shadow-xl"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

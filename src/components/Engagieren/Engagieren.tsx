@@ -5,38 +5,19 @@ export default function Engagieren() {
     <div>
       {/* Header Section */}
       <header
-        className="h-screen w-full bg-cover bg-center relative"
+        className="w-full relative bg-center bg-cover h-[50vh] 
+    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
+    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
         style={{
           backgroundImage:
             "url(/images/Neuigkeiten/OSSARA_Arbeitssituation.jpg)",
         }}
       >
-        {/* Spacer matching navbar height */}
-        <div
-          className="
-    h-16 xs:h-18 sm:h-20 md:h-22 md2:h-24 
-    tab:h-28 tab-xl:h-30 lg:h-32 xl:h-40 
-    2xl:h-44 3xl:h-48 land-xs:h-16 land-sm:h-20"
-        />
-
-        <div className="absolute inset-0 flex items-start justify-start">
+        <div className="absolute bottom-3 left-4">
           <h1
             className="text-[#fcc41b] font-extrabold leading-tight uppercase 
-      xs:text-3xl sm:text-5xl md:text-6xl md2:text-7xl tab:text-8xl tab-xl:text-9xl 
-      lg:text-[10rem] xl:text-[11rem] 2xl:text-[12rem] 3xl:text-[13rem] 
-      
-      /* Horizontal alignment matching navbar */
-      xs:ml-3 sm:ml-4 md:ml-6 md2:ml-8 tab:ml-10 tab-xl:ml-12 
-      lg:ml-14 xl:ml-16 2xl:ml-18 3xl:ml-20
-      
-      /* Increased vertical spacing */
-      mt-8 xs:mt-10 sm:mt-12 md:mt-14 md2:mt-16 
-      tab:mt-20 tab-xl:mt-24 lg:mt-28 xl:mt-32 
-      2xl:mt-36 3xl:mt-40
-      land-xs:mt-6 land-sm:mt-8
-      
-      /* Fine-tune positioning */
-      transform translate-y-1"
+        text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
+        xl:text-8xl 2xl:text-[8rem] 3xl:text-[14rem] pl-4 pt-10"
           >
             Engagieren.
           </h1>
@@ -50,11 +31,19 @@ export default function Engagieren() {
           className="w-full max-w-6xl flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-center text-[#fcc41b]">
-            Job Openings
+            Unsere aktuellen Ausschreibungen
           </h2>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-center text-gray-800">
-            Join our team and help us make a difference!
+            Werde ein Teil von Ossara und setze Dich mit uns für nachhaltige
+            Veränderung ein!
           </p>
+
+          {/* //TODO: Put the placeholder text below when there is no job opening */}
+          {/* Derzeit haben wir keine offenen Stellen, aber wir freuen uns immer
+          über Initiativbewerbungen! Werde ein Teil von Ossara und setze dich
+          mit uns für nachhaltige Veränderung ein. Schick uns deine Bewerbung –
+          vielleicht gibt es bald eine Gelegenheit, die zu dir passt! */}
+
           <div className="w-full mt-6 sm:mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Job Cards */}
             {[...Array(3)].map((_, index) => (
@@ -89,17 +78,18 @@ export default function Engagieren() {
       {/* Mitglied Werden */}
       <section
         className="min-h-screen w-full bg-cover bg-center relative"
-        style={{ backgroundImage: "url(/bgs/img-46.jpg)" }}
+        style={{ backgroundImage: "url(/images/Engagieren/engagieren.jpg)" }}
       >
         <div
           id="mitglied-werden"
           className="absolute inset-0 bg-black bg-opacity-10 flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 gap-4 sm:gap-6 md:gap-8"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-[#fcc41b] drop-shadow-md font-extrabold leading-tight uppercase">
-            Become a Member
+            Werde Mitglied
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-white max-w-xl text-center">
-            Join our community and contribute to our mission!
+            Werde Mitglied und unterstütze uns dabei, nachhaltige Veränderungen
+            zu bewirken. Gemeinsam können wir mehr erreichen!
           </p>
           <Link
             href="/member"
@@ -107,7 +97,7 @@ export default function Engagieren() {
             aria-label="Become A Member"
             className="px-6 sm:px-8 py-3 sm:py-4 text-lg sm:text-xl font-medium text-white bg-[#ffb400] rounded-lg hover:bg-[#e6a200] transition-colors"
           >
-            Join Now
+            Jetzt beitreten!
           </Link>
         </div>
       </section>
@@ -119,10 +109,10 @@ export default function Engagieren() {
           className="w-full max-w-6xl flex flex-col items-center justify-center gap-4 sm:gap-6 md:gap-8"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-semibold text-center text-[#fcc41b]">
-            Volunteer Opportunities
+            Ehrenamtliches Engagement
           </h2>
           <p className="mt-3 text-base sm:text-lg md:text-xl text-center text-gray-800">
-            Make a difference by volunteering with us.
+            Wir suchen Dich - werde ein Teil von uns!
           </p>
           <div className="w-full mt-6 sm:mt-8 md:mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {/* Volunteer Cards */}
