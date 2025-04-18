@@ -41,7 +41,7 @@ export default function Rassismus() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="max-w-full w-full">
+            <div className="max-w-full">
               <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-black leading-relaxed text-left">
                 Ossara e.V. setzt sich in Hamburg aktiv dafür ein,
                 Anti‑Schwarzen Rassismus sichtbar zu machen und Räume für

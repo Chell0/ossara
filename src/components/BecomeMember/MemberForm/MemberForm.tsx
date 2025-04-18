@@ -4,10 +4,6 @@ export default function MemberForm() {
       <h2 className="text-4xl font-bold text-center mb-6">
         Beitrittserklärung
       </h2>
-      {/* <p className="text-center text-gray-600 text-base mb-6">
-        (bitte kopieren und im Freundes- und Bekanntenkreis verteilen)
-      </p> */}
-
       <form className="space-y-6">
         {/* Form Fields */}
         {/* Name */}
@@ -98,43 +94,12 @@ export default function MemberForm() {
             jeweils zum 01.04. eines jeden Jahres fällig.
           </p>
         </div>
-
-        {/* Checkboxes */}
-        {/* <div className="mt-4 space-y-4">
-          <label className="flex items-start space-x-2">
-            <input type="checkbox" className="w-5 h-5" />
-            <span className="text-base text-gray-700">
-              Den ersten Jahresbeitrag überweise ich selbst an Ossara e.V.
-              spätestens zum__________________________.
-            </span>
-          </label>
-
-          <label className="flex items-start space-x-2">
-            <input type="checkbox" className="w-5 h-5" />
-            <span className="text-base text-gray-700">
-              Ich möchte Ossara e.V. mit einer unverbindlichen einmaligen Spende
-              in Höhe von _________________€ unterstützen.
-            </span>
-          </label>
-
-          <label className="flex items-start space-x-2">
-            <input type="checkbox" className="w-5 h-5" />
-            <span className="text-base text-gray-700">
-              Ich bitte um die Zusendung einer{" "}
-              <span className="font-semibold">Spendenquittung</span> (Beiträge
-              bis zur Höhe von 200 € werden von Finanzämtern ohne
-              Zuwendungsbestätigung anerkannt. Der Einzahlungsbeleg/Kontoauszug
-              gilt als Nachweis)
-            </span>
-          </label>
-        </div> */}
-
         <div className="mt-6">
           <button
             type="submit"
             className="w-full text-white text-md font-medium py-2 px-4 rounded-md bg-[#ffb400] hover:bg-[#e6a200] transition-colors"
           >
-            Submit
+            Senden
           </button>
         </div>
       </form>

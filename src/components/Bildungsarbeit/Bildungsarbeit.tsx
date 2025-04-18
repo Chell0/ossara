@@ -7,38 +7,18 @@ export default function Bildungsarbeit() {
       <div>
         {/* Header Section */}
         <header
-          className="h-screen w-full bg-cover bg-center relative"
+          className="w-full relative bg-center bg-cover h-[50vh] 
+    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
+    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
           style={{
             backgroundImage:
               "url(/images/Bildungsarbeit/BILDUNGSARBEIT_MACHTBEWUSST.jpg)",
           }}
         >
-          {/* Spacer matching navbar height */}
-          <div
-            className="
-    h-16 xs:h-18 sm:h-20 md:h-22 md2:h-24 
-    tab:h-28 tab-xl:h-30 lg:h-32 xl:h-40 
-    2xl:h-44 3xl:h-48 land-xs:h-16 land-sm:h-20"
-          />
-
-          <div className="absolute inset-0 flex items-start justify-start">
+          <div className="absolute bottom-3 left-4">
             <h1
-              className="text-[#eb7b24] font-extrabold leading-tight uppercase 
-      xs:text-3xl sm:text-5xl md:text-6xl md2:text-7xl tab:text-8xl tab-xl:text-9xl 
-      lg:text-[10rem] xl:text-[11rem] 2xl:text-[12rem] 3xl:text-[13rem] 
-      
-      /* Horizontal alignment matching navbar */
-      xs:ml-3 sm:ml-4 md:ml-6 md2:ml-8 tab:ml-10 tab-xl:ml-12 
-      lg:ml-14 xl:ml-16 2xl:ml-18 3xl:ml-20
-      
-      /* Increased vertical spacing */
-      mt-8 xs:mt-10 sm:mt-12 md:mt-14 md2:mt-16 
-      tab:mt-20 tab-xl:mt-24 lg:mt-28 xl:mt-32 
-      2xl:mt-36 3xl:mt-40
-      land-xs:mt-6 land-sm:mt-8
-      
-      /* Fine-tune positioning */
-      transform translate-y-1"
+              className="text-[#eb7b24] font-extrabold leading-tight uppercase text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
+        xl:text-8xl 2xl:text-[8rem] 3xl:text-[14rem] pl-4 pt-10"
             >
               Macht.
               <br />
@@ -47,20 +27,20 @@ export default function Bildungsarbeit() {
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div className="basis-full mx-auto">
-            <p
-              className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl 
-                font-semibold leading-normal tracking-normal p-6"
-            >
+        <section className="relative w-full min-h-screen text-[#eb7b24] pb-20 px-8">
+          {/* BIG TEXT */}
+          <div className="mx-auto pt-10 mb-12 xs:mb-14 sm:mb-16 md:mb-18 lg:mb-22 xl:mb-26 2xl:mb-32 3xl:mb-44">
+            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem]  font-semibold leading-normal tracking-normal">
               Wir vernetzen lokale Initiativen und schaffen Räume für den Dialog
               über Dekolonialisierung und soziale Transformation – für eine
               gerechtere Zukunft.
             </p>
           </div>
-          <div className="flex md:flex-grow flex-row justify-end">
-            <div className="basis-full  text-black pt-10 mr-10 m-8">
-              <p className="text-2xl">
+
+          {/* small text */}
+          <div className="w-full flex justify-center">
+            <div className="max-w-full">
+              <p className="text-sm xs:text-base xs2:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl leading-relaxed text-left text-black">
                 Ossara e.V. setzt sich aktiv für die Sichtbarmachung und
                 Auseinandersetzung mit kolonialen Erblasten und
                 Dekolonialisierungsprozessen ein. Ein zentraler Aspekt unserer
@@ -101,7 +81,7 @@ export default function Bildungsarbeit() {
                       alt="Machtbewusst Photo"
                       fill
                       quality={100}
-                      className="object-cover rounded-md shadow-2xl"
+                      className="object-cover shadow-2xl"
                       priority
                     />
                   </Link>
@@ -198,7 +178,7 @@ export default function Bildungsarbeit() {
                     width={480}
                     height={490}
                     quality={100}
-                    className="w-full h-full object-cover rounded-md shadow-lg"
+                    className="w-full h-full object-cover shadow-lg"
                   />
                 </div>
               </div>
@@ -221,7 +201,7 @@ export default function Bildungsarbeit() {
                     width={480}
                     height={480}
                     quality={100}
-                    className="w-full h-full object-cover rounded-md shadow-lg"
+                    className="w-full h-full object-cover shadow-lg"
                   />
                 </div>
               </div>
@@ -232,34 +212,19 @@ export default function Bildungsarbeit() {
                   Dekoloniale Bildungsreisen
                 </h3>
                 <p className="mt-4 text-lg text-black">
-                  Die Fachstelle dekoloniale Perspektiven im
-                  entwicklungspolitischen Engagement ist Teil des bundesweiten
-                  Eine Welt-Promotor:innen-Programms, welches in Hamburg von
-                  hamburg.global koordiniert wird. Unsere Eine
-                  Welt-Promotor:innen setzen sich dafür ein, die Stimmen von
-                  BIPoC und diasporischen Gemeinschaften zu stärken und
-                  Partizipationsprozesse zu fördern. Ihr Ziel ist es, das
-                  zivilgesellschaftliche Engagement für eine gerechtere,
-                  nachhaltigere Welt sichtbarer zu machen und neue Kooperationen
-                  zu fördern. Sie tragen aktiv zur Umsetzung der
-                  UN-Nachhaltigkeitsziele bei, insbesondere zur Reduzierung von
-                  Ungleichheiten (Ziel 10). Der Fokus liegt auf der Vernetzung
-                  und Beratung von zivilgesellschaftlichen Initiativen und
-                  Akteur:innen.
-                </p>
-                <p className="text-lg text-black">
-                  Die Fachstelle Dekolonisierung ist Teil des bundesweiten Eine
-                  Welt-Promotor:innen-Programms, das in Hamburg von
-                  hamburg.global koordiniert wird.
-                </p>
-                <p className="text-lg text-black">
-                  Weitere Informationen finden Sie{" "}
-                  <Link
-                    href="/bildungsreisen"
-                    className="bg-[#eb7b24] text-white font-semibold shadow-xl p-1"
-                  >
-                    hier
-                  </Link>
+                  Unsere dekolonialen Bildungsreisen bieten dir die Möglichkeit,
+                  historische und aktuelle Zusammenhänge von Kolonialismus und
+                  Machtstrukturen auf eine neue Art und Weise zu entdecken.
+                  Durch den direkten Austausch mit Menschen vor Ort, Besuche von
+                  bedeutenden historischen Stätten und das Kennenlernen von
+                  lokalen Perspektiven kannst du mehr über die Auswirkungen des
+                  Kolonialismus erfahren und reflektieren. Dabei geht es nicht
+                  nur um die Vergangenheit, sondern auch darum, wie diese
+                  Geschichte noch heute das Leben und die Gesellschaft prägt.
+                  Wir möchten ein kritisches Bewusstsein für koloniale
+                  Erbschaften fördern und gleichzeitig die Chancen des
+                  interkulturellen Dialogs und des gegenseitigen Lernens
+                  aufzeigen.
                 </p>
               </div>
             </div>
@@ -280,28 +245,22 @@ export default function Bildungsarbeit() {
                   KoRaBi
                 </h3>
                 <p className="mt-4 text-lg text-black">
-                  Die Fachstelle dekoloniale Perspektiven im
-                  entwicklungspolitischen Engagement ist Teil des bundesweiten
-                  Eine Welt-Promotor:innen-Programms, welches in Hamburg von
-                  hamburg.global koordiniert wird. Unsere Eine
-                  Welt-Promotor:innen setzen sich dafür ein, die Stimmen von
-                  BIPoC und diasporischen Gemeinschaften zu stärken und
-                  Partizipationsprozesse zu fördern. Ihr Ziel ist es, das
-                  zivilgesellschaftliche Engagement für eine gerechtere,
-                  nachhaltigere Welt sichtbarer zu machen und neue Kooperationen
-                  zu fördern. Sie tragen aktiv zur Umsetzung der
-                  UN-Nachhaltigkeitsziele bei, insbesondere zur Reduzierung von
-                  Ungleichheiten (Ziel 10). Der Fokus liegt auf der Vernetzung
-                  und Beratung von zivilgesellschaftlichen Initiativen und
-                  Akteur:innen.
+                  Konzeptwerk Rassismuskritische Bildungsarbeit entwickelt
+                  innovative Konzepte für rassismuskritische Bildungsarbeit und
+                  professionalisiert Bildner:innen in diesem Bereich. Das
+                  Projekt zielt darauf ab, Fachkräfte und Multiplikator:innen
+                  mit praxisorientierten Ansätzen zu unterstützen,
+                  rassismuskritische Perspektiven zu integrieren und in ihrer
+                  Arbeit zu vermitteln.
                 </p>
-                <p className="text-lg text-black">
-                  Die Fachstelle Dekolonisierung ist Teil des bundesweiten Eine
-                  Welt-Promotor:innen-Programms, das in Hamburg von
-                  hamburg.global koordiniert wird.
-                </p>
-                <p className="text-lg text-black">
-                  Weitere Informationen finden Sie{" "}
+                <p className="mt-4 text-lg text-black">
+                  KoRaBi wird ehrenamtlich von <b>Sam Schulz</b> und{" "}
+                  <b>Tatiana La Mura Floes</b> geleitet, die beide über
+                  umfassende Erfahrungen in der rassismuskritischen
+                  Bildungsarbeit und in der Durchführung von Fortbildungen für
+                  Multiplikator:innen verfügen. Ihre Expertise sorgt dafür, dass
+                  die Bildungsarbeit sowohl theoretisch fundiert als auch
+                  praktisch wirksam ist.
                   <Link
                     href="/korabi"
                     className="bg-[#eb7b24] text-white font-semibold shadow-xl p-1"
@@ -318,7 +277,7 @@ export default function Bildungsarbeit() {
                     width={480}
                     height={480}
                     quality={100}
-                    className="w-full h-full object-cover rounded-md shadow-lg"
+                    className="w-full h-full object-cover shadow-lg"
                   />
                 </div>
               </div>

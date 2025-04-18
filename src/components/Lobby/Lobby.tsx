@@ -39,7 +39,7 @@ export default function Lobby() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="max-w-full w-full">
+            <div className="max-w-full">
               <p className="text-sm xs:text-base xs2:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl leading-relaxed text-left text-black">
                 Die Stärkung der BIPoC-Communities hat für Ossara e.V. eine hohe
                 Priorität. Ein zentraler Bestandteil unserer Arbeit ist die
