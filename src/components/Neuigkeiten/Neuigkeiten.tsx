@@ -80,45 +80,49 @@ export default function Neuigkeiten() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-10"
+              className="container mx-auto px-4 py-8"
             >
-              {paginatedNews.length > 0 ? (
-                paginatedNews.map((news) => (
-                  <motion.div
-                    key={news.id}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="w-full h-auto overflow-hidden shadow-xl rounded-lg"
-                  >
-                    <div className="relative h-48 sm:h-56 w-full">
-                      <Image
-                        src={news.image}
-                        alt={news.title}
-                        fill
-                        quality={100}
-                        className="object-cover rounded-t-lg"
-                      />
-                    </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                {paginatedNews.length > 0 ? (
+                  paginatedNews.map((news) => (
+                    <motion.div
+                      key={news.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="group block overflow-hidden hover:shadow-md transition-shadow duration-200"
+                    >
+                      {/* Image + yellow badge */}
+                      <div className="relative w-full aspect-[4/3]">
+                        <Image
+                          src={news.image}
+                          alt={news.title}
+                          fill
+                          quality={100}
+                          className="object-cover group-hover:scale-[1.02] transition-transform duration-300"
+                        />
+                        <span className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-yellow-300 text-sm uppercase font-semibold px-8 py-2">
+                          {news.category || "News"}
+                        </span>
+                      </div>
 
-                    <div className="p-4 sm:p-5">
-                      <h3 className="font-bold text-lg sm:text-xl mb-2 text-gray-800 hover:underline">
-                        <Link href={news.mehr}>{news.title}</Link>
-                      </h3>
-                      <p className="mb-2 text-sm font-semibold text-gray-800">
-                        {news.date}
-                      </p>
-                      <p className="text-sm text-gray-800 line-clamp-3">
-                        {news.content}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))
-              ) : (
-                <p className="text-xl font-bold text-center text-gray-800 col-span-full">
-                  Leider sind derzeit keine Neuigkeiten verfügbar.
-                </p>
-              )}
+                      {/* Title & Date */}
+                      <div className="pt-8 pb-6">
+                        <h3 className="text-xl font-bold leading-snug text-gray-900 line-clamp-2">
+                          <Link href={news.mehr}>{news.title}</Link>
+                        </h3>
+                        <time className="mt-2 block text-sm text-gray-500">
+                          {news.date}
+                        </time>
+                      </div>
+                    </motion.div>
+                  ))
+                ) : (
+                  <p className="text-xl font-bold text-center text-gray-800 col-span-full">
+                    Leider sind derzeit keine Neuigkeiten verfügbar.
+                  </p>
+                )}
+              </div>
             </motion.div>
 
             {/* Pagination Controls */}
