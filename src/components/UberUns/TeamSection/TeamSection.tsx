@@ -3,22 +3,28 @@ import Image from "next/image";
 export default function TeamSection() {
   const images = [
     {
-      src: "/images/UberUns/Team/OSSARA_Portrait_CamiloAngola.jpg",
-      name: "John Doe",
-      position: "Projektmanager",
+      src: "/images/UberUns/Team/NicolasMoumouni.jpg",
+      name: "Nicolas A. S. Moumouni",
+      position: "Vorstandsvorsitzender",
+      büro: "Hamburg, Deutschland",
+    },
+    {
+      src: "/images/UberUns/Team/placeholderTeamMate.jpg",
+      name: "Dr. Sewa Okpar",
+      position: "Vorstandsmitglied",
+      büro: "Hamburg, Deutschland",
+    },
+    {
+      src: "/images/UberUns/Team/JuliaKarimi.jpg",
+      name: "Julia Karimi",
+      position: "Vorstandsmitglied",
       büro: "Hamburg, Germany",
     },
     {
-      src: "/images/UberUns/Team/OSSARA_Portrait_CatherineSchlueter.jpg",
-      name: "John Doe",
-      position: "Assistentin für Projektmanagement",
-      büro: "Hamburg, Germany",
-    },
-    {
-      src: "/images/UberUns/Team/OSSARA_Portrait_HayfordAnyidoho.jpg",
-      name: "John Doe",
-      position: "Leitung Monitoring und Evaluation",
-      büro: "Hamburg, Germany",
+      src: "/images/UberUns/Team/GaetanTagba.jpg",
+      name: "Gaetan Tagba",
+      position: "Projektmanagement",
+      büro: "Kara, Togo",
     },
     {
       src: "/images/UberUns/Team/SalwaTchakala.jpg",
@@ -27,52 +33,55 @@ export default function TeamSection() {
       büro: "Kara, Togo",
     },
     {
-      src: "/images/UberUns/Team/OSSARA_Portrait_EmmaDittler.jpg",
-      name: "John Doe",
-      position: "Assistentin für Projektmanagement",
-      büro: "Hamburg, Germany",
+      src: "/images/UberUns/Team/RitaZulu-Diawara.jpg",
+      name: "Rita Zulu-Diawara",
+      position: "Projektkoordination Integrative Stadtteilarbeit",
+      büro: "Hamburg, Deutschland",
     },
     {
-      src: "/images/UberUns/Team/Sonia.jpg",
-      name: "John Doe",
-      position: "Assistentin der Geschäftsführung",
-      büro: "Hamburg, Germany",
+      src: "/images/UberUns/Team/HayfordAnyidoho.jpg",
+      name: "Hayford Anyidoho",
+      position: "Projektleitung Sprachförderung und Prüfungsvorbereitung",
+      büro: "Hamburg, Deutschland",
     },
     {
-      src: "/images/UberUns/Team/jonDoe.jpg",
-      name: "John Doe",
-      position: "Projektmanager",
-      büro: "Kara, Togo",
+      src: "/images/UberUns/Team/KatjaHeyn.jpg",
+      name: "Katja Miriam Heyn",
+      position: "Projektleitung Beratungs- und Bewerbungstraing",
+      büro: "Hamburg, Deutschland",
     },
     {
-      src: "/images/UberUns/Team/OSSARA_Portrait_RitaZulu-Diawara.jpg",
-      name: "John Doe",
-      position: "Leitung Monitoring und Evaluation",
-      büro: "Hamburg, Germany",
-    },
-    {
-      src: "/images/UberUns/Team/OSSARA_Portrait_NicolasMoumouni.jpg",
-      name: "John Doe",
-      position: "Assistentin der Geschäftsführung",
-      büro: "Hamburg, Germany",
-    },
-    {
-      src: "/images/UberUns/Team/OSSARA_Portrait_KatjaHeyn.jpg",
-      name: "John Doe",
-      position: "Projektmanager",
-      büro: "Hamburg, Germany",
-    },
-    {
-      src: "/images/UberUns/Team/OSSARA_Portrait_JuliaKarimi.jpg",
-      name: "John Doe",
-      position: "Leitung Monitoring und Evaluation",
-      büro: "Hamburg, Germany",
+      src: "/images/UberUns/Team/EmmaDittler.jpg",
+      name: "Emma Dittler",
+      position: "Projektassistenz Öffentlichkeitsarbeit",
+      büro: "Hamburg, Deutschland",
     },
     {
       src: "/images/UberUns/Team/NataanmanLare.jpg",
       name: "Nataan-man Lare",
-      position: "Assistentin für Projektmanagement",
+      position: "Assistentin Projektmanagement",
       büro: "Kara, Togo",
+    },
+    {
+      src: "/images/UberUns/Team/CatherineSchlueter.jpg",
+      name: "Catherine Schlüter",
+      position:
+        "Fachpromotorin und Veranstaltungsmanagement für Dekolonisierung",
+      büro: "Hamburg, Deutschland",
+    },
+    {
+      src: "/images/UberUns/Team/Sonia.jpg",
+      name: "Sonia Octavio",
+      position: "Fachpromotorin und Öffentlichkeitsarbeit Dekolonisierung",
+      büro: "Hamburg, Deutschland",
+    },
+
+    {
+      src: "/images/UberUns/Team/CamiloAngola.jpg",
+      name: "Camilo Angola",
+      position:
+        "Projektkoordination Vernetzung und Bewusstseinsbildung zu Anti-Schwarzen Rassismus",
+      büro: "Hamburg, Deutschland",
     },
   ];
 
