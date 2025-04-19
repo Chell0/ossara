@@ -230,7 +230,7 @@ export default function Veranstaltungen() {
     <>
       <div>
         {/* Header Section */}
-        <header className="relative w-full h-screen">
+        <header className="relative w-full h-[100dvh]">
           {/* BackgroundImage */}
           <div className="absolute inset-0 w-full h-full">
             <Image

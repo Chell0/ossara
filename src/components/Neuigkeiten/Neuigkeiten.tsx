@@ -27,21 +27,31 @@ export default function Neuigkeiten() {
     <>
       <div>
         {/* Header Section */}
-        <header className="relative w-full h-screen">
-          <div className="absolute inset-0 w-full h-full">
+        <header className="relative w-full h-[100dvh]">
+          {/* Backgruond Image */}
+          <div className="relative inset-0 w-full h-full">
             <Image
               src="/images/Neuigkeiten/OSSARA_Arbeitssituation.jpg"
               fill
               alt="Home Page Header image"
               className="object-cover"
               priority
-              sizes="(max-width: 320px) 100vw, (max-width: 1920px) 100vw, 100vw"
+              sizes="(max-width: 320px) 100vw, (max-width: 2560px) 100vw, 100vw"
             />
           </div>
-
-          <div className="absolute bottom-3 left-4">
-            <div className="space-y-1 xs:space-y-1.5 xs2:space-y-2 sm2:space-y-2.5 md:space-y-3 tab-sm:space-y-4 tab:space-y-5 tab-xl:space-y-6 xl:space-y-7 3xl:space-y-8">
-              <h1 className="text-[#eb7b24] text-3xl font-bold xs:text-[34px] xs2:text-[38px] sm:text-[42px] md:text-5xl lg:text-9xl xl:text-[100px] 2xl:text-[120px] 3xl:text-[140px] leading-[1.1] md:leading-[1.05] uppercase">
+          {/* Text Content */}
+          <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-10 lg:left-10 xl:bottom-section xl:left-section 2xl:left-section">
+            <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
+              <h1
+                className="text-[#eb7b24] text-3xl font-bold leading-[1.1] uppercase
+              xs:text-5xl
+              sm:text-6xl
+              md:text-8xl
+              lg:text-9xl
+              xl:text-[140px]
+              2xl:text-[160px]
+              3xl:text-[200px]"
+              >
                 <span className="block">Neuigkeiten.</span>
               </h1>
             </div>
