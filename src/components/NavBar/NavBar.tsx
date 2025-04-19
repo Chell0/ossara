@@ -107,7 +107,7 @@ export default function NavBar() {
     <>
       <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
         <div className="w-full pt-4 pl-4 pr-4">
-          <div className="flex justify-between items-center h-16 md:h-20 xl:h-24 3xl:h-28">
+          <div className="flex justify-between items-center h-header md:h-20 xl:h-24 3xl:h-28">
             {/* Menu Button */}
             <div className="flex items-center gap-2">
               <button
@@ -131,8 +131,8 @@ export default function NavBar() {
                 <Image
                   src="/logos/ossara_logo.png"
                   alt="Ossara Logo"
-                  width={160}
-                  height={60}
+                  width={1280}
+                  height={445}
                   className="h-10 md:h-12 xl:h-16 3xl:h-20 w-auto object-contain"
                   priority
                 />

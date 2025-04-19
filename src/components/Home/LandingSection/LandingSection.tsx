@@ -18,29 +18,18 @@ export default function LandingSection() {
       </div>
 
       {/* Text Content */}
-      <div className="absolute bottom-3 left-4">
+      <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-10 lg:left-10 xl:bottom-section xl:left-section">
         <div>
-          <div
-            className="text-white space-y-1
-          xs:space-y-1.5
-          xs2:space-y-2
-          sm:space-y-2.5
-          md:space-y-3
-          lg:space-y-4
-          xl:space-y-6
-          2xl:space-y-7
-          3xl:space-y-8"
-          >
+          <div className="text-white space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
             <h1
               className="text-3xl font-bold leading-[1.1] uppercase
-            xs:text-[34px]
-            xs2:text-[38px]
-            sm:text-[42px]
-            md:text-5xl md:leading-[1.05]
-            lg:text-7xl
-            xl:text-[90px]
-            2xl:text-[110px]
-            3xl:text-[130px]"
+              xs:text-4xl
+              sm:text-5xl
+              md:text-6xl
+              lg:text-7xl
+              xl:text-8xl
+              2xl:text-9xl
+              3xl:text-[130px]" // 130px still custom, optional: define "10xl" if you want
             >
               <span className="block">GEMEINSAM GEGEN</span>
               <span className="block">Loremipsum dolor</span>
