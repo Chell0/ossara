@@ -2,65 +2,37 @@ import Image from "next/image";
 
 export default function Sponsors() {
   return (
-    <>
-      <section className="px-1 mt-20 bg-white min-h-fit">
-        <div className="grid grid-cols-4 sm:grid-cols-5 lg:grid-cols-6 gap-4">
-          <div className="flex items-center justify-center p-2 font-semibold text-smokyBlack text-base">
-            <p>Gefördert durch: ENGAGEMENT GLOBAL</p>
-          </div>
-          <div className="flex items-center justify-center p-2 font-semibold text-smokyBlack text-base">
-            <p>mit Mitteln des</p>
-          </div>
-
-          {/* Logo 1 */}
-          <div className="relative flex items-center justify-center w-full h-[15vh] text-center">
-            <Image
-              src="/logos/image-1.png"
-              alt="Sponsor Logo"
-              width={120}
-              height={120}
-              quality={100}
-              className="object-contain"
-            />
-          </div>
-
-          {/* Logo 2 */}
-          <div className="relative flex items-center justify-center w-full h-[15vh] text-center">
-            <Image
-              src="/logos/image-2.jpeg"
-              alt="Sponsor Logo"
-              width={120}
-              height={120}
-              quality={100}
-              className="object-contain"
-            />
-          </div>
-
-          {/* Logo 3 */}
-          <div className="relative flex items-center justify-center w-full h-[15vh] text-center">
-            <Image
-              src="/logos/image-3.jpg"
-              alt="Sponsor Logo"
-              width={120}
-              height={120}
-              quality={100}
-              className="object-contain"
-            />
-          </div>
-
-          {/* Logo 4 */}
-          <div className="relative flex items-center justify-center w-full h-[15vh] text-center">
-            <Image
-              src="/logos/image-4.jpg"
-              alt="Sponsor Logo"
-              width={120}
-              height={120}
-              quality={100}
-              className="object-contain"
-            />
-          </div>
+    <section className="container mx-auto mt-20 bg-white px-4 py-8">
+      <div className="grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4 md:gap-6">
+        {/* Text Cells */}
+        <div className="flex items-center justify-center p-2 col-span-2 xs:col-span-1">
+          <p className="text-smokyBlack text-base font-semibold text-center">
+            Gefördert durch: ENGAGEMENT GLOBAL
+          </p>
         </div>
-      </section>
-    </>
+        <div className="flex items-center justify-center p-2">
+          <p className="text-smokyBlack text-base font-semibold text-center">
+            mit Mitteln des
+          </p>
+        </div>
+
+        {/* Sponsor Logos */}
+        {[1, 2, 3, 4].map((num) => (
+          <div
+            key={num}
+            className="relative flex items-center justify-center w-full h-[80px] xs:h-[100px] sm:h-[120px] md:h-[15vh]"
+          >
+            <Image
+              src={`/logos/image-${num}.${num === 1 ? "png" : num === 2 ? "jpeg" : "jpg"}`}
+              alt={`Sponsor Logo ${num}`}
+              fill
+              sizes="(max-width: 640px) 25vw, (max-width: 1024px) 20vw, 15vw"
+              quality={100}
+              className="object-contain p-2"
+            />
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }

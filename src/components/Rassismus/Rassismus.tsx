@@ -7,32 +7,69 @@ export default function Rassismus() {
     <>
       <div>
         {/* Header Section */}
-        <header
-          className="w-full relative bg-center bg-cover h-[50vh] 
-    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
-    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
-          style={{
-            backgroundImage:
-              "url(/images/AntischwarzerRassismus/ANTISCHWARZERRASSISMUS.jpg)",
-          }}
-        >
-          <div className="absolute bottom-3 left-4">
-            <h1
-              className="text-[#b7410e] font-extrabold leading-tight uppercase 
-        text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
-        xl:text-8xl 2xl:text-[8rem] 3xl:text-[14rem] pl-4 pt-10"
+        <header className="relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/AntischwarzerRassismus/ANTISCHWARZERRASSISMUS.jpg"
+              fill
+              alt="Home Page Header Image"
+              className="object-cover w-full h-full"
+              priority
+              sizes="100vw"
+            />
+          </div>
+
+          {/* Text Content (moved left & down) */}
+          <div
+            className="
+              absolute
+                bottom-6    left-2
+              xs:bottom-8  xs:left-3
+              xs2:bottom-9 xs2:left-4
+              sm:bottom-10 sm:left-6
+              md:bottom-11 md:left-7
+              lg:bottom-12 lg:left-8
+              xl:bottom-13 xl:left-9
+              2xl:bottom-14 2xl:left-10
+            "
+          >
+            <div
+              className="
+                space-y-2
+                xs:space-y-3
+                sm:space-y-4
+                md:space-y-6
+                lg:space-y-8
+                xl:space-y-10
+                2xl:space-y-12
+              "
             >
-              Anti-Schwarzer.
-              <br />
-              Rassismus.
-            </h1>
+              <h1
+                className="
+                  text-[#b7410e] font-extrabold uppercase leading-[1.1]
+                  text-3xl
+                  xs:text-4xl
+                  xs2:text-5xl
+                  sm:text-6xl
+                  md:text-7xl
+                  lg:text-8xl
+                  xl:text-9xl
+                  2xl:text-[140px]
+                  3xl:text-[160px]
+                "
+              >
+                <span className="block">Anti-Schwarzer.</span>
+                <span className="block">Rassismus.</span>
+              </h1>
+            </div>
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#b7410e] pb-20 px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16 3xl:px-20">
+        <section className="relative w-full min-h-screen text-[#b7410e] pb-20 px-8">
           {/* BIG TEXT */}
-          <div className="mx-auto pt-8 mb-12 xs:mb-14 sm:mb-16 md:mb-18 lg:mb-22 xl:mb-26 2xl:mb-32 3xl:mb-44">
-            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem]  font-semibold leading-normal tracking-normal">
+          <div className="mx-auto pt-8 mb-12 xs:mb-14 xs2:mb-15 sm:mb-16 md:mb-20 lg:mb-36 xl:mb-40 2xl:mb-52 3xl:mb-52">
+            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl 3xl:text-[10rem]  font-semibold leading-tight tracking-normal mx-auto">
               Sichtbarkeit schaffen, Strukturen verändern: Wir engagieren uns
               gegen Anti‑Schwarzen Rassismus und stärken die Stimmen von BIPoC
               in politischen und gesellschaftlichen Prozessen.
@@ -41,8 +78,8 @@ export default function Rassismus() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="max-w-full">
-              <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-black leading-relaxed text-left">
+            <div className="mx-auto">
+              <p className="text-sm xs:text-base xs2:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-black leading-relaxed text-left">
                 Ossara e.V. setzt sich in Hamburg aktiv dafür ein,
                 Anti‑Schwarzen Rassismus sichtbar zu machen und Räume für
                 Empowerment und Austausch für BIPoC zu schaffen. Unsere
@@ -66,8 +103,8 @@ export default function Rassismus() {
           </div>
         </section>
 
-        <section className="relative w-full min-h-screen py-12 xs2:py-16 sm:py-20 md:py-24 lg:py-32 xl:py-36 2xl:py-40 3xl:py-48">
-          <div className="container mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 flex flex-col items-center justify-center">
+        <section className="relative w-full min-h-screen py-12 xs2:py-section sm:py-20 md:py-section-lg lg:py-32 xl:py-36 2xl:py-40 3xl:py-48">
+          <div className="container mx-auto flex flex-col items-center justify-center">
             <div className="w-full flex flex-col lg:flex-row items-center lg:items-center gap-12 mt-10 xs2:mt-14 sm:mt-16 md:mt-20 lg:mt-24">
               {/* Left Column - Image */}
               <div className="w-full lg:w-1/2 space-y-2 md:space-y-4 flex justify-center">
@@ -75,8 +112,8 @@ export default function Rassismus() {
                   <Image
                     src="/images/AntischwarzerRassismus/Anti-Schwarzer-Rassismus_PhotoMaischaSouaga.jpg"
                     alt="AntischwarzerRassismus Image"
-                    width={480}
-                    height={480}
+                    width={8071}
+                    height={5384}
                     quality={100}
                     className="w-full h-full object-cover shadow-lg"
                   />
@@ -84,8 +121,8 @@ export default function Rassismus() {
               </div>
 
               {/* Right Column - Contact Card */}
-              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-10 lg:pt-0">
-                <h3 className="text-[#b7410e] text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-2">
+              <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left pt-8 lg:pt-0">
+                <h3 className="text-[#b7410e] text-xl xs:text-2xl xs2:text-3xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl 3xl:text-8xl font-semibold mb-4">
                   Kontaktperson
                 </h3>
                 <hr className="w-24 border-2 border-[#b7410e] mb-6 mx-auto lg:mx-0" />
@@ -94,7 +131,7 @@ export default function Rassismus() {
                   position="Vernetzung und Bewusstseinsbildung zu Anti-Schwarzen Rassismus"
                   email="camilo.angola[at]ossara.de"
                   phone="(+49) 157 55572533"
-                  imageSrc="/images/UberUns/Team/OSSARA_Portrait_CamiloAngola.jpg"
+                  imageSrc="/images/UberUns/Team/CamiloAngola.jpg"
                 />
               </div>
             </div>
@@ -108,7 +145,17 @@ export default function Rassismus() {
               Forderungskatalog
             </p>
 
-            <button className="px-4 py-2 xs2:px-4 xs2:py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 lg:px-7 lg:py-3.5 xl:px-8 xl:py-4 2xl:px-9 2xl:py-4.5 3xl:px-10 3xl:py-6 text-sm xs2:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-semibold rounded-xl shadow-xl bg-[#b7410e] text-white">
+            <button
+              className="px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-xl bg-[#b7410e]
+      xs2:px-4 xs2:py-2 xs2:text-base
+      sm:px-5 sm:py-2.5 sm:text-lg
+      md:px-6 md:py-3 md:text-xl
+      lg:px-7 lg:py-3.5 lg:text-2xl
+      xl:px-8 xl:py-4 xl:text-3xl
+      2xl:px-9 2xl:py-4.5 2xl:text-4xl
+      3xl:px-10 3xl:py-6 3xl:text-5xl
+    "
+            >
               <Link
                 href={`/files/forderungskatalog_anti_schwarzer_rassismus`}
                 target="_blank"

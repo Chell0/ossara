@@ -19,7 +19,7 @@ export default function YouTubeSection({ videoId }: YouTubeSectionProps) {
   };
 
   return (
-    <section className="overflow-hidden w-full aspect-video max-w-8xl mx-auto shadow-lg">
+    <section className="overflow-hidden w-full aspect-video max-w-4xl mx-auto shadow-lg">
       <div className="relative w-full h-full">
         <YouTube
           videoId={videoId}
