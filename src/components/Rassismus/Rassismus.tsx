@@ -78,8 +78,8 @@ export default function Rassismus() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="mx-auto">
-              <p className="text-sm xs:text-base xs2:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-black leading-relaxed text-left">
+            <div className="max-w-7xl">
+              <p className="text-sm xs:text-xs xs2:text-xs sm:text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-black leading-relaxed text-left">
                 Ossara e.V. setzt sich in Hamburg aktiv dafür ein,
                 Anti‑Schwarzen Rassismus sichtbar zu machen und Räume für
                 Empowerment und Austausch für BIPoC zu schaffen. Unsere
@@ -140,20 +140,20 @@ export default function Rassismus() {
 
         {/* Forderungskatalog */}
         <section>
-          <div className="flex flex-col xs2:flex-row items-center justify-between gap-4 xs2:gap-6 border border-[#ba334b] rounded-xl px-4 xs2:px-6 sm:px-8 md:px-10 py-4 shadow-sm w-full max-w-[90%] xs:max-w-[85%] sm:max-w-[410px] md:max-w-[640px] lg:max-w-2xl xl:max-w-3xl 2xl:max-w-5xl 3xl:max-w-7xl mx-auto">
-            <p className="text-sm xs2:text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl text-black text-center xs2:text-left">
+          <div className="flex flex-col xs2:flex-row items-center justify-between gap-4 xs2:gap-6 border border-[#ba334b] rounded-xl px-4 xs2:px-6 sm:px-8 md:px-10 py-4 shadow-sm w-full max-w-[80%] xs:max-w-[75%] sm:max-w-[356px] md:max-w-[520px] lg:max-w-xl xl:max-w-2xl 2xl:max-w-2xl 3xl:max-w-4xl mx-auto">
+            <p className="text-sm xs2:text-xs sm:text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-black text-center xs2:text-left">
               Forderungskatalog
             </p>
 
             <button
-              className="px-4 py-2 text-sm font-semibold text-white rounded-xl shadow-xl bg-[#b7410e]
-      xs2:px-4 xs2:py-2 xs2:text-base
-      sm:px-5 sm:py-2.5 sm:text-lg
-      md:px-6 md:py-3 md:text-xl
-      lg:px-7 lg:py-3.5 lg:text-2xl
-      xl:px-8 xl:py-4 xl:text-3xl
-      2xl:px-9 2xl:py-4.5 2xl:text-4xl
-      3xl:px-10 3xl:py-6 3xl:text-5xl
+              className="px-4 py-2 text-sm font-semibold text-white rounded-md shadow-xl bg-[#b7410e] xs:px-2 xs:py-1 xs:text-xs
+      xs2:px-4 xs2:py-2 xs2:text-xs
+      sm:px-5 sm:py-2.5 sm:text-xs
+      md:px-6 md:py-3 md:text-base
+      lg:px-7 lg:py-3.5 lg:text-lg
+      xl:px-8 xl:py-4 xl:text-xl
+      2xl:px-9 2xl:py-4.5 2xl:text-2xl
+      3xl:px-10 3xl:py-6 3xl:text-3xl
     "
             >
               <Link
