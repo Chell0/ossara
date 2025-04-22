@@ -26,8 +26,10 @@ const config: Config = {
         lg: "2rem",
       },
       screens: {
-        lg: "1024px",
-        xl: "1280px",
+        "lg": "1024px",
+        "xl": "1280px",
+        "2xl": "1440px",
+        "3xl": "2560px",
       },
     },
     extend: {
@@ -39,7 +41,7 @@ const config: Config = {
       maxWidth: {
         "8xl": "88rem",
         "prose": "65ch",
-        "screen-3xl": "2560px",
+        "3xl": "2560px",
       },
       fontSize: {
         "xs": "0.75rem",
