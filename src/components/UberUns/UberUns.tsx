@@ -51,7 +51,7 @@ export default function UberUns() {
 
             {/* Text Content */}
             <div className="w-full flex flex-col items-center lg:items-start max-w-2xl text-center lg:text-left">
-              <h3 className="text-[#eb7b24] text-6xl sm:text-7xl md:text-8xl font-extrabold uppercase tracking-tight pb-4">
+              <h3 className="text-orange-600 text-6xl sm:text-7xl md:text-8xl font-extrabold uppercase tracking-tight pb-4">
                 Über uns
               </h3>
               <p className="text-sm sm:text-base md:text-lg text-black leading-loose mb-4">

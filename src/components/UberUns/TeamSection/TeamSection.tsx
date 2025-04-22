@@ -75,7 +75,6 @@ export default function TeamSection() {
       position: "Fachpromotorin und Öffentlichkeitsarbeit Dekolonisierung",
       büro: "Hamburg, Deutschland",
     },
-
     {
       src: "/images/UberUns/Team/CamiloAngola.jpg",
       name: "Camilo Angola",
@@ -108,7 +107,7 @@ export default function TeamSection() {
                 <p className="font-bold text-white text-xs xs:text-sm sm:text-base md:text-lg truncate">
                   {image.name}
                 </p>
-                <p className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base opacity-90 truncate">
+                <p className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base opacity-90 line-clamp-3">
                   {image.position}
                 </p>
                 <p className="text-white text-[10px] xs:text-xs sm:text-sm opacity-80 truncate">

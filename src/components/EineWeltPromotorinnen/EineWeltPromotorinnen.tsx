@@ -29,6 +29,7 @@ export default function EineWeltPromotorinnen() {
               "
             >
               <h1 className="text-[#eb7b24] font-extrabold uppercase leading-[1.1]text-3xl xs:text-4xl xs2:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px] 3xl:text-[160px]">
+                <span className="block">Dekoloniale.</span>
                 <span className="block">Perspektiven.</span>
               </h1>
             </div>

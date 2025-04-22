@@ -96,7 +96,7 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-0">
         <div className="flex justify-between items-center h-header">
           {/* Menu Button */}
           <div className="flex items-center gap-2">
@@ -110,7 +110,7 @@ export default function NavBar() {
                 <MenuIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
               )}
             </button>
-            <span className="font-medium text-xl md:text-2xl xl:text-3xl">
+            <span className="font-medium text-base md:text-lg lg:text-xl xl:text-2xl">
               Menü
             </span>
           </div>
