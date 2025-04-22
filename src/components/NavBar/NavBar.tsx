@@ -1,9 +1,8 @@
 "use client";
 
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
-
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import { useEffect, useState } from "react";
 
 export default function NavBar() {
@@ -11,7 +10,6 @@ export default function NavBar() {
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
   const [showNav, setShowNav] = useState(true);
 
-  // Toggle main menu and reset submenu state
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
     setActiveSubMenu(null);
@@ -21,21 +19,15 @@ export default function NavBar() {
     setActiveSubMenu(activeSubMenu === menuName ? null : menuName);
   };
 
-  // Hide the top navbar when scrolling down (unless the menu is open)
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setShowNav(false);
-      } else {
-        setShowNav(true);
-      }
+      setShowNav(window.scrollY <= 0 || menuOpen);
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [menuOpen]);
 
-  // Split menu items into left and right columns
   const leftMenuItems = [
     { name: "NEUIGKEITEN", href: "/neuigkeiten", items: [] },
     { name: "VERANSTALTUNGEN", href: "/veranstaltungen", items: [] },
@@ -58,8 +50,8 @@ export default function NavBar() {
       ],
     },
     {
-      name: "FÖRDERN & SPENDEN",
-      href: "/fordern",
+      name: "SPENDEN",
+      href: "/spenden",
       items: [],
     },
     { name: "DOWNLOADS", href: "/downloads", items: [] },
@@ -75,7 +67,7 @@ export default function NavBar() {
         { name: "Sprachförderung", href: "#sprachförderung" },
       ],
     },
-    { name: "LOBBY UND NETZWERKARBEIT", href: "/lobby", items: [] },
+    { name: "LOKAL VERNETZT", href: "/lokal", items: [] },
     {
       name: "DEKOLONIALE BILDUNGSARBEIT",
       href: "/bildungsarbeit",
@@ -85,13 +77,13 @@ export default function NavBar() {
           name: "Eine Welt-Promotorinnen Programm",
           href: "/eine_welt_promotorinnen",
         },
-        { name: "Dekoloniale Bildungsreisen", href: "/bildungsreisen" },
+        { name: "Dekoloniale Bildungsreisen", href: "#bildungsreisen" },
         { name: "KoRaBi", href: "/korabi" },
       ],
     },
     { name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: [] },
     {
-      name: "DEKOLONIALE INTERNATIONALE ZUSAMMENARBEIT",
+      name: "DEKOLONIAL GLOBAL",
       href: "/dekoloniale",
       items: [
         { name: "Projekte", href: "/projects" },
@@ -100,158 +92,155 @@ export default function NavBar() {
     },
   ];
 
-  // Render the top navbar only if at the very top or when the menu is open
-  if (!showNav && !menuOpen) return null;
+  if (!showNav) return null;
 
   return (
-    <>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
-        <div className="w-full pt-4 pl-4 pr-4">
-          <div className="flex justify-between items-center h-16 md:h-20 xl:h-24 3xl:h-28">
-            {/* Menu Button */}
-            <div className="flex items-center gap-2">
-              <button
-                className="text-black focus:outline-none"
-                onClick={toggleMenu}
+    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-between items-center h-header">
+          {/* Menu Button */}
+          <div className="flex items-center gap-2">
+            <button
+              onClick={toggleMenu}
+              className="text-black focus:outline-none"
+            >
+              {menuOpen ? (
+                <XIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
+              ) : (
+                <MenuIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
+              )}
+            </button>
+            <span className="font-medium text-xl md:text-2xl xl:text-3xl">
+              Menü
+            </span>
+          </div>
+
+          {/* Logo */}
+          <div className="flex-shrink-0">
+            <Link href="/">
+              <Image
+                src="/logos/ossara_logo.png"
+                alt="Ossara Logo"
+                width={1280}
+                height={445}
+                className="h-8 md:h-10 xl:h-14 2xl:h-18 w-auto object-contain"
+                priority
+              />
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div className="fixed inset-0 z-50 bg-[#fef5db] overflow-y-auto">
+          <div className="container mx-auto px-4 py-section">
+            <div className="flex justify-between items-center mb-8">
+              <Link
+                href="/"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
               >
-                {menuOpen ? (
-                  <XIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10 3xl:w-12 3xl:h-12" />
-                ) : (
-                  <MenuIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10 3xl:w-12 3xl:h-12" />
-                )}
+                Ossara
+              </Link>
+              <button
+                onClick={toggleMenu}
+                className="text-gray-600 hover:text-gray-800"
+              >
+                <XIcon className="w-8 h-8 md:w-10 md:h-10" />
               </button>
-              <span className="font-medium text-xl md:text-2xl xl:text-3xl 3xl:text-4xl">
-                Menü
-              </span>
             </div>
 
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <Link href="/">
-                <Image
-                  src="/logos/ossara_logo.png"
-                  alt="Ossara Logo"
-                  width={160}
-                  height={60}
-                  className="h-10 md:h-12 xl:h-16 3xl:h-20 w-auto object-contain"
-                  priority
-                />
-              </Link>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Left Column */}
+              <ul className="space-y-4 md:space-y-6">
+                {leftMenuItems.map((menu, index) => (
+                  <li key={index}>
+                    <div className="flex justify-between items-center">
+                      <Link
+                        href={menu.href}
+                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
+                        onClick={toggleMenu}
+                      >
+                        {menu.name}
+                      </Link>
+                      {menu.items.length > 0 && (
+                        <button
+                          onClick={() => toggleSubMenu(menu.name)}
+                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-xl md:text-2xl"
+                        >
+                          {activeSubMenu === menu.name ? "−" : "+"}
+                        </button>
+                      )}
+                    </div>
+                    {activeSubMenu === menu.name && (
+                      <ul className="pl-4 mt-2 space-y-2 text-lg md:text-xl">
+                        {menu.items.map((item, subIndex) => (
+                          <li key={subIndex}>
+                            <Link
+                              href={
+                                item.href.startsWith("#")
+                                  ? `${menu.href}${item.href}`
+                                  : item.href
+                              }
+                              className="text-[#f7cc55] hover:text-[#e6b845]"
+                              onClick={toggleMenu}
+                            >
+                              {item.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+
+              {/* Right Column */}
+              <ul className="space-y-4 md:space-y-6">
+                {rightMenuItems.map((menu, index) => (
+                  <li key={index}>
+                    <div className="flex justify-between items-center">
+                      <Link
+                        href={menu.href}
+                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
+                        onClick={toggleMenu}
+                      >
+                        {menu.name}
+                      </Link>
+                      {menu.items.length > 0 && (
+                        <button
+                          onClick={() => toggleSubMenu(menu.name)}
+                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-xl md:text-2xl"
+                        >
+                          {activeSubMenu === menu.name ? "−" : "+"}
+                        </button>
+                      )}
+                    </div>
+                    {activeSubMenu === menu.name && (
+                      <ul className="pl-4 mt-2 space-y-2 text-lg md:text-xl">
+                        {menu.items.map((item, subIndex) => (
+                          <li key={subIndex}>
+                            <Link
+                              href={
+                                item.href.startsWith("#")
+                                  ? `${menu.href}${item.href}`
+                                  : item.href
+                              }
+                              className="text-[#f7cc55] hover:text-[#e6b845]"
+                              onClick={toggleMenu}
+                            >
+                              {item.name}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
-
-        {menuOpen && (
-          <div className="fixed inset-0 z-50 bg-[#fef5db] overflow-y-auto">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-8">
-              <div className="flex justify-between items-center mb-6 md:mb-10">
-                <Link
-                  href="/"
-                  className="text-4xl md:text-7xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
-                >
-                  Ossara
-                </Link>
-                <button
-                  onClick={toggleMenu}
-                  className="text-gray-600 hover:text-gray-800"
-                >
-                  <XIcon className="w-8 h-8 md:w-10 md:h-10" />
-                </button>
-              </div>
-
-              <div className="flex flex-col md:flex-row md:mt-10 space-y-6 md:space-y-0 md:space-x-8">
-                {/* Left Column */}
-                <ul className="w-full pr-0 space-y-4 md:space-y-6 md:w-1/2 md:pr-8">
-                  {leftMenuItems.map((menu, index) => (
-                    <li key={index}>
-                      <div className="flex justify-between items-center">
-                        <Link
-                          href={menu.href}
-                          className="text-2xl md:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
-                          onClick={toggleMenu}
-                        >
-                          {menu.name}
-                        </Link>
-                        {menu.items.length > 0 && (
-                          <button
-                            onClick={() => toggleSubMenu(menu.name)}
-                            className="text-[#f7cc55] hover:text-[#e6b845] ml-2 md:ml-4 text-xl md:text-3xl w-6 h-6 md:w-8 md:h-8 flex items-center justify-center"
-                          >
-                            {activeSubMenu === menu.name ? "−" : "+"}
-                          </button>
-                        )}
-                      </div>
-                      {activeSubMenu === menu.name && menu.items.length > 0 && (
-                        <ul className="pl-4 mt-1 md:mt-2 text-lg md:text-xl font-medium">
-                          {menu.items.map((item, subIndex) => (
-                            <li key={subIndex}>
-                              <Link
-                                href={
-                                  item.href.startsWith("#")
-                                    ? `${menu.href}${item.href}`
-                                    : item.href
-                                }
-                                className="text-[#f7cc55] hover:text-[#e6b845]"
-                                onClick={toggleMenu}
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-
-                {/* Right Column */}
-                <ul className="w-full pl-0 space-y-4 md:space-y-6 md:w-1/2 md:pl-4">
-                  {rightMenuItems.map((menu, index) => (
-                    <li key={index}>
-                      <div className="flex justify-between items-center">
-                        <Link
-                          href={menu.href}
-                          className="text-2xl md:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
-                          onClick={toggleMenu}
-                        >
-                          {menu.name}
-                        </Link>
-                        {menu.items.length > 0 && (
-                          <button
-                            onClick={() => toggleSubMenu(menu.name)}
-                            className="text-[#f7cc55] hover:text-[#e6b845] ml-2 md:ml-4 text-xl md:text-3xl w-8 h-8 md:w-10 md:h-10 flex items-center justify-center"
-                          >
-                            {activeSubMenu === menu.name ? "−" : "+"}
-                          </button>
-                        )}
-                      </div>
-                      {activeSubMenu === menu.name && menu.items.length > 0 && (
-                        <ul className="pl-4 mt-1 md:mt-2 text-lg md:text-xl font-medium">
-                          {menu.items.map((item, subIndex) => (
-                            <li key={subIndex}>
-                              <Link
-                                href={
-                                  item.href.startsWith("#")
-                                    ? `${menu.href}${item.href}`
-                                    : item.href
-                                }
-                                className="text-[#f7cc55] hover:text-[#e6b845]"
-                                onClick={toggleMenu}
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        )}
-      </nav>
-    </>
+      )}
+    </nav>
   );
 }

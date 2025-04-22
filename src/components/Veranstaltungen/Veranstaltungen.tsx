@@ -198,6 +198,58 @@ const eventsData: Event[] = [
       "Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in Deutschland anzugehen.",
     imageUrl: "/veranstaltungen/uber-alltagsrassismus-reden.png",
   },
+  {
+    id: 16,
+    title:
+      "“Alltagsrassismus begegnen”- Umgangsformen und Bewältigungskapazitäten von Rassimus erfahrenen",
+    type: "Workshop",
+    date: "2025-05-12",
+    time: "16:30 Uhr",
+    location: "Hamburg Nord",
+    link: "/veranstaltungen/event15",
+    description:
+      "Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in Deutschland anzugehen.",
+    imageUrl: "/veranstaltungen/uber-alltagsrassismus-reden.png",
+  },
+  {
+    id: 17,
+    title:
+      "“Alltagsrassismus begegnen”- Umgangsformen und Bewältigungskapazitäten von Rassimus erfahrenen",
+    type: "Workshop",
+    date: "2025-05-13",
+    time: "16:30 Uhr",
+    location: "Hamburg Nord",
+    link: "/veranstaltungen/event15",
+    description:
+      "Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in Deutschland anzugehen.",
+    imageUrl: "/veranstaltungen/uber-alltagsrassismus-reden.png",
+  },
+  {
+    id: 18,
+    title:
+      "“Alltagsrassismus begegnen”- Umgangsformen und Bewältigungskapazitäten von Rassimus erfahrenen",
+    type: "Workshop",
+    date: "2025-05-14",
+    time: "16:30 Uhr",
+    location: "Hamburg Nord",
+    link: "/veranstaltungen/event15",
+    description:
+      "Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in Deutschland anzugehen.",
+    imageUrl: "/veranstaltungen/uber-alltagsrassismus-reden.png",
+  },
+  {
+    id: 19,
+    title:
+      "“Alltagsrassismus begegnen”- Umgangsformen und Bewältigungskapazitäten von Rassimus erfahrenen",
+    type: "Workshop",
+    date: "2025-05-15",
+    time: "16:30 Uhr",
+    location: "Hamburg Nord",
+    link: "/veranstaltungen/event15",
+    description:
+      "Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in Deutschland anzugehen.",
+    imageUrl: "/veranstaltungen/uber-alltagsrassismus-reden.png",
+  },
 ];
 
 // Date format consistency
@@ -230,8 +282,8 @@ export default function Veranstaltungen() {
     <>
       <div>
         {/* Header Section */}
-        <header className="relative w-full h-screen">
-          {/* BackgroundImage */}
+        <header className="relative w-full min-h-screen">
+          {/* Background Image */}
           <div className="absolute inset-0 w-full h-full">
             <Image
               src="/images/Veranstaltungen/OSSARA_Lobbyarbeit_Netzwerken.jpg"
@@ -239,65 +291,62 @@ export default function Veranstaltungen() {
               alt="Home Page Header image"
               className="object-cover"
               priority
-              sizes="(max-width: 320px) 100vw, (max-width: 1920px) 100vw, 100vw"
+              sizes="(max-width: 319px) 100vw, (max-width: 424px) 100vw, (max-width: 767px) 100vw, (max-width: 1023px) 100vw, (max-width: 1279px) 100vw, (max-width: 1439px) 100vw, (max-width: 2559px) 100vw, 100vw"
             />
           </div>
 
           {/* Text Section */}
-          <div className="absolute bottom-3 left-4">
-            <div className="space-y-1 xs:space-y-1.5 xs2:space-y-2 sm2:space-y-2.5 md:space-y-3 tab-sm:space-y-4 tab:space-y-5 tab-xl:space-y-6 xl:space-y-7 3xl:space-y-8">
-              <h1 className="text-[#eb7b24] text-3xl font-bold xs:text-[34px] xs2:text-[38px] sm:text-[42px] md:text-5xl lg:text-9xl xl:text-[100px] 2xl:text-[120px] 3xl:text-[140px] leading-[1.1] md:leading-[1.05] uppercase">
+          <div className="absolute bottom-4 left-4 xs:bottom-5 xs:left-5 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 lg:bottom-section lg:left-section xl:bottom-section-lg xl:left-section-lg">
+            <div className="space-y-2 xs:space-y-3 xs2:space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12">
+              <h1 className="text-[#eb7b24] text-2xl font-extrabold xs:text-3xl xs2:text-4xl sm:text-[40px] md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl 3xl:text-[140px] leading-[1.1] md:leading-[1.05] uppercase">
                 <span className="block">Veranstaltungen.</span>
               </h1>
             </div>
           </div>
         </header>
+
         {/* Current and Future Events */}
-        <h3 className="my-12 sm:my-16 md:my-20 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-center text-[#eb7b24]">
+        <h3 className="my-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center text-[#eb7b24]">
           Upcoming Events
         </h3>
         {/* Current and Future Events Section */}
-        <section className="mx-4 my-8 md:m-10">
-          <div className="grid grid-cols-1 gap-5 mt-8 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
+          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
             {currentAndFutureEvents.length > 0 ? (
               currentAndFutureEvents.map((event) => (
-                <div
-                  key={event.id}
-                  className="flex flex-col h-full overflow-hidden transition-transform duration-300 rounded-lg shadow-lg hover:scale-105"
-                >
+                <div key={event.id} className="w-full overflow-hidden">
                   {/* Image section */}
-                  <div className="relative w-full aspect-video sm:aspect-square lg:aspect-video">
+                  <div className="relative w-full aspect-[4/3] overflow-hidden">
                     <Image
                       src={event.imageUrl}
                       alt={event.title}
                       fill
                       quality={100}
                       className="object-cover"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw"
                     />
+                    {/* Rectangular badge for date only */}
+                    <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
+                      <div className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold">
+                        {formatDate(event.date)}
+                      </div>
+                    </div>
                   </div>
 
                   {/* Content section */}
-                  <div className="flex flex-col flex-1 p-4 sm:p-5 lg:p-6">
-                    <h3 className="text-sm font-semibold text-gray-900 lg:text-base">
+                  <div className="flex flex-col p-2">
+                    <h3 className="text-sm xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
                       {event.title}
                     </h3>
-
-                    <div className="mt-2 text-xs text-gray-500 sm:mt-3 sm:text-sm">
-                      What: {event.type}
+                    <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                      {event.type}
                     </div>
-
-                    <div className="mt-1 text-xs text-gray-500 sm:mt-2 sm:text-sm">
-                      Wann: {formatDate(event.date)}, {event.time}
+                    <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                      @{event.location}
                     </div>
-
-                    <p className="mt-2 text-xs leading-relaxed text-gray-600 line-clamp-3 sm:mt-3 sm:text-sm">
-                      {event.description}
-                    </p>
-
                     <Link
                       href={event.link}
-                      className="mt-3 text-xs font-medium text-[#eb7b24] hover:underline sm:mt-4 sm:text-sm"
+                      className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base font-medium text-[#eb7b24] hover:underline"
                     >
                       Mehr →
                     </Link>
@@ -305,53 +354,54 @@ export default function Veranstaltungen() {
                 </div>
               ))
             ) : (
-              <p className="py-8 text-lg font-bold text-center text-gray-800 col-span-full sm:text-xl">
+              <p className="py-section text-base xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center text-gray-800 col-span-full">
                 No upcoming events found.
               </p>
             )}
           </div>
         </section>
+
         {/* Archived Events Section */}
-        <h3
-          className="pt-10 pb-6 text-3xl font-semibold leading-tight text-center text-[#eb7b24] 
-              md:pt-16 md:pb-8 md:text-4xl md:leading-snug 
-              lg:pt-20 lg:pb-10 lg:text-5xl lg:leading-normal"
-        >
+        <h3 className="pt-section pb-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-center text-[#eb7b24]">
           Veranstaltungsarchiv
         </h3>
 
-        <section className="px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-6 sm:py-8 md:py-10">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
+          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
             {pastEvents.slice(0, 15).map((event) => (
               <div key={event.id} className="w-full overflow-hidden">
                 {/* Image Section */}
-                <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-lg">
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
                   <Image
                     src={event.imageUrl}
                     alt={event.title}
                     fill
                     quality={100}
                     className="object-cover"
+                    sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw)"
                   />
-                  {/* Rectangular badge for date and time */}
-                  <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 text-center">
-                    <div className="text-sm font-semibold">
+                  {/* Rectangular badge for date only */}
+                  <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
+                    <div className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold">
                       {formatDate(event.date)}
                     </div>
-                    <div className="text-xs">{event.time}</div>
                   </div>
                 </div>
 
                 {/* Content Section */}
-                <div className="flex flex-col">
-                  <h3 className="mt-2 uppercase text-xl font-semibold text-[#eb7b24] line-clamp-2">
+                <div className="flex flex-col p-2">
+                  <h3 className="text-base xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
                     {event.title}
                   </h3>
-                  <div className="text-sm text-gray-500">{event.type}</div>
-                  <div className="text-sm text-gray-500">@{event.location}</div>
+                  <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                    {event.type}
+                  </div>
+                  <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                    @{event.location}
+                  </div>
                   <Link
                     href={event.link}
-                    className="mt-4 text-sm text-black hover:underline"
+                    className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base text-[#eb7b24] font-medium hover:underline"
                   >
                     Mehr →
                   </Link>

@@ -87,8 +87,8 @@ export default function TeamSection() {
 
   return (
     <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-6 md:gap-8">
+      <div className="container max-w-8xl">
+        <div className="grid grid-cols-1 gap-4 xs2:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs2:gap-6 md:gap-8">
           {images.map((image, index) => (
             <div
               key={index}
@@ -98,20 +98,20 @@ export default function TeamSection() {
                 src={image.src}
                 alt={`Portrait of ${image.name}`}
                 fill
-                sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 23vw"
+                sizes="(max-width: 425px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
                 quality={100}
-                priority={index < 4} // Only prioritize first 4 images
+                priority={index < 4}
               />
 
-              <div className="absolute inset-0 flex flex-col justify-end p-3 sm:p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-black/70">
-                <p className="font-bold text-white text-sm sm:text-base md:text-lg truncate">
+              <div className="absolute inset-0 flex flex-col justify-end p-2 xs:p-3 sm:p-4 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <p className="font-bold text-white text-xs xs:text-sm sm:text-base md:text-lg truncate">
                   {image.name}
                 </p>
-                <p className="text-white text-xs sm:text-sm md:text-base opacity-90 truncate">
+                <p className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base opacity-90 truncate">
                   {image.position}
                 </p>
-                <p className="text-white text-xs sm:text-sm opacity-80 truncate">
+                <p className="text-white text-[10px] xs:text-xs sm:text-sm opacity-80 truncate">
                   {image.büro}
                 </p>
               </div>

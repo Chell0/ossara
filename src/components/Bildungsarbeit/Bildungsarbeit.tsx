@@ -6,31 +6,69 @@ export default function Bildungsarbeit() {
     <>
       <div>
         {/* Header Section */}
-        <header
-          className="w-full relative bg-center bg-cover h-[50vh] 
-    xs:h-[55vh] xs2:h-[58vh] sm:h-[60vh] md:h-[65vh] lg:h-[75vh] 
-    xl:h-[85vh] 2xl:h-[95vh] 3xl:h-screen"
-          style={{
-            backgroundImage:
-              "url(/images/Bildungsarbeit/BILDUNGSARBEIT_MACHTBEWUSST.jpg)",
-          }}
-        >
-          <div className="absolute bottom-3 left-4">
-            <h1
-              className="text-[#eb7b24] font-extrabold leading-tight uppercase text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
-        xl:text-8xl 2xl:text-[8rem] 3xl:text-[14rem] pl-4 pt-10"
+        <header className="relative w-full h-screen overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <Image
+              src="/images/Bildungsarbeit/BILDUNGSARBEIT_MACHTBEWUSST.jpg"
+              fill
+              alt="Home Page Header image"
+              className="object-cover w-full h-full"
+              priority
+              sizes="100vw"
+            />
+          </div>
+
+          {/* Text Content (moved left & down) */}
+          <div
+            className="
+              absolute
+                bottom-6    left-2
+              xs:bottom-8  xs:left-3
+              xs2:bottom-9 xs2:left-4
+              sm:bottom-10 sm:left-6
+              md:bottom-11 md:left-7
+              lg:bottom-12 lg:left-8
+              xl:bottom-13 xl:left-9
+              2xl:bottom-14 2xl:left-10
+            "
+          >
+            <div
+              className="
+                space-y-2
+                xs:space-y-3
+                sm:space-y-4
+                md:space-y-6
+                lg:space-y-8
+                xl:space-y-10
+                2xl:space-y-12
+              "
             >
-              Macht.
-              <br />
-              Bewusst.
-            </h1>
+              <h1
+                className="
+                  text-[#eb7b24] font-extrabold uppercase leading-[1.1]
+                  text-3xl
+                  xs:text-4xl
+                  xs2:text-5xl
+                  sm:text-6xl
+                  md:text-7xl
+                  lg:text-8xl
+                  xl:text-9xl
+                  2xl:text-[140px]
+                  3xl:text-[160px]
+                "
+              >
+                <span className="block">Macht.</span>
+                <span className="block">Bewusst.</span>
+              </h1>
+            </div>
           </div>
         </header>
 
-        <section className="relative w-full min-h-screen text-[#eb7b24] pb-20 px-8">
+        <section className="relative w-full min-h-screen text-[#eb7b24] px-8">
           {/* BIG TEXT */}
-          <div className="mx-auto pt-10 mb-12 xs:mb-14 sm:mb-16 md:mb-18 lg:mb-22 xl:mb-26 2xl:mb-32 3xl:mb-44">
-            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem]  font-semibold leading-normal tracking-normal">
+          <div className="mx-auto pt-8 mb-12 xs:mb-14 sm:mb-16 md:mb-20 lg:mb-36 xl:mb-40 2xl:mb-48 3xl:mb-52">
+            <p className="text-2xl xs:text-3xl xs2:text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem] 3xl:text-[10rem] font-semibold leading-tight tracking-normal mx-auto">
               Wir vernetzen lokale Initiativen und schaffen Räume für den Dialog
               über Dekolonialisierung und soziale Transformation – für eine
               gerechtere Zukunft.
@@ -39,8 +77,8 @@ export default function Bildungsarbeit() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="max-w-full">
-              <p className="text-sm xs:text-base xs2:text-lg sm:text-xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl 3xl:text-5xl leading-relaxed text-left text-black">
+            <div className="mx-auto">
+              <p className="text-sm xs:text-sm xs2:text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl leading-relaxed text-left text-black">
                 Ossara e.V. setzt sich aktiv für die Sichtbarmachung und
                 Auseinandersetzung mit kolonialen Erblasten und
                 Dekolonialisierungsprozessen ein. Ein zentraler Aspekt unserer
@@ -62,60 +100,61 @@ export default function Bildungsarbeit() {
           </div>
         </section>
 
-        {/* MachtBewusst */}
-        <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div
-            id="machtbewusst"
-            className="absolute inset-0 flex flex-col intems-center justify-center pt-20 pb-20"
-          >
-            <div className="flex md:flex-grow flex-row gap-6 pt-20 m-6">
-              <div className="basis-2/3">
-                <div className="relative h-[60vh] w-full md:h-[70vh]">
-                  <Link
-                    href="https://machtbewusst-hamburg.de"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={`/sections/machtbewusst.png`}
-                      alt="Machtbewusst Photo"
-                      fill
-                      quality={100}
-                      className="object-cover shadow-2xl"
-                      priority
-                    />
-                  </Link>
-                </div>
+        {/* MachtBewusst Hamburg */}
+        <section
+          id="#machtbewusst"
+          className="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center py-section"
+        >
+          <div className="container flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
+            {/* Image Container */}
+            <div className="w-full md:w-1/2 flex items-center p-4">
+              <div className="relative w-full aspect-[21/9] max-h-[500px] md:max-h-[600px]">
+                <Link
+                  href="https://machtbewusst-hamburg.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit MachtBewusst Hamburg website"
+                >
+                  <Image
+                    src="/images/Bildungsarbeit/machtbewusst.png"
+                    alt="MachtBewusst Hamburg website showing decolonization resources"
+                    fill
+                    quality={90}
+                    className="object-contain"
+                    priority
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </Link>
               </div>
+            </div>
 
-              {/* Right: Text */}
-              <div className="basis-1/3">
-                <h2 className="text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-bold text-left">
-                  <Link
-                    href="https://machtbewusst-hamburg.de"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    MachtBewusst Hamburg
-                  </Link>
-                </h2>
-                <p className="mt-4 text-base text-black">
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center p-4 max-w-prose">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#eb7b24] mb-6">
+                <Link
+                  href="https://machtbewusst-hamburg.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  MachtBewusst Hamburg
+                </Link>
+              </h2>
+              <div className="space-y-4 text-base md:text-lg text-black">
+                <p>
                   Bist du auf der Suche nach Themen zur Dekolonisierung?
                   Möchtest du wissen, was in Hamburg passiert und wer sich aktiv
                   für Veränderungen einsetzt? Dann bist du bei uns genau
                   richtig!
                 </p>
-                <p className="text-base text-black">
-                  In unserem Blog „MachtBewusst Hamburg“ dreht sich alles um
+                <p>
+                  In unserem Blog „MachtBewusst Hamburg" dreht sich alles um
                   machtkritische und dekoloniale Perspektiven in der Hamburger
                   Zivilgesellschaft. Wir beleuchten das Engagement von
                   Initiativen, Organisationen und Einzelpersonen, die den
-                  Dekolonisierungsprozess in Hamburg vorantreiben. Hier findest
-                  du spannende Beiträge, wertvolles Fachwissen und inspirierende
-                  Geschichten, die zeigen, wie der Wandel in unserer Stadt
-                  gestaltet wird.
+                  Dekolonisierungsprozess in Hamburg vorantreiben.
                 </p>
-                <p className="text-base text-black">
+                <p>
                   Komm vorbei, lass dich von unseren Inhalten inspirieren und
                   informiere dich über die vielfältigen Projekte und Aktionen,
                   die das Ziel haben, gesellschaftliche Ungleichheiten zu
@@ -126,20 +165,16 @@ export default function Bildungsarbeit() {
           </div>
         </section>
 
-        {/* Eine Welt-Promotorinnen */}
-        <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div
-            id="promotorinnen"
-            className="absolute inset-0 flex flex-col intems-center justify-center pt-20"
-          >
-            <div className="flex md:flex-grow flex-row gap-10 pt-10 mt-20 m-6">
-              <div className="basis-1/2">
-                <h3
-                  className={`text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-left`}
-                >
-                  Eine Welt-Promotor*innen Programm
-                </h3>
-                <p className="text-lg text-black">
+        {/* Eine Welt-Promotor*innen */}
+        <section className="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center py-section">
+          <div className="container flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center p-4 max-w-prose">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#eb7b24] mb-6">
+                Eine Welt-Promotor*innen Programm
+              </h3>
+              <div className="space-y-4 text-base md:text-lg text-black">
+                <p>
                   Die Fachstelle dekoloniale Perspektiven im
                   entwicklungspolitischen Engagement ist Teil des bundesweiten
                   Eine Welt-Promotor:innen-Programms, welches in Hamburg von
@@ -155,63 +190,59 @@ export default function Bildungsarbeit() {
                   und Beratung von zivilgesellschaftlichen Initiativen und
                   Akteur:innen.
                 </p>
-                <p className="text-lg text-black">
+                <p>
                   Die Fachstelle Dekolonisierung ist Teil des bundesweiten Eine
                   Welt-Promotor:innen-Programms, das in Hamburg von
                   hamburg.global koordiniert wird.
                 </p>
-                <p className="text-lg text-black">
-                  Weitere Informationen finden Sie{" "}
-                  <Link
-                    href={`/eine_welt_promotorinnen`}
-                    className="bg-[#eb7b24] text-white font-semibold shadow-xl p-1"
-                  >
-                    hier
-                  </Link>
-                </p>
               </div>
-              <div className="basis-1/2">
-                <div className="flex justify-center items-center h-[400px] md:h-[490px]">
-                  <Image
-                    src={`/sections/eine-welt-fach-promotorinnen.jpg`}
-                    alt="Eine Welt-Promotorinnen Photo"
-                    width={480}
-                    height={490}
-                    quality={100}
-                    className="w-full h-full object-cover shadow-lg"
-                  />
-                </div>
+            </div>
+
+            {/* Image Container */}
+            <div className="w-full md:w-1/2 flex items-center justify-center p-4">
+              <div className="relative w-full aspect-square max-h-[500px] md:max-h-[600px]">
+                <Image
+                  src="/images/Bildungsarbeit/eine-welt-fach-promotorinnen.jpg"
+                  alt="Eine Welt-Promotor*innen team working in Hamburg"
+                  fill
+                  quality={90}
+                  className="object-cover shadow-lg"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
         </section>
 
         {/* Dekoloniale Bildungsreisen */}
-        <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div
-            id="bildungsreisen"
-            className="absolute inset-0 flex flex-col intems-center justify-center pt-20"
-          >
-            <div className="flex md:flex-grow flex-row gap-10 pt-10 mt-20 m-6">
-              <div className="basis-1/2">
-                <div className="flex justify-center items-center h-[400px] md:h-[460px]">
-                  <Image
-                    src={`/images/Bildungsarbeit/Bildungsarbeit_Bildungsreisen.jpg`}
-                    alt="Bildungsreisen Photo"
-                    width={480}
-                    height={480}
-                    quality={100}
-                    className="w-full h-full object-cover shadow-lg"
-                  />
-                </div>
+        <section
+          id="#bildungsreisen"
+          className="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center py-section"
+        >
+          <div className="container flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
+            {/* Image Container */}
+            <div className="w-full md:w-1/2 flex items-center justify-center p-4">
+              <div className="relative w-full aspect-square max-h-[500px] md:max-h-[600px]">
+                <Image
+                  src="/images/Bildungsarbeit/Bildungsarbeit_Bildungsreisen.jpg"
+                  alt="Group participating in dekoloniale Bildungsreisen"
+                  fill
+                  quality={90}
+                  className="object-cover"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
-              <div className="basis-1/2">
-                <h3
-                  className={`text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-left`}
-                >
-                  Dekoloniale Bildungsreisen
-                </h3>
-                <p className="mt-4 text-lg text-black">
+            </div>
+
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center p-4 max-w-prose">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#eb7b24] mb-6">
+                Dekoloniale Bildungsreisen
+              </h3>
+              <div className="space-y-4 text-base md:text-lg text-black">
+                <p>
                   Unsere dekolonialen Bildungsreisen bieten dir die Möglichkeit,
                   historische und aktuelle Zusammenhänge von Kolonialismus und
                   Machtstrukturen auf eine neue Art und Weise zu entdecken.
@@ -232,19 +263,15 @@ export default function Bildungsarbeit() {
         </section>
 
         {/* KoRaBi */}
-        <section className="relative w-full min-h-screen text-[#eb7b24]">
-          <div
-            id="korabi"
-            className="absolute inset-0 flex flex-col intems-center justify-center pt-20"
-          >
-            <div className="flex md:flex-grow flex-row gap-10 pt-10 mt-20 m-6">
-              <div className="basis-1/2">
-                <h3
-                  className={`text-4xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-left`}
-                >
-                  KoRaBi
-                </h3>
-                <p className="mt-4 text-lg text-black">
+        <section className="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center py-section">
+          <div className="container flex flex-col md:flex-row gap-8 md:gap-12 items-stretch">
+            {/* Text Content */}
+            <div className="w-full md:w-1/2 flex flex-col justify-center p-4 max-w-prose">
+              <h3 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#eb7b24] mb-6">
+                KoRaBi
+              </h3>
+              <div className="space-y-4 text-base md:text-lg text-black">
+                <p>
                   Konzeptwerk Rassismuskritische Bildungsarbeit entwickelt
                   innovative Konzepte für rassismuskritische Bildungsarbeit und
                   professionalisiert Bildner:innen in diesem Bereich. Das
@@ -253,7 +280,7 @@ export default function Bildungsarbeit() {
                   rassismuskritische Perspektiven zu integrieren und in ihrer
                   Arbeit zu vermitteln.
                 </p>
-                <p className="mt-4 text-lg text-black">
+                <p>
                   KoRaBi wird ehrenamtlich von <b>Sam Schulz</b> und{" "}
                   <b>Tatiana La Mura Floes</b> geleitet, die beide über
                   umfassende Erfahrungen in der rassismuskritischen
@@ -261,25 +288,30 @@ export default function Bildungsarbeit() {
                   Multiplikator:innen verfügen. Ihre Expertise sorgt dafür, dass
                   die Bildungsarbeit sowohl theoretisch fundiert als auch
                   praktisch wirksam ist.
+                </p>
+                <p className="mt-6">
                   <Link
                     href="/korabi"
-                    className="bg-[#eb7b24] text-white font-semibold shadow-xl p-1"
+                    className="inline-block bg-[#eb7b24] text-white font-medium px-6 py-2 hover:bg-[#d56a1e] transition-colors"
                   >
-                    hier
+                    Hier
                   </Link>
                 </p>
               </div>
-              <div className="basis-1/2">
-                <div className="flex justify-center items-center h-[400px] md:h-[460px]">
-                  <Image
-                    src={`/images/Bildungsarbeit/OSSARA_Integrative_Stadtarbeit.jpg`}
-                    alt="Korabi Photo"
-                    width={480}
-                    height={480}
-                    quality={100}
-                    className="w-full h-full object-cover shadow-lg"
-                  />
-                </div>
+            </div>
+
+            {/* Image Container */}
+            <div className="w-full md:w-1/2 flex items-center justify-center p-4">
+              <div className="relative w-full aspect-square max-h-[500px] md:max-h-[600px]">
+                <Image
+                  src="/images/Bildungsarbeit/OSSARA_Integrative_Stadtarbeit.jpg"
+                  alt="KoRaBi workshop session"
+                  fill
+                  quality={90}
+                  className="object-cover shadow-lg"
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
             </div>
           </div>
