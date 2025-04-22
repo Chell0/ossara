@@ -77,8 +77,8 @@ export default function Bildungsarbeit() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="mx-auto">
-              <p className="text-sm xs:text-sm xs2:text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl leading-relaxed text-left text-black">
+            <div className="max-w-7xl">
+              <p className="text-sm xs:text-xs xs2:text-xs sm:text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-black leading-relaxed text-left">
                 Ossara e.V. setzt sich aktiv für die Sichtbarmachung und
                 Auseinandersetzung mit kolonialen Erblasten und
                 Dekolonialisierungsprozessen ein. Ein zentraler Aspekt unserer

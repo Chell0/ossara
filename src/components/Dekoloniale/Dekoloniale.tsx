@@ -48,8 +48,8 @@ export default function Dekoloniale() {
 
           {/* small text */}
           <div className="w-full flex justify-center">
-            <div className="mx-auto">
-              <p className="text-sm xs:text-sm xs2:text-base sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-4xl leading-relaxed text-left text-black">
+            <div className="max-w-7xl">
+              <p className="text-sm xs:text-xs xs2:text-xs sm:text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl 3xl:text-3xl text-black leading-relaxed text-left">
                 Ossara e.V. verfolgt einen dekolonialen Ansatz in der
                 internationalen Zusammenarbeit, um gleichwertige Partnerschaften
                 und nachhaltige Entwicklung zu fördern. Wir setzen uns dafür
@@ -74,7 +74,7 @@ export default function Dekoloniale() {
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-10">
               {/* Project List */}
               <div className="w-full lg:w-1/2 space-y-4 lg:space-y-6">
-                <p className="text-2xl xs2:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-left">
+                <p className="text-xl xs2:text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight text-left">
                   Unsere Projekte umfassen:
                 </p>
                 <ul className="mt-4 text-base xs2:text-lg list-disc text-black space-y-2 pl-5">
