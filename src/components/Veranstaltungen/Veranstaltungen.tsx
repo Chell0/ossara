@@ -38,7 +38,7 @@ const eventsData: Event[] = [
     link: "/veranstaltungen/event2",
     description:
       "Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen von kreativen Angeboten zu verbinden. Was: Teller bemalen - Hier kannst du deinen neuen Lieblings Frühstücksteller oder einen Wandteller gestalten Mit Fabienne Schöter, Kunsttherapeutin",
-    imageUrl: "/veranstaltungen/netzwerkstatt2.png",
+    imageUrl: "/veranstaltungen/Netzwerkstatt2.png",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ const eventsData: Event[] = [
     link: "/veranstaltungen/event3",
     description:
       "Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen von kreativen Angeboten zu verbinden. Was: Gemeinsam werden wir die Technik des Linoldruckes kennenlernen und uns hier ausprobieren. Mit Fabienne Schöter, Kunsttherapeutin.",
-    imageUrl: "/veranstaltungen/netzwerkstatt1.png",
+    imageUrl: "/veranstaltungen/Netzwerkstatt1.png",
   },
   {
     id: 4,
