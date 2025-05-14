@@ -116,8 +116,8 @@ export default function Bildungsarbeit() {
                   aria-label="Visit MachtBewusst Hamburg website"
                 >
                   <Image
-                    src="/images/Bildungsarbeit/machtbewusst.png"
-                    alt="MachtBewusst Hamburg website showing decolonization resources"
+                    src="/images/Bildungsarbeit/machtbewusst.jpg"
+                    alt="machtBewusst image"
                     fill
                     quality={90}
                     className="object-contain"
