@@ -40,18 +40,17 @@ export default function Neuigkeiten() {
             />
           </div>
           {/* Text Content */}
-          <div className="absolute bottom-4 left-4 xs:bottom-5 xs:left-5 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 lg:bottom-section lg:left-section xl:bottom-section-lg xl:left-section-lg">
-            <div className="space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12">
+          <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-10 lg:left-10 xl:bottom-section xl:left-section z-10">
+            <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
               <h1
-                className="text-[#eb7b24] text-3xl font-extrabold leading-[1.1] uppercase
-        xs:text-4xl
-        xs2:text-5xl
-        sm:text-6xl
-        md:text-7xl
-        lg:text-8xl
-        xl:text-9xl
-        2xl:text-[140px]
-        3xl:text-[160px]"
+                className="text-[#eb7b24] text-3xl font-bold leading-[1.1] uppercase
+          xs:text-4xl
+          sm:text-5xl
+          md:text-6xl
+          lg:text-7xl
+          xl:text-7xl
+          2xl:text-9xl
+          3xl:text-[180px]"
               >
                 <span className="block">Neuigkeiten.</span>
               </h1>
