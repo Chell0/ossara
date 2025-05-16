@@ -97,9 +97,9 @@ export default function NavBar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 sm:h-20 lg:h-header">
+        <div className="flex justify-between items-center h-16 xs:h-8 xs2:h-10 sm:h-20 lg:h-header">
           {/* Menu Button */}
-          <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
+          <div className="flex items-center gap-1 sm:gap-2 lg:gap-3">
             <button
               onClick={toggleMenu}
               className="text-black focus:outline-none"
@@ -110,7 +110,7 @@ export default function NavBar() {
                 <MenuIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10" />
               )}
             </button>
-            <span className="font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+            <span className="font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl pt-2">
               Menü
             </span>
           </div>

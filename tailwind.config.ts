@@ -8,31 +8,31 @@ const config: Config = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    screens: {
-      "xs": "320px",
-      "xs2": "375px",
-      "sm": "425px",
-      "md": "768px",
-      "lg": "1024px",
-      "xl": "1280px",
-      "2xl": "1440px",
-      "3xl": "2560px",
-    },
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: "1rem",
-        sm: "1.5rem",
-        lg: "2rem",
-      },
+    extend: {
       screens: {
+        "xs": "320px",
+        "xs2": "375px",
+        "sm": "425px",
+        "md": "768px",
         "lg": "1024px",
         "xl": "1280px",
         "2xl": "1440px",
         "3xl": "2560px",
       },
-    },
-    extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "1.5rem",
+          lg: "2rem",
+        },
+        screens: {
+          "lg": "1024px",
+          "xl": "1280px",
+          "2xl": "1440px",
+          "3xl": "2560px",
+        },
+      },
       spacing: {
         "section": "4rem",
         "section-lg": "6rem",
@@ -50,6 +50,7 @@ const config: Config = {
         "lg": "1.125rem",
         "xl": "1.25rem",
         "2xl": "1.5rem",
+        "3xl": "2rem",
       },
     },
   },
