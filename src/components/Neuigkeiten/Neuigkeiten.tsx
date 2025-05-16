@@ -43,10 +43,8 @@ export default function Neuigkeiten() {
         <div className="relative z-10 h-full">
           <section className="absolute bottom-1 left-1 sm:bottom-2 sm:left-1 md:bottom-4 md:left-3 lg:bottom-6 lg:left-3 flex items-end h-full px-4 sm:px-6">
             <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
-              <h1 className="text-[#eb7b24] text-xl font-bold leading-[1.1] uppercase xs:text-3xl xs2:text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl 3xl:text-[12rem]  animate-fade-in">
-                <span className="block animate-slide-up animation-delay-400">
-                  Neuigkeiten.
-                </span>
+              <h1 className="text-[#eb7b24] text-xl font-bold leading-[1.1] uppercase xs:text-3xl xs2:text-3xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl 3xl:text-[12rem] animate-fade-in">
+                <span className="block animate-slide-up">Neuigkeiten.</span>
               </h1>
             </div>
           </section>
