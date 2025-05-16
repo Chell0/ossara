@@ -26,7 +26,7 @@ export default function LandingSection() {
               sm:text-5xl
               md:text-6xl
               lg:text-7xl
-              xl:text-8xl
+              xl:text-7xl
               2xl:text-9xl
               3xl:text-[180px]"
           >

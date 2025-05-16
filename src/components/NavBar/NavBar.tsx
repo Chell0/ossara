@@ -96,21 +96,21 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="container mx-auto px-0">
-        <div className="flex justify-between items-center h-header">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16 sm:h-20 lg:h-header">
           {/* Menu Button */}
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 sm:gap-3 lg:gap-4">
             <button
               onClick={toggleMenu}
               className="text-black focus:outline-none"
             >
               {menuOpen ? (
-                <XIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
+                <XIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10" />
               ) : (
-                <MenuIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
+                <MenuIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10" />
               )}
             </button>
-            <span className="font-medium text-base md:text-lg lg:text-xl xl:text-2xl">
+            <span className="font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
               Menü
             </span>
           </div>
@@ -121,9 +121,9 @@ export default function NavBar() {
               <Image
                 src="/logos/ossara_logo.png"
                 alt="Ossara Logo"
-                width={1280}
-                height={445}
-                className="h-8 md:h-10 xl:h-14 2xl:h-18 w-auto object-contain"
+                width={100}
+                height={100}
+                className="pt-6 w-auto object-contain"
                 priority
               />
             </Link>
