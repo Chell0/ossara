@@ -27,23 +27,24 @@ export default function Neuigkeiten() {
     <>
       <div>
         {/* Header Section */}
-        <header className="relative w-full min-h-screen">
+        <div className="relative w-full full-viewport">
           {/* Background Image */}
           <div className="absolute inset-0 w-full h-full">
             <Image
               src="/images/Neuigkeiten/OSSARA_Arbeitssituation.jpg"
               fill
-              alt="Home Page Header image"
+              alt="Neuigkeiten Header image"
               className="object-cover"
               priority
-              sizes="(max-width: 319px) 100vw, (max-width: 424px) 100vw, (max-width: 767px) 100vw, (max-width: 1023px) 100vw, (max-width: 1279px) 100vw, (max-width: 1439px) 100vw, (max-width: 2559px) 100vw, 100vw"
+              sizes="(max-width: 320px) 100vw, (max-width: 2560px) 100vw, 100vw"
             />
           </div>
-          {/* Text Content */}
-          <div className="fixed bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-10 lg:left-10 xl:bottom-section xl:left-section z-10">
-            <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
-              <h1
-                className="text-[#eb7b24] text-3xl font-bold leading-[1.1] uppercase
+          {/* Sticky Text Content */}
+          <div className="relative z-10 h-full">
+            <div className="sticky bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-10 lg:left-10 xl:bottom-section xl:left-section flex items-end h-full px-4 sm:px-6 xl:px-section">
+              <section className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
+                <h1
+                  className="text-[#eb7b24] text-3xl font-bold leading-[1.1] uppercase
           xs:text-4xl
           sm:text-5xl
           md:text-6xl
@@ -51,12 +52,13 @@ export default function Neuigkeiten() {
           xl:text-7xl
           2xl:text-9xl
           3xl:text-[180px]"
-              >
-                <span className="block">Neuigkeiten.</span>
-              </h1>
+                >
+                  <span className="block">Neuigkeiten.</span>
+                </h1>
+              </section>
             </div>
           </div>
-        </header>
+        </div>
 
         {/* News Section */}
         <section className="min-h-screen w-full">
