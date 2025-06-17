@@ -6,11 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "bunx eslint . --ext .ts, .tsx"
+    "lint": "next lint --dir src"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "6.6.0",
     "@heroicons/react": "v1",
+    "@next/eslint-plugin-next": "^15.3.3",
     "@tailwindcss/container-queries": "^0.1.1",
     "autoprefixer": "^10.4.20",
     "framer-motion": "^12.7.3",
@@ -22,6 +23,7 @@
     "vercel": "41.1.4"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@tailwindcss/forms": "0.5.10",
     "@tailwindcss/typography": "0.5.16",
     "@types/node": "22.9.1",
@@ -29,8 +31,9 @@
     "@types/react-dom": "19.0.3",
     "@typescript-eslint/eslint-plugin": "8.32.1",
     "@typescript-eslint/parser": "8.32.1",
-    "eslint": "9.27.0",
+    "eslint": "9.29.0",
     "eslint-config-next": "^15.3.2",
+    "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-next": "0.0.0",
     "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",

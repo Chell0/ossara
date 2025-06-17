@@ -58,7 +58,7 @@ export default function Home() {
             Unterstütze Uns Und Werde Supporter*in
           </p>
           <Link
-            href="/fordern"
+            href="/spenden"
             className="flex items-center justify-center space-x-2 px-4 py-2 xs:px-5 xs:py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 font-semibold rounded-lg shadow-sm bg-[#fcc41b] text-white hover:bg-[#e6ac00] transition-colors"
           >
             Spenden
