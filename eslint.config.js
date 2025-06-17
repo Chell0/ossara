@@ -3,15 +3,21 @@ const prettier = require("eslint-plugin-prettier");
 const unusedImports = require("eslint-plugin-unused-imports");
 const simpleImportSort = require("eslint-plugin-simple-import-sort");
 const typescriptEslint = require("@typescript-eslint/eslint-plugin");
+const tsParser = require("@typescript-eslint/parser");
 
+/** @type {import("eslint").Linter.FlatConfig[]} */
 module.exports = [
-  // Next.js core web vitals config (already a flat config array)
+  // Next.js Web Vitals config (already Flat Config style)
   ...nextConfigs.coreWebVitals,
+
   {
+    // Apply to all files
+    files: ["**/*.{js,jsx,ts,tsx}"],
     languageOptions: {
+      parser: tsParser,
       parserOptions: {
         project: "./tsconfig.json",
-        tsconfigRootDir: __dirname, // Ensures the correct root is used
+        tsconfigRootDir: __dirname,
       },
     },
     settings: {
@@ -37,6 +43,7 @@ module.exports = [
       "unused-imports/no-unused-imports": "error",
     },
   },
+
   {
     files: ["**/*.ts", "**/*.tsx"],
     rules: {

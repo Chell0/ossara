@@ -11,7 +11,9 @@ export default function Home() {
     <div className="overflow-hidden">
       <main className="bg-[#fef5db] relative">
         <NavBar />
-        <LandingSection />
+        <div className="h-screen">
+          <LandingSection />
+        </div>
 
         <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-section min-h-screen flex flex-col lg:flex-row items-center justify-center gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
           {/* Image Container */}

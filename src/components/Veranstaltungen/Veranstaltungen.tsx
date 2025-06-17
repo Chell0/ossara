@@ -280,97 +280,44 @@ export default function Veranstaltungen() {
 
   return (
     <>
-      <div>
-        {/* Header Section */}
-        <header className="relative w-full min-h-screen">
-          {/* Background Image */}
-          <div className="absolute inset-0 w-full h-full">
-            <Image
-              src="/images/Veranstaltungen/OSSARA_Lobbyarbeit_Netzwerken.jpg"
-              fill
-              alt="Home Page Header image"
-              className="object-cover"
-              priority
-              sizes="(max-width: 319px) 100vw, (max-width: 424px) 100vw, (max-width: 767px) 100vw, (max-width: 1023px) 100vw, (max-width: 1279px) 100vw, (max-width: 1439px) 100vw, (max-width: 2559px) 100vw, 100vw"
-            />
-          </div>
+      {/* Header Section */}
+      <div className="relative w-full xs:h-[13.5vh] xs2:h-[15.8vh] sm:h-[17.9vh] md:h-[32.2vh] lg:h-[43vh] xl:h-[53.7vh] 2xl:h-[60.5vh] 3xl:h-[86vh]">
+        {/* Background Image */}
+        <div className="absolute inset-0 w-full">
+          <Image
+            src="/images/Veranstaltungen/OSSARA_Lobbyarbeit_Netzwerken.jpg"
+            alt="Veranstaltung Header image"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Overlay gradient for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        </div>
 
-          {/* Text Section */}
-          <div className="absolute bottom-4 left-4 xs:bottom-5 xs:left-5 sm:bottom-6 sm:left-6 md:bottom-8 md:left-8 lg:bottom-section lg:left-section xl:bottom-section-lg xl:left-section-lg">
-            <div className="space-y-2 xs:space-y-3 xs2:space-y-4 sm:space-y-5 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12">
-              <h1 className="text-[#eb7b24] text-2xl font-extrabold xs:text-3xl xs2:text-4xl sm:text-[40px] md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl 3xl:text-[140px] leading-[1.1] md:leading-[1.05] uppercase">
-                <span className="block">Veranstaltungen.</span>
+        {/* Text Content */}
+        <div className="relative z-10 h-full">
+          <section className="absolute bottom-1 left-1 sm:bottom-3 sm:left-1 md:bottom-4 md:left-3 lg:bottom-6 lg:left-3 flex items-end h-full px-4 sm:px-6">
+            <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
+              <h1 className="text-[#eb7b24] font-bold leading-[1.1] uppercase text-2xl xs:text-lg xs2:text-xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-[12rem] animate-fade-in">
+                <span className="block animate-slide-up">Veranstaltungen.</span>
               </h1>
             </div>
-          </div>
-        </header>
+          </section>
+        </div>
+      </div>
 
-        {/* Current and Future Events */}
-        <h3 className="my-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center text-[#eb7b24]">
-          Upcoming Events
-        </h3>
-        {/* Current and Future Events Section */}
-        <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
-          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
-            {currentAndFutureEvents.length > 0 ? (
-              currentAndFutureEvents.map((event) => (
-                <div key={event.id} className="w-full overflow-hidden">
-                  {/* Image section */}
-                  <div className="relative w-full aspect-[4/3] overflow-hidden">
-                    <Image
-                      src={event.imageUrl}
-                      alt={event.title}
-                      fill
-                      quality={100}
-                      className="object-cover"
-                      sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw"
-                    />
-                    {/* Rectangular badge for date only */}
-                    <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
-                      <div className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold">
-                        {formatDate(event.date)}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Content section */}
-                  <div className="flex flex-col p-2">
-                    <h3 className="text-sm xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
-                      {event.title}
-                    </h3>
-                    <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
-                      {event.type}
-                    </div>
-                    <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
-                      @{event.location}
-                    </div>
-                    <Link
-                      href={event.link}
-                      className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base font-medium text-[#eb7b24] hover:underline"
-                    >
-                      Mehr →
-                    </Link>
-                  </div>
-                </div>
-              ))
-            ) : (
-              <p className="py-section text-base xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center text-gray-800 col-span-full">
-                No upcoming events found.
-              </p>
-            )}
-          </div>
-        </section>
-
-        {/* Archived Events Section */}
-        <h3 className="pt-section pb-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-center text-[#eb7b24]">
-          Veranstaltungsarchiv
-        </h3>
-
-        <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
-          <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
-            {pastEvents.slice(0, 15).map((event) => (
+      {/* Current and Future Events */}
+      <h3 className="my-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center text-[#eb7b24]">
+        Upcoming Events
+      </h3>
+      {/* Current and Future Events Section */}
+      <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
+        <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
+          {currentAndFutureEvents.length > 0 ? (
+            currentAndFutureEvents.map((event) => (
               <div key={event.id} className="w-full overflow-hidden">
-                {/* Image Section */}
+                {/* Image section */}
                 <div className="relative w-full aspect-[4/3] overflow-hidden">
                   <Image
                     src={event.imageUrl}
@@ -378,7 +325,7 @@ export default function Veranstaltungen() {
                     fill
                     quality={100}
                     className="object-cover"
-                    sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw)"
+                    sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw"
                   />
                   {/* Rectangular badge for date only */}
                   <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
@@ -388,9 +335,9 @@ export default function Veranstaltungen() {
                   </div>
                 </div>
 
-                {/* Content Section */}
+                {/* Content section */}
                 <div className="flex flex-col p-2">
-                  <h3 className="text-base xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
+                  <h3 className="text-sm xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
                     {event.title}
                   </h3>
                   <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
@@ -401,16 +348,70 @@ export default function Veranstaltungen() {
                   </div>
                   <Link
                     href={event.link}
-                    className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base text-[#eb7b24] font-medium hover:underline"
+                    className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base font-medium text-[#eb7b24] hover:underline"
                   >
                     Mehr →
                   </Link>
                 </div>
               </div>
-            ))}
-          </div>
-        </section>
-      </div>
+            ))
+          ) : (
+            <p className="py-section text-base xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center text-gray-800 col-span-full">
+              No upcoming events found.
+            </p>
+          )}
+        </div>
+      </section>
+
+      {/* Archived Events Section */}
+      <h3 className="pt-section pb-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-center text-[#eb7b24]">
+        Veranstaltungsarchiv
+      </h3>
+
+      <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
+        <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
+          {pastEvents.slice(0, 15).map((event) => (
+            <div key={event.id} className="w-full overflow-hidden">
+              {/* Image Section */}
+              <div className="relative w-full aspect-[4/3] overflow-hidden">
+                <Image
+                  src={event.imageUrl}
+                  alt={event.title}
+                  fill
+                  quality={100}
+                  className="object-cover"
+                  sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw)"
+                />
+                {/* Rectangular badge for date only */}
+                <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
+                  <div className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold">
+                    {formatDate(event.date)}
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="flex flex-col p-2">
+                <h3 className="text-base xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
+                  {event.title}
+                </h3>
+                <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                  {event.type}
+                </div>
+                <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                  @{event.location}
+                </div>
+                <Link
+                  href={event.link}
+                  className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base text-[#eb7b24] font-medium hover:underline"
+                >
+                  Mehr →
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
