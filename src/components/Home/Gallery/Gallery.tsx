@@ -30,25 +30,25 @@ export default function Gallery() {
 
   return (
     <>
-      <div className="w-full min-h-screen">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-8xl pt-section">
-          <div className="grid grid-cols-1 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:gap-section xl:grid-cols-3 xl:gap-section-lg auto-rows-fr">
+      <div className="min-h-screen w-full">
+        <div className="container mx-auto max-w-8xl px-4 pt-section sm:px-6 lg:px-8">
+          <div className="grid auto-rows-fr grid-cols-1 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:grid-cols-2 lg:gap-section xl:grid-cols-3 xl:gap-section-lg">
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative w-full aspect-[4/3] overflow-hidden shadow-md group"
+                className="group relative aspect-[4/3] w-full overflow-hidden shadow-md"
               >
                 <Image
                   fill
                   src={image.src}
                   alt={`Image ${index + 1}`}
-                  className="object-cover w-full h-full transition-all duration-300 ease-in-out group-hover:scale-103"
+                  className="h-full w-full object-cover transition-all duration-300 ease-in-out group-hover:scale-103"
                   sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, (max-width: 1279px) 33vw, 25vw"
                   quality={100}
                   priority={false}
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <p className="p-2 xs:p-3 sm:p-4 md:p-5 lg:p-6 xl:p-7 2xl:p-8 text-center text-white text-xs xs:text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl font-bold drop-shadow-md backdrop-blur-sm">
+                  <p className="p-2 xs:p-3 text-center font-bold text-white text-xs xs:text-xs drop-shadow-md backdrop-blur-sm sm:p-4 sm:text-sm md:p-5 md:text-base lg:p-6 lg:text-lg xl:p-7 xl:text-xl 2xl:p-8 2xl:text-2xl">
                     {image.text}
                   </p>
                 </div>

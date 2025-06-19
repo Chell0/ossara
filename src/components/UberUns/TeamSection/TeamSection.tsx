@@ -87,11 +87,11 @@ export default function TeamSection() {
   return (
     <>
       <div className="container max-w-8xl">
-        <div className="grid grid-cols-1 gap-4 xs2:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xs2:gap-6 md:gap-8">
+        <div className="grid grid-cols-1 xs2:grid-cols-2 gap-4 xs2:gap-6 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
           {images.map((image, index) => (
             <div
               key={index}
-              className="relative aspect-square w-full overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 group"
+              className="group relative aspect-square w-full overflow-hidden shadow-xl transition-all duration-300 hover:shadow-2xl"
             >
               <Image
                 src={image.src}
@@ -103,14 +103,14 @@ export default function TeamSection() {
                 priority={index < 4}
               />
 
-              <div className="absolute inset-0 flex flex-col justify-end p-2 xs:p-3 sm:p-4 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <p className="font-bold text-white text-xs xs:text-sm sm:text-base md:text-lg truncate">
+              <div className="absolute inset-0 flex flex-col justify-end bg-black/70 p-2 xs:p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100 sm:p-4">
+                <p className="truncate font-bold text-white text-xs xs:text-sm sm:text-base md:text-lg">
                   {image.name}
                 </p>
-                <p className="text-white text-[10px] xs:text-xs sm:text-sm md:text-base opacity-90 line-clamp-3">
+                <p className="line-clamp-3 text-[10px] text-white xs:text-xs opacity-90 sm:text-sm md:text-base">
                   {image.position}
                 </p>
-                <p className="text-white text-[10px] xs:text-xs sm:text-sm opacity-80 truncate">
+                <p className="truncate text-[10px] text-white xs:text-xs opacity-80 sm:text-sm">
                   {image.büro}
                 </p>
               </div>

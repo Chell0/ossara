@@ -6,7 +6,7 @@ export default function Promo() {
       {/* Dekolonisierung */}
       <div className="w-full md:basis-1/2">
         <div className="mx-auto flex max-w-md items-center justify-between rounded-md border border-[#eb7b24] p-4 shadow-sm">
-          <p className="text-base md:text-lg text-black">
+          <p className="text-base text-black md:text-lg">
             Promo Dekolonisierung Flyer
           </p>
           <Link
@@ -14,7 +14,7 @@ export default function Promo() {
             target="_blank"
             rel="noopener noreferrer"
             download
-            className="flex items-center gap-2 rounded-md bg-[#eb7b24] px-4 py-2 text-sm md:text-base font-semibold text-white shadow-xl transition-colors hover:bg-[#d96e1f]"
+            className="flex items-center gap-2 rounded-md bg-[#eb7b24] px-4 py-2 font-semibold text-sm text-white shadow-xl transition-colors hover:bg-[#d96e1f] md:text-base"
           >
             <DownloadIcon />
             <span className="hidden sm:inline">Download Now</span>
@@ -25,7 +25,7 @@ export default function Promo() {
       {/* Promotorinnen */}
       <div className="w-full md:basis-1/2">
         <div className="mx-auto flex max-w-md items-center justify-between rounded-md border border-[#eb7b24] p-4 shadow-sm">
-          <p className="text-base md:text-lg text-black">
+          <p className="text-base text-black md:text-lg">
             Flyer HH Promotorinnen
           </p>
           <Link
@@ -33,7 +33,7 @@ export default function Promo() {
             target="_blank"
             rel="noopener noreferrer"
             download
-            className="flex items-center gap-2 rounded-md bg-[#eb7b24] px-4 py-2 text-sm md:text-base font-semibold text-white shadow-xl transition-colors hover:bg-[#d96e1f]"
+            className="flex items-center gap-2 rounded-md bg-[#eb7b24] px-4 py-2 font-semibold text-sm text-white shadow-xl transition-colors hover:bg-[#d96e1f] md:text-base"
           >
             <DownloadIcon />
             <span className="hidden sm:inline">Download Now</span>

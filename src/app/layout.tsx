@@ -1,5 +1,5 @@
-import { leagueSpartan } from "@/app/fonts";
 import type { Metadata } from "next";
+import { leagueSpartan } from "@/app/fonts";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "../styles/globals.css";

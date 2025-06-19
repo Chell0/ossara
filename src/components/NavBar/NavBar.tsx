@@ -1,9 +1,9 @@
 "use client";
 
-import { MenuIcon, XIcon } from "@heroicons/react/solid";
+import {MenuIcon, XIcon} from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import {useEffect, useState} from "react";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -29,24 +29,24 @@ export default function NavBar() {
   }, [menuOpen]);
 
   const leftMenuItems = [
-    { name: "NEUIGKEITEN", href: "/neuigkeiten", items: [] },
-    { name: "VERANSTALTUNGEN", href: "/veranstaltungen", items: [] },
+    {name: "NEUIGKEITEN", href: "/neuigkeiten", items: []},
+    {name: "VERANSTALTUNGEN", href: "/veranstaltungen", items: []},
     {
       name: "ÜBER UNS",
       href: "/uber",
       items: [
-        { name: "Verein", href: "#verein" },
-        { name: "Team", href: "#team" },
-        { name: "Geschichte", href: "#geschichte" },
+        {name: "Verein", href: "#verein"},
+        {name: "Team", href: "#team"},
+        {name: "Geschichte", href: "#geschichte"},
       ],
     },
     {
       name: "ENGAGIEREN",
       href: "/engagieren",
       items: [
-        { name: "Stellenausschreibungen", href: "#stellenausschreibungen" },
-        { name: "Mitglied Werden", href: "#mitglied-werden" },
-        { name: "Ehrenamtliches Engagement", href: "#ehrenamt" },
+        {name: "Stellenausschreibungen", href: "#stellenausschreibungen"},
+        {name: "Mitglied Werden", href: "#mitglied-werden"},
+        {name: "Ehrenamtliches Engagement", href: "#ehrenamt"},
       ],
     },
     {
@@ -54,7 +54,7 @@ export default function NavBar() {
       href: "/spenden",
       items: [],
     },
-    { name: "DOWNLOADS", href: "/downloads", items: [] },
+    {name: "DOWNLOADS", href: "/downloads", items: []},
   ];
 
   const rightMenuItems = [
@@ -62,32 +62,32 @@ export default function NavBar() {
       name: "INTEGRATIVE STADTTEILARBEIT",
       href: "/stadtteilarbeit",
       items: [
-        { name: "Stadtteilarbeit", href: "#stadtteilarbeit" },
-        { name: "Bewerbungstraining", href: "#bewerbungstraining" },
-        { name: "Sprachförderung", href: "#sprachförderung" },
+        {name: "Stadtteilarbeit", href: "#stadtteilarbeit"},
+        {name: "Bewerbungstraining", href: "#bewerbungstraining"},
+        {name: "Sprachförderung", href: "#sprachförderung"},
       ],
     },
-    { name: "LOKAL VERNETZT", href: "/lokal", items: [] },
+    {name: "LOKAL VERNETZT", href: "/lokal", items: []},
     {
       name: "DEKOLONIALE BILDUNGSARBEIT",
       href: "/bildungsarbeit",
       items: [
-        { name: "Machtbewusst-Hamburg", href: "#machtbewusst" },
+        {name: "Machtbewusst-Hamburg", href: "#machtbewusst"},
         {
           name: "Eine Welt-Promotorinnen Programm",
           href: "/eine_welt_promotorinnen",
         },
-        { name: "Dekoloniale Bildungsreisen", href: "#bildungsreisen" },
-        { name: "KoRaBi", href: "/korabi" },
+        {name: "Dekoloniale Bildungsreisen", href: "#bildungsreisen"},
+        {name: "KoRaBi", href: "/korabi"},
       ],
     },
-    { name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: [] },
+    {name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: []},
     {
       name: "DEKOLONIAL GLOBAL",
       href: "/dekoloniale",
       items: [
-        { name: "Projekte", href: "/projects" },
-        { name: "Partner", href: "/projekt_partners" },
+        {name: "Projekte", href: "/projects"},
+        {name: "Partner", href: "/projekt_partners"},
       ],
     },
   ];
@@ -95,9 +95,10 @@ export default function NavBar() {
   if (!showNav) return null;
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
+    <nav className="fixed top-0 left-0 z-50 w-full bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 xs:h-8 xs2:h-10 sm:h-20 lg:h-header">
+        <div
+          className="flex h-16 xs2:h-10 xs:h-8 items-center justify-between sm:h-20 lg:h-header">
           {/* Menu Button */}
           <div className="flex items-center gap-1 sm:gap-2 lg:gap-3">
             <button
@@ -105,12 +106,15 @@ export default function NavBar() {
               className="text-black focus:outline-none"
             >
               {menuOpen ? (
-                <XIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10" />
+                <XIcon
+                  className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-10 xl:w-10"/>
               ) : (
-                <MenuIcon className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 xl:w-10 xl:h-10" />
+                <MenuIcon
+                  className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-10 xl:w-10"/>
               )}
             </button>
-            <span className="font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl pt-2">
+            <span
+              className="pt-2 font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
               Menü
             </span>
           </div>
@@ -123,7 +127,7 @@ export default function NavBar() {
                 alt="Ossara Logo"
                 width={100}
                 height={100}
-                className="pt-6 w-auto object-contain"
+                className="w-auto object-contain pt-6"
                 priority
               />
             </Link>
@@ -132,12 +136,12 @@ export default function NavBar() {
       </div>
 
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-[#fef5db] overflow-y-auto">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#fef5db]">
           <div className="container mx-auto px-4 py-section">
-            <div className="flex justify-between items-center mb-8">
+            <div className="mb-8 flex items-center justify-between">
               <Link
                 href="/"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
+                className="font-bold text-4xl text-[#f7cc55] uppercase hover:text-[#e6b845] md:text-5xl lg:text-6xl"
               >
                 Ossara
               </Link>
@@ -145,19 +149,19 @@ export default function NavBar() {
                 onClick={toggleMenu}
                 className="text-gray-600 hover:text-gray-800"
               >
-                <XIcon className="w-8 h-8 md:w-10 md:h-10" />
+                <XIcon className="h-8 w-8 md:h-10 md:w-10"/>
               </button>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid gap-8 md:grid-cols-2">
               {/* Left Column */}
               <ul className="space-y-4 md:space-y-6">
                 {leftMenuItems.map((menu, index) => (
                   <li key={index}>
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                       <Link
                         href={menu.href}
-                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
+                        className="font-bold text-2xl text-[#f7cc55] hover:text-[#e6b845] md:text-3xl lg:text-4xl"
                         onClick={toggleMenu}
                       >
                         {menu.name}
@@ -165,14 +169,14 @@ export default function NavBar() {
                       {menu.items.length > 0 && (
                         <button
                           onClick={() => toggleSubMenu(menu.name)}
-                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-xl md:text-2xl"
+                          className="ml-4 text-[#f7cc55] text-xl hover:text-[#e6b845] md:text-2xl"
                         >
                           {activeSubMenu === menu.name ? "−" : "+"}
                         </button>
                       )}
                     </div>
                     {activeSubMenu === menu.name && (
-                      <ul className="pl-4 mt-2 space-y-2 text-lg md:text-xl">
+                      <ul className="mt-2 space-y-2 pl-4 text-lg md:text-xl">
                         {menu.items.map((item, subIndex) => (
                           <li key={subIndex}>
                             <Link
@@ -198,10 +202,10 @@ export default function NavBar() {
               <ul className="space-y-4 md:space-y-6">
                 {rightMenuItems.map((menu, index) => (
                   <li key={index}>
-                    <div className="flex justify-between items-center">
+                    <div className="flex items-center justify-between">
                       <Link
                         href={menu.href}
-                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
+                        className="font-bold text-2xl text-[#f7cc55] hover:text-[#e6b845] md:text-3xl lg:text-4xl"
                         onClick={toggleMenu}
                       >
                         {menu.name}
@@ -209,14 +213,14 @@ export default function NavBar() {
                       {menu.items.length > 0 && (
                         <button
                           onClick={() => toggleSubMenu(menu.name)}
-                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-xl md:text-2xl"
+                          className="ml-4 text-[#f7cc55] text-xl hover:text-[#e6b845] md:text-2xl"
                         >
                           {activeSubMenu === menu.name ? "−" : "+"}
                         </button>
                       )}
                     </div>
                     {activeSubMenu === menu.name && (
-                      <ul className="pl-4 mt-2 space-y-2 text-lg md:text-xl">
+                      <ul className="mt-2 space-y-2 pl-4 text-lg md:text-xl">
                         {menu.items.map((item, subIndex) => (
                           <li key={subIndex}>
                             <Link

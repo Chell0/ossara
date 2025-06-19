@@ -281,7 +281,7 @@ export default function Veranstaltungen() {
   return (
     <>
       {/* Header Section */}
-      <div className="relative w-full xs:h-[13.5vh] xs2:h-[15.8vh] sm:h-[17.9vh] md:h-[32.2vh] lg:h-[43vh] xl:h-[53.7vh] 2xl:h-[60.5vh] 3xl:h-[86vh]">
+      <div className="relative 3xl:h-[86vh] xs2:h-[15.8vh] xs:h-[13.5vh] w-full sm:h-[17.9vh] md:h-[32.2vh] lg:h-[43vh] xl:h-[53.7vh] 2xl:h-[60.5vh]">
         {/* Background Image */}
         <div className="absolute inset-0 w-full">
           <Image
@@ -297,9 +297,9 @@ export default function Veranstaltungen() {
 
         {/* Text Content */}
         <div className="relative z-10 h-full">
-          <section className="absolute bottom-1 left-1 sm:bottom-3 sm:left-1 md:bottom-4 md:left-3 lg:bottom-6 lg:left-3 flex items-end h-full px-4 sm:px-6">
+          <section className="absolute bottom-1 left-1 flex h-full items-end px-4 sm:bottom-3 sm:left-1 sm:px-6 md:bottom-4 md:left-3 lg:bottom-6 lg:left-3">
             <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
-              <h1 className="text-[#eb7b24] font-bold leading-[1.1] uppercase text-2xl xs:text-lg xs2:text-xl sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl 3xl:text-[12rem] animate-fade-in">
+              <h1 className="animate-fade-in font-bold 3xl:text-[12rem] text-2xl text-[#eb7b24] xs2:text-xl xs:text-lg uppercase leading-[1.1] sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
                 <span className="block animate-slide-up">Veranstaltungen.</span>
               </h1>
             </div>
@@ -308,17 +308,17 @@ export default function Veranstaltungen() {
       </div>
 
       {/* Current and Future Events */}
-      <h3 className="my-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center text-[#eb7b24]">
+      <h3 className="my-section text-center font-semibold text-2xl text-[#eb7b24] xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
         Upcoming Events
       </h3>
       {/* Current and Future Events Section */}
-      <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
-        <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
+      <section className="container mx-auto px-4 xs:px-5 py-section sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 xs:grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12 lg:grid-cols-4 lg:gap-section xl:grid-cols-4 xl:gap-section-lg 2xl:grid-cols-4">
           {currentAndFutureEvents.length > 0 ? (
             currentAndFutureEvents.map((event) => (
               <div key={event.id} className="w-full overflow-hidden">
                 {/* Image section */}
-                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Image
                     src={event.imageUrl}
                     alt={event.title}
@@ -328,8 +328,8 @@ export default function Veranstaltungen() {
                     sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw"
                   />
                   {/* Rectangular badge for date only */}
-                  <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
-                    <div className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold">
+                  <div className="absolute right-4 bottom-4 rounded bg-[#eb7b24] p-2 xs:p-2.5 text-center text-white sm:p-3 md:p-3.5">
+                    <div className="font-semibold text-xs xs:text-xs sm:text-sm md:text-base">
                       {formatDate(event.date)}
                     </div>
                   </div>
@@ -337,18 +337,18 @@ export default function Veranstaltungen() {
 
                 {/* Content section */}
                 <div className="flex flex-col p-2">
-                  <h3 className="text-sm xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
+                  <h3 className="line-clamp-3 font-semibold 3xl:text-2xl text-[#eb7b24] text-sm xs2:text-xs xs:text-[0.7rem] uppercase sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl">
                     {event.title}
                   </h3>
-                  <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                  <div className="text-gray-500 text-xs xs:text-xs sm:text-sm md:text-base">
                     {event.type}
                   </div>
-                  <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                  <div className="text-gray-500 text-xs xs:text-xs sm:text-sm md:text-base">
                     @{event.location}
                   </div>
                   <Link
                     href={event.link}
-                    className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base font-medium text-[#eb7b24] hover:underline"
+                    className="mt-3 xs:mt-4 font-medium text-[#eb7b24] text-xs xs:text-xs hover:underline sm:mt-5 sm:text-sm md:text-base"
                   >
                     Mehr →
                   </Link>
@@ -356,7 +356,7 @@ export default function Veranstaltungen() {
               </div>
             ))
           ) : (
-            <p className="py-section text-base xs:text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center text-gray-800 col-span-full">
+            <p className="col-span-full py-section text-center font-bold text-base text-gray-800 xs:text-base sm:text-lg md:text-xl lg:text-2xl">
               No upcoming events found.
             </p>
           )}
@@ -364,16 +364,16 @@ export default function Veranstaltungen() {
       </section>
 
       {/* Archived Events Section */}
-      <h3 className="pt-section pb-section text-2xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold leading-tight text-center text-[#eb7b24]">
+      <h3 className="pt-section pb-section text-center font-semibold text-2xl text-[#eb7b24] xs:text-2xl leading-tight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
         Veranstaltungsarchiv
       </h3>
 
-      <section className="container mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-section">
-        <div className="grid grid-cols-1 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-4 gap-6 xs:gap-8 sm:gap-10 md:gap-12 lg:gap-section xl:gap-section-lg">
+      <section className="container mx-auto px-4 xs:px-5 py-section sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 xs:grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12 lg:grid-cols-4 lg:gap-section xl:grid-cols-4 xl:gap-section-lg 2xl:grid-cols-4">
           {pastEvents.slice(0, 15).map((event) => (
             <div key={event.id} className="w-full overflow-hidden">
               {/* Image Section */}
-              <div className="relative w-full aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src={event.imageUrl}
                   alt={event.title}
@@ -383,8 +383,8 @@ export default function Veranstaltungen() {
                   sizes="(max-width: 424px) 100vw, (max-width: 767px) 50vw, (max-width: 1023px) 33vw, 25vw)"
                 />
                 {/* Rectangular badge for date only */}
-                <div className="absolute bottom-4 right-4 bg-[#eb7b24] text-white p-2 xs:p-2.5 sm:p-3 md:p-3.5 text-center rounded">
-                  <div className="text-xs xs:text-xs sm:text-sm md:text-base font-semibold">
+                <div className="absolute right-4 bottom-4 rounded bg-[#eb7b24] p-2 xs:p-2.5 text-center text-white sm:p-3 md:p-3.5">
+                  <div className="font-semibold text-xs xs:text-xs sm:text-sm md:text-base">
                     {formatDate(event.date)}
                   </div>
                 </div>
@@ -392,18 +392,18 @@ export default function Veranstaltungen() {
 
               {/* Content Section */}
               <div className="flex flex-col p-2">
-                <h3 className="text-base xs:text-[0.7rem] xs2:text-xs sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl 3xl:text-2xl uppercase font-semibold text-[#eb7b24] line-clamp-3">
+                <h3 className="line-clamp-3 font-semibold 3xl:text-2xl text-[#eb7b24] text-base xs2:text-xs xs:text-[0.7rem] uppercase sm:text-sm md:text-base lg:text-md xl:text-lg 2xl:text-xl">
                   {event.title}
                 </h3>
-                <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                <div className="text-gray-500 text-xs xs:text-xs sm:text-sm md:text-base">
                   {event.type}
                 </div>
-                <div className="text-xs xs:text-xs sm:text-sm md:text-base text-gray-500">
+                <div className="text-gray-500 text-xs xs:text-xs sm:text-sm md:text-base">
                   @{event.location}
                 </div>
                 <Link
                   href={event.link}
-                  className="mt-3 xs:mt-4 sm:mt-5 text-xs xs:text-xs sm:text-sm md:text-base text-[#eb7b24] font-medium hover:underline"
+                  className="mt-3 xs:mt-4 font-medium text-[#eb7b24] text-xs xs:text-xs hover:underline sm:mt-5 sm:text-sm md:text-base"
                 >
                   Mehr →
                 </Link>

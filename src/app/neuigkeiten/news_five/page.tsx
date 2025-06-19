@@ -5,24 +5,24 @@ import NavBar from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
-    <div className="bg-white relative">
+    <div className="relative bg-white">
       <main className="p-6">
         <NavBar />
-        <div className="container max-w-screen-md mx-auto mt-20 bg-[#fff6ea] p-10 rounded-lg shadow-sm">
+        <div className="container mx-auto mt-20 max-w-screen-md rounded-lg bg-[#fff6ea] p-10 shadow-sm">
           {/* News Date */}
-          <h3 className="text-center text-gray-500 mb-5 uppercase">
+          <h3 className="mb-5 text-center text-gray-500 uppercase">
             06. November 2023
           </h3>
 
           {/* News Title */}
           <h1
-            className={`mb-10 text-center text-[#eb7b24] text-2xl sm:text-lg md:text-xl lg:text-3xl font-bold uppercase leading-8 tracking-wide`}
+            className={`mb-10 text-center font-bold text-2xl text-[#eb7b24] uppercase leading-8 tracking-wide sm:text-lg md:text-xl lg:text-3xl`}
           >
             Podiumsdiskussion Decolonize Literatur
           </h1>
 
           {/* News Image */}
-          <div className="flex items-center justify-center mt-10 mb-5 max-w-screen-lg">
+          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/news/picture-1.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
@@ -36,11 +36,11 @@ export default function Page() {
           </div>
 
           {/* News Content */}
-          <section className="max-w-screen-md mx-auto mt-20 prose prose-sm prose-stone prose-headings:text-2xl prose-headings:text-orange-500 prose-headings:font-semibold prose-a:text-orange-500 prose-a:target:_blank prose-a:rel:noreferrer">
-            <p className="mt-4 text-base text-[#eb7b24]">
+          <section className="prose prose-sm prose-stone prose-a:target:_blank prose-a:rel:noreferrer mx-auto mt-20 max-w-screen-md prose-headings:font-semibold prose-a:text-orange-500 prose-headings:text-2xl prose-headings:text-orange-500">
+            <p className="mt-4 text-[#eb7b24] text-base">
               <b>Wann?</b> 06.11.2023, 18:30 Uhr
             </p>
-            <p className="mt-4 text-base text-[#eb7b24]">
+            <p className="mt-4 text-[#eb7b24] text-base">
               <b>Wo?</b> Bücherhalle Altona, Ottenser Hauptstr. 8-10, Mercado 2.
               Stock, 22765 Hamburg
             </p>
@@ -66,10 +66,10 @@ export default function Page() {
               Repräsentationsräume für weitere Perspektiven geschaffen werden
               können.
             </p>
-            <p className="mt-4 text-base text-[#eb7b24]">
+            <p className="mt-4 text-[#eb7b24] text-base">
               <b>Podiumsgäste:</b> Millicent Adjei, Dayan Kodua, Dan Thy Nguyen
             </p>
-            <p className="mt-4 text-base text-[#eb7b24]">
+            <p className="mt-4 text-[#eb7b24] text-base">
               <b>Moderation:</b> Cane Çağlar
             </p>
             <div className="relative mt-20 overflow-hidden">

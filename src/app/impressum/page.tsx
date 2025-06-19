@@ -7,79 +7,79 @@ export default function Page() {
       <main className="bg-[#fef5db]">
         <NavBar />
         <header
-          className="h-screen w-full bg-cover bg-center relative p-10"
+          className="relative h-screen w-full bg-center bg-cover p-10"
           style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
         >
           <div
-            className={`absolute top-0 left-0 right-0 inset-0 bg-black bg-opacity-70 flex items-start justify-start`}
+            className={`absolute inset-0 top-0 right-0 left-0 flex items-start justify-start bg-black bg-opacity-70`}
           >
             <h1
-              className={`text-[#ffb400] drop-shadow-xl text-[8rem] font-extrabold leading-tight uppercase p-6 ml-10 mt-20`}
+              className={`mt-20 ml-10 p-6 font-extrabold text-[#ffb400] text-[8rem] uppercase leading-tight drop-shadow-xl`}
             >
               Impressum.
             </h1>
           </div>
         </header>
-        <div className="p-10 mx-5 mt-10">
+        <div className="mx-5 mt-10 p-10">
           <div>
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Gemäß §5 TMG:
             </h4>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Dieses Impressum gilt für die Website MachtBewusst-Hamburg.de
               sowie für die Onlinepräsenzen von Ossara auf YouTube, Facebook und
               Instagram.
             </p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Herausgeberin:
             </h4>
-            <p className="text-sm text-gray-800">Ossara e.V.</p>
-            <p className="text-sm text-gray-800">Papenreye 65</p>
-            <p className="text-sm text-gray-800">22453 Hamburg</p>
-            <p className="text-sm text-gray-800">E-Mail: info[at]ossara.de</p>
+            <p className="text-gray-800 text-sm">Ossara e.V.</p>
+            <p className="text-gray-800 text-sm">Papenreye 65</p>
+            <p className="text-gray-800 text-sm">22453 Hamburg</p>
+            <p className="text-gray-800 text-sm">E-Mail: info[at]ossara.de</p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Vertreten durch:
             </h4>
-            <p className="text-sm text-gray-800">Nicolas A. S. Moumouni</p>
-            <p className="text-sm text-gray-800">Vorstandsvorsitzender</p>
-            <p className="text-sm text-gray-800">Tel.: +49 15213062798</p>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">Nicolas A. S. Moumouni</p>
+            <p className="text-gray-800 text-sm">Vorstandsvorsitzender</p>
+            <p className="text-gray-800 text-sm">Tel.: +49 15213062798</p>
+            <p className="text-gray-800 text-sm">
               E-Mail: vorstand[at]ossara.de
             </p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Vereinsregister:
             </h4>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Ossara ist gemeinnützig anerkannt und Spenden an uns sind
               steuerlich absetzbar.
             </p>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Registergericht: Amtsgericht Hamburg
             </p>
-            <p className="text-sm text-gray-800">Registernummer: VR 23447</p>
+            <p className="text-gray-800 text-sm">Registernummer: VR 23447</p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Verantwortlich für den redaktionellen Inhalt:
             </h4>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Julia Karimi - info[at]ossara.de
             </p>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Sonia Octavio - sonia.octavio[at]ossara.de
             </p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Haftung für Inhalte
             </h4>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene
               Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
               verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter
@@ -95,10 +95,10 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Haftung für Links
             </h4>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Unser Angebot enthält Links zu externen Webseiten Dritter, auf
               deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
               diese fremden Inhalte auch keine Gewähr übernehmen. Für die
@@ -113,10 +113,10 @@ export default function Page() {
             </p>
           </div>
           <div className="mt-5">
-            <h4 className="text-2xl font-semibold text-[#ffb400]">
+            <h4 className="font-semibold text-2xl text-[#ffb400]">
               Urheberrecht
             </h4>
-            <p className="text-sm text-gray-800">
+            <p className="text-gray-800 text-sm">
               Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
               diesen Seiten unterliegen dem deutschen Urheberrecht. Die
               Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
