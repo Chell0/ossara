@@ -4,7 +4,7 @@ import YouTube, { type YouTubeProps } from "react-youtube";
 import type { YouTubeSectionProps } from "@/app/lib/interface";
 
 export default function YouTubeSection({ videoId }: YouTubeSectionProps) {
-  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+  const onPlayerReady: YouTubeProps["onReady"] = event => {
     event.target.pauseVideo();
   };
 

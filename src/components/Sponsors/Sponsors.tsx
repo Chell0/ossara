@@ -15,7 +15,7 @@ export default function Sponsors() {
         </div>
 
         {/* Sponsor Logos */}
-        {[1, 2, 3, 4].map((num) => (
+        {[1, 2, 3, 4].map(num => (
           <div
             key={num}
             className="relative flex h-[80px] xs:h-[100px] w-full items-center justify-center sm:h-[120px] md:h-[15vh]"

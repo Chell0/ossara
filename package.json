@@ -1,52 +1,39 @@
 {
-	"name": "ossara",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"dev": "next dev",
-		"build": "next build",
-		"start": "next start",
-		"lint": "bunx --bun biome lint",
-		"format": "bunx --bun biome format --write .",
-		"lint-staged": {
-			"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
-				"biome check --files-ignore-unknown=true",
-				"biome check --write --no-errors-on-unmatched",
-				"biome check --write --organize-imports-enabled=false --no-errors-on-unmatched",
-				"biome check --write --unsafe --no-errors-on-unmatched",
-				"biome format --write --no-errors-on-unmatched",
-				"biome lint --write --no-errors-on-unmatched"
-			],
-			"*": [
-				"biome check --no-errors-on-unmatched --files-ignore-unknown=true"
-			]
-		}
-	},
-	"dependencies": {
-		"@fortawesome/fontawesome-free": "6.6.0",
-		"@heroicons/react": "v1",
-		"@tailwindcss/container-queries": "^0.1.1",
-		"autoprefixer": "^10.4.20",
-		"framer-motion": "^12.7.3",
-		"next": "15.3.2",
-		"react": "18.3.1",
-		"react-dom": "18.3.1",
-		"react-youtube": "10.1.0",
-		"tailwind-scrollbar-hide": "^2.0.0",
-		"vercel": "41.1.4"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.0.0",
-		"@tailwindcss/forms": "0.5.10",
-		"@tailwindcss/typography": "0.5.16",
-		"@types/node": "22.9.1",
-		"@types/react": "19.0.8",
-		"@types/react-dom": "19.0.3",
-		"husky": "^9.1.7",
-		"lint-staged": "^16.1.2",
-		"postcss": "8.4.49",
-		"tailwindcss": "4.1.10",
-		"typescript": "5.6.3",
-		"typescript-eslint": "^8.34.1"
-	}
+  "name": "ossara",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "bunx biome lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "6.6.0",
+    "@heroicons/react": "v1",
+    "@tailwindcss/container-queries": "^0.1.1",
+    "@tailwindcss/postcss": "^4.1.10",
+    "autoprefixer": "^10.4.20",
+    "framer-motion": "^12.7.3",
+    "next": "15.3.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-youtube": "10.1.0",
+    "tailwind-scrollbar-hide": "^2.0.0",
+    "vercel": "41.1.4"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.0",
+    "@tailwindcss/forms": "0.5.10",
+    "@tailwindcss/typography": "0.5.16",
+    "@types/node": "22.9.1",
+    "@types/react": "19.0.8",
+    "@types/react-dom": "19.0.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.10",
+    "typescript": "5.6.3",
+    "typescript-eslint": "^8.34.1"
+  }
 }

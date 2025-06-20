@@ -79,7 +79,7 @@ export default function Neuigkeiten() {
             className="grid grid-cols-1 xs:grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12 lg:grid-cols-4 lg:gap-section xl:grid-cols-4 xl:gap-section-lg 2xl:grid-cols-4"
           >
             {paginatedNews.length > 0 ? (
-              paginatedNews.map((news) => (
+              paginatedNews.map(news => (
                 <motion.div
                   key={news.id}
                   initial={{ opacity: 0, y: 20 }}
