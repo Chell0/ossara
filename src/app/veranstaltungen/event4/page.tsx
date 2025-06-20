@@ -31,28 +31,22 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Podiumsdiskussion
-          </p>
+          <p className="mt-2 text-base text-gray-800">What: Podiumsdiskussion</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">
-            Wann: 09. September 2024
-          </p>
+          <p className="mt-2 text-base text-gray-800">Wann: 09. September 2024</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 18:30 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            In der Fortsetzung der Decolonize-Reihe wollen wir uns mit den
-            historischen Bezügen und Kontinuitäten des Kolonialismus in der
-            Hamburger Polizei auseinandersetzen. Dabei liegt der Fokus auf
-            strukturellem Rassismus, wie zum Beispiel Racial Profiling, und den
-            notwendigen Dekolonisierungsprozessen. Wir werden untersuchen, wie
-            die Polizei während der Kolonialzeit koloniale Interessen
-            durchsetzte und welche Maßnahmen heute erforderlich sind, um diese
-            Strukturen zu überwinden..
+            In der Fortsetzung der Decolonize-Reihe wollen wir uns mit den historischen Bezügen und
+            Kontinuitäten des Kolonialismus in der Hamburger Polizei auseinandersetzen. Dabei liegt
+            der Fokus auf strukturellem Rassismus, wie zum Beispiel Racial Profiling, und den
+            notwendigen Dekolonisierungsprozessen. Wir werden untersuchen, wie die Polizei während
+            der Kolonialzeit koloniale Interessen durchsetzte und welche Maßnahmen heute
+            erforderlich sind, um diese Strukturen zu überwinden..
           </p>
         </div>
         <Footer />

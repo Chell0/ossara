@@ -37,14 +37,12 @@ export default function Page() {
           {/* News Content */}
           <section className="prose prose-sm sm:prose-base prose-stone prose-a:target:_blank prose-a:rel:noreferrer mx-auto mt-10 max-w-screen-md prose-headings:font-semibold prose-a:text-orange-500 prose-headings:text-orange-500 prose-headings:text-xl sm:mt-20 sm:prose-headings:text-2xl">
             <p className="mt-4 text-gray-800 text-sm sm:text-base">
-              Seit September 2024 ist Katja Heyn im Ossara-Team Hamburg als
-              Bewerbungstrainerin und Orientierungshilfe dabei. Egal ob Schule,
-              Ausbildung, Studium oder Jobsuche- sie hilft dir gerne weiter.
-              Auch bei Fragen rund um Wohnungssuche, Gesundheit oder
-              Alltagsproblemen steht sie dir zur Seite. Du brauchst
-              Unterstützung beim Ausfüllen von Formularen oder einfach jemanden,
-              der dich bei deinen nächsten Schritten berät? Katja ist für dich
-              da und begleitet dich auf deinem Weg!
+              Seit September 2024 ist Katja Heyn im Ossara-Team Hamburg als Bewerbungstrainerin und
+              Orientierungshilfe dabei. Egal ob Schule, Ausbildung, Studium oder Jobsuche- sie hilft
+              dir gerne weiter. Auch bei Fragen rund um Wohnungssuche, Gesundheit oder
+              Alltagsproblemen steht sie dir zur Seite. Du brauchst Unterstützung beim Ausfüllen von
+              Formularen oder einfach jemanden, der dich bei deinen nächsten Schritten berät? Katja
+              ist für dich da und begleitet dich auf deinem Weg!
             </p>
             <p className="mt-4 text-gray-800 text-sm sm:text-base">
               Katja Heyn erreicht ihr unter:
@@ -54,9 +52,8 @@ export default function Page() {
               <li>bewerbungstraining@ossara.de</li>
             </ul>
             <p className="mt-4 text-gray-800 text-sm sm:text-base">
-              Katja Heyn ist die Nachfolgerin von Martina von Kaltenborn. Wir
-              danken Martina von Kaltenborn für all ihr Engagement in den
-              letzten Jahren.
+              Katja Heyn ist die Nachfolgerin von Martina von Kaltenborn. Wir danken Martina von
+              Kaltenborn für all ihr Engagement in den letzten Jahren.
             </p>
           </section>
         </div>

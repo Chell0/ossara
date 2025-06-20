@@ -34,18 +34,16 @@ export default function Page() {
           <p className="mt-2 text-base text-gray-800">What: Workshop</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">
-            Wann: 20. - 21. Mai 2023
-          </p>
+          <p className="mt-2 text-base text-gray-800">Wann: 20. - 21. Mai 2023</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 12:00 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Dieser Workshop bietet Raum für Verbindungen. Mit kreativen Methoden
-            wollen wir Verbindungen reaktivieren, schaffen, besprechen und uns
-            wieder mehr mit uns selbst und miteinander verbunden fühlen.
+            Dieser Workshop bietet Raum für Verbindungen. Mit kreativen Methoden wollen wir
+            Verbindungen reaktivieren, schaffen, besprechen und uns wieder mehr mit uns selbst und
+            miteinander verbunden fühlen.
           </p>
         </div>
         <Footer />

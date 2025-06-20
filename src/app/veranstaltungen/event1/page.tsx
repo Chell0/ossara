@@ -44,17 +44,14 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed sm:mt-4 sm:text-lg md:text-xl">
-            In unserer bevorstehenden Veranstaltung werden wir die
-            vielschichtige Beziehung zwischen Kirche und Kolonialismus
-            beleuchten und die weitreichenden Auswirkungen dieser Verbindung auf
-            die globalen Gesellschaften untersuchen. Wir werden dabei die
-            missionarischen Aktivitäten der Kirchen, ihre Rolle bei der
-            Legitimation kolonialer Unternehmungen und die Folgen für Bildung
-            und Kultur in betroffenen Regionen thematisieren. Zudem werfen wir
-            einen Blick auf die heutige Partnerschaftsarbeit und zeigen
-            verschiedene Perspektiven auf – von der Unterstützung des
-            Kolonialismus durch die Kirche bis hin zu den Widerstandsbewegungen
-            innerhalb kirchlicher Gemeinschaften.
+            In unserer bevorstehenden Veranstaltung werden wir die vielschichtige Beziehung zwischen
+            Kirche und Kolonialismus beleuchten und die weitreichenden Auswirkungen dieser
+            Verbindung auf die globalen Gesellschaften untersuchen. Wir werden dabei die
+            missionarischen Aktivitäten der Kirchen, ihre Rolle bei der Legitimation kolonialer
+            Unternehmungen und die Folgen für Bildung und Kultur in betroffenen Regionen
+            thematisieren. Zudem werfen wir einen Blick auf die heutige Partnerschaftsarbeit und
+            zeigen verschiedene Perspektiven auf – von der Unterstützung des Kolonialismus durch die
+            Kirche bis hin zu den Widerstandsbewegungen innerhalb kirchlicher Gemeinschaften.
           </p>
         </div>
         <Footer />

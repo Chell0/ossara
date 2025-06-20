@@ -1,11 +1,11 @@
 "use client";
 
-import {MenuIcon, XIcon} from "@heroicons/react/solid";
+import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
-export default function NavBar() {
+const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
   const [showNav, setShowNav] = useState(true);
@@ -29,24 +29,24 @@ export default function NavBar() {
   }, [menuOpen]);
 
   const leftMenuItems = [
-    {name: "NEUIGKEITEN", href: "/neuigkeiten", items: []},
-    {name: "VERANSTALTUNGEN", href: "/veranstaltungen", items: []},
+    { name: "NEUIGKEITEN", href: "/neuigkeiten", items: [] },
+    { name: "VERANSTALTUNGEN", href: "/veranstaltungen", items: [] },
     {
       name: "ÜBER UNS",
       href: "/uber",
       items: [
-        {name: "Verein", href: "#verein"},
-        {name: "Team", href: "#team"},
-        {name: "Geschichte", href: "#geschichte"},
+        { name: "Verein", href: "#verein" },
+        { name: "Team", href: "#team" },
+        { name: "Geschichte", href: "#geschichte" },
       ],
     },
     {
       name: "ENGAGIEREN",
       href: "/engagieren",
       items: [
-        {name: "Stellenausschreibungen", href: "#stellenausschreibungen"},
-        {name: "Mitglied Werden", href: "#mitglied-werden"},
-        {name: "Ehrenamtliches Engagement", href: "#ehrenamt"},
+        { name: "Stellenausschreibungen", href: "#stellenausschreibungen" },
+        { name: "Mitglied Werden", href: "#mitglied-werden" },
+        { name: "Ehrenamtliches Engagement", href: "#ehrenamt" },
       ],
     },
     {
@@ -54,7 +54,7 @@ export default function NavBar() {
       href: "/spenden",
       items: [],
     },
-    {name: "DOWNLOADS", href: "/downloads", items: []},
+    { name: "DOWNLOADS", href: "/downloads", items: [] },
   ];
 
   const rightMenuItems = [
@@ -62,32 +62,32 @@ export default function NavBar() {
       name: "INTEGRATIVE STADTTEILARBEIT",
       href: "/stadtteilarbeit",
       items: [
-        {name: "Stadtteilarbeit", href: "#stadtteilarbeit"},
-        {name: "Bewerbungstraining", href: "#bewerbungstraining"},
-        {name: "Sprachförderung", href: "#sprachförderung"},
+        { name: "Stadtteilarbeit", href: "#stadtteilarbeit" },
+        { name: "Bewerbungstraining", href: "#bewerbungstraining" },
+        { name: "Sprachförderung", href: "#sprachförderung" },
       ],
     },
-    {name: "LOKAL VERNETZT", href: "/lokal", items: []},
+    { name: "LOKAL VERNETZT", href: "/lokal", items: [] },
     {
       name: "DEKOLONIALE BILDUNGSARBEIT",
       href: "/bildungsarbeit",
       items: [
-        {name: "Machtbewusst-Hamburg", href: "#machtbewusst"},
+        { name: "Machtbewusst-Hamburg", href: "#machtbewusst" },
         {
           name: "Eine Welt-Promotorinnen Programm",
           href: "/eine_welt_promotorinnen",
         },
-        {name: "Dekoloniale Bildungsreisen", href: "#bildungsreisen"},
-        {name: "KoRaBi", href: "/korabi"},
+        { name: "Dekoloniale Bildungsreisen", href: "#bildungsreisen" },
+        { name: "KoRaBi", href: "/korabi" },
       ],
     },
-    {name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: []},
+    { name: "ANTI-SCHWARZER RASSISMUS", href: "/rassismus", items: [] },
     {
       name: "DEKOLONIAL GLOBAL",
       href: "/dekoloniale",
       items: [
-        {name: "Projekte", href: "/projects"},
-        {name: "Partner", href: "/projekt_partners"},
+        { name: "Projekte", href: "/projects" },
+        { name: "Partner", href: "/projekt_partners" },
       ],
     },
   ];
@@ -97,24 +97,13 @@ export default function NavBar() {
   return (
     <nav className="fixed top-0 left-0 z-50 w-full bg-transparent">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          className="flex h-16 xs2:h-10 xs:h-8 items-center justify-between sm:h-20 lg:h-header">
+        <div className="flex h-16 xs2:h-10 xs:h-8 items-center justify-between sm:h-20 lg:h-header">
           {/* Menu Button */}
           <div className="flex items-center gap-1 sm:gap-2 lg:gap-3">
-            <button
-              onClick={toggleMenu}
-              className="text-black focus:outline-none"
-            >
-              {menuOpen ? (
-                <XIcon
-                  className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-10 xl:w-10"/>
-              ) : (
-                <MenuIcon
-                  className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-10 xl:w-10"/>
-              )}
+            <button onClick={toggleMenu}>
+              {menuOpen ? <XIcon className="h-8 w-8" /> : <MenuIcon className="h-8 w-8" />}
             </button>
-            <span
-              className="pt-2 font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+            <span className="pt-2 font-medium text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
               Menü
             </span>
           </div>
@@ -122,14 +111,7 @@ export default function NavBar() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <Image
-                src="/logos/ossara_logo.png"
-                alt="Ossara Logo"
-                width={100}
-                height={100}
-                className="w-auto object-contain pt-6"
-                priority
-              />
+              <Image src="/logos/ossara_logo.png" alt="Ossara Logo" width={200} height={200} />
             </Link>
           </div>
         </div>
@@ -145,11 +127,8 @@ export default function NavBar() {
               >
                 Ossara
               </Link>
-              <button
-                onClick={toggleMenu}
-                className="text-gray-600 hover:text-gray-800"
-              >
-                <XIcon className="h-8 w-8 md:h-10 md:w-10"/>
+              <button onClick={toggleMenu} className="text-gray-600 hover:text-gray-800">
+                <XIcon className="h-8 w-8 md:h-10 md:w-10" />
               </button>
             </div>
 
@@ -181,9 +160,7 @@ export default function NavBar() {
                           <li key={subIndex}>
                             <Link
                               href={
-                                item.href.startsWith("#")
-                                  ? `${menu.href}${item.href}`
-                                  : item.href
+                                item.href.startsWith("#") ? `${menu.href}${item.href}` : item.href
                               }
                               className="text-[#f7cc55] hover:text-[#e6b845]"
                               onClick={toggleMenu}
@@ -225,9 +202,7 @@ export default function NavBar() {
                           <li key={subIndex}>
                             <Link
                               href={
-                                item.href.startsWith("#")
-                                  ? `${menu.href}${item.href}`
-                                  : item.href
+                                item.href.startsWith("#") ? `${menu.href}${item.href}` : item.href
                               }
                               className="text-[#f7cc55] hover:text-[#e6b845]"
                               onClick={toggleMenu}
@@ -247,4 +222,6 @@ export default function NavBar() {
       )}
     </nav>
   );
-}
+};
+
+export default NavBar;

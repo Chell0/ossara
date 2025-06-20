@@ -31,9 +31,7 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Podiumsdiskussion
-          </p>
+          <p className="mt-2 text-base text-gray-800">What: Podiumsdiskussion</p>
 
           {/* Event Date */}
           <p className="mt-2 text-base text-gray-800">Wann: 11. März 2024</p>
@@ -43,14 +41,12 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Unsere Decolonize-Veranstaltungsreihe setzt sich diesmal mit dem
-            Thema Schönheits- und Körperideale auseinander und untersucht die
-            koloniale Prägung von gesellschaftlichen Schönheitsvorstellungen.
-            Wir fragen, wie „Schönheit“ in unseren Biografien verankert ist und
-            wie diese Ideale mit bestehenden Machtstrukturen kollidieren. Ziel
-            ist es, durch Empowerment und dekoloniale Perspektiven einen
-            gesellschaftlichen Wandel zu fördern und bestehende Schönheitsnormen
-            zu hinterfragen.
+            Unsere Decolonize-Veranstaltungsreihe setzt sich diesmal mit dem Thema Schönheits- und
+            Körperideale auseinander und untersucht die koloniale Prägung von gesellschaftlichen
+            Schönheitsvorstellungen. Wir fragen, wie „Schönheit“ in unseren Biografien verankert ist
+            und wie diese Ideale mit bestehenden Machtstrukturen kollidieren. Ziel ist es, durch
+            Empowerment und dekoloniale Perspektiven einen gesellschaftlichen Wandel zu fördern und
+            bestehende Schönheitsnormen zu hinterfragen.
           </p>
         </div>
         <Footer />

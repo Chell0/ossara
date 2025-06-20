@@ -31,9 +31,7 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Podiumsdiskussion
-          </p>
+          <p className="mt-2 text-base text-gray-800">What: Podiumsdiskussion</p>
 
           {/* Event Date */}
           <p className="mt-2 text-base text-gray-800">Wann: 30. Mai 2024</p>
@@ -43,16 +41,14 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Im Rahmen der Europawoche 2024 findet die Podiumsdiskussion „Europas
-            koloniale Vergangenheit. Impulse und Initiativen zur dekolonialen
-            Auseinandersetzung“ statt, die sich mit den aktuellen Ansätzen
-            europäischer Länder zur Aufarbeitung ihrer kolonialen Geschichte
-            beschäftigt. Diskutiert werden Themen wie Restitution, Entschädigung
-            und die Rückgabe kulturellen Erbes sowie der interkulturelle Dialog
-            und der Bewusstseinsprozess in der Zivilbevölkerung. Die
-            Veranstaltung beleuchtet sowohl erfolgreiche dekoloniale Projekte
-            als auch bestehende Herausforderungen und Bedarfe im Kontext der
-            kolonialen Aufarbeitung.
+            Im Rahmen der Europawoche 2024 findet die Podiumsdiskussion „Europas koloniale
+            Vergangenheit. Impulse und Initiativen zur dekolonialen Auseinandersetzung“ statt, die
+            sich mit den aktuellen Ansätzen europäischer Länder zur Aufarbeitung ihrer kolonialen
+            Geschichte beschäftigt. Diskutiert werden Themen wie Restitution, Entschädigung und die
+            Rückgabe kulturellen Erbes sowie der interkulturelle Dialog und der Bewusstseinsprozess
+            in der Zivilbevölkerung. Die Veranstaltung beleuchtet sowohl erfolgreiche dekoloniale
+            Projekte als auch bestehende Herausforderungen und Bedarfe im Kontext der kolonialen
+            Aufarbeitung.
           </p>
         </div>
         <Footer />

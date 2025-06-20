@@ -27,8 +27,8 @@ export default function Page() {
           <h1
             className={`mt-20 text-left font-bold text-2xl text-[#eb7b24] uppercase leading-8 tracking-wide sm:text-lg md:text-xl lg:text-3xl`}
           >
-            “Alltagsrassismus begegnen”- Umgangsformen und
-            Bewältigungskapazitäten von Rassimus erfahrenen
+            “Alltagsrassismus begegnen”- Umgangsformen und Bewältigungskapazitäten von Rassimus
+            erfahrenen
           </h1>
 
           {/* Event Type */}
@@ -42,13 +42,12 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Rassismus ist ein großes Problem, das verändert werden muss. Die
-            Geschichte des Rassismus ist voller Leid, Schmerz und Krieg. Aber es
-            gibt auch Geschichten von Menschen, die sich dagegen gewehrt haben.
-            Leider werden die Erfahrungen von denen, die Rassismus erfahren oft
-            nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen
-            Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von
-            Rassismus in Deutschland anzugehen
+            Rassismus ist ein großes Problem, das verändert werden muss. Die Geschichte des
+            Rassismus ist voller Leid, Schmerz und Krieg. Aber es gibt auch Geschichten von
+            Menschen, die sich dagegen gewehrt haben. Leider werden die Erfahrungen von denen, die
+            Rassismus erfahren oft nicht gehört. Wir sprechen u.a. darüber, auf welche Ressourcen
+            Rassismus erfahrene zurückgreifen können, um gegen die Gefahren von Rassismus in
+            Deutschland anzugehen
           </p>
         </div>
         <Footer />

@@ -24,9 +24,7 @@ export default function EineWeltPromotorinnen() {
 
           {/* Text Content */}
           <div className="absolute bottom-6 xs2:bottom-9 xs:bottom-8 left-2 xs2:left-4 xs:left-3 sm:bottom-10 sm:left-6 md:bottom-11 md:left-7 lg:bottom-12 lg:left-8 xl:bottom-13 xl:left-9 2xl:bottom-14 2xl:left-10">
-            <div
-              className="3xl:space-y-13 space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 "
-            >
+            <div className="3xl:space-y-13 space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 ">
               <h1 className="font-extrabold 3xl:text-[160px] text-[#eb7b24] xs2:text-5xl xs:text-4xl uppercase leading-[1.1]text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px]">
                 <span className="block">Dekoloniale.</span>
                 <span className="block">Perspektiven.</span>
@@ -38,48 +36,41 @@ export default function EineWeltPromotorinnen() {
           {/* BIG TEXT */}
           <div className="mx-auto 3xl:mb-52 mb-12 xs:mb-14 pt-8 sm:mb-16 md:mb-20 lg:mb-36 xl:mb-40 2xl:mb-48">
             <p className="mx-auto font-semibold 3xl:text-[10rem] text-2xl xs2:text-4xl xs:text-3xl leading-tight tracking-normal sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem]">
-              Dekoloniale Perspektiven durchbrechen anhaltenden koloniale
-              Machtstrukturen und eröffnen neue Wege des Denkens und Handelns,
-              die Vielfalt und Gerechtigkeit in den Mittelpunkt stellen.
+              Dekoloniale Perspektiven durchbrechen anhaltenden koloniale Machtstrukturen und
+              eröffnen neue Wege des Denkens und Handelns, die Vielfalt und Gerechtigkeit in den
+              Mittelpunkt stellen.
             </p>
           </div>
           <div className="flex flex-col gap-8 xs2:gap-10 px-4 py-16 xs2:py-20 text-black sm:px-6 lg:flex-row lg:px-8">
             <div className="w-full lg:basis-1/2">
               <p className="text-base xs2:text-lg leading-relaxed">
-                Obwohl die meisten ehemaligen Kolonien schon vor Jahrzehnten
-                ihre Freiheit erlangt haben, gibt es immer noch koloniale
-                Kontinuitäten, die weltweit das kollektive Gedächtnis der weißen
-                Mehrheitsgesellschaft prägen und ebenso in gesellschaftlichen
-                Strukturen tief verankert sind. Letztere sind getarnt durch
-                Machtasymmetrien, Ausbeutung und das Fortbestehen des
-                strukturellen und institutionellen Rassismus, der insbesondere
-                Menschen aus dem Globalen Süden und solche, die in der Diaspora
-                leben, betrifft. Als Hafenstadt war Hamburg viele Jahrhunderte
-                lang eine der bedeutendsten Kolonialmetropolen in Europa und
-                auch heute noch erinnern zahlreiche Orte an ihre
-                Kolonialgeschichte. Die Stadt muss sich deshalb dazu
-                verpflichten, die vielfältigen kolonialen Verflechtungen und
-                ihre Auswirkungen auf unsere heutige Gesellschaft zu
-                hinterfragen und der Öffentlichkeit zu vermitteln.
+                Obwohl die meisten ehemaligen Kolonien schon vor Jahrzehnten ihre Freiheit erlangt
+                haben, gibt es immer noch koloniale Kontinuitäten, die weltweit das kollektive
+                Gedächtnis der weißen Mehrheitsgesellschaft prägen und ebenso in gesellschaftlichen
+                Strukturen tief verankert sind. Letztere sind getarnt durch Machtasymmetrien,
+                Ausbeutung und das Fortbestehen des strukturellen und institutionellen Rassismus,
+                der insbesondere Menschen aus dem Globalen Süden und solche, die in der Diaspora
+                leben, betrifft. Als Hafenstadt war Hamburg viele Jahrhunderte lang eine der
+                bedeutendsten Kolonialmetropolen in Europa und auch heute noch erinnern zahlreiche
+                Orte an ihre Kolonialgeschichte. Die Stadt muss sich deshalb dazu verpflichten, die
+                vielfältigen kolonialen Verflechtungen und ihre Auswirkungen auf unsere heutige
+                Gesellschaft zu hinterfragen und der Öffentlichkeit zu vermitteln.
               </p>
             </div>
             <div className="w-full lg:basis-1/2">
               <p className="text-base xs2:text-lg leading-relaxed">
-                Als Eine Welt-Promotorinnen für Dekolonisierung wollen wir uns
-                dafür engagieren, Partizipationsprozesse zu fördern und
-                postkoloniale, dekoloniale und diasporische Stimmen
-                zusammenzubringen. Darüber hinaus wollen wir das
-                zivilgesellschaftliche Engagement für eine global nachhaltigere
-                und gerechtere Weltordnung im städtischen Raum sichtbarer machen
-                und neue regionale und überregionale Kooperationen anstoßen. Mit
-                unserer Arbeit tragen wir auch zur Implementierung der 17
-                UN-Nachhaltigkeitsziele bei, wobei ein Schwerpunkt auf den Kampf
-                gegen weniger Ungleichheit (Ziel 10) auf der Welt liegt. Die
-                Fachstelle Dekoloniserung ist Teil des bundeweiten Eine
-                Welt-Promotor*innen-Programm das in Hamburg von der
-                Netzwerkstelle von hamburg.global koordiniert wird. Aktuell gibt
-                es neben unseren Stellen Promotor*innen in den Bereichen Fairer
-                Handel, Globales Lernen und Klima- und Ressourcengerechtigkeit.
+                Als Eine Welt-Promotorinnen für Dekolonisierung wollen wir uns dafür engagieren,
+                Partizipationsprozesse zu fördern und postkoloniale, dekoloniale und diasporische
+                Stimmen zusammenzubringen. Darüber hinaus wollen wir das zivilgesellschaftliche
+                Engagement für eine global nachhaltigere und gerechtere Weltordnung im städtischen
+                Raum sichtbarer machen und neue regionale und überregionale Kooperationen anstoßen.
+                Mit unserer Arbeit tragen wir auch zur Implementierung der 17
+                UN-Nachhaltigkeitsziele bei, wobei ein Schwerpunkt auf den Kampf gegen weniger
+                Ungleichheit (Ziel 10) auf der Welt liegt. Die Fachstelle Dekoloniserung ist Teil
+                des bundeweiten Eine Welt-Promotor*innen-Programm das in Hamburg von der
+                Netzwerkstelle von hamburg.global koordiniert wird. Aktuell gibt es neben unseren
+                Stellen Promotor*innen in den Bereichen Fairer Handel, Globales Lernen und Klima-
+                und Ressourcengerechtigkeit.
               </p>
             </div>
           </div>
@@ -96,11 +87,9 @@ export default function EineWeltPromotorinnen() {
                 </h3>
                 <hr className="mx-auto mb-6 w-24 border-2 border-[#eb7b24] lg:mx-0" />
                 <p className="mt-6 max-w-xl text-base xs2:text-lg leading-relaxed lg:text-xl">
-                  Aufbau von einem Netzwerk und Unterstützung von Akteur*innen,
-                  deren Fokus auf der aktiven Mitgestaltung des
-                  gesamtstädtischen Dekolonisierungsprozesses und dekolonialen
-                  entwicklungspolitischen Bildungs- und Informationsarbeit
-                  liegt.
+                  Aufbau von einem Netzwerk und Unterstützung von Akteur*innen, deren Fokus auf der
+                  aktiven Mitgestaltung des gesamtstädtischen Dekolonisierungsprozesses und
+                  dekolonialen entwicklungspolitischen Bildungs- und Informationsarbeit liegt.
                 </p>
               </div>
 
@@ -148,11 +137,10 @@ export default function EineWeltPromotorinnen() {
                 </h3>
                 <hr className="mx-auto mb-6 w-24 border-2 border-[#eb7b24] lg:mx-0" />
                 <p className="mt-6 max-w-xl text-base xs2:text-lg leading-relaxed lg:text-xl">
-                  Beratung von zivilgesellschaftlichen Initiativen und
-                  Multiplikator*innen, die sich über bisherige Akteur*innen und
-                  deren Projekte im gesamtstädtischen Dekolonisierungsprozess
-                  informieren wollen und das Thema (Post-)Kolonialismus in ihre
-                  Arbeit und Abläufe verankern wollen.
+                  Beratung von zivilgesellschaftlichen Initiativen und Multiplikator*innen, die sich
+                  über bisherige Akteur*innen und deren Projekte im gesamtstädtischen
+                  Dekolonisierungsprozess informieren wollen und das Thema (Post-)Kolonialismus in
+                  ihre Arbeit und Abläufe verankern wollen.
                 </p>
               </div>
             </div>

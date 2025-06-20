@@ -11,9 +11,7 @@ export default function Page() {
         <NavBar />
         <div className="container mx-auto mt-20 max-w-screen-md rounded-lg bg-[#fff6ea] p-10 shadow-sm">
           {/* News Date */}
-          <h3 className="mb-5 text-center text-gray-500 uppercase">
-            12. Dezember 2023
-          </h3>
+          <h3 className="mb-5 text-center text-gray-500 uppercase">12. Dezember 2023</h3>
 
           {/* News Title */}
           <h1
@@ -39,10 +37,9 @@ export default function Page() {
           {/* Text */}
           <section className="prose prose-sm prose-stone prose-a:target:_blank prose-a:rel:noreferrer mx-auto mt-20 max-w-screen-md prose-headings:font-semibold prose-a:text-orange-500 prose-headings:text-2xl prose-headings:text-orange-500">
             <p className="mt-4 text-base text-gray-800">
-              Du möchtest Neuigkeiten von Ossara e.V. und aktuelle Debatten und
-              News zum Thema Dekolonisierung und Anti-Rassismus innerhalb
-              Hamburgs verfolgen oder über Veranstaltungen zu diesen Thematiken
-              informiert bleiben?
+              Du möchtest Neuigkeiten von Ossara e.V. und aktuelle Debatten und News zum Thema
+              Dekolonisierung und Anti-Rassismus innerhalb Hamburgs verfolgen oder über
+              Veranstaltungen zu diesen Thematiken informiert bleiben?
             </p>
             <p className="text-base">
               Dann abonniere unseren Newsletter{" "}

@@ -31,9 +31,7 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Netzwerken und Workshop
-          </p>
+          <p className="mt-2 text-base text-gray-800">What: Netzwerken und Workshop</p>
 
           {/* Event Date */}
           <p className="mt-2 text-base text-gray-800">Wann: 24. October 2024</p>
@@ -43,11 +41,10 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken
-            und Werken im Rahmen von kreativen Angeboten zu verbinden. Was:
-            Teller bemalen - Hier kannst du deinen neuen Lieblings
-            Frühstücksteller oder einen Wandteller gestalten Mit Fabienne
-            Schöter, Kunsttherapeutin.
+            Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen
+            von kreativen Angeboten zu verbinden. Was: Teller bemalen - Hier kannst du deinen neuen
+            Lieblings Frühstücksteller oder einen Wandteller gestalten Mit Fabienne Schöter,
+            Kunsttherapeutin.
           </p>
         </div>
         <Footer />

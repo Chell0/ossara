@@ -27,9 +27,8 @@ export default function Page() {
           <h1
             className={`mt-20 text-left font-bold text-2xl text-[#eb7b24] uppercase leading-8 tracking-wide sm:text-lg md:text-xl lg:text-3xl`}
           >
-            Der Zusammenhang von rassistischen Mikroaggressionen und
-            traumatischen Stress UND der Einfluss von Widerstand und Empowerment
-            gegen Rassismus
+            Der Zusammenhang von rassistischen Mikroaggressionen und traumatischen Stress UND der
+            Einfluss von Widerstand und Empowerment gegen Rassismus
           </h1>
 
           {/* Event Type */}
@@ -43,13 +42,11 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Eine Form von Rassismus, die zu den alltäglichen und chronischen
-            Belastungen von rassifizierten Menschen zählt und häufig im
-            Therapiekontext reproduziert wird, sind Mikroaggressionen.
-            Mikroaggressionen sind alles andere als harmlos: sie können
-            traumatischen Stress auslösen. Wir beschäftigen uns mit diesem
-            Zusammenhang und der Frage, wie Empowerment und Widerstand die
-            Psyche schützen können.
+            Eine Form von Rassismus, die zu den alltäglichen und chronischen Belastungen von
+            rassifizierten Menschen zählt und häufig im Therapiekontext reproduziert wird, sind
+            Mikroaggressionen. Mikroaggressionen sind alles andere als harmlos: sie können
+            traumatischen Stress auslösen. Wir beschäftigen uns mit diesem Zusammenhang und der
+            Frage, wie Empowerment und Widerstand die Psyche schützen können.
           </p>
         </div>
         <Footer />

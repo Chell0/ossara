@@ -34,19 +34,16 @@ export default function Page() {
           <p className="mt-2 text-base text-gray-800">What: Workshop</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">
-            Wann: 10. - 11. Juni 2023
-          </p>
+          <p className="mt-2 text-base text-gray-800">Wann: 10. - 11. Juni 2023</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 10:00 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            WenDo heißt die eigenen Handlungsmöglichkeiten kennen, das eigene
-            Gefühl ernst nehmen und Vertrauen in die eigene Stärke und
-            Wehrhaftigkeit haben. So können Konflikte und Bedrohungssituationen
-            erfolgreich gelöst werden. Auf der Arbeit, in der U-Bahn, im
+            WenDo heißt die eigenen Handlungsmöglichkeiten kennen, das eigene Gefühl ernst nehmen
+            und Vertrauen in die eigene Stärke und Wehrhaftigkeit haben. So können Konflikte und
+            Bedrohungssituationen erfolgreich gelöst werden. Auf der Arbeit, in der U-Bahn, im
             Freund*innenkreis oder der Familie.
           </p>
         </div>

@@ -31,24 +31,20 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Netzwerken und Workshop
-          </p>
+          <p className="mt-2 text-base text-gray-800">What: Netzwerken und Workshop</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">
-            Wann: 19. September 2024
-          </p>
+          <p className="mt-2 text-base text-gray-800">Wann: 19. September 2024</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 18:30 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken
-            und Werken im Rahmen von kreativen Angeboten zu verbinden. Was:
-            Gemeinsam werden wir die Technik des Linoldruckes kennenlernen und
-            uns hier ausprobieren. Mit Fabienne Schöter, Kunsttherapeutin.
+            Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen
+            von kreativen Angeboten zu verbinden. Was: Gemeinsam werden wir die Technik des
+            Linoldruckes kennenlernen und uns hier ausprobieren. Mit Fabienne Schöter,
+            Kunsttherapeutin.
           </p>
         </div>
         <Footer />

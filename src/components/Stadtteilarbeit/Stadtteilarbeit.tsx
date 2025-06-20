@@ -23,9 +23,7 @@ export default function Stadtteilarbeit() {
 
           {/* Text Content */}
           <div className="absolute bottom-6 xs2:bottom-9 xs:bottom-8 left-2 xs2:left-4 xs:left-3 sm:bottom-10 sm:left-6 md:bottom-11 md:left-7 lg:bottom-12 lg:left-8 xl:bottom-13 xl:left-9 2xl:bottom-14 2xl:left-10">
-            <div
-              className="3xl:space-y-13 space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 "
-            >
+            <div className="3xl:space-y-13 space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 ">
               <h1 className="font-extrabold 3xl:text-[160px] text-[#fcc41b] xs2:text-5xl xs:text-4xl uppercase leading-[1.1]text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px]">
                 <span className="block">Stadtteil.</span>
                 <span className="block">Arbeit.</span>
@@ -38,9 +36,8 @@ export default function Stadtteilarbeit() {
           {/* BIG TEXT */}
           <div className="mx-auto 3xl:mb-32 xs:mb-10 pt-8 sm:mb-12 md:mb-16 lg:mb-20 xl:mb-24 2xl:mb-28">
             <p className="text-left font-semibold 3xl:text-[8rem] text-xl xs2:text-3xl xs:text-2xl leading-normal tracking-normal sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl">
-              Mit niederschwelliger Beratung und praxisnaher Unterstützung
-              schaffen wir berufliche Perspektiven und fördern erfolgreiche
-              Integration.
+              Mit niederschwelliger Beratung und praxisnaher Unterstützung schaffen wir berufliche
+              Perspektiven und fördern erfolgreiche Integration.
             </p>
           </div>
 
@@ -54,20 +51,16 @@ export default function Stadtteilarbeit() {
             {/* Text Section */}
             <div className="mb-8 xs:mb-10 w-full 3xl:pt-24 pt-8 xs:pt-10 sm:mb-12 sm:pt-12 md:mb-0 md:w-1/2 md:pt-14 lg:pt-16 xl:pt-18 2xl:pt-20">
               <p className="mx-auto max-w-prose 3xl:text-2xl text-black text-xs xs:text-sm leading-snug sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-2xl">
-                Ossara e.V. bietet eine niedrigschwellige Sozialberatung und
-                Bewerbungshilfe für Geflüchtete und Interessierte. In
-                wöchentlichen Terminen unterstützen wir bei der Orientierung im
-                deutschen Arbeitsmarkt, der Erstellung von Bewerbungsunterlagen
-                und der Jobsuche. Darüber hinaus bieten wir Sprachförderung und
-                Prüfungsvorbereitung, die Teilnehmer*innen gezielt auf
-                Abschlussprüfungen wie das Zertifikat Deutsch Telc und Goethe
-                vorbereiten. Unser Ziel ist es, formale Sprachkenntnisse zu
-                vermitteln, die schriftliche Kompetenz zu stärken und
-                gleichzeitig eine interkulturelle Austauschplattform zu bieten.
-                Mit diesen Angeboten möchten wir den Teilnehmenden die nötigen
-                Fähigkeiten und das Selbstvertrauen für eine erfolgreiche
-                Integration und berufliche Perspektiven in Deutschland
-                vermitteln.
+                Ossara e.V. bietet eine niedrigschwellige Sozialberatung und Bewerbungshilfe für
+                Geflüchtete und Interessierte. In wöchentlichen Terminen unterstützen wir bei der
+                Orientierung im deutschen Arbeitsmarkt, der Erstellung von Bewerbungsunterlagen und
+                der Jobsuche. Darüber hinaus bieten wir Sprachförderung und Prüfungsvorbereitung,
+                die Teilnehmer*innen gezielt auf Abschlussprüfungen wie das Zertifikat Deutsch Telc
+                und Goethe vorbereiten. Unser Ziel ist es, formale Sprachkenntnisse zu vermitteln,
+                die schriftliche Kompetenz zu stärken und gleichzeitig eine interkulturelle
+                Austauschplattform zu bieten. Mit diesen Angeboten möchten wir den Teilnehmenden die
+                nötigen Fähigkeiten und das Selbstvertrauen für eine erfolgreiche Integration und
+                berufliche Perspektiven in Deutschland vermitteln.
               </p>
             </div>
           </div>
@@ -135,9 +128,8 @@ export default function Stadtteilarbeit() {
 
                 <div className="mt-6 space-y-4">
                   <p className="text-black text-sm sm:text-base md:text-lg">
-                    Du hast Fragen zu Arbeit, Ausbildung, Schule oder Studium?
-                    Du brauchst Hilfe beim Schreiben von Bewerbungen oder beim
-                    Ausfüllen von Formularen?
+                    Du hast Fragen zu Arbeit, Ausbildung, Schule oder Studium? Du brauchst Hilfe
+                    beim Schreiben von Bewerbungen oder beim Ausfüllen von Formularen?
                   </p>
 
                   <p className="text-black text-sm sm:text-base md:text-lg">
@@ -145,9 +137,9 @@ export default function Stadtteilarbeit() {
                   </p>
 
                   <p className="text-black text-sm sm:text-base md:text-lg">
-                    Ossara e.V. bietet einmal pro Woche eine offene Beratung an.
-                    Wir nehmen uns Zeit für dich. Gemeinsam schauen wir, was du
-                    brauchst und wie wir dich unterstützen können.
+                    Ossara e.V. bietet einmal pro Woche eine offene Beratung an. Wir nehmen uns Zeit
+                    für dich. Gemeinsam schauen wir, was du brauchst und wie wir dich unterstützen
+                    können.
                   </p>
 
                   <p className="text-black text-sm sm:text-base md:text-lg">
@@ -155,9 +147,7 @@ export default function Stadtteilarbeit() {
                   </p>
 
                   <ul className="list-disc space-y-2 pl-6 font-semibold text-[#fcc41b] text-sm leading-relaxed sm:text-base md:text-lg">
-                    <li>
-                      der Suche nach Arbeit, Praktikum, Ausbildung oder Schule
-                    </li>
+                    <li>der Suche nach Arbeit, Praktikum, Ausbildung oder Schule</li>
                     <li>dem Schreiben von Lebenslauf und Bewerbung</li>
                     <li>Formularen vom Amt oder für Anträge</li>
                   </ul>
@@ -170,22 +160,19 @@ export default function Stadtteilarbeit() {
 
                     <p className="text-sm sm:text-base md:text-lg">
                       <span className="block font-bold text-black">Wo?</span>
-                      In den Räumen des SV Groß Borstel Brödermannsweg 31, 22453
-                      Hamburg und digital
+                      In den Räumen des SV Groß Borstel Brödermannsweg 31, 22453 Hamburg und digital
                     </p>
 
                     <p className="text-sm sm:text-base md:text-lg">
-                      <span className="block font-bold text-black">
-                        Für wen?
-                      </span>
-                      Das Angebot ist für geflüchtete Menschen aus Unterkünften
-                      in der Nähe – und für alle, die Unterstützung brauchen.
+                      <span className="block font-bold text-black">Für wen?</span>
+                      Das Angebot ist für geflüchtete Menschen aus Unterkünften in der Nähe – und
+                      für alle, die Unterstützung brauchen.
                     </p>
                   </div>
 
                   <p className="text-black text-sm sm:text-base md:text-lg">
-                    Wir sprechen einfaches Deutsch. Bei Bedarf organisieren wir
-                    eine Übersetzung. Du bist herzlich willkommen.
+                    Wir sprechen einfaches Deutsch. Bei Bedarf organisieren wir eine Übersetzung. Du
+                    bist herzlich willkommen.
                   </p>
                 </div>
               </div>
@@ -223,43 +210,35 @@ export default function Stadtteilarbeit() {
 
                 <div className="mt-6 space-y-4">
                   <p className="text-black text-sm italic leading-relaxed sm:text-base md:text-lg">
-                    Gemeinsam sicherer in der Sprache – für Alltag, Ausbildung
-                    und Prüfungen
+                    Gemeinsam sicherer in der Sprache – für Alltag, Ausbildung und Prüfungen
                   </p>
 
                   <p className="text-black text-sm sm:text-base md:text-lg">
-                    Mit unserem Sprachförderangebot unterstützen wir dich dabei,
-                    deine Deutschkenntnisse zu verbessern – besonders für
-                    wichtige Gespräche, Bewerbungen und Prüfungen.
+                    Mit unserem Sprachförderangebot unterstützen wir dich dabei, deine
+                    Deutschkenntnisse zu verbessern – besonders für wichtige Gespräche, Bewerbungen
+                    und Prüfungen.
                   </p>
 
-                  <p className="text-black text-sm sm:text-base md:text-lg">
-                    Wir helfen dir:
-                  </p>
+                  <p className="text-black text-sm sm:text-base md:text-lg">Wir helfen dir:</p>
 
                   <ul className="list-disc space-y-2 pl-5 font-semibold text-[#fcc41b] text-sm leading-relaxed sm:text-base md:text-lg">
                     <li>Besser auf Deutsch zu schreiben</li>
                     <li>Dich in Prüfungen gut auszudrücken</li>
                     <li>Dich sicherer im formellen Deutsch zu fühlen</li>
-                    <li>
-                      Andere Menschen kennenzulernen und dich auszutauschen
-                    </li>
+                    <li>Andere Menschen kennenzulernen und dich auszutauschen</li>
                   </ul>
 
                   <p className="text-black text-sm sm:text-base md:text-lg">
-                    Unser Ziel ist es, dich gut auf deine Abschlussprüfungen
-                    vorzubereiten. In kleinen Gruppen üben wir Prüfungsfragen,
-                    schreiben Texte und trainieren das freie Sprechen. Du kannst
-                    lernen, wie Prüfungen ablaufen – und was du dabei beachten
-                    musst.
+                    Unser Ziel ist es, dich gut auf deine Abschlussprüfungen vorzubereiten. In
+                    kleinen Gruppen üben wir Prüfungsfragen, schreiben Texte und trainieren das
+                    freie Sprechen. Du kannst lernen, wie Prüfungen ablaufen – und was du dabei
+                    beachten musst.
                   </p>
 
                   <div className="space-y-4">
                     <div>
                       <p className="text-sm sm:text-base md:text-lg">
-                        <span className="block font-bold text-black">
-                          Wann?
-                        </span>
+                        <span className="block font-bold text-black">Wann?</span>
                         Montags und dienstags
                         <br />
                         von 10:00 bis 13:00 Uhr
@@ -269,8 +248,7 @@ export default function Stadtteilarbeit() {
                     <div>
                       <p className="text-black text-sm sm:text-base md:text-lg">
                         <span className="block font-bold">Was wird geübt?</span>
-                        Wir bereiten dich auf viele bekannte Prüfungen vor, zum
-                        Beispiel:
+                        Wir bereiten dich auf viele bekannte Prüfungen vor, zum Beispiel:
                       </p>
                       <ul className="mt-2 list-disc space-y-2 pl-5 font-semibold text-sm sm:text-base md:text-lg">
                         <li>telc A1, A2, B1, B2, C1</li>
@@ -280,17 +258,13 @@ export default function Stadtteilarbeit() {
                     </div>
 
                     <p className="text-sm sm:text-base md:text-lg">
-                      <span className="block font-bold text-black">
-                        Wichtig:
-                      </span>
-                      Wir führen keine Prüfungen selbst durch und übernehmen
-                      keine Prüfungsgebühren. Wir helfen dir aber bei der
-                      Vorbereitung und können dir sagen, wo du dich anmelden
-                      kannst.
+                      <span className="block font-bold text-black">Wichtig:</span>
+                      Wir führen keine Prüfungen selbst durch und übernehmen keine Prüfungsgebühren.
+                      Wir helfen dir aber bei der Vorbereitung und können dir sagen, wo du dich
+                      anmelden kannst.
                     </p>
                     <p className="text-black text-sm sm:text-base md:text-lg">
-                      Melde dich gerne, wenn du mitmachen möchtest – wir freuen
-                      uns auf dich!
+                      Melde dich gerne, wenn du mitmachen möchtest – wir freuen uns auf dich!
                     </p>
                   </div>
                 </div>

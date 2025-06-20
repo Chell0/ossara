@@ -6,9 +6,7 @@ export default function Promo() {
       {/* Dekolonisierung */}
       <div className="w-full md:basis-1/2">
         <div className="mx-auto flex max-w-md items-center justify-between rounded-md border border-[#eb7b24] p-4 shadow-sm">
-          <p className="text-base text-black md:text-lg">
-            Promo Dekolonisierung Flyer
-          </p>
+          <p className="text-base text-black md:text-lg">Promo Dekolonisierung Flyer</p>
           <Link
             href="/files/dekolonisierung.pdf"
             target="_blank"
@@ -25,9 +23,7 @@ export default function Promo() {
       {/* Promotorinnen */}
       <div className="w-full md:basis-1/2">
         <div className="mx-auto flex max-w-md items-center justify-between rounded-md border border-[#eb7b24] p-4 shadow-sm">
-          <p className="text-base text-black md:text-lg">
-            Flyer HH Promotorinnen
-          </p>
+          <p className="text-base text-black md:text-lg">Flyer HH Promotorinnen</p>
           <Link
             href="/files/dekolonisierung.pdf"
             target="_blank"

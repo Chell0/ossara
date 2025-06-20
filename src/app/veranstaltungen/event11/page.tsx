@@ -41,14 +41,12 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Rassistische Strukturen machen krank und zeigen ihre Spuren auch im
-            Gesundheitswesen. Im Afrozensus 2020 berichten fast 7 von 10
-            Menschen über Rassismuserfahrung in ärztlicher Behandlung. In der
-            Ausbildung von Gesundheitspersonal gibt es keine strukturierte
-            Weiterbildung über Rassismus und andere Diskriminierungsformen.
-            Dieser Workshop ist ein (Er-)Forschungsraum für Austausch,
-            Reflexion, Bewegung und Strategien in gemeinsamen und geschützteren
-            Räumen.
+            Rassistische Strukturen machen krank und zeigen ihre Spuren auch im Gesundheitswesen. Im
+            Afrozensus 2020 berichten fast 7 von 10 Menschen über Rassismuserfahrung in ärztlicher
+            Behandlung. In der Ausbildung von Gesundheitspersonal gibt es keine strukturierte
+            Weiterbildung über Rassismus und andere Diskriminierungsformen. Dieser Workshop ist ein
+            (Er-)Forschungsraum für Austausch, Reflexion, Bewegung und Strategien in gemeinsamen und
+            geschützteren Räumen.
           </p>
         </div>
         <Footer />

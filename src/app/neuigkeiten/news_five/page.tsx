@@ -10,9 +10,7 @@ export default function Page() {
         <NavBar />
         <div className="container mx-auto mt-20 max-w-screen-md rounded-lg bg-[#fff6ea] p-10 shadow-sm">
           {/* News Date */}
-          <h3 className="mb-5 text-center text-gray-500 uppercase">
-            06. November 2023
-          </h3>
+          <h3 className="mb-5 text-center text-gray-500 uppercase">06. November 2023</h3>
 
           {/* News Title */}
           <h1
@@ -41,30 +39,25 @@ export default function Page() {
               <b>Wann?</b> 06.11.2023, 18:30 Uhr
             </p>
             <p className="mt-4 text-[#eb7b24] text-base">
-              <b>Wo?</b> Bücherhalle Altona, Ottenser Hauptstr. 8-10, Mercado 2.
-              Stock, 22765 Hamburg
+              <b>Wo?</b> Bücherhalle Altona, Ottenser Hauptstr. 8-10, Mercado 2. Stock, 22765
+              Hamburg
             </p>
             <p className="mt-4 text-base text-gray-800">
-              Die anhaltende Präsenz kolonialer Denkweisen und Strukturen ist in
-              verschiedenen Bereichen unserer Gesellschaft immer noch zu spüren
-              und macht sich u.a. in Form von rassistischer Diskriminierung,
-              wirtschaftlicher, kultureller und politischer Ausbeutung sichtbar.
-              Die dekoloniale Perspektive zielt darauf ab, die vom Kolonialismus
-              geschaffene globale Ungleichheit kritisch zu betrachten und die
-              bestehenden Machtstrukturen und Hierarchien zu hinterfragen und zu
-              dekonstruieren. Dies setzt voraus, dass Dekolonisierung als
-              interdisziplinäres Querschnittsthema behandelt wird, und dazu
-              ermutigt, marginalisierte Stimmen und Erfahrungen in den
-              Vordergrund zu stellen. Bei unserer Auftaktveranstaltung
-              Decolonize Literatur wollen wir uns mit dekolonialen Perspektiven
-              auf die Literatur beschäftigen und uns kritisch mit den heutigen
-              Auswirkungen des Kolonialismus auf die Literaturbranche
-              auseinandersetzen. Wir analysieren den eurozentrischen Blick auf
-              Literatur und werfen in den Raum, wie die weiß dominierte
-              Gegenwartsliteratur Vorurteile und Stereotypen u. a. durch
-              Illustration, Sprache, im Verlagswesen reproduziert und wie neue
-              Repräsentationsräume für weitere Perspektiven geschaffen werden
-              können.
+              Die anhaltende Präsenz kolonialer Denkweisen und Strukturen ist in verschiedenen
+              Bereichen unserer Gesellschaft immer noch zu spüren und macht sich u.a. in Form von
+              rassistischer Diskriminierung, wirtschaftlicher, kultureller und politischer
+              Ausbeutung sichtbar. Die dekoloniale Perspektive zielt darauf ab, die vom
+              Kolonialismus geschaffene globale Ungleichheit kritisch zu betrachten und die
+              bestehenden Machtstrukturen und Hierarchien zu hinterfragen und zu dekonstruieren.
+              Dies setzt voraus, dass Dekolonisierung als interdisziplinäres Querschnittsthema
+              behandelt wird, und dazu ermutigt, marginalisierte Stimmen und Erfahrungen in den
+              Vordergrund zu stellen. Bei unserer Auftaktveranstaltung Decolonize Literatur wollen
+              wir uns mit dekolonialen Perspektiven auf die Literatur beschäftigen und uns kritisch
+              mit den heutigen Auswirkungen des Kolonialismus auf die Literaturbranche
+              auseinandersetzen. Wir analysieren den eurozentrischen Blick auf Literatur und werfen
+              in den Raum, wie die weiß dominierte Gegenwartsliteratur Vorurteile und Stereotypen u.
+              a. durch Illustration, Sprache, im Verlagswesen reproduziert und wie neue
+              Repräsentationsräume für weitere Perspektiven geschaffen werden können.
             </p>
             <p className="mt-4 text-[#eb7b24] text-base">
               <b>Podiumsgäste:</b> Millicent Adjei, Dayan Kodua, Dan Thy Nguyen
@@ -83,10 +76,9 @@ export default function Page() {
               />
             </div>
             <p className="mt-10 text-base text-gray-800">
-              Die Veranstaltung findet in deutscher Lautsprache statt. Der
-              Eintritt ist kostenlos. Anmeldung bitte bis zum 05.11.2023. Die
-              Veranstaltung ist der Auftakt einer Decolonize-Reihe, die den
-              interkulturellen Dialog und den Austausch von verschiedenen
+              Die Veranstaltung findet in deutscher Lautsprache statt. Der Eintritt ist kostenlos.
+              Anmeldung bitte bis zum 05.11.2023. Die Veranstaltung ist der Auftakt einer
+              Decolonize-Reihe, die den interkulturellen Dialog und den Austausch von verschiedenen
               Stimmen und Perspektiven aus der Community fördert.
             </p>
           </section>

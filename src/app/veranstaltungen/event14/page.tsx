@@ -41,13 +41,11 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Yoga ist in den letzten Jahren immer beliebter geworden. Obwohl
-            stark verwestlicht und eingenommen von mehrheitlich weißen,
-            schlanken und reichen Frauen*, gehen die Ursprünge des Yoga nicht
-            nur auf Indien zurück. Wie wir inzwischen wissen, ist diese heilige
-            Praxis auch auf dem afrikanischen Kontinent verwurzelt. All
-            gender/gemischter Kurs für BPoC Teilnahme ohne/mit geringen (A1)
-            Deutschkenntnissen möglich!
+            Yoga ist in den letzten Jahren immer beliebter geworden. Obwohl stark verwestlicht und
+            eingenommen von mehrheitlich weißen, schlanken und reichen Frauen*, gehen die Ursprünge
+            des Yoga nicht nur auf Indien zurück. Wie wir inzwischen wissen, ist diese heilige
+            Praxis auch auf dem afrikanischen Kontinent verwurzelt. All gender/gemischter Kurs für
+            BPoC Teilnahme ohne/mit geringen (A1) Deutschkenntnissen möglich!
           </p>
         </div>
         <Footer />

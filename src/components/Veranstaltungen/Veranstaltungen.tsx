@@ -266,17 +266,11 @@ export default function Veranstaltungen() {
   const currentDate = new Date();
 
   // Separate current and future events from past events
-  const currentAndFutureEvents = eventsData.filter(
-    (event) => new Date(event.date) >= currentDate,
-  );
-  const pastEvents = eventsData.filter(
-    (event) => new Date(event.date) < currentDate,
-  );
+  const currentAndFutureEvents = eventsData.filter((event) => new Date(event.date) >= currentDate);
+  const pastEvents = eventsData.filter((event) => new Date(event.date) < currentDate);
 
   // Sort events in ascending order by date
-  currentAndFutureEvents.sort(
-    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-  );
+  currentAndFutureEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   return (
     <>

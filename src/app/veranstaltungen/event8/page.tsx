@@ -31,27 +31,22 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Podiumsdiskussion
-          </p>
+          <p className="mt-2 text-base text-gray-800">What: Podiumsdiskussion</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">
-            Wann: 06. November 2023
-          </p>
+          <p className="mt-2 text-base text-gray-800">Wann: 06. November 2023</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 18:30 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Die Auftaktveranstaltung „Decolonize Literatur“ widmet sich der
-            kritischen Auseinandersetzung mit den dekolonialen Perspektiven auf
-            die Literatur. Wir analysieren, wie der eurozentrische Blick in der
-            Literaturbranche Vorurteile und Stereotypen durch Sprache,
-            Illustration und das Verlagswesen fortsetzt. Ziel ist es, neue
-            Repräsentationsräume zu schaffen und marginalisierte Perspektiven
-            stärker in den Fokus zu rücken.
+            Die Auftaktveranstaltung „Decolonize Literatur“ widmet sich der kritischen
+            Auseinandersetzung mit den dekolonialen Perspektiven auf die Literatur. Wir analysieren,
+            wie der eurozentrische Blick in der Literaturbranche Vorurteile und Stereotypen durch
+            Sprache, Illustration und das Verlagswesen fortsetzt. Ziel ist es, neue
+            Repräsentationsräume zu schaffen und marginalisierte Perspektiven stärker in den Fokus
+            zu rücken.
           </p>
         </div>
         <Footer />

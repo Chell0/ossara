@@ -23,9 +23,7 @@ export default function Dekoloniale() {
 
           {/* Text Content */}
           <div className="absolute bottom-6 xs2:bottom-9 xs:bottom-8 left-2 xs2:left-4 xs:left-3 sm:bottom-10 sm:left-6 md:bottom-11 md:left-7 lg:bottom-12 lg:left-8 xl:bottom-13 xl:left-9 2xl:bottom-14 2xl:left-10">
-            <div
-              className="3xl:space-y-13 space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 "
-            >
+            <div className="3xl:space-y-13 space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 ">
               <h1 className="font-extrabold 3xl:text-[160px] text-[#d3103e] xs2:text-5xl xs:text-4xl uppercase leading-[1.1]text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px]">
                 <span className="block">Dekolonial.</span>
                 <span className="block">Global.</span>
@@ -38,10 +36,9 @@ export default function Dekoloniale() {
           {/* BIG TEXT */}
           <div className="mx-auto 3xl:mb-52 mb-12 xs:mb-14 pt-8 sm:mb-16 md:mb-20 lg:mb-36 xl:mb-40 2xl:mb-48">
             <p className="mx-auto font-semibold 3xl:text-[10rem] text-2xl xs2:text-4xl xs:text-3xl leading-tight tracking-normal sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-[5rem]">
-              Mit dekolonialer Perspektive setzen wir Projekte um, die die
-              lokale Selbstbestimmung stärken, nachhaltige Verbesserungen in den
-              Lebensbedingungen ermöglichen und langfristige Partnerschaften
-              fördern.
+              Mit dekolonialer Perspektive setzen wir Projekte um, die die lokale Selbstbestimmung
+              stärken, nachhaltige Verbesserungen in den Lebensbedingungen ermöglichen und
+              langfristige Partnerschaften fördern.
             </p>
           </div>
 
@@ -49,19 +46,16 @@ export default function Dekoloniale() {
           <div className="flex w-full justify-center">
             <div className="max-w-7xl">
               <p className="text-left 3xl:text-3xl text-black text-sm xs2:text-xs xs:text-xs leading-relaxed sm:text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                Ossara e.V. verfolgt einen dekolonialen Ansatz in der
-                internationalen Zusammenarbeit, um gleichwertige Partnerschaften
-                und nachhaltige Entwicklung zu fördern. Wir setzen uns dafür
-                ein, koloniale Strukturen zu hinterfragen und bestehende
-                Machtungleichheiten zu überwinden. In enger Zusammenarbeit mit
-                lokalen Partner:innen in Togo, Benin und Côte d'Ivoire arbeiten
-                wir daran, die Selbstbestimmung der Gemeinschaften zu stärken
-                und die Lebensbedingungen langfristig zu verbessern. Dabei legen
-                wir großen Wert auf diasporische Stimmen, die Beteiligung der
-                Menschen vor Ort und die Berücksichtigung ihrer Perspektiven.
-                Unsere Projekte werden auf Augenhöhe und partizipativ
-                entwickelt, um gemeinsam die sozialen und wirtschaftlichen
-                Herausforderungen zu bewältigen und eine gerechte, inklusive
+                Ossara e.V. verfolgt einen dekolonialen Ansatz in der internationalen
+                Zusammenarbeit, um gleichwertige Partnerschaften und nachhaltige Entwicklung zu
+                fördern. Wir setzen uns dafür ein, koloniale Strukturen zu hinterfragen und
+                bestehende Machtungleichheiten zu überwinden. In enger Zusammenarbeit mit lokalen
+                Partner:innen in Togo, Benin und Côte d'Ivoire arbeiten wir daran, die
+                Selbstbestimmung der Gemeinschaften zu stärken und die Lebensbedingungen langfristig
+                zu verbessern. Dabei legen wir großen Wert auf diasporische Stimmen, die Beteiligung
+                der Menschen vor Ort und die Berücksichtigung ihrer Perspektiven. Unsere Projekte
+                werden auf Augenhöhe und partizipativ entwickelt, um gemeinsam die sozialen und
+                wirtschaftlichen Herausforderungen zu bewältigen und eine gerechte, inklusive
                 Zukunft zu gestalten.
               </p>
             </div>
@@ -77,14 +71,8 @@ export default function Dekoloniale() {
                   Unsere Projekte umfassen:
                 </p>
                 <ul className="mt-4 list-disc space-y-2 pl-5 text-base text-black xs2:text-lg">
-                  <li>
-                    Bau von Schulgebäuden, Sanitäranlagen, Spielplätzen und
-                    Brunnen
-                  </li>
-                  <li>
-                    Ausstattung von Schulen und Sportvereinen mit Möbeln und
-                    Trikots
-                  </li>
+                  <li>Bau von Schulgebäuden, Sanitäranlagen, Spielplätzen und Brunnen</li>
+                  <li>Ausstattung von Schulen und Sportvereinen mit Möbeln und Trikots</li>
                   <li>Bildungsprogramme, Stipendien und Förderungen</li>
                   <li>Starthilfen für Frauen</li>
                   <li>Umweltbildung durch Wiederaufforstungsinitiativen</li>
@@ -123,21 +111,17 @@ export default function Dekoloniale() {
                 Projektprozess
               </h3>
               <p className="text-base text-black leading-relaxed sm:text-lg">
-                Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von
-                Anfragen aus der lokalen Bevölkerung oder Partnerorganisationen.
-                Die aktive Beteiligung der lokalen Gemeinschaften an allen
-                Projektphasen ist für uns entscheidend, um sicherzustellen, dass
-                Projekte ihren Bedürfnissen entsprechen. Nach einem Feldbesuch,
-                bei dem wir uns intensiv mit den Betroffenen austauschen und
-                wichtige Daten sammeln, wird ein Projektantrag erstellt. Die
-                Fördermittelakquise kann mehrere Monate bis Jahre dauern. Sobald
-                die Mittel gesichert sind, startet die Umsetzung des Projekts in
-                enger Zusammenarbeit mit lokalen Partner:innen. Wir begleiten
-                den Prozess und stellen sicher, dass die Qualitätsstandards
-                sowie die Fristen eingehalten werden. Nach dem Projektabschluss
-                erfolgen eine Evaluierung und regelmäßige Nachkontrollen
-                (Monitoring), um die Nachhaltigkeit des Projektes
-                sicherzustellen.
+                Der Projektprozess bei Ossara e.V. beginnt mit der Annahme von Anfragen aus der
+                lokalen Bevölkerung oder Partnerorganisationen. Die aktive Beteiligung der lokalen
+                Gemeinschaften an allen Projektphasen ist für uns entscheidend, um sicherzustellen,
+                dass Projekte ihren Bedürfnissen entsprechen. Nach einem Feldbesuch, bei dem wir uns
+                intensiv mit den Betroffenen austauschen und wichtige Daten sammeln, wird ein
+                Projektantrag erstellt. Die Fördermittelakquise kann mehrere Monate bis Jahre
+                dauern. Sobald die Mittel gesichert sind, startet die Umsetzung des Projekts in
+                enger Zusammenarbeit mit lokalen Partner:innen. Wir begleiten den Prozess und
+                stellen sicher, dass die Qualitätsstandards sowie die Fristen eingehalten werden.
+                Nach dem Projektabschluss erfolgen eine Evaluierung und regelmäßige Nachkontrollen
+                (Monitoring), um die Nachhaltigkeit des Projektes sicherzustellen.
               </p>
               <div className="mt-4 flex justify-start">
                 <Link
@@ -193,21 +177,17 @@ export default function Dekoloniale() {
                 Projektpartner
               </h3>
               <p className="text-base text-black leading-relaxed sm:text-lg">
-                Der Projektpartner bei Ossara e.V. beginnt mit der Annahme von
-                Anfragen aus der lokalen Bevölkerung oder Partnerorganisationen.
-                Die aktive Beteiligung der lokalen Gemeinschaften an allen
-                Projektphasen ist für uns entscheidend, um sicherzustellen, dass
-                Projekte ihren Bedürfnissen entsprechen. Nach einem Feldbesuch,
-                bei dem wir uns intensiv mit den Betroffenen austauschen und
-                wichtige Daten sammeln, wird ein Projektantrag erstellt. Die
-                Fördermittelakquise kann mehrere Monate bis Jahre dauern. Sobald
-                die Mittel gesichert sind, startet die Umsetzung des Projekts in
-                enger Zusammenarbeit mit lokalen Partner:innen. Wir begleiten
-                den Prozess und stellen sicher, dass die Qualitätsstandards
-                sowie die Fristen eingehalten werden. Nach dem Projektabschluss
-                erfolgen eine Evaluierung und regelmäßige Nachkontrollen
-                (Monitoring), um die Nachhaltigkeit des Projektes
-                sicherzustellen.
+                Der Projektpartner bei Ossara e.V. beginnt mit der Annahme von Anfragen aus der
+                lokalen Bevölkerung oder Partnerorganisationen. Die aktive Beteiligung der lokalen
+                Gemeinschaften an allen Projektphasen ist für uns entscheidend, um sicherzustellen,
+                dass Projekte ihren Bedürfnissen entsprechen. Nach einem Feldbesuch, bei dem wir uns
+                intensiv mit den Betroffenen austauschen und wichtige Daten sammeln, wird ein
+                Projektantrag erstellt. Die Fördermittelakquise kann mehrere Monate bis Jahre
+                dauern. Sobald die Mittel gesichert sind, startet die Umsetzung des Projekts in
+                enger Zusammenarbeit mit lokalen Partner:innen. Wir begleiten den Prozess und
+                stellen sicher, dass die Qualitätsstandards sowie die Fristen eingehalten werden.
+                Nach dem Projektabschluss erfolgen eine Evaluierung und regelmäßige Nachkontrollen
+                (Monitoring), um die Nachhaltigkeit des Projektes sicherzustellen.
               </p>
               <div className="mt-4 flex justify-start">
                 <Link

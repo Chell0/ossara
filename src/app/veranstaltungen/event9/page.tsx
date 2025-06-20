@@ -41,13 +41,12 @@ export default function Page() {
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Die Auftaktveranstaltung „Decolonize Literatur“ widmet sich der
-            kritischen Auseinandersetzung mit den dekolonialen Perspektiven auf
-            die Literatur. Wir analysieren, wie der eurozentrische Blick in der
-            Literaturbranche Vorurteile und Stereotypen durch Sprache,
-            Illustration und das Verlagswesen fortsetzt. Ziel ist es, neue
-            Repräsentationsräume zu schaffen und marginalisierte Perspektiven
-            stärker in den Fokus zu rücken.
+            Die Auftaktveranstaltung „Decolonize Literatur“ widmet sich der kritischen
+            Auseinandersetzung mit den dekolonialen Perspektiven auf die Literatur. Wir analysieren,
+            wie der eurozentrische Blick in der Literaturbranche Vorurteile und Stereotypen durch
+            Sprache, Illustration und das Verlagswesen fortsetzt. Ziel ist es, neue
+            Repräsentationsräume zu schaffen und marginalisierte Perspektiven stärker in den Fokus
+            zu rücken.
           </p>
         </div>
         <Footer />
