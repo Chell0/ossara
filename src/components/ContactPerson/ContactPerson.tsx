@@ -24,9 +24,7 @@ const ContactPerson: React.FC<ContactPersonProps> = ({
 
       {/* Contact Info */}
       <div className="text-center text-black lg:text-left">
-        <h2 className="mb-2 font-semibold text-base sm:text-lg md:text-xl">
-          {name}
-        </h2>
+        <h2 className="mb-2 font-semibold text-base sm:text-lg md:text-xl">{name}</h2>
         <p className="mb-3 text-xs sm:text-sm md:text-base">{position}</p>
         <p className="text-xs sm:text-sm md:text-base">
           <span className="font-semibold">E-Mail:</span> {email}

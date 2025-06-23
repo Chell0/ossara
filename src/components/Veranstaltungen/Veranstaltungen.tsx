@@ -266,17 +266,11 @@ export default function Veranstaltungen() {
   const currentDate = new Date();
 
   // Separate current and future events from past events
-  const currentAndFutureEvents = eventsData.filter(
-    (event) => new Date(event.date) >= currentDate,
-  );
-  const pastEvents = eventsData.filter(
-    (event) => new Date(event.date) < currentDate,
-  );
+  const currentAndFutureEvents = eventsData.filter(event => new Date(event.date) >= currentDate);
+  const pastEvents = eventsData.filter(event => new Date(event.date) < currentDate);
 
   // Sort events in ascending order by date
-  currentAndFutureEvents.sort(
-    (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime(),
-  );
+  currentAndFutureEvents.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 
   return (
     <>
@@ -315,7 +309,7 @@ export default function Veranstaltungen() {
       <section className="container mx-auto px-4 xs:px-5 py-section sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 xs:grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12 lg:grid-cols-4 lg:gap-section xl:grid-cols-4 xl:gap-section-lg 2xl:grid-cols-4">
           {currentAndFutureEvents.length > 0 ? (
-            currentAndFutureEvents.map((event) => (
+            currentAndFutureEvents.map(event => (
               <div key={event.id} className="w-full overflow-hidden">
                 {/* Image section */}
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
@@ -370,7 +364,7 @@ export default function Veranstaltungen() {
 
       <section className="container mx-auto px-4 xs:px-5 py-section sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 xs:grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12 lg:grid-cols-4 lg:gap-section xl:grid-cols-4 xl:gap-section-lg 2xl:grid-cols-4">
-          {pastEvents.slice(0, 15).map((event) => (
+          {pastEvents.slice(0, 15).map(event => (
             <div key={event.id} className="w-full overflow-hidden">
               {/* Image Section */}
               <div className="relative aspect-[4/3] w-full overflow-hidden">

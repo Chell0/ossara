@@ -22,12 +22,8 @@ export default function LandingSection() {
           <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
             <h1 className="animate-fade-in font-bold 3xl:text-[12rem] text-2xl text-white xs2:text-xl xs:text-lg uppercase leading-[1.1] sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
               <span className="block animate-slide-up">GEMEINSAM GEGEN</span>
-              <span className="block animate-slide-up delay-200">
-                Loremipsum dolor
-              </span>
-              <span className="block animate-slide-up delay-400">
-                Lorem sit
-              </span>
+              <span className="block animate-slide-up delay-200">Loremipsum dolor</span>
+              <span className="block animate-slide-up delay-400">Lorem sit</span>
             </h1>
           </div>
         </section>

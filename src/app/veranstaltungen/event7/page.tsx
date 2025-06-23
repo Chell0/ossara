@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div className="relative bg-[#fff6ea]">
       <main className="p-6">
-        <NavBar />
+        <NavBar/>
         <div className="container mx-auto mt-20 max-w-screen-md p-10">
           {/* Events Image */}
-          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
+          <div
+            className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/veranstaltungen/runder-tisch.png`}
               alt={`Decolonize Polizei Photo`}
@@ -19,7 +20,7 @@ export default function Page() {
               priority
               quality={100}
               className={`rounded-md object-contain object-center`}
-              style={{ maxHeight: "640px" }}
+              style={{maxHeight: "640px"}}
             />
           </div>
 
@@ -42,15 +43,19 @@ export default function Page() {
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
             Am 08. Mai 2024 lädt der 11. Runde Tisch Koloniales Erbe von 18 bis
-            21 Uhr zu einem zivilgesellschaftlichen Austausch und einer
-            Diskussion über den Fortschritt der Dekolonisierungsprojekte im
-            Jupiter in der Mönckebergstraße 2-4 in Hamburg ein. Der Eintritt ist
-            frei und die Veranstaltung ist öffentlich, wobei Beiträge zu
-            aktuellen Projekten vorab an Catherine Schlüter gesendet werden
-            können, spontane Beiträge sind ebenfalls willkommen.
+            21 Uhr zu einem
+            zivilgesellschaftlichen Austausch und einer Diskussion über den
+            Fortschritt der
+            Dekolonisierungsprojekte im Jupiter in der Mönckebergstraße 2-4 in
+            Hamburg ein. Der
+            Eintritt ist frei und die Veranstaltung ist öffentlich, wobei
+            Beiträge zu aktuellen
+            Projekten vorab an Catherine Schlüter gesendet werden können,
+            spontane Beiträge sind
+            ebenfalls willkommen.
           </p>
         </div>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

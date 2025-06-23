@@ -65,8 +65,7 @@ export default function TeamSection() {
     {
       src: "/images/UberUns/Team/CatherineSchlueter.jpg",
       name: "Catherine Schlüter",
-      position:
-        "Fachpromotorin und Veranstaltungsmanagement für Dekolonisierung",
+      position: "Fachpromotorin und Veranstaltungsmanagement für Dekolonisierung",
       büro: "Hamburg, Deutschland",
     },
     {

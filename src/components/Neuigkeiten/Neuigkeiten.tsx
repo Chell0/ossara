@@ -14,10 +14,7 @@ export default function Neuigkeiten() {
 
   const allNews = showNeuigkeiten ? newsData : archiveData;
   const pageCount = Math.ceil(allNews.length / itemsPerPage);
-  const paginatedNews = allNews.slice(
-    (currentPage - 1) * itemsPerPage,
-    currentPage * itemsPerPage,
-  );
+  const paginatedNews = allNews.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
   useEffect(() => {
     setCurrentPage(1); // Reset to first page when switching tabs
@@ -59,9 +56,7 @@ export default function Neuigkeiten() {
             <button
               onClick={() => setShowNeuigkeiten(true)}
               className={`rounded-2xl px-4 xs:px-5 py-2 xs:py-2.5 text-sm xs:text-sm shadow-md transition sm:px-6 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg lg:text-xl ${
-                showNeuigkeiten
-                  ? "bg-[#eb7b24] text-white"
-                  : "bg-gray-200 text-[#eb7b24]"
+                showNeuigkeiten ? "bg-[#eb7b24] text-white" : "bg-gray-200 text-[#eb7b24]"
               }`}
             >
               Neuigkeiten
@@ -69,9 +64,7 @@ export default function Neuigkeiten() {
             <button
               onClick={() => setShowNeuigkeiten(false)}
               className={`rounded-2xl px-4 xs:px-5 py-2 xs:py-2.5 text-sm xs:text-sm shadow-md transition sm:px-6 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg lg:text-xl ${
-                !showNeuigkeiten
-                  ? "bg-[#eb7b24] text-white"
-                  : "bg-gray-200 text-[#eb7b24]"
+                !showNeuigkeiten ? "bg-[#eb7b24] text-white" : "bg-gray-200 text-[#eb7b24]"
               }`}
             >
               Neuigkeiten Archive
@@ -86,7 +79,7 @@ export default function Neuigkeiten() {
             className="grid grid-cols-1 xs:grid-cols-1 gap-6 xs:gap-8 sm:grid-cols-2 sm:gap-10 md:grid-cols-3 md:gap-12 lg:grid-cols-4 lg:gap-section xl:grid-cols-4 xl:gap-section-lg 2xl:grid-cols-4"
           >
             {paginatedNews.length > 0 ? (
-              paginatedNews.map((news) => (
+              paginatedNews.map(news => (
                 <motion.div
                   key={news.id}
                   initial={{ opacity: 0, y: 20 }}

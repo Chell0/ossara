@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div className="relative bg-[#fff6ea]">
       <main className="p-6">
-        <NavBar />
+        <NavBar/>
         <div className="container mx-auto mt-20 max-w-screen-md p-10">
           {/* Events Image */}
-          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
+          <div
+            className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/veranstaltungen/anti-rassismus-im-gesundheitswesen.png`}
               alt={`Decolonize Polizei Photo`}
@@ -19,7 +20,7 @@ export default function Page() {
               priority
               quality={100}
               className={`rounded-md object-contain object-center`}
-              style={{ maxHeight: "640px" }}
+              style={{maxHeight: "640px"}}
             />
           </div>
 
@@ -42,16 +43,19 @@ export default function Page() {
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
             Rassistische Strukturen machen krank und zeigen ihre Spuren auch im
-            Gesundheitswesen. Im Afrozensus 2020 berichten fast 7 von 10
-            Menschen über Rassismuserfahrung in ärztlicher Behandlung. In der
-            Ausbildung von Gesundheitspersonal gibt es keine strukturierte
+            Gesundheitswesen. Im
+            Afrozensus 2020 berichten fast 7 von 10 Menschen über
+            Rassismuserfahrung in ärztlicher
+            Behandlung. In der Ausbildung von Gesundheitspersonal gibt es keine
+            strukturierte
             Weiterbildung über Rassismus und andere Diskriminierungsformen.
-            Dieser Workshop ist ein (Er-)Forschungsraum für Austausch,
-            Reflexion, Bewegung und Strategien in gemeinsamen und geschützteren
-            Räumen.
+            Dieser Workshop ist ein
+            (Er-)Forschungsraum für Austausch, Reflexion, Bewegung und
+            Strategien in gemeinsamen und
+            geschützteren Räumen.
           </p>
         </div>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

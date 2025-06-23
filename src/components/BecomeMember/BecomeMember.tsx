@@ -5,10 +5,7 @@ export default function BecomeMember() {
     <>
       <div>
         {/* Membership form */}
-        <section
-          id="ehrenamtliches_engagement"
-          className="relative h-screen w-full"
-        >
+        <section id="ehrenamtliches_engagement" className="relative h-screen w-full">
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <MemberForm />
           </div>

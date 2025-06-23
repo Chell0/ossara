@@ -11,13 +11,11 @@ export default function Sponsors() {
           </p>
         </div>
         <div className="flex items-center justify-center p-2">
-          <p className="text-center font-semibold text-base text-smokyBlack">
-            mit Mitteln des
-          </p>
+          <p className="text-center font-semibold text-base text-smokyBlack">mit Mitteln des</p>
         </div>
 
         {/* Sponsor Logos */}
-        {[1, 2, 3, 4].map((num) => (
+        {[1, 2, 3, 4].map(num => (
           <div
             key={num}
             className="relative flex h-[80px] xs:h-[100px] w-full items-center justify-center sm:h-[120px] md:h-[15vh]"

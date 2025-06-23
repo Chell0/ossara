@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div className="relative bg-[#fff6ea]">
       <main className="p-6">
-        <NavBar />
+        <NavBar/>
         <div className="container mx-auto mt-20 max-w-screen-md p-10">
           {/* Events Image */}
-          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
+          <div
+            className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/veranstaltungen/decolonize-schonheit.png`}
               alt={`Decolonize Polizei Photo`}
@@ -19,7 +20,7 @@ export default function Page() {
               priority
               quality={100}
               className={`rounded-md object-contain object-center`}
-              style={{ maxHeight: "640px" }}
+              style={{maxHeight: "640px"}}
             />
           </div>
 
@@ -31,9 +32,8 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">
-            What: Podiumsdiskussion
-          </p>
+          <p className="mt-2 text-base text-gray-800">What:
+            Podiumsdiskussion</p>
 
           {/* Event Date */}
           <p className="mt-2 text-base text-gray-800">Wann: 11. März 2024</p>
@@ -44,16 +44,19 @@ export default function Page() {
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
             Unsere Decolonize-Veranstaltungsreihe setzt sich diesmal mit dem
-            Thema Schönheits- und Körperideale auseinander und untersucht die
-            koloniale Prägung von gesellschaftlichen Schönheitsvorstellungen.
-            Wir fragen, wie „Schönheit“ in unseren Biografien verankert ist und
-            wie diese Ideale mit bestehenden Machtstrukturen kollidieren. Ziel
-            ist es, durch Empowerment und dekoloniale Perspektiven einen
-            gesellschaftlichen Wandel zu fördern und bestehende Schönheitsnormen
-            zu hinterfragen.
+            Thema Schönheits- und
+            Körperideale auseinander und untersucht die koloniale Prägung von
+            gesellschaftlichen
+            Schönheitsvorstellungen. Wir fragen, wie „Schönheit“ in unseren
+            Biografien verankert ist
+            und wie diese Ideale mit bestehenden Machtstrukturen kollidieren.
+            Ziel ist es, durch
+            Empowerment und dekoloniale Perspektiven einen gesellschaftlichen
+            Wandel zu fördern und
+            bestehende Schönheitsnormen zu hinterfragen.
           </p>
         </div>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

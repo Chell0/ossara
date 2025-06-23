@@ -25,9 +25,7 @@ export default function UberUns() {
           <section className="absolute bottom-1 left-1 flex h-full items-end px-4 sm:bottom-3 sm:left-1 sm:px-6 md:bottom-4 md:left-3 lg:bottom-6 lg:left-3">
             <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
               <h1 className="animate-fade-in font-bold 3xl:text-[12rem] text-2xl text-[#f7cc55] xs2:text-xl xs:text-lg uppercase leading-[1.1] sm:text-3xl md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-8xl">
-                <span className="block animate-slide-up delay-200">
-                  Inside.
-                </span>
+                <span className="block animate-slide-up delay-200">Inside.</span>
               </h1>
             </div>
           </section>
@@ -61,33 +59,28 @@ export default function UberUns() {
               Über uns
             </h3>
             <p className="mb-4 text-black text-sm leading-loose sm:text-base md:text-lg">
-              Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die
-              sich mit einer dekolonialen Perspektive für Bildung, Gesundheit
-              und interkulturelle Vielfalt einsetzt. Wir hinterfragen bestehende
-              Machtstrukturen und engagieren uns auch in Hamburg. Hier bieten
-              wir integrative Stadtteilarbeit an und unterstützen mit
-              Beratungsangeboten, die auf Hilfe zur Selbsthilfe abzielen. In
-              unserer entwicklungspolitischen Bildungsarbeit in Hamburg setzen
-              wir uns intensiv mit den Themen Dekolonisierung und Anti-Schwarzem
-              Rassismus auseinander und schaffen Begegnungs- und empowernde
-              Räume für BIPoC.
+              Ossara e.V. ist eine Migrant:innen-Selbstorganisation (MSO), die sich mit einer
+              dekolonialen Perspektive für Bildung, Gesundheit und interkulturelle Vielfalt
+              einsetzt. Wir hinterfragen bestehende Machtstrukturen und engagieren uns auch in
+              Hamburg. Hier bieten wir integrative Stadtteilarbeit an und unterstützen mit
+              Beratungsangeboten, die auf Hilfe zur Selbsthilfe abzielen. In unserer
+              entwicklungspolitischen Bildungsarbeit in Hamburg setzen wir uns intensiv mit den
+              Themen Dekolonisierung und Anti-Schwarzem Rassismus auseinander und schaffen
+              Begegnungs- und empowernde Räume für BIPoC.
             </p>
             <p className="mb-4 text-black text-sm leading-loose sm:text-base md:text-lg">
-              Neben unserer internationalen Arbeit in Westafrika (Togo, Benin,
-              Côte d'Ivoire) engagieren wir uns auch in Hamburg. Hier bieten wir
-              integrative Stadtteilarbeit an und unterstützen mit
-              Beratungsangeboten, die auf Hilfe zur Selbsthilfe abzielen. In
-              unserer entwicklungspolitischen Bildungsarbeit in Hamburg setzen
-              wir uns intensiv mit den Themen Dekolonisierung und Anti-Schwarzem
-              Rassismus auseinander und schaffen Begegnungs- und empowernde
-              Räume für BIPoC.
+              Neben unserer internationalen Arbeit in Westafrika (Togo, Benin, Côte d'Ivoire)
+              engagieren wir uns auch in Hamburg. Hier bieten wir integrative Stadtteilarbeit an und
+              unterstützen mit Beratungsangeboten, die auf Hilfe zur Selbsthilfe abzielen. In
+              unserer entwicklungspolitischen Bildungsarbeit in Hamburg setzen wir uns intensiv mit
+              den Themen Dekolonisierung und Anti-Schwarzem Rassismus auseinander und schaffen
+              Begegnungs- und empowernde Räume für BIPoC.
             </p>
             <p className="mb-8 text-black text-sm leading-loose sm:text-base md:text-lg">
-              Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende und
-              nachhaltige Veränderung nur durch einen dekolonialen und
-              machtkritischen Ansatz erreicht werden kann, der die Stimmen und
-              Bedürfnisse derjenigen in den Mittelpunkt stellt, die am stärksten
-              von kolonialen und rassistischen Strukturen betroffen sind.
+              Unsere Arbeit basiert auf der Überzeugung, dass tiefgreifende und nachhaltige
+              Veränderung nur durch einen dekolonialen und machtkritischen Ansatz erreicht werden
+              kann, der die Stimmen und Bedürfnisse derjenigen in den Mittelpunkt stellt, die am
+              stärksten von kolonialen und rassistischen Strukturen betroffen sind.
             </p>
           </div>
         </div>
@@ -106,9 +99,8 @@ export default function UberUns() {
             </h3>
             <div className="space-y-4 text-xs xs:text-sm sm:text-base md:text-lg lg:text-xl xl:text-[1.25rem] 2xl:text-[1.35rem]">
               <p className="text-gray-800">
-                Als eingetragener Verein (VR 23447) sind wir politisch und
-                konfessionell neutral. Unsere Arbeit umfasst ein breites
-                Spektrum an Tätigkeitsfeldern, darunter:
+                Als eingetragener Verein (VR 23447) sind wir politisch und konfessionell neutral.
+                Unsere Arbeit umfasst ein breites Spektrum an Tätigkeitsfeldern, darunter:
               </p>
               <ul className="ml-5 list-disc space-y-2 font-semibold text-[#eb7b24]">
                 <li>Bildung</li>
@@ -116,24 +108,20 @@ export default function UberUns() {
                 <li>Nachhaltige internationale Zusammenarbeit</li>
                 <li>Hilfe für Geflüchtete, Verfolgte und Kriegsopfer</li>
                 <li>
-                  Förderung von internationaler Verständigung, Toleranz und
-                  kultureller Vielfalt
+                  Förderung von internationaler Verständigung, Toleranz und kultureller Vielfalt
                 </li>
-                <li>
-                  Verbesserung der öffentlichen Gesundheitsversorgung und
-                  Gesundheitsfürsorge
-                </li>
+                <li>Verbesserung der öffentlichen Gesundheitsversorgung und Gesundheitsfürsorge</li>
                 <li>Unterstützung hilfsbedürftiger Menschen</li>
               </ul>
               <p className="text-gray-800">
-                Unsere Projekte werden durch ein starkes Netzwerk aus
-                engagierten Mitgliedern, Mitarbeiter:innen, ehrenamtlichen
-                Helfer:innen und Partnerorganisationen unterstützt.
+                Unsere Projekte werden durch ein starkes Netzwerk aus engagierten Mitgliedern,
+                Mitarbeiter:innen, ehrenamtlichen Helfer:innen und Partnerorganisationen
+                unterstützt.
               </p>
               <p className="text-gray-800">
-                Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit,
-                sich durch Praktika oder freiwillige Mitarbeit aktiv in Hamburg
-                oder im westafrikanischen Büro einzubringen.
+                Wir bieten Menschen, die unsere Werte teilen, die Möglichkeit, sich durch Praktika
+                oder freiwillige Mitarbeit aktiv in Hamburg oder im westafrikanischen Büro
+                einzubringen.
               </p>
             </div>
           </div>
@@ -156,10 +144,7 @@ export default function UberUns() {
       </section>
 
       {/* Team Section */}
-      <section
-        id="team"
-        className="px-4 xs2:px-6 py-section lg:px-8 xl:py-section-lg"
-      >
+      <section id="team" className="px-4 xs2:px-6 py-section lg:px-8 xl:py-section-lg">
         <h3 className="mb-12 text-center font-bold text-4xl text-[#eb7b24] leading-tight drop-shadow-sm sm:mb-16 sm:text-5xl md:text-6xl lg:mb-20 lg:text-7xl 2xl:text-8xl">
           Das Team
         </h3>
@@ -197,30 +182,24 @@ export default function UberUns() {
               Unsere Geschichte
             </h3>
             <p className="text-black text-sm xs2:text-base leading-relaxed sm:text-lg md:text-xl">
-              Ossara e.V. wurde am 28. Oktober 2017 gegründet, um eine
-              dekoloniale und machtkritische internationale Zusammenarbeit zu
-              fördern. Der Name „Ossara“, der in der Lamba-Sprache aus dem
-              Norden Togos „Alles wird gut!“ bedeutet, steht für unsere Vision
-              einer positiven Veränderung, die durch eine gleichwertige
-              Zusammenarbeit und die Stärkung der Selbstbestimmung erreicht
-              wird.
+              Ossara e.V. wurde am 28. Oktober 2017 gegründet, um eine dekoloniale und
+              machtkritische internationale Zusammenarbeit zu fördern. Der Name „Ossara“, der in der
+              Lamba-Sprache aus dem Norden Togos „Alles wird gut!“ bedeutet, steht für unsere Vision
+              einer positiven Veränderung, die durch eine gleichwertige Zusammenarbeit und die
+              Stärkung der Selbstbestimmung erreicht wird.
             </p>
             <p className="text-black text-sm xs2:text-base leading-relaxed sm:text-lg md:text-xl">
-              Unsere ersten Projekte begannen in Togo, wo wir mit lokalen
-              Partner:innen Bildungs- und Infrastrukturprojekte durchführten. Im
-              Laufe der Jahre haben wir unsere Arbeit auf weitere
-              westafrikanische Länder ausgeweitet und gleichzeitig ein neues
-              Arbeitsfeld in Hamburg etabliert, das sich auf die Stärkung von
-              BIPoC-Communities sowie die Bekämpfung von Rassismus und
-              Diskriminierung konzentriert.
+              Unsere ersten Projekte begannen in Togo, wo wir mit lokalen Partner:innen Bildungs-
+              und Infrastrukturprojekte durchführten. Im Laufe der Jahre haben wir unsere Arbeit auf
+              weitere westafrikanische Länder ausgeweitet und gleichzeitig ein neues Arbeitsfeld in
+              Hamburg etabliert, das sich auf die Stärkung von BIPoC-Communities sowie die
+              Bekämpfung von Rassismus und Diskriminierung konzentriert.
             </p>
             <p className="text-black text-sm xs2:text-base leading-relaxed sm:text-lg md:text-xl">
-              Heute ist Ossara e.V. ein Verein, der nicht nur in Westafrika
-              aktiv ist, sondern auch auf lokaler Ebene durch
-              entwicklungspolitische Bildungsarbeit, Empowerment und Vernetzung
-              einen Beitrag zu einer gerechteren und nachhaltigeren Welt
-              leistet. Ebenso ist der Verein in vielen regionalen und
-              überregionalen Gremien sowie Netzwerken aktiv.
+              Heute ist Ossara e.V. ein Verein, der nicht nur in Westafrika aktiv ist, sondern auch
+              auf lokaler Ebene durch entwicklungspolitische Bildungsarbeit, Empowerment und
+              Vernetzung einen Beitrag zu einer gerechteren und nachhaltigeren Welt leistet. Ebenso
+              ist der Verein in vielen regionalen und überregionalen Gremien sowie Netzwerken aktiv.
             </p>
           </div>
         </div>

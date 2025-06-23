@@ -1,17 +1,13 @@
 export default function MemberForm() {
   return (
     <section className="mx-auto max-w-4xl rounded-lg bg-white p-6 shadow-lg">
-      <h2 className="mb-6 text-center font-bold text-4xl">
-        Beitrittserklärung
-      </h2>
+      <h2 className="mb-6 text-center font-bold text-4xl">Beitrittserklärung</h2>
       <form className="space-y-6">
         {/* Form Fields */}
         {/* Name */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium text-gray-700 text-sm">
-              Name
-            </label>
+            <label className="block font-medium text-gray-700 text-sm">Name</label>
             <input
               type="text"
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
@@ -19,9 +15,7 @@ export default function MemberForm() {
           </div>
           {/* Vorname */}
           <div>
-            <label className="block font-medium text-gray-700 text-sm">
-              Vorname
-            </label>
+            <label className="block font-medium text-gray-700 text-sm">Vorname</label>
             <input
               type="text"
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
@@ -31,9 +25,7 @@ export default function MemberForm() {
         {/* Address */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium text-gray-700 text-sm">
-              Straße und Hausnummer
-            </label>
+            <label className="block font-medium text-gray-700 text-sm">Straße und Hausnummer</label>
             <input
               type="text"
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
@@ -41,18 +33,14 @@ export default function MemberForm() {
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="block font-medium text-gray-700 text-sm">
-                PLZ
-              </label>
+              <label className="block font-medium text-gray-700 text-sm">PLZ</label>
               <input
                 type="text"
                 className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
               />
             </div>
             <div>
-              <label className="block font-medium text-gray-700 text-sm">
-                Ort
-              </label>
+              <label className="block font-medium text-gray-700 text-sm">Ort</label>
               <input
                 type="text"
                 className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
@@ -63,18 +51,14 @@ export default function MemberForm() {
         {/* Telefon and Email */}
         <div className="grid grid-cols-2 gap-4">
           <div>
-            <label className="block font-medium text-gray-700 text-sm">
-              Telefon
-            </label>
+            <label className="block font-medium text-gray-700 text-sm">Telefon</label>
             <input
               type="text"
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
             />
           </div>
           <div>
-            <label className="block font-medium text-gray-700 text-sm">
-              Email
-            </label>
+            <label className="block font-medium text-gray-700 text-sm">Email</label>
             <input
               type="email"
               className="mt-1 block w-full rounded-md border border-gray-300 p-2 shadow-sm"
@@ -90,8 +74,8 @@ export default function MemberForm() {
             <span className="text-yellow-500">Jahresbeitrag</span> zu zahlen.
           </p>
           <p className="mt-2 text-gray-700">
-            Der Betrag ist zu Beginn der Mitgliedschaft zu überweisen und dann
-            jeweils zum 01.04. eines jeden Jahres fällig.
+            Der Betrag ist zu Beginn der Mitgliedschaft zu überweisen und dann jeweils zum 01.04.
+            eines jeden Jahres fällig.
           </p>
         </div>
         <div className="mt-6">

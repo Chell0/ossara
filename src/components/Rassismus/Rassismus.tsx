@@ -21,15 +21,9 @@ export default function Rassismus() {
           </div>
 
           {/* Text Content (moved left & down) */}
-          <div
-            className="absolute bottom-6 xs2:bottom-9 xs:bottom-8 left-2 xs2:left-4 xs:left-3 sm:bottom-10 sm:left-6 md:bottom-11 md:left-7 lg:bottom-12 lg:left-8 xl:bottom-13 xl:left-9 2xl:bottom-14 2xl:left-10 "
-          >
-            <div
-              className="space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 "
-            >
-              <h1
-                className="font-extrabold 3xl:text-[160px] text-3xl text-[#b7410e] xs2:text-5xl xs:text-4xl uppercase leading-[1.1] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px] "
-              >
+          <div className="absolute bottom-6 xs2:bottom-9 xs:bottom-8 left-2 xs2:left-4 xs:left-3 sm:bottom-10 sm:left-6 md:bottom-11 md:left-7 lg:bottom-12 lg:left-8 xl:bottom-13 xl:left-9 2xl:bottom-14 2xl:left-10 ">
+            <div className="space-y-2 xs:space-y-3 sm:space-y-4 md:space-y-6 lg:space-y-8 xl:space-y-10 2xl:space-y-12 ">
+              <h1 className="font-extrabold 3xl:text-[160px] text-3xl text-[#b7410e] xs2:text-5xl xs:text-4xl uppercase leading-[1.1] sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[140px] ">
                 <span className="block">Anti-Schwarzer.</span>
                 <span className="block">Rassismus.</span>
               </h1>
@@ -41,9 +35,9 @@ export default function Rassismus() {
           {/* BIG TEXT */}
           <div className="mx-auto 3xl:mb-52 mb-12 xs2:mb-15 xs:mb-14 pt-8 sm:mb-16 md:mb-20 lg:mb-36 xl:mb-40 2xl:mb-52">
             <p className="mx-auto font-semibold 3xl:text-[10rem] text-2xl xs2:text-4xl xs:text-3xl leading-tight tracking-normal sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-8xl">
-              Sichtbarkeit schaffen, Strukturen verändern: Wir engagieren uns
-              gegen Anti‑Schwarzen Rassismus und stärken die Stimmen von BIPoC
-              in politischen und gesellschaftlichen Prozessen.
+              Sichtbarkeit schaffen, Strukturen verändern: Wir engagieren uns gegen Anti‑Schwarzen
+              Rassismus und stärken die Stimmen von BIPoC in politischen und gesellschaftlichen
+              Prozessen.
             </p>
           </div>
 
@@ -51,24 +45,19 @@ export default function Rassismus() {
           <div className="flex w-full justify-center">
             <div className="max-w-7xl">
               <p className="text-left 3xl:text-3xl text-black text-sm xs2:text-xs xs:text-xs leading-relaxed sm:text-xs md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
-                Ossara e.V. setzt sich in Hamburg aktiv dafür ein,
-                Anti‑Schwarzen Rassismus sichtbar zu machen und Räume für
-                Empowerment und Austausch für BIPoC zu schaffen. Unsere
-                Bildungsarbeit konzentriert sich auf die Auseinandersetzung mit
-                den Auswirkungen von Anti‑Schwarzem Rassismus und das aktive
-                Arbeiten gegen rassistische Strukturen. Ein wesentlicher
-                Bestandteil unserer Arbeit ist die Mitwirkung am
-                Forderungskatalog der Hamburger Arbeitsgruppe Anti‑Schwarzer
-                Rassismus, der konkrete politische und gesellschaftliche
-                Veränderungen fordert, um die Rechte und Lebensbedingungen von
-                BIPoC zu verbessern. Darüber hinaus vertreten wir die Interessen
-                von BIPoC in relevanten Gremien, um die Stimme der betroffenen
-                Gemeinschaften in politischen und gesellschaftlichen
-                Entscheidungsprozessen zu stärken. Dieser Bereich unserer Arbeit
-                befindet sich noch im Aufbau, aber wir sind fest entschlossen,
-                ihn weiter auszubauen und das Bewusstsein für Anti‑Schwarzen
-                Rassismus zu stärken, um eine gerechtere, solidarische
-                Gesellschaft zu fördern.
+                Ossara e.V. setzt sich in Hamburg aktiv dafür ein, Anti‑Schwarzen Rassismus sichtbar
+                zu machen und Räume für Empowerment und Austausch für BIPoC zu schaffen. Unsere
+                Bildungsarbeit konzentriert sich auf die Auseinandersetzung mit den Auswirkungen von
+                Anti‑Schwarzem Rassismus und das aktive Arbeiten gegen rassistische Strukturen. Ein
+                wesentlicher Bestandteil unserer Arbeit ist die Mitwirkung am Forderungskatalog der
+                Hamburger Arbeitsgruppe Anti‑Schwarzer Rassismus, der konkrete politische und
+                gesellschaftliche Veränderungen fordert, um die Rechte und Lebensbedingungen von
+                BIPoC zu verbessern. Darüber hinaus vertreten wir die Interessen von BIPoC in
+                relevanten Gremien, um die Stimme der betroffenen Gemeinschaften in politischen und
+                gesellschaftlichen Entscheidungsprozessen zu stärken. Dieser Bereich unserer Arbeit
+                befindet sich noch im Aufbau, aber wir sind fest entschlossen, ihn weiter auszubauen
+                und das Bewusstsein für Anti‑Schwarzen Rassismus zu stärken, um eine gerechtere,
+                solidarische Gesellschaft zu fördern.
               </p>
             </div>
           </div>
@@ -116,9 +105,7 @@ export default function Rassismus() {
               Forderungskatalog
             </p>
 
-            <button
-              className="rounded-md bg-[#b7410e] 3xl:px-10 px-4 xs2:px-4 xs:px-2 3xl:py-6 py-2 xs2:py-2 xs:py-1 font-semibold 3xl:text-3xl text-sm text-white xs2:text-xs xs:text-xs shadow-xl sm:px-5 sm:py-2.5 sm:text-xs md:px-6 md:py-3 md:text-base lg:px-7 lg:py-3.5 lg:text-lg xl:px-8 xl:py-4 xl:text-xl 2xl:px-9 2xl:py-4.5 2xl:text-2xl "
-            >
+            <button className="rounded-md bg-[#b7410e] 3xl:px-10 px-4 xs2:px-4 xs:px-2 3xl:py-6 py-2 xs2:py-2 xs:py-1 font-semibold 3xl:text-3xl text-sm text-white xs2:text-xs xs:text-xs shadow-xl sm:px-5 sm:py-2.5 sm:text-xs md:px-6 md:py-3 md:text-base lg:px-7 lg:py-3.5 lg:text-lg xl:px-8 xl:py-4 xl:text-xl 2xl:px-9 2xl:py-4.5 2xl:text-2xl ">
               <Link
                 href={`/files/forderungskatalog_anti_schwarzer_rassismus`}
                 target="_blank"
