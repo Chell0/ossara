@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div className="relative">
       <main className="adbsolute bg-[#fff6ea] p-1">
-        <NavBar />
+        <NavBar/>
         <div className="container mx-auto mt-20 max-w-screen-md p-10">
           {/* Events Image */}
-          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
+          <div
+            className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/veranstaltungen/netzwerkstatt1.png`}
               alt={`Netzwerkstatt2 photo`}
@@ -19,7 +20,7 @@ export default function Page() {
               priority
               quality={100}
               className={`rounded-md object-contain object-center`}
-              style={{ maxHeight: "640px" }}
+              style={{maxHeight: "640px"}}
             />
           </div>
 
@@ -31,23 +32,28 @@ export default function Page() {
           </h1>
 
           {/* Event Type */}
-          <p className="mt-2 text-base text-gray-800">What: Netzwerken und Workshop</p>
+          <p className="mt-2 text-base text-gray-800">What: Netzwerken und
+            Workshop</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">Wann: 19. September 2024</p>
+          <p className="mt-2 text-base text-gray-800">Wann: 19. September
+            2024</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 18:30 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken und Werken im Rahmen
-            von kreativen Angeboten zu verbinden. Was: Gemeinsam werden wir die Technik des
-            Linoldruckes kennenlernen und uns hier ausprobieren. Mit Fabienne Schöter,
+            Unser Angebot der NETZ:WERKSTATT bietet die Möglichkeit, Netzwerken
+            und Werken im Rahmen
+            von kreativen Angeboten zu verbinden. Was: Gemeinsam werden wir die
+            Technik des
+            Linoldruckes kennenlernen und uns hier ausprobieren. Mit Fabienne
+            Schöter,
             Kunsttherapeutin.
           </p>
         </div>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

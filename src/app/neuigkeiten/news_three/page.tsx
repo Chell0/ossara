@@ -2,16 +2,18 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div>
       <main className="relative bg-white">
-        <NavBar />
-        <div className="container mx-auto mt-20 max-w-screen-md rounded-lg bg-[#fff6ea] p-10 shadow-sm">
+        <NavBar/>
+        <div
+          className="container mx-auto mt-20 max-w-screen-md rounded-lg bg-[#fff6ea] p-10 shadow-sm">
           {/* News Date */}
-          <h3 className="mb-5 text-center text-gray-500 uppercase">12. Dezember 2023</h3>
+          <h3 className="mb-5 text-center text-gray-500 uppercase">12. Dezember
+            2023</h3>
 
           {/* News Title */}
           <h1
@@ -21,7 +23,8 @@ export default function Page() {
           </h1>
 
           {/* News Image */}
-          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
+          <div
+            className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/news/picture-4.png`}
               alt={`Neu im Team Ossara- Hamburg photo`}
@@ -30,15 +33,18 @@ export default function Page() {
               priority
               quality={100}
               className={`rounded-md object-contain object-center`}
-              style={{ maxHeight: "640px" }}
+              style={{maxHeight: "640px"}}
             />
           </div>
 
           {/* Text */}
-          <section className="prose prose-sm prose-stone prose-a:target:_blank prose-a:rel:noreferrer mx-auto mt-20 max-w-screen-md prose-headings:font-semibold prose-a:text-orange-500 prose-headings:text-2xl prose-headings:text-orange-500">
+          <section
+            className="prose prose-sm prose-stone prose-a:target:_blank prose-a:rel:noreferrer mx-auto mt-20 max-w-screen-md prose-headings:font-semibold prose-a:text-orange-500 prose-headings:text-2xl prose-headings:text-orange-500">
             <p className="mt-4 text-base text-gray-800">
-              Du möchtest Neuigkeiten von Ossara e.V. und aktuelle Debatten und News zum Thema
-              Dekolonisierung und Anti-Rassismus innerhalb Hamburgs verfolgen oder über
+              Du möchtest Neuigkeiten von Ossara e.V. und aktuelle Debatten und
+              News zum Thema
+              Dekolonisierung und Anti-Rassismus innerhalb Hamburgs verfolgen
+              oder über
               Veranstaltungen zu diesen Thematiken informiert bleiben?
             </p>
             <p className="text-base">
@@ -55,7 +61,7 @@ export default function Page() {
             </p>
           </section>
         </div>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

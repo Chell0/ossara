@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div className="relative bg-[#fff6ea]">
       <main className="p-6">
-        <NavBar />
+        <NavBar/>
         <div className="container mx-auto mt-20 max-w-screen-md p-10">
           {/* Events Image */}
-          <div className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
+          <div
+            className="mt-10 mb-5 flex max-w-screen-lg items-center justify-center">
             <Image
               src={`/veranstaltungen/verbindungen.png`}
               alt={`Decolonize Polizei Photo`}
@@ -19,7 +20,7 @@ export default function Page() {
               priority
               quality={100}
               className={`rounded-md object-contain object-center`}
-              style={{ maxHeight: "640px" }}
+              style={{maxHeight: "640px"}}
             />
           </div>
 
@@ -34,19 +35,22 @@ export default function Page() {
           <p className="mt-2 text-base text-gray-800">What: Workshop</p>
 
           {/* Event Date */}
-          <p className="mt-2 text-base text-gray-800">Wann: 20. - 21. Mai 2023</p>
+          <p className="mt-2 text-base text-gray-800">Wann: 20. - 21. Mai
+            2023</p>
 
           {/* Event Time */}
           <p className="mt-2 text-base text-gray-800">Time: 12:00 Uhr</p>
 
           {/* Event Description */}
           <p className="mt-3 text-base text-gray-600 leading-relaxed">
-            Dieser Workshop bietet Raum für Verbindungen. Mit kreativen Methoden wollen wir
-            Verbindungen reaktivieren, schaffen, besprechen und uns wieder mehr mit uns selbst und
+            Dieser Workshop bietet Raum für Verbindungen. Mit kreativen
+            Methoden wollen wir
+            Verbindungen reaktivieren, schaffen, besprechen und uns wieder mehr
+            mit uns selbst und
             miteinander verbunden fühlen.
           </p>
         </div>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );

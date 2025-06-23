@@ -1,14 +1,14 @@
 import Footer from "@/components/Footer/Footer";
-import NavBar from "@/components/NavBar/NavBar";
+import {NavBar} from "@/components/NavBar/NavBar";
 
 export default function Page() {
   return (
     <div>
       <main className="bg-[#fef5db]">
-        <NavBar />
+        <NavBar/>
         <header
           className="relative h-screen w-full bg-center bg-cover p-10"
-          style={{ backgroundImage: "url(/bgs/img1.jpg)" }}
+          style={{backgroundImage: "url(/bgs/img1.jpg)"}}
         >
           <div
             className={`absolute inset-0 top-0 right-0 left-0 flex items-start justify-start bg-black bg-opacity-70`}
@@ -20,7 +20,7 @@ export default function Page() {
             </h1>
           </div>
         </header>
-        <Footer />
+        <Footer/>
       </main>
     </div>
   );
