@@ -19,18 +19,18 @@ type MenuColumnProps = {
 };
 
 const MenuColumn = ({
-                      items,
-                      activeSubMenu,
-                      toggleMenu,
-                      toggleSubMenu
-                    }: MenuColumnProps) => (
+  items,
+  activeSubMenu,
+  toggleMenu,
+  toggleSubMenu
+}: MenuColumnProps) => (
   <ul className="space-y-4 md:space-y-6">
     {items.map(menu => (
       <li key={menu.name}>
         <div className="flex items-center justify-between">
           <Link
             href={menu.href}
-            className={`font-bold 3xl:text-6xl text-3xl text-[#f7cc55] hover:text-[#e6b845] lg:text-3xl xl:text-4xl 2xl:text-5xl`}
+            className="font-bold text-3xl md:text-4xl lg:text-5xl text-[#f7cc55] hover:text-[#e6b845] transition-colors duration-200"
             onClick={toggleMenu}
           >
             {menu.name}
@@ -51,7 +51,7 @@ const MenuColumn = ({
               <li key={`${menu.name}-${item.name}`}>
                 <Link
                   href={item.href.startsWith("#") ? `${menu.href}${item.href}` : item.href}
-                  className={`font-medium text-3xl text-[#f7cc55] hover:text-[#e6b845]`}
+                  className={`font-medium text-2xl text-[#f7cc55] hover:text-[#e6b845]`}
                   onClick={toggleMenu}
                 >
                   {item.name}
