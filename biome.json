@@ -24,8 +24,8 @@
           "level": "error",
           "fix": "safe",
           "options": {
-            "attributes": ["className"],
-            "functions": ["cn", "clsx", "twMerge"]
+            "attributes": [ "className" ],
+            "functions": [ "cn", "clsx", "twMerge" ]
           }
         }
       }
