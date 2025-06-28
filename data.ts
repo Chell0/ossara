@@ -1,4 +1,4 @@
-import { Category, NewsItem } from "./types";
+import type { Category, NewsItem } from "./types";
 
 export const newsData: NewsItem[] = [
   {

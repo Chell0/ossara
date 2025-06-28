@@ -1,38 +1,32 @@
-"use client";
-
 import Image from "next/image";
 
 export default function LandingSection() {
   return (
-    <section className="relative w-full h-[100dvh]">
-      {/* Background Image */}
-      <div className="relative inset-0 w-full h-full">
-        <Image
-          src="/bgs/img1.jpg"
-          fill
-          alt="Home Page Header image"
-          className="object-cover"
-          priority
-          sizes="(max-width: 320px) 100vw, (max-width: 2560px) 100vw, 100vw"
-        />
-      </div>
-
-      {/* Text Content */}
-      <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 lg:bottom-10 lg:left-10 xl:bottom-section xl:left-section">
-        <div className="space-y-2 xs:space-y-2.5 sm:space-y-3 md:space-y-4 lg:space-y-6 xl:space-y-7 2xl:space-y-8">
+    <section className={`w-full`}>
+      <div className="relative h-screen">
+        <div className="absolute inset-0">
+          <Image
+            src="/bgs/img1.jpg"
+            width={5472}
+            height={3648}
+            alt="Hero Image"
+            className="h-auto w-full object-contain"
+          />
+        </div>
+        <div
+          className="relative z-10 flex items-end justify-end pb-8 pl-4 text-left text-white">
           <h1
-            className="text-white text-3xl font-bold leading-[1.1] uppercase
-              xs:text-4xl
-              sm:text-5xl
-              md:text-6xl
-              lg:text-7xl
-              xl:text-8xl
-              2xl:text-9xl
-              3xl:text-[180px]"
-          >
-            <span className="block">GEMEINSAM GEGEN</span>
-            <span className="block">Loremipsum dolor</span>
-            <span className="block">Lorem sit</span>
+            className="font-bold text-4xl uppercase leading-tight sm:text-6xl md:text-7xl lg:text-8xl">
+            <span
+              className="block animate-[slideUp_0.8s_ease-out_0.2s_forwards]">
+              GEMEINSAM GEGEN
+            </span>
+            <span
+              className="block animate-[slideUp_0.8s_ease-out_0.4s_forwards]">
+              Loremipsum dolor
+            </span>
+            <span
+              className="block animate-[slideUp_0.8s_ease-out_0.6s_forwards]">Lorem sit</span>
           </h1>
         </div>
       </div>

@@ -1,10 +1,10 @@
 "use client";
 
-import { YouTubeSectionProps } from "@/app/lib/interface";
-import YouTube, { YouTubeProps } from "react-youtube";
+import YouTube, { type YouTubeProps } from "react-youtube";
+import type { YouTubeSectionProps } from "@/app/lib/interface";
 
 export default function YouTubeSection({ videoId }: YouTubeSectionProps) {
-  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+  const onPlayerReady: YouTubeProps["onReady"] = event => {
     event.target.pauseVideo();
   };
 
@@ -19,13 +19,13 @@ export default function YouTubeSection({ videoId }: YouTubeSectionProps) {
   };
 
   return (
-    <section className="overflow-hidden w-full aspect-video max-w-4xl mx-auto shadow-lg">
-      <div className="relative w-full h-full">
+    <section className="mx-auto aspect-video w-full max-w-4xl overflow-hidden shadow-lg">
+      <div className="relative h-full w-full">
         <YouTube
           videoId={videoId}
           opts={playerOptions}
           onReady={onPlayerReady}
-          className="absolute top-0 left-0 w-full h-full"
+          className="absolute top-0 left-0 h-full w-full"
           iframeClassName="w-full h-full"
           title="YouTube video player"
         />

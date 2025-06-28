@@ -4,8 +4,9 @@ import { MenuIcon, XIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import MenuColumn from "@/components/MenuColumn/MenuColumn";
 
-export default function NavBar() {
+export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSubMenu, setActiveSubMenu] = useState<string | null>(null);
   const [showNav, setShowNav] = useState(true);
@@ -95,147 +96,81 @@ export default function NavBar() {
   if (!showNav) return null;
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="container mx-auto px-0">
-        <div className="flex justify-between items-center h-header">
-          {/* Menu Button */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={toggleMenu}
-              className="text-black focus:outline-none"
-            >
-              {menuOpen ? (
-                <XIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
-              ) : (
-                <MenuIcon className="w-6 h-6 md:w-8 md:h-8 xl:w-10 xl:h-10" />
-              )}
-            </button>
-            <span className="font-medium text-base md:text-lg lg:text-xl xl:text-2xl">
-              Menü
-            </span>
-          </div>
+    <nav className="fixed z-50 w-full bg-transparent">
+      <div className="flex items-center justify-between px-4 py-3">
+        {/* Menu Button */}
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded={menuOpen}
+            onClick={toggleMenu}
+            className="rounded-md cursor-pointer p-2 text-black"
+          >
+            {menuOpen ? (
+              <XIcon className="h-8 w-8" />
+            ) : (
+              <MenuIcon className="h-8 w-8" />
+            )}
+          </button>
+          <span className="pt-1 text-2xl font-semibold text-black">Menü</span>
+        </div>
 
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <Link href="/">
-              <Image
-                src="/logos/ossara_logo.png"
-                alt="Ossara Logo"
-                width={1280}
-                height={445}
-                className="h-8 md:h-10 xl:h-14 2xl:h-18 w-auto object-contain"
-                priority
-              />
-            </Link>
-          </div>
+        {/* Logo */}
+        <div>
+          <Link href="/" className="block">
+            <Image
+              src="/logos/ossara_logo.png"
+              alt="Ossara Logo"
+              className="object-contain"
+              width={160}
+              height={160}
+              priority
+            />
+          </Link>
         </div>
       </div>
 
+      {/* Mobile Navigation */}
       {menuOpen && (
-        <div className="fixed inset-0 z-50 bg-[#fef5db] overflow-y-auto">
-          <div className="container mx-auto px-4 py-section">
-            <div className="flex justify-between items-center mb-8">
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-[#fef5db]">
+          <div className="mx-auto px-10 py-10">
+            <div className="mb-16 flex items-center justify-between">
               <Link
                 href="/"
-                className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f7cc55] hover:text-[#e6b845] uppercase"
+                className="text-6xl font-extrabold uppercase text-[#f7cc55] hover:text-[#e6b845] md:text-7xl lg:text-8xl"
               >
                 Ossara
               </Link>
               <button
+                type="button"
                 onClick={toggleMenu}
-                className="text-gray-600 hover:text-gray-800"
-              >
-                <XIcon className="w-8 h-8 md:w-10 md:h-10" />
+                aria-controls="mobile-menu"
+                aria-expanded={menuOpen}
+                className="rounded-md cursor-pointer p-2 text-gray-800">
+                <XIcon className="h-8 w-8 md:h-10 md:w-10" />
               </button>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-10">
               {/* Left Column */}
-              <ul className="space-y-4 md:space-y-6">
-                {leftMenuItems.map((menu, index) => (
-                  <li key={index}>
-                    <div className="flex justify-between items-center">
-                      <Link
-                        href={menu.href}
-                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
-                        onClick={toggleMenu}
-                      >
-                        {menu.name}
-                      </Link>
-                      {menu.items.length > 0 && (
-                        <button
-                          onClick={() => toggleSubMenu(menu.name)}
-                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-xl md:text-2xl"
-                        >
-                          {activeSubMenu === menu.name ? "−" : "+"}
-                        </button>
-                      )}
-                    </div>
-                    {activeSubMenu === menu.name && (
-                      <ul className="pl-4 mt-2 space-y-2 text-lg md:text-xl">
-                        {menu.items.map((item, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              href={
-                                item.href.startsWith("#")
-                                  ? `${menu.href}${item.href}`
-                                  : item.href
-                              }
-                              className="text-[#f7cc55] hover:text-[#e6b845]"
-                              onClick={toggleMenu}
-                            >
-                              {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
+              <ul className="space-y-4">
+                <MenuColumn
+                  items={leftMenuItems}
+                  activeSubMenu={activeSubMenu}
+                  toggleMenu={toggleMenu}
+                  toggleSubMenu={toggleSubMenu}
+                />
               </ul>
 
               {/* Right Column */}
               <ul className="space-y-4 md:space-y-6">
-                {rightMenuItems.map((menu, index) => (
-                  <li key={index}>
-                    <div className="flex justify-between items-center">
-                      <Link
-                        href={menu.href}
-                        className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f7cc55] hover:text-[#e6b845]"
-                        onClick={toggleMenu}
-                      >
-                        {menu.name}
-                      </Link>
-                      {menu.items.length > 0 && (
-                        <button
-                          onClick={() => toggleSubMenu(menu.name)}
-                          className="text-[#f7cc55] hover:text-[#e6b845] ml-4 text-xl md:text-2xl"
-                        >
-                          {activeSubMenu === menu.name ? "−" : "+"}
-                        </button>
-                      )}
-                    </div>
-                    {activeSubMenu === menu.name && (
-                      <ul className="pl-4 mt-2 space-y-2 text-lg md:text-xl">
-                        {menu.items.map((item, subIndex) => (
-                          <li key={subIndex}>
-                            <Link
-                              href={
-                                item.href.startsWith("#")
-                                  ? `${menu.href}${item.href}`
-                                  : item.href
-                              }
-                              className="text-[#f7cc55] hover:text-[#e6b845]"
-                              onClick={toggleMenu}
-                            >
-                              {item.name}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </li>
-                ))}
+                <MenuColumn
+                  items={rightMenuItems}
+                  activeSubMenu={activeSubMenu}
+                  toggleMenu={toggleMenu}
+                  toggleSubMenu={toggleSubMenu}
+                />
               </ul>
             </div>
           </div>
@@ -243,4 +178,4 @@ export default function NavBar() {
       )}
     </nav>
   );
-}
+};
