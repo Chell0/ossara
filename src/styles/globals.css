@@ -1,5 +1,158 @@
 @import "tailwindcss";
 
+/* Custom global styles */
+:root {
+  font-family: 'League Spartan', system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom utilities using Tailwind's layer system */
+
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Adaptive hero image positioning and scaling */
+@layer utilities {
+  .adaptive-hero-image {
+    /* Default positioning for all screens */
+    object-position: center center;
+    
+    /* Mobile portrait - focus on center-top for better composition */
+    @media (max-width: 640px) and (orientation: portrait) {
+      object-position: center 30%;
+    }
+    
+    /* Mobile landscape - center positioning works best */
+    @media (max-width: 640px) and (orientation: landscape) {
+      object-position: center center;
+    }
+    
+    /* Small tablets portrait */
+    @media (min-width: 641px) and (max-width: 768px) and (orientation: portrait) {
+      object-position: center 35%;
+    }
+    
+    /* Tablets landscape */
+    @media (min-width: 641px) and (max-width: 1024px) and (orientation: landscape) {
+      object-position: center center;
+    }
+    
+    /* Desktop and larger screens */
+    @media (min-width: 1025px) {
+      object-position: center center;
+    }
+    
+    /* Very small screens (older phones) */
+    @media (max-width: 375px) {
+      object-position: center 25%;
+    }
+    
+    /* Ultra-wide screens */
+    @media (min-width: 1920px) {
+      object-position: center center;
+    }
+    
+    /* Handle very short screens (landscape phones, some tablets) */
+    @media (max-height: 500px) and (orientation: landscape) {
+      object-position: center center;
+    }
+    
+    /* Ensure image covers properly on all aspect ratios */
+    @media (min-aspect-ratio: 16/9) {
+      object-fit: cover;
+    }
+    
+    @media (max-aspect-ratio: 4/3) {
+      object-fit: cover;
+      object-position: center 40%;
+    }
+  }
+  
+  /* Responsive text shadows for better readability */
+  .text-shadow-adaptive {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+    @media (min-width: 768px) {
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    }
+    
+    @media (min-width: 1024px) {
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6);
+    }
+  }
+  
+  /* Fluid typography utilities */
+  .text-fluid-xs {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+  }
+  
+  .text-fluid-sm {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+  }
+  
+  .text-fluid-base {
+    font-size: clamp(1.125rem, 3vw, 1.5rem);
+  }
+  
+  .text-fluid-lg {
+    font-size: clamp(1.25rem, 4vw, 2rem);
+  }
+  
+  .text-fluid-xl {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+  }
+  
+  .text-fluid-2xl {
+    font-size: clamp(2rem, 6vw, 4rem);
+  }
+  
+  .text-fluid-3xl {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+  }
+}
+
+/* Enhanced animations for better performance */
+@layer components {
+  .hero-text-animation {
+    animation: slideUpFade 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  }
+}
+
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Optimize for reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .hero-text-animation,
+  .animate-bounce,
+  [class*="animate-"] {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
 @layer utilities {
   .animate-fade-in {
     opacity: 0;
